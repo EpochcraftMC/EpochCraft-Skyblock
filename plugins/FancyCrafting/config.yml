@@ -1,0 +1,179 @@
+messages:
+  prefix: ''
+  # 插件重载会重新加载消息和 GUI。
+  plugin_reload: '&a插件已重新加载。'
+  # 当命令使用错误或调用帮助页面时，命令将以这种格式显示。
+  command_usage: '&b%command% &7- &f%usage%'
+  recipe_does_not_exist: '&c找不到配方 %recipe_name%。'
+
+# 工作台 GUI 的配置
+workbench:
+  # GUI 的标题
+  title: '&8合成台'
+  # GUI 的大小，确保不要定义超过 size-1 的槽位
+  size: 54
+  # 可以进行合成的槽位
+  crafting-slots:
+    - 10
+    - 11
+    - 12
+    - 19
+    - 20
+    - 21
+    - 28
+    - 29
+    - 30
+  # 显示合成状态的槽位（无效配方/有效配方）
+  craft-state-slots:
+    - 45
+    - 46
+    - 47
+    - 48
+    - 50
+    - 51
+    - 52
+    - 53
+  # 显示返回物品的槽位
+  back-slot: 49
+  # 合成结果出现的槽位
+  result-slot: 24
+
+# 配方总览部分，名称不言自明
+recipe_list:
+  title: '&8配方列表'
+  size: 54
+  workbench-slot: 48
+  add-recipe-slot: 49
+  back-slot: 50
+  previous-page-slot: 45
+  next-page-slot: 53
+  preview-lore: '&e点击预览！'
+  edit-lore: '&b右键点击编辑！'
+
+# 配方编辑 GUI 部分
+recipe_edit:
+  title: '&8编辑配方'
+  crafting-slots:
+    - 10
+    - 11
+    - 12
+    - 19
+    - 20
+    - 21
+    - 28
+    - 29
+    - 30
+  result-slot: 24
+  save-slot: 53
+  cancel-slot: 45
+  edit-name-slot: 49
+
+# 配方编辑 GUI 部分
+recipe_preview:
+  title: '&8配方查看器'
+  crafting-slots:
+    - 10
+    - 11
+    - 12
+    - 19
+    - 20
+    - 21
+    - 28
+    - 29
+    - 30
+  result-slot: 24
+  back-slot: 49
+  return-to-list-slot: 48
+
+# 可以配置的物品，遵循以下格式：
+#<key>:                     | 请不要更改这个，这是插件查找物品的方式。
+#  material: DIAMOND_SWORD  | 物品的类型。 https://helpch.at/docs/1.8.8/org/bukkit/Material.html
+#  data: 0                  | 可选 - 物品的 "伤害值"。例如用于给玻璃染色。
+#  displayName: '&fName'    | 可选 - 物品的名称。支持颜色代码。
+#  lore:                    | 可选 - 物品的描述。
+#    - '&a第 1 行'
+#    - '&b第 2 行'
+#  enchants:                | 可选 - 物品的附魔。 https://helpch.at/docs/1.8.8/org/bukkit/enchantments/Enchantment.html
+#    DAMAGE_ALL: 5
+#    DURABILITY: 3
+items:
+  fill:
+    material: STAINED_GLASS_PANE
+    data: 15
+    displayName: '&r'
+  back:
+    material: BARRIER
+    displayName: '&a关闭'
+    lore:
+      - '&e点击关闭！'
+    # 命令只能为返回物品定义。
+    commands: []
+
+  # 工作台专属物品
+  valid-craft:
+    material: STAINED_GLASS_PANE
+    data: 5
+    displayName: '&r'
+  invalid-craft:
+    material: STAINED_GLASS_PANE
+    data: 14
+    displayName: '&r'
+  empty-result:
+    material: STAINED_GLASS_PANE
+    data: 8
+    displayName: '&r'
+
+  # 列表专属物品
+  add-recipe:
+    material: INK_SACK
+    data: 10
+    displayName: '&a添加配方'
+    lore:
+      - '&e点击创建新配方！'
+  workbench:
+    material: WORKBENCH
+    displayName: '&a打开工作台'
+    lore:
+      - '&e点击打开工作台！'
+  next-page:
+    material: ARROW
+    displayName: '&a下一页'
+    lore:
+      - '&e点击前往'
+  previous-page:
+    material: ARROW
+    displayName: '&a上一页'
+    lore:
+      - '&e点击前往'
+
+  # 配方编辑专属物品
+  edit-name:
+    material: NAME_TAG
+    displayName: '&a编辑名称'
+    lore:
+      - '&e点击设置此配方的名称'
+      - ''
+      - '&7当前名称:'
+  cancel:
+    material: STAINED_GLASS_PANE
+    data: 14
+    displayName: '&a取消编辑'
+    lore:
+      - '&e点击取消！'
+  save:
+    material: STAINED_GLASS_PANE
+    data: 5
+    displayName: '&a保存配方'
+    lore:
+      - '&e点击保存此配方！'
+
+  # 配方预览专属物品
+  return-to-list:
+    material: BOOK
+    displayName: '&a列出所有配方'
+    lore:
+      - '&7查看所有可用的'
+      - '&7配方。'
+      - ''
+      - '&e点击查看！'
+      - '&c需要管理员或更高权限'

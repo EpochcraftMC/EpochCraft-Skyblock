@@ -1,0 +1,275 @@
+# _ _____ _____ _____ _____ _____ _____ _____ _____ _
+#|_|_____|_____|_____|_____|_____|_____|_____|_____|_|
+#| |    _____  ______ _     _    ___   ________    | |
+#| |   |  __ \|  ____| |   | |  | \ \ / /  ____|   | |
+#|_|   | |  | | |__  | |   | |  | |\ V /| |__      |_|
+#| |   | |  | |  __| | |   | |  | | > < |  __|     | |
+#| |   | |__| | |____| |___| |__| |/ . \| |____    | |
+#|_|   |_____/|______|______\____//_/ \_\______|   |_|
+#| |                                               | |
+#| |          DeluxeBazaar | SedatTR#8666          | |
+#|_|_____ _____ _____ _____ _____ _____ _____ _____|_|
+#|_|_____|_____|_____|_____|_____|_____|_____|_____|_|
+#
+# 如果你有任何问题或建议，请联系我。
+# Discord: SedatTR#8666
+# Discord 服务器: https://discord.gg/nchk86TKMT
+# Wiki: https://sedattr.gitbook.io/deluxebazaar
+# 如果你正在使用此插件，即表示你接受服务条款。
+
+# 如果默认配置不工作，是因为这些配置是在旧版本中创建的。
+# 请为你的服务器版本修复配置中的物品。
+config:
+  buyOrder:
+    limitEnabled: true # 启用或禁用限制。
+    topOrderLimit: 1.0 # 如果收购单价格上涨超过此数字，将改变价格。（设为 0 禁用）
+    maximumCount: 1600 # 每个收购单的最大物品数量。
+    minimumPrice: 0.1 # 收购单最低价格。
+    requiredCount: 1 # 如果收购单价格数量为 2 或更多，将改变价格。
+    checkWhenCreated: true # 如果创建新的收购单，将像购买/出售物品时一样检查订单。
+
+  sellOffer:
+    limitEnabled: true
+    bestOfferLimit: 1.0
+    maximumCount: 1600
+    minimumPrice: 0.1
+    requiredCount: 1
+    checkWhenCreated: true
+
+  addons:
+    PlaceholderAPI: false # 用于集市占位符。
+    HeadDatabase: false # 用于在物品中使用 HDB 头颅。
+    MMOItems: false # 目前仅适用于 PREMIUM 版本。
+
+  default:
+    main:
+      flags: # 主菜单物品的物品标记。（包括所有物品）
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+    economy:
+      type: "vault" # vault 或 yaml
+      yaml:
+        folder: "plugins/YAMLEconomy/players"
+        file: "%uuid%.yml" # %uuid% 或 %player%
+        node: money.total # 在文件中: money -> total: 100
+    input:
+      type: "anvil" # 输入菜单类型，为了更好的性能我推荐 anvil。（sign 或 anvil）
+      sign:
+        lines: # 告示牌的行，不要使用颜色代码。
+          - ""
+          - "^^^^^^^^^^"
+          - "写入"
+          - "数字"
+    category: "mining" # 默认分类名称。
+    mode: "direct" # 默认模式名称。
+    sellNormalItems: true # 如果你想出售普通的 Minecraft 物品，请启用。（不是从集市购买的）
+    maximumNumber: 2304 # 如果你不知道，请不要更改。
+    limitSellPrice: true # 如果此设置为 true，出售价格将始终低于购买价格。
+    buyGoBack: false # 启用后，购买东西时将关闭（返回）购买菜单。
+    sellGoBack: true # 禁用后，出售东西时将不关闭（返回）出售菜单。
+    settings:
+      order: true # 启用或禁用订单。
+      orderSettings: true # 启用或禁用订单设置。
+      sellAll: true # 启用或禁用全部出售。
+      sellItems: true # 启用或禁用物品出售。
+      items:
+        enabled: true # 如果你不想在创建购买或出售订单时改变价格，请禁用此项。
+
+        change: true # 如果你不想通过公式和重载改变价格，请禁用此项。
+        reload: 60 # 物品和数量的重新加载时间，单位分钟。
+        buyPrice:
+          maximumChange: 1.0 # 最大价格变化（即使公式变化 +5，插件也会最多变化 +1。仅用于增加或减少）
+          minimumCount: 1000 # 如果购买数量少于这个数字，价格将不会改变。（设为 0 禁用）
+          formula: "%oldprice% + (%buycount% / 100)" # 新价格的公式。（%oldprice% 和 %buycount%）
+          type: "increase" # increase、set 或 decrease
+        sellPrice:
+          maximumChange: 1.0
+          minimumCount: 1000
+          formula: "%oldprice% + (%sellcount% / 100)"
+          type: "decrease"
+
+  messages: # 所有消息。
+    noPermission: "&c你没有足够的权限。"
+    consoleUsage: "&8- &a/bazaar reload: &7重新加载插件。"
+    playerUsage:
+      - "&8- &a/bazaar menu: &7打开集市菜单。"
+      - "&8- &a/bazaar buy [物品] [数量]: &7购买物品。"
+      - "&8- &a/bazaar sell [物品] [数量]: &7出售物品。"
+    adminUsage:
+      - "&8- &a/bazaaradmin menu [玩家]: &7为玩家打开集市菜单。"
+      - "&8- &a/bazaaradmin buy [玩家] [物品] [数量]: &7为玩家购买物品。"
+      - "&8- &a/bazaaradmin sell [玩家] [物品] [数量]: &7为玩家出售物品。"
+      - "&8- &a/bazaaradmin createitem [名称] [分类]: &7自动创建你手中的物品并添加到文件。"
+      - "&8- &a/bazaaradmin reload: &7重新加载插件。"
+    buyUsage: "&c购买用法: &f/bazaar buy [物品] [数量]"
+    sellUsage: "&c出售用法: &f/bazaar sell [物品] [数量]"
+    adminMenuUsage: "&c菜单用法: &f/bazaaradmin menu [玩家]"
+    adminBuyUsage: "&c购买用法: &f/bazaaradmin buy [玩家] [物品] [数量]"
+    adminSellUsage: "&c购买用法: &f/bazaaradmin sell [玩家] [物品] [数量]"
+    notPlayer: "&c你不是玩家！"
+    reloaded: "&a插件已成功重新加载。"
+    notEnoughMoney: "&c你需要更多 &f%price% &c金币！"
+    notEnoughItem: "&c你需要更多 &f%count%x %item% &c物品！"
+    removeError: "&c移除时出现问题，请联系服主。"
+    addError: "&c添加时出现问题，请联系服主。"
+    noEmptySlot: "&c你没有足够的空槽位！"
+    sellPriceCantBeHigher: "&c出售价格不能高于购买价格！"
+    wrongItem: "&c这个物品是错误的！"
+    wrongPlayer: "&c我找不到这样的玩家！"
+    wrongNumber: "&c你需要输入数字！"
+    wrongCategory: "&c这个分类是错误的！"
+    pluginError: "&c插件出现问题，请重试！"
+    createItemUsage: "&c用法: &f/bazaar createitem [名称] [分类]"
+    createdItem: "&a成功创建了名为 &f%name% &a& 分类为 &f%category%&a 的物品！请在物品文件中编辑价格并将物品添加到分类。"
+    bought: "&6集市！ &7以 &6%price% 金币&7 购买了 &a%count%&7x &f%item%&7！"
+    sold: "&6集市！ &7以 &6%price% 金币&7 出售了 &a%count%&7x &f%item%&7！"
+    soldAll: "&6集市！ &7共以 &6%price% 金币&7 出售了 &a%count%&7x 物品&7！"
+    writeNumber: "&a输入数字"
+    bigNumber: "&c输入更小的数字"
+    reachedMinimumBuyPrice: "&c这个物品已经达到最低购买价格了！"
+    reachedMinimumSellPrice: "&c这个物品已经达到最低出售价格了！"
+    cancelCustom: "&c你已取消自定义数量。"
+    noItem: "&c你没有这个物品！"
+    buyOrderSetup: "&e收购单设置！ &a%amount%&7x &f%name% &7以 &6%price% 金币"
+    sellOfferSetup: "&e出售单设置！ &a%amount%&7x &f%name% &7以 &6%price% 金币"
+    priceChanged: "&e价格已更改！ &a%amount%&7x %name% &7物品的价格从 &6%oldprice% 金币&7 更改为 &6%newprice% &7！"
+    buyOrderCancelled: "&c已取消！ &7取消收购单已退款 &6%price% 金币 &7！"
+    sellOfferCancelled: "&c已取消！ &7取消出售单已退还 &a%amount%&7x %name% &7！"
+    orderDisabled: "&c订单系统已禁用！"
+    sellAllDisabled: "&c全部出售已禁用！"
+    sellItemsDisabled: "&c物品出售已禁用！"
+    claimedBuyOrder: "&6集市！ &7已领取 &a%amount%&7x %name% &7价值 &6%price% 金币 &7以每个 &6%unitprice% &7购买！"
+    claimedSellOffer: "&6集市！ &7从出售 &a%amount%&7x %name% &7中以每个 &6%unitprice% &7领取了 &6%price% 金币 &7！"
+    maximumSellOffer: "&c你已经达到了最大出售单数量！"
+    maximumBuyOrder: "&c你已经达到了最大收购单数量！"
+    buyOrderFilled: "&6[集市] &e你的 &a收购单 &e（&a%count%&7x %name%&e）已成交！"
+    sellOfferFilled: "&6[集市] &e你的 &6出售单 &e（&a%count%&7x %name%&e）已成交！"
+    noPermissionItem: "&c你对这个物品没有足够的权限！"
+    notEnoughStock: "&c这个物品需要更多 &f%count% &c库存！"
+    maximumCount: "&c你不能输入这个数字！"
+    minimumCount: "&c数量最少需要输入 1！"
+    noStock: "&c无"
+
+  permissions: # 如果你想禁用，请写 ""。
+    menu:
+      # 如果玩家拥有此权限，可以在主菜单中看到此物品。（也可以购买和出售此物品）
+      # 你可以使用 %item% 占位符。
+      item: ""
+
+      # 如果玩家拥有此权限，可以在主菜单中看到此分类。
+      # 你可以使用 %category% 占位符。
+      category: ""
+    normal: # 普通命令
+      command: "" # /bazaar
+      menu: "" # /bazaar menu
+      buy: "" # /bazaar buy [物品] [数量]
+      sell: "" # /bazaar sell [物品] [数量]
+    admin: # 管理员命令
+      command: "bazaaradmin.command" # /bazaaradmin
+      menu: "bazaaradmin.menu" # /bazaaradmin menu [玩家]
+      buy: "bazaaradmin.buy" # /bazaaradmin buy [玩家] [物品] [数量]
+      sell: "bazaaradmin.sell" # /bazaaradmin sell [玩家] [物品] [数量]
+      createItem: "bazaaradmin.createitem" # /bazaaradmin createitem [名称] [分类]
+      reload: "bazaaradmin.reload" # /bazaaradmin reload
+
+number: # 价格的数字格式。
+  removeDecimal: false # 如果为 true，数字将没有小数。（例如 43.34 变成 43）
+  minimumFraction: 0
+  maximumFraction: 2
+  decimal: true # 10,2 等。
+  short: # 10k、25M、1T 等。（我不推荐，目前有点小问题。）
+    enabled: false
+    thousand: "k"
+    million: "M"
+    billion: "G"
+    trillion: "T"
+    quadrillion: "Q"
+    quintillion: "E"
+
+order:
+  buy:
+    setup:
+      name: "&a&l收购&8: &f%name%"
+      lore:
+        - "&8价值 %price% 金币"
+        - "&f"
+        - "&7订单数量: &a%count%&7x"
+        - "&7单价: &6%unitprice% 金币"
+        - "&f"
+        - "&7发布者: &a%player%"
+        - "&e点击查看选项！"
+    filled:
+      name: "&a&l收购&8: &f%name%"
+      lore:
+        - "&8价值 %price% 金币"
+        - "&f"
+        - "&7订单数量: &a%count%&7x"
+        - "&7已成交: &a%fillcount%&7/%count% &a%percent%%！"
+        - "&f"
+        - "&7单价: &6%unitprice% 金币"
+        - "&f"
+        - "&a你有 &2%collectcount% 个物品 &a可以领取！"
+        - "&e点击领取！"
+
+  sell:
+    setup:
+      name: "&e&l出售&8: &f%name%"
+      lore:
+        - "&8价值 %price% 金币"
+        - "&f"
+        - "&7订单数量: &a%count%&7x"
+        - "&7单价: &6%unitprice% 金币"
+        - "&f"
+        - "&7发布者: &a%player%"
+        - "&e点击查看选项！"
+    filled:
+      name: "&e&l出售&8: &f%name%"
+      lore:
+        - "&8价值 %price% 金币"
+        - "&f"
+        - "&7订单数量: &e%count%&7x"
+        - "&7已成交: &e%fillcount%&7/%count% &e%percent%%！"
+        - "&f"
+        - "&7单价: &6%unitprice% 金币"
+        - "&f"
+        - "&e你有 &6%collectprice% 金币 &e可以领取！"
+        - "&e点击领取！"
+
+modes:
+  sound:
+    enabled: false
+    type: "CLICK"
+    volume: 1
+    pitch: 1
+  main:
+    advanced:
+      - "&8%product% 种商品"
+      - "&r"
+      - "&7购买价格: &6%buyprice% 金币"
+      - "&8%buycount% 次3天内立即购买"
+      - "&r"
+      - "&7出售价格: &6%sellprice% 金币"
+      - "&8%sellcount% 次3天内立即出售"
+      - "&r"
+      - "&e点击查看商品！"
+    direct:
+      - "&8%product% 种商品"
+      - "&r"
+      - "&7购买价格: &6%buyprice% 金币"
+      - "&7出售价格: &6%sellprice% 金币"
+      - "&r"
+      - "&e点击查看商品！"
+  items:
+    advanced:
+      - "&7购买价格: &6%buyprice% 金币"
+      - "&8%buycount% 次3天内立即购买"
+      - "&r"
+      - "&7出售价格: &6%sellprice% 金币"
+      - "&8%sellcount% 次3天内立即出售"
+      - "&r"
+      - "&e点击查看物品！"
+    direct:
+      - "&7购买价格: &6%buyprice% 金币"
+      - "&7出售价格: &6%sellprice% 金币"
+      - "&r"
+      - "&e点击查看物品！"

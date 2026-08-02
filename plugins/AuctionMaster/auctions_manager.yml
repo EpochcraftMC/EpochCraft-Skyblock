@@ -1,0 +1,302 @@
+#这是菜单中每个拍卖物品的描述：
+#使用 %amount% 代表物品数量
+auction-item-lore:
+  #没有出价的物品的描述
+  #使用 %display-name-seller% 代表卖家的显示名称
+  #使用 %starting-bid% 代表起拍价
+  #使用 %duration% 代表拍卖时长
+  auction-item-no-bid:
+    - '&8&m---------------------'
+    - '&7卖家: %display-name-seller%'
+    - '&7起拍价: &6%starting-bid% 金币'
+    - ''
+    - '&7结束于: &e%duration%'
+    - ''
+    - '&e点击查看！'
+  #有出价的物品的描述
+  #使用 %display-name-seller% 代表卖家的显示名称
+  #使用 %bids% 代表出价数量
+  #使用 %top-bid% 代表最高出价
+  #使用 %top-bid-player% 代表最高出价者
+  #使用 %duration% 代表拍卖时长
+  auction-item-with-bids:
+    - '&8&m---------------------'
+    - '&7卖家: %display-name-seller%'
+    - '&7出价: &a%bids% 次'
+    - ''
+    - '&7最高出价: &6%top-bid% 金币'
+    - '&7出价者: %top-bid-player%'
+    - ''
+    - '&7结束于: &e%duration%'
+    - ''
+    - '&e点击查看！'
+  #使用 %display-name-seller% 代表卖家的显示名称
+  #使用 %bids% 代表出价数量
+  #使用 %top-bid% 代表最高出价
+  #使用 %top-bid-player% 代表最高出价者
+  auction-item-ended:
+    - '&8&m---------------------'
+    - '&7卖家: %display-name-seller%'
+    - '&7出价: &a%bids% 次'
+    - ''
+    - '&7最高出价: &6%top-bid% 金币'
+    - '&7出价者: %top-bid-player%'
+    - ''
+    - '&7状态: &a已结束！'
+    - ''
+    - '&e点击查看！'
+  #使用 %display-name-seller% 代表卖家的显示名称
+  #使用 %starting-bid% 代表起拍价
+  auction-item-expired:
+    - '&8&m---------------------'
+    - '&7卖家: %display-name-seller%'
+    - '&7起拍价: &6%starting-bid% 金币'
+    - ''
+    - '&7状态: &c已过期！'
+    - ''
+    - '&e点击查看！'
+
+sort-auction-item: '154'
+sort-auction-item-name: '&a排序'
+#描述是动态的，所以你只能编辑
+#排序方式的名称
+sort-auction-item-sorting:
+  highest-bid: '最高出价'
+  lowest-bid: '最低出价'
+  ending-soon: '即将结束'
+  most-bids: '出价最多'
+  click-to-switch: '&e点击切换排序！'
+
+search-auction-item: 323
+search-auction-item-name: '&a搜索'
+search-auction-item-lore:
+  - '&7按名称查找物品。'
+  - ''
+  - '&e点击搜索！'
+
+#搜索拍卖时在告示牌上显示的消息
+#只有 3 行，因为第一行是玩家输入的地方
+search-sign-message:
+  - '^^^^^^^^^^^^^^^'
+  - '输入你的'
+  - '搜索内容'
+
+create-menu-name: '&8拍卖创建器'
+manage-own-auctions-menu-name: '&8你的拍卖管理'
+manage-menu-item: '418'
+manage-menu-item-name: '&a管理拍卖'
+manage-menu-item-lore:
+  #玩家没有自己的拍卖时显示的描述
+  manage-no-own-auctions:
+    - '&7将你自己的物品上架'
+    - '&7拍卖，供其他玩家'
+    - '&7购买。'
+    - ''
+    - '&e点击发财！'
+  #玩家有待处理的拍卖时显示的描述
+  #使用 %auctions% 代表玩家拥有的拍卖数量
+  #使用 %bids% 代表其拍卖上的出价总数
+  #使用 %coins% 代表其拍卖上的金币总数
+  manage-with-own-auctions:
+    - '&7你拥有 &e%auctions% 个拍卖&7，'
+    - '&7正在进行或刚刚'
+    - '&7结束。'
+    - ''
+    - '&7你的拍卖有 &a%bids% 次出价'
+    - '&7共计 &6%coins% 金币&7。'
+    - ''
+    - '&e点击管理！'
+
+preview-no-item-selected: '77'
+preview-no-item-selected-name: '&e点击你背包中的物品！'
+preview-no-item-selected-lore:
+  - '&7将其选中进行拍卖'
+
+preview-selected-item-name: '&a&n&l物品拍卖'
+preview-selected-item-take-back: '&e点击取回！'
+
+#当玩家有 2 个或更多已结束的拍卖时出现此物品
+collect-all-item: '380'
+#使用 %auctions% 代表可以领取的拍卖数量
+#使用 %coins% 代表可以领取的金币总数
+#使用 %items% 代表可以领取的过期物品
+collect-all-item-name: '&a全部领取'
+collect-all-item-lore:
+  own-auctions:
+    - '&8已结束的拍卖'
+    - ''
+    - '&7你有 &e%auctions% &7个已结束的拍卖'
+    - '&7总价值 &6%coins% &7金币'
+    - '&7和 &e%items% &7个过期拍卖中的物品。'
+    - ''
+    - '&e点击领取！'
+  own-bids:
+    - '&8已结束的拍卖'
+    - ''
+    - '&7有 &e%auctions% &7个你出过价的'
+    - '&7已结束拍卖。'
+    - ''
+    - '&7你可以领回 &6%coins% &7金币'
+    - '&7（来自输掉的拍卖）和'
+    - '&e%items% &7个物品（来自赢得的拍卖）。'
+    - ''
+    - '&e点击领取！'
+
+#玩家背包已满但试图领取物品时发送的消息
+not-enough-inventory-space: '&c你的背包空间不足！'
+
+create-auction-item:
+  no-item-selected-material: '159:14'
+  no-item-selected-name: '&c创建拍卖'
+  no-item-selected-lore:
+    - '&7未选择物品！'
+    - ''
+    - '&7点击背包中的物品'
+    - '&7将其选中进行'
+    - '&7此拍卖。'
+  item-selected-material: '159:13'
+  item-selected-name: '&a创建拍卖'
+  #使用 %item-name% 代表物品名称
+  #使用 %starting-bid% 代表起拍价金额
+  #使用 %duration% 代表拍卖时长
+  #使用 %fee% 代表总费用
+  item-selected-lore:
+    - '&7此物品将被添加到'
+    - '&7拍卖行供其他'
+    - '&7玩家购买。'
+    - ''
+    - '&7物品: &f%item-name%'
+    - '&7拍卖时长: &e%duration%'
+    - '&7起拍价: &6%starting-bid% 金币'
+    - ''
+    - '&7创建费用: &6%fee% 金币'
+    - ''
+    - '&e点击提交！'
+
+#默认起拍价
+default-starting-bid: '500'
+
+starting-bid-item: '266'
+#使用 %starting-bid% 代表起拍价金额
+#使用 %starting-fee% 代表起拍价费用
+starting-bid-item-name: '&f起拍价: &6%starting-bid% 金币'
+starting-bid-item-lore:
+  - '&7玩家为了获得你的物品'
+  - '&7可以提供的'
+  - '&7最低价格。'
+  - ''
+  - '&7一旦有玩家为你的'
+  - '&7物品出价，其他玩家将'
+  - '&7在拍卖结束前有'
+  - '&7机会出更高的价格。'
+  - ''
+  - '&7额外费用: &6+%starting-fee% 金币 &e(5%)'
+  - ''
+  - '&e点击编辑！'
+#修改起拍价时在告示牌上显示的消息
+#只有 3 行，因为第一行是玩家输入的地方
+starting-bid-sign-message:
+  - '^^^^^^^^^^^^^^^'
+  - '你的拍卖'
+  - '起拍价'
+#当起拍价无法登记时显示的消息
+starting-bid-sign-deny: '&c这不是一个有效的数字。'
+#不要使用 % 符号，只需以 100 为基数说明
+#你想要的比例
+starting-bid-fee-procent: '5'
+
+#使用 m 代表分钟，h 代表小时，d 代表天，数字和时间单位之间用空格隔开
+#最大拍卖时间为 7 天，你不能将拍卖设置为秒
+#如果你输入的时间不正确，将重置为 2 小时
+default-starting-duration: '2 h'
+
+#时间的自定义单位
+#不要在上面的选项中使用这些，它们仅可用于
+#拍卖消息中，在配置中请使用上方注释中的语法
+second: '秒'
+seconds: '秒'
+minute: '分钟'
+minutes: '分钟'
+hour: '小时'
+hours: '小时'
+day: '天'
+days: '天'
+
+#时间单位的简写:
+short_second: '秒'
+short_minute: '分'
+short_hour: '时'
+short_day: '天'
+
+
+#这是计算小时费用的公式
+#x=小时数
+extra-fee-formula: '5*(x+3)+5*x*(Math.floor(x/9)+Math.floor(x/20))'
+#分钟的费用是固定的（5 分钟 - 59 分钟）
+extra-fee-minutes: '500'
+
+#这是在 %extra-fee% 中使用的消息
+extra-fee-message: '额外费用: '
+
+duration-menu-name: '&8拍卖时长'
+#这是在时长选择菜单中带有时间的物品上使用的消息
+duration-selection-lore: '&e点击选择！'
+
+duration-item: '347'
+#使用 %auction-fee% 代表拍卖的时长费用
+#使用 %auction-time% 代表拍卖的时间
+duration-item-name: '&f时长: &e%auction-time%'
+duration-item-lore:
+  - '&7玩家将有多长时间'
+  - '&7可以出价'
+  - ''
+  - '&7注意: 出价会自动'
+  - '&7增加拍卖的'
+  - '&7时长。'
+  - ''
+  - '&7额外费用: &6+%auction-fee% 金币'
+  - ''
+  - '&e点击编辑！'
+
+#时长菜单中的时钟
+duration-select-item-name: '&a自定义时长'
+duration-select-item-lore:
+  - '&7指定你希望拍卖'
+  - '&7持续多长时间。'
+  - ''
+  - '&b右键点击选择分钟！'
+  - '&e点击设置小时！'
+
+#修改拍卖时长时在告示牌上显示的消息
+#只有 3 行，因为第一行是玩家输入的地方
+#%time-format% 是小时/分钟。
+duration-sign-message:
+  - '^^^^^^^^^^^^^^^'
+  - '拍卖'
+  - '%time-format%'
+
+#输入的小时/分钟数不正确时显示的消息
+duration-sign-deny: '&c这不是一个有效的数字。'
+
+not-enough-money-auction: '&c你没有足够的金币来创建这个拍卖。'
+
+auction-confirm-menu-name: '&8确认拍卖'
+
+auction-confirm-item-material: '159:13'
+auction-confirm-item-name: '&a确认'
+#使用 %cost% 代表玩家创建拍卖需要支付的
+#总价格
+auction-confirm-item-lore:
+  - '&7拍卖费用: &6%cost% 金币'
+  - ''
+  - '&7你确定要'
+  - '&7创建这个拍卖吗？'
+  - ''
+  - '&e点击确认！'
+
+auction-cancel-item-material: '159:14'
+auction-cancel-item-name: '&c取消'
+auction-cancel-item-lore:
+  - '&7取消拍卖的创建。'
+
+auction-created-message: '&a你的拍卖已创建！'

@@ -1,0 +1,192 @@
+money-bags:
+  allow-stack: false
+  #You can only use textures
+  money-bag-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk2Y2UxM2ZmNjE1NWZkZjMyMzVkOGQyMjE3NGM1ZGU0YmY1NTEyZjFhZGVkYTFhZmEzZmMyODE4MGYzZjcifX19'
+  full-inventory-message: '&c你的背包已满！我没有地方放袋子。'
+  #ATTENTION! If you give money bags using /moneybag give the limits don't matter (minimum-amount & maximum-amount)
+  #The minimum amount of coins the bag needs to have
+  minimum-amount: 500
+  minimum-message: '&f少于 &6500 硬币 &f不需要袋子，直接放在钱包里就行。'
+  #The maximum amount of coins the bag can hold
+  maximum-amount: 500000
+  maximum-message: '&f袋子最多只能装 &650万 硬币&f！再多就要撑破了。'
+  money-bag-click: '&f你从一个袋子中收集了 &6%amount% 硬币&f！'
+  money-bag-name: '&6硬币袋'
+  #Use %amount% for the amount of coins the bag contains
+  money-bag-lore:
+    - '&7这是一个可以'
+    - '&7存放硬币的袋子！'
+    - '&7最多可存放 &650万 硬币&7！'
+    - ''
+    - '&7它装有'
+    - '&6%amount% 硬币&7！'
+    - ''
+    - '&e点击将硬币'
+    - '&e添加到你的钱包！'
+
+talismans:
+  use-talismans: true
+  #When this is set to false, your talismans won't drop on death
+  talismans-drop: true
+  upgrade-menu:
+    not-enough-coins: '&c你钱包里的硬币不够！'
+    upgraded: '&a你的护符已升级！'
+    title: '&8护符升级'
+    middle-item:
+      name: '&a升级'
+      lore:
+        - '&7从 %fromTalisman% 升级'
+        - '&7到 %toTalisman%'
+        - ''
+        - '&7价格：&6%cost% 硬币'
+        - ''
+        - '&e点击新护符'
+        - '&e以确认！'
+  random-coins-talisman:
+    #You can disable individual talismans if you don't use them
+    #to increase performance
+    use-this-talisman: true
+    #Use %amount% for the amount of coins the talisman gave
+    #Use %talisman-name% for the display name of the talisman
+    talisman-give-message: '&6+%amount% 硬币 &7(%talisman-name%&7)'
+    #The index of the maximum upgrade
+    last-index: 2
+    0:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmNTdlN2FhOGRlODY1OTFiYjBiYzUyY2JhMzBhNDlkOTMxYmZhYmJkNDdiYmM4MGJkZDY2MjI1MTM5MjE2MSJ9fX0='
+      name: '&6幸运硬币护符'
+      #Minimum interval and maximum interval are numbers represented in minutes
+      minimum-interval: 3
+      maximum-interval: 7
+      minimum-coins: 1
+      maximum-coins: 5
+      lore:
+        - ''
+        - '&7这个护符会在随机'
+        - '&7时间间隔给你少量'
+        - '&7硬币。'
+        - ''
+        - '&7硬币间隔：&e3 - 7 分钟'
+        - '&7最大数量：&65 硬币'
+        - ''
+        - '&f&l常见'
+    1:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU2NGU1NTM4MGQzOTkwMDJlMDFjZjBiMTI3NzRjZGE2YTdhMjZkODZiNTliZjg2MjkyODRlZjFhMzg3ZDRkMCJ9fX0='
+      #How much does it cost to upgrade to this one
+      upgrade-cost: 15000
+      name: '&6幸运硬币戒指'
+      #Minimum interval and maximum interval are numbers represented in minutes
+      minimum-interval: 5
+      maximum-interval: 7
+      minimum-coins: 3
+      maximum-coins: 17
+      lore:
+        - ''
+        - '&7这个护符会在随机'
+        - '&7时间间隔给你少量'
+        - '&7硬币。'
+        - ''
+        - '&7硬币间隔：&e5 - 7 分钟'
+        - '&7最大数量：&617 硬币'
+        - ''
+        - '&f&l常见'
+    2:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGExNGZmOTEyNTY2ZDQ3MTk4MTI3ODhlNjMzYmE0MjNkMWRiMTQ0OWFkZmJiNzA2MWZhZmU3NGJhODgwOTQ2OSJ9fX0='
+      #How much does it cost to upgrade to this one
+      upgrade-cost: 30000
+      name: '&6幸运硬币圣物'
+      #Minimum interval and maximum interval are numbers represented in minutes
+      minimum-interval: 4
+      maximum-interval: 6
+      minimum-coins: 5
+      maximum-coins: 25
+      lore:
+        - ''
+        - '&7这个护符会在随机'
+        - '&7时间间隔给你少量'
+        - '&7硬币。'
+        - ''
+        - '&7硬币间隔：&e4 - 6 分钟'
+        - '&7最大数量：&625 硬币'
+        - ''
+        - '&f&l常见'
+  percent-reducer-talisman:
+    use-this-talisman: true
+    last-index: 2
+    0:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEzOGU4M2E1NTkxZDY3NDc5YzAxNzkzN2UxZDk4ZGRhZDA0MDhkNTMzYWUyZDhjNzljMzRhZmQ4NzE5OWE3In19fQ=='
+      name: '&c钱包守护护符'
+      reduce-percent: 5
+      lore:
+        - ''
+        - '&7这个护符可降低'
+        - '&7你死亡时损失'
+        - '&7硬币的百分比'
+        - '&7达 &c5%&7！'
+        - ''
+        - '&a&l罕见'
+    1:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBiN2NhMmNlZDExZDMyNWEzMWQ1ZjI3NTNmYjcxZTIxNjk3ZDI5MWJlYzljMmZhNGE1ZjU5MGRiOWM5OTFmIn19fQ=='
+      name: '&c钱包守护戒指'
+      upgrade-cost: 10000
+      reduce-percent: 10
+      lore:
+        - ''
+        - '&7这个护符可降低'
+        - '&7你死亡时损失'
+        - '&7硬币的百分比'
+        - '&7达 &c10%&7！'
+        - ''
+        - '&a&l罕见'
+    2:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDRlZGZiZTk0ZDJkMWZhMzY3ODMyZDQyYWEyODI0ZjAxNGRhOTk1YTcyZGI3MmI0NTJiOWM3Yjk4ZTRmYSJ9fX0='
+      name: '&c钱包守护圣物'
+      upgrade-cost: 20000
+      reduce-percent: 20
+      lore:
+        - ''
+        - '&7这个护符可降低'
+        - '&7你死亡时损失'
+        - '&7硬币的百分比'
+        - '&7达 &c20%&7！'
+        - ''
+        - '&a&l罕见'
+  death-save-talisman:
+    use-this-talisman: true
+    last-index: 2
+    0:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDUyZGNhNjhjOGY4YWY1MzNmYjczN2ZhZWVhY2JlNzE3Yjk2ODc2N2ZjMTg4MjRkYzJkMzdhYzc4OWZjNzcifX19'
+      name: '&a幸运钱包护符'
+      percent: 5
+      lore:
+        - ''
+        - '&7这个护符有'
+        - '&a5% &7的几率在死亡时'
+        - '&7不损失钱包里'
+        - '&7的硬币！'
+        - ''
+        - '&a&l罕见'
+    1:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2JiNjEyZWI0OTVlZGUyYzVjYTUxNzhkMmQxZWNmMWNhNWEyNTVkMjVkZmMzYzI1NGJjNDdmNjg0ODc5MWQ4In19fQ=='
+      name: '&a幸运钱包戒指'
+      percent: 10
+      upgrade-cost: 15000
+      lore:
+        - ''
+        - '&7这个护符有'
+        - '&a10% &7的几率在死亡时'
+        - '&7不损失钱包里'
+        - '&7的硬币！'
+        - ''
+        - '&a&l罕见'
+    2:
+      skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFkMDQ3NmU4NjcxNjk2YWYzYTg5NDlhZmEyYTgxNGI5YmRkZTY1ZWNjZDFhOGI1OTNhZWVmZjVhMDMxOGQifX19'
+      name: '&a幸运钱包圣物'
+      percent: 20
+      upgrade-cost: 30000
+      lore:
+        - ''
+        - '&7这个护符有'
+        - '&a20% &7的几率在死亡时'
+        - '&7不损失钱包里的硬币！'
+        - ''
+        - '&a&l罕见'

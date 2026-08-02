@@ -1,0 +1,543 @@
+{
+  "upgradeGUITitle": "&7升级",
+  "boosterGUITitle": "&7加成",
+  "confirmationGUITitle": "&7你确定吗？",
+  "missionsGUITitle": "&7任务",
+  "membersGUITitle": "&7成员",
+  "coopGUITitle": "&7合作岛屿",
+  "islandMenuGUITitle": "&7菜单",
+  "warpGUITitle": "&7传送点",
+  "topGUITitle": "&7顶级岛屿",
+  "borderColorGUITitle": "&7边界颜色",
+  "permissionsGUITitle": "&7权限",
+  "schematicselectGUITitle": "&7选择岛屿",
+  "bankGUITitle": "&7岛屿银行",
+  "visitGUITitle": "&7访问岛屿",
+  "shopGUITitle": "&7岛屿商店",
+  "biomeGUITitle": "&7岛屿生物群系",
+  "visitorGUITitle": "&7岛屿访客",
+  "visitorGUISize": 27,
+  "upgradeGUISize": 27,
+  "boosterGUISize": 27,
+  "missionsGUISize": 27,
+  "membersGUISize": 27,
+  "coopGUISize": 27,
+  "islandMenuGUISize": 45,
+  "warpGUISize": 27,
+  "topGUISize": 27,
+  "borderColorGUISize": 27,
+  "permissionsGUISize": 27,
+  "schematicselectGUISize": 27,
+  "bankGUISize": 27,
+  "visitGUISize": 54,
+  "shopGUISize": 54,
+  "biomeGUISize": 54,
+  "spawner": {
+    "material": "SPAWNER",
+    "amount": 1,
+    "title": "&e&l刷怪增加",
+    "lore": [
+      "&7你的刷怪笼太慢了吗？购买此",
+      "&7加成，刷怪速率提高两倍。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7剩余时间: &e{spawnerbooster_minutes} 分钟 {spawnerbooster_seconds} 秒",
+      "&e&l * &7加成费用: &e{spawnerbooster_crystalcost} 水晶和 ${spawnerbooster_vaultcost}",
+      "",
+      "&e&l[!] &e右键点击购买此加成。"
+    ]
+  },
+  "farming": {
+    "material": "WHEAT",
+    "amount": 1,
+    "title": "&e&l农作物增产",
+    "lore": [
+      "&7你的农作物长得太慢了吗？购买此",
+      "&7加成，农作物生长速度提高两倍。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7剩余时间: &e{farmingbooster_minutes} 分钟 {farmingbooster_seconds} 秒",
+      "&e&l * &7加成费用: &e{farmingbooster_crystalcost} 水晶和 ${farmingbooster_vaultcost}",
+      "",
+      "&e&l[!] &e右键点击购买此加成。"
+    ]
+  },
+  "exp": {
+    "material": "EXPERIENCE_BOTTLE",
+    "amount": 1,
+    "title": "&e&l经验加成",
+    "lore": [
+      "&7获取经验太慢了吗？购买此",
+      "&7加成，经验获取速度提高两倍。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7剩余时间: &e{expbooster_minutes} 分钟 {expbooster_seconds} 秒",
+      "&e&l * &7加成费用: &e{expbooster_crystalcost} 水晶和 ${expbooster_vaultcost}",
+      "",
+      "&e&l[!] &e右键点击购买此加成。"
+    ]
+  },
+  "flight": {
+    "material": "FEATHER",
+    "amount": 1,
+    "title": "&e&l飞行加成",
+    "lore": [
+      "&7厌倦了从岛屿上掉下去？购买此",
+      "&7加成，允许所有成员飞行。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7剩余时间: &e{flightbooster_minutes} 分钟 {flightbooster_seconds} 秒",
+      "&e&l * &7加成费用: &e{flightbooster_crystalcost} 水晶和 ${flightbooster_vaultcost}",
+      "",
+      "&e&l[!] &e右键点击购买此加成。"
+    ]
+  },
+  "size": {
+    "material": "GRASS_BLOCK",
+    "amount": 1,
+    "title": "&e&l岛屿大小",
+    "lore": [
+      "&7需要更多空间扩张？购买此",
+      "&7升级来增加你的岛屿大小。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7当前等级: &e{sizelevel}",
+      "&e&l * &7当前大小: &e{sizeblocks}x{sizeblocks} 方块",
+      "&e&l * &7升级费用: &e{sizecrystalscost} 水晶和 ${sizevaultcost}",
+      "&e&l等级:",
+      "&e&l * &7等级 1: &e50x50 方块",
+      "&e&l * &7等级 2: &e100x100 方块",
+      "&e&l * &7等级 3: &e150x150 方块",
+      "",
+      "&e&l[!] &e左键点击购买此升级"
+    ]
+  },
+  "member": {
+    "material": "ARMOR_STAND",
+    "amount": 1,
+    "title": "&e&l成员数量",
+    "lore": [
+      "&7需要更多成员？购买此",
+      "&7升级来增加你的成员数量。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7当前等级: &e{memberlevel}",
+      "&e&l * &7当前成员: &e{membercount} 名成员",
+      "&e&l * &7升级费用: &e{membercrystalscost} 水晶和 ${membervaultcost}",
+      "&e&l等级:",
+      "&e&l * &7等级 1: &e9 名成员",
+      "&e&l * &7等级 2: &e18 名成员",
+      "&e&l * &7等级 3: &e27 名成员",
+      "",
+      "&e&l[!] &e左键点击购买此升级"
+    ]
+  },
+  "warp": {
+    "material": "END_PORTAL_FRAME",
+    "amount": 1,
+    "title": "&e&l岛屿传送点",
+    "lore": [
+      "&7需要更多岛屿传送点？购买此",
+      "&7升级来增加你的传送点数量。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7当前等级: &e{warplevel}",
+      "&e&l * &7当前传送点: &e{warpcount} 个",
+      "&e&l * &7升级费用: &e{warpcrystalscost} 水晶和 ${warpvaultcost}",
+      "&e&l等级:",
+      "&e&l * &7等级 1: &e2 个传送点",
+      "&e&l * &7等级 2: &e5 个传送点",
+      "&e&l * &7等级 3: &e9 个传送点",
+      "",
+      "&e&l[!] &e左键点击购买此升级"
+    ]
+  },
+  "ores": {
+    "material": "DIAMOND_ORE",
+    "amount": 1,
+    "title": "&e&l岛屿生成器",
+    "lore": [
+      "&7想改进你的生成器？购买此",
+      "&7升级来改进你的岛屿生成器。",
+      "",
+      "&e&l信息:",
+      "&e&l * &7当前等级: &e{oreslevel}",
+      "&e&l * &7升级费用: &e{orescrystalscost} 水晶和 ${oresvaultcost}",
+      "",
+      "&e&l[!] &e左键点击购买此升级"
+    ]
+  },
+  "experience": {
+    "material": "EXPERIENCE_BOTTLE",
+    "amount": 1,
+    "title": "&e&l岛屿经验",
+    "lore": [
+      "&7{experience} 经验",
+      "&e&l[!] &e左键点击取出",
+      "&e&l[!] &e右键点击存入"
+    ],
+    "slot": 11
+  },
+  "crystals": {
+    "material": "NETHER_STAR",
+    "amount": 1,
+    "title": "&e&l岛屿水晶",
+    "lore": [
+      "&7{crystals} 水晶",
+      "&e&l[!] &e左键点击取出",
+      "&e&l[!] &e右键点击存入"
+    ],
+    "slot": 13
+  },
+  "money": {
+    "material": "PAPER",
+    "amount": 1,
+    "title": "&e&l岛屿金钱",
+    "lore": [
+      "&7${money}",
+      "&e&l[!] &e左键点击取出",
+      "&e&l[!] &e右键点击存入"
+    ],
+    "slot": 15
+  },
+  "crystal": {
+    "material": "NETHER_STAR",
+    "amount": 1,
+    "title": "&e*** &e&l岛屿水晶 &e***",
+    "lore": [
+      "",
+      "&e&l[!] &e兑换请前往你的岛屿银行"
+    ]
+  },
+  "background": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": " ",
+    "lore": []
+  },
+  "nextPage": {
+    "material": "LIME_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&a&l下一页",
+    "lore": []
+  },
+  "previousPage": {
+    "material": "RED_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&c&l上一页",
+    "lore": []
+  },
+  "biome": {
+    "material": "GRASS_BLOCK",
+    "amount": 1,
+    "title": "&e&l{biome} 生物群系",
+    "lore": []
+  },
+  "back": {
+    "material": "NETHER_STAR",
+    "amount": 1,
+    "title": "&c&l返回",
+    "lore": []
+  },
+  "islandmember": {
+    "material": "PLAYER_HEAD",
+    "amount": 1,
+    "title": "&e&l{player}",
+    "headOwner": "{player}",
+    "lore": [
+      "&e角色: {role}",
+      "",
+      "&e&l[!] &e左键点击降级该玩家。",
+      "&e&l[!] &e右键点击晋升该玩家。"
+    ]
+  },
+  "islandcoop": {
+    "material": "PLAYER_HEAD",
+    "amount": 1,
+    "title": "&e&l{player}",
+    "headOwner": "{player}",
+    "lore": [
+      "&e&l * &7岛屿: &e{name}",
+      "&e&l * &7职位: &e{rank}",
+      "&e&l * &7价值: &e{value}",
+      "",
+      "&e&l[!] &e左键点击传送到此岛屿。",
+      "&e&l[!] &e右键点击取消与此岛屿的合作。"
+    ]
+  },
+  "islandRoles": {
+    "material": "RED_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&e&l{role}",
+    "lore": []
+  },
+  "islandPermissionAllow": {
+    "material": "LIME_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&e&l{permission}",
+    "lore": []
+  },
+  "islandPermissionDeny": {
+    "material": "RED_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&e&l{permission}",
+    "lore": []
+  },
+  "islandWarp": {
+    "material": "YELLOW_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&e&l{warp}",
+    "lore": [
+      "",
+      "&e&l[!] &e左键点击传送到此传送点。",
+      "&e&l[!] &e右键点击删除此传送点。"
+    ]
+  },
+  "topisland": {
+    "material": "PLAYER_HEAD",
+    "amount": 1,
+    "title": "&a{player} 的岛屿",
+    "headOwner": "{player}",
+    "lore": [
+      "&7所有者: &7{name}",
+      "",
+      "&7岛屿排名: &e#{rank}",
+      "&7岛屿价值: &e{value}",
+      "",
+      "&7你可以通过放置矿物方块",
+      "&7来提高你的岛屿",
+      "&7价值。"
+    ]
+  },
+  "topfiller": {
+    "material": "BARRIER",
+    "amount": 1,
+    "title": " ",
+    "lore": []
+  },
+  "visitisland": {
+    "material": "PLAYER_HEAD",
+    "amount": 1,
+    "title": "&e&l{player}",
+    "headOwner": "{player}",
+    "lore": [
+      "&e&l * &7岛屿: &e{name}",
+      "&e&l * &7职位: &e{rank}",
+      "&e&l * &7价值: &e{value}",
+      "&e&l * &7投票: &e{votes}",
+      "",
+      "&e&l[!] &e左键点击传送到此岛屿。",
+      "&e&l[!] &e右键点击(取消)为此岛屿投票。"
+    ]
+  },
+  "islandVisitors": {
+    "material": "PLAYER_HEAD",
+    "amount": 1,
+    "title": "&b&l{player}",
+    "headOwner": "{player}",
+    "lore": [
+      "点击驱逐访客"
+    ]
+  },
+  "red": {
+    "material": "RED_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&c&l红色",
+    "lore": [],
+    "slot": 10
+  },
+  "green": {
+    "material": "LIME_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&a&l绿色",
+    "lore": [],
+    "slot": 12
+  },
+  "blue": {
+    "material": "BLUE_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&e&l蓝色",
+    "lore": [],
+    "slot": 14
+  },
+  "off": {
+    "material": "WHITE_STAINED_GLASS_PANE",
+    "amount": 1,
+    "title": "&f&l关闭",
+    "lore": [],
+    "slot": 16
+  },
+  "menu": [
+    [
+      {
+        "material": "PLAYER_HEAD",
+        "amount": 1,
+        "title": "&e&l岛屿升级",
+        "headOwner": "ABigDwarf",
+        "lore": [
+          "&7升级你的岛屿。"
+        ],
+        "slot": 21
+      },
+      "is upgrade"
+    ],
+    [
+      {
+        "material": "PLAYER_HEAD",
+        "amount": 1,
+        "title": "&e&l岛屿成员",
+        "headOwner": "Peaches_MLG",
+        "lore": [
+          "&7查看你的岛屿成员。"
+        ],
+        "slot": 14
+      },
+      "is members"
+    ],
+    [
+      {
+        "material": "DIAMOND",
+        "amount": 1,
+        "title": "&e&l岛屿排名",
+        "lore": [
+          "&7查看顶级岛屿。"
+        ],
+        "slot": 0
+      },
+      "is top"
+    ],
+    [
+      {
+        "material": "END_PORTAL_FRAME",
+        "amount": 1,
+        "title": "&e&l岛屿传送点",
+        "lore": [
+          "&7查看你的岛屿传送点。"
+        ],
+        "slot": 20
+      },
+      "is warps"
+    ],
+    [
+      {
+        "material": "BARRIER",
+        "amount": 1,
+        "title": "&e&l删除岛屿",
+        "lore": [
+          "&7删除你的岛屿。"
+        ],
+        "slot": 44
+      },
+      "is delete"
+    ],
+    [
+      {
+        "material": "PLAYER_HEAD",
+        "amount": 1,
+        "title": "&e&l岛屿生物群系",
+        "headOwner": "BlockminersTV",
+        "lore": [
+          "&7更改你的岛屿生物群系。"
+        ],
+        "slot": 12
+      },
+      "is biome"
+    ],
+    [
+      {
+        "material": "BOOK",
+        "amount": 1,
+        "title": "&e&l岛屿权限",
+        "lore": [
+          "&7更改岛屿权限。"
+        ],
+        "slot": 31
+      },
+      "is permissions"
+    ],
+    [
+      {
+        "material": "NAME_TAG",
+        "amount": 1,
+        "title": "&e&l岛屿合作",
+        "lore": [
+          "&7查看你的合作岛屿。"
+        ],
+        "slot": 32
+      },
+      "is coop"
+    ],
+    [
+      {
+        "material": "EXPERIENCE_BOTTLE",
+        "amount": 1,
+        "title": "&e&l岛屿加成",
+        "lore": [
+          "&7为你的岛屿启用加成。"
+        ],
+        "slot": 23
+      },
+      "is booster"
+    ],
+    [
+      {
+        "material": "WHITE_BED",
+        "amount": 1,
+        "title": "&e&l岛屿家园",
+        "lore": [
+          "&7传送到你的岛屿家园"
+        ],
+        "slot": 13
+      },
+      "is home"
+    ],
+    [
+      {
+        "material": "GOLD_INGOT",
+        "amount": 1,
+        "title": "&e&l岛屿银行",
+        "lore": [
+          "&7查看你的岛屿银行。"
+        ],
+        "slot": 30
+      },
+      "is bank"
+    ],
+    [
+      {
+        "material": "GRASS_BLOCK",
+        "amount": 1,
+        "title": "&e&l岛屿重置",
+        "lore": [
+          "&7重新生成你的岛屿。"
+        ],
+        "slot": 36
+      },
+      "is regen"
+    ],
+    [
+      {
+        "material": "IRON_SWORD",
+        "amount": 1,
+        "title": "&e&l岛屿任务",
+        "lore": [
+          "&7查看岛屿任务。"
+        ],
+        "slot": 22
+      },
+      "is missions"
+    ],
+    [
+      {
+        "material": "BEACON",
+        "amount": 1,
+        "title": "&e&l岛屿边界",
+        "lore": [
+          "&7更改你的岛屿边界。"
+        ],
+        "slot": 24
+      },
+      "is border"
+    ]
+  ]
+}

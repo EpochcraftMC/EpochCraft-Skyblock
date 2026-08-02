@@ -1,0 +1,88 @@
+menu_title: '&8任务'
+open_command:
+- missions
+- missionlist
+- mission
+size: 45
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 1
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 42
+        - 41
+        - 43
+        - 44
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+        
+      fairy-souls:
+        display_name: '&d仙灵之魂'
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjk2OTIzYWQyNDczMTAwMDdmNmFlNWQzMjZkODQ3YWQ1Mzg2NGNmMTZjMzU2NWExODFkYzhlNmIyMGJlMjM4NyJ9fX0='
+        lore:
+        - '&7在地图上寻找散落的仙灵之魂'
+        - '&7来获得许多'
+        - '&7奖励！'
+        - ''
+        - '&7已找到: &e%us_fairysouls%&7/&d%us_total_fairysouls%'
+        - ''
+        priority: 1
+        data: 0
+        slot: 10
+        left_click_commands: []
+        right_click_commands: []
+        
+      player-island:
+        display_name: '&e玩家岛屿'
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        material: PAPER
+        lore:
+        - ''
+        - '&7任务进度:'
+        - '&c  %player_has_permission_missions.completed.break-a-log% 砍一棵原木'
+        - '&c  %player_has_permission_missions.completed.craft-a-workbench% 合成工作台'
+        - '&c  %player_has_permission_missions.completed.craft-a-pickaxe% 合成木镐'
+        - '&c  %player_has_permission_missions.completed.go-through-the-portal% 穿过传送门'
+        - ''
+        priority: 1
+        data: 0
+        slot: 11
+        left_click_commands: []
+        right_click_commands: []
+
+      go-back:
+        material: ARROW
+        slot: 40
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] menu'
+        right_click_commands:
+        - '[openguimenu] menu'

@@ -1,0 +1,74 @@
+Items:
+  #想创建多少物品就创建多少。记住每个物品必须有唯一的槽位。
+  #如果你为同一个槽位添加了多个物品。
+  #将按顺序读取。所以请确保先把优先级更高的物品放在这里。
+  #重要！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+  #出于安全原因，如果至少有一个物品使用 "PLACEHOLDER" 材质，
+  #不要在同一个槽位中使用多个物品。
+  #重要！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+  player:
+    Slot: 22
+    Dynamic-slot: 0
+    Permission: "none"
+    Material: "PROFILE_OWNER"
+    Custom-model-data: 0
+    Displayname: "&8%vault_prefix%{OWNER}&7 的档案"
+    Lore:
+    - " &c❤ 生命值 &f%us_health% HP"
+    - " &a❇ 防御 &f%us_defense%"
+    - " &f❂ 真实防御 &f0"
+    - " &c❁ 力量 &f%us_force%"
+    - " &f✦ 速度 &f%us_speed%%"
+    - " &9☣ 暴击几率 &f%us_critchance%%"
+    - " &9☠ 暴击伤害 &f%us_critdamage%%"
+    - " &e⚔ 额外攻击速度 &f0%"
+    - " &b✎ 智力 &f%us_intelligence%"
+    - " &3ð 海怪几率 &f%us_seacreature%%"
+    - " &b✯ 寻宝 &f0"
+    - " &d♠ 宠物运气 &f0"
+    Close-on-click: false
+    Commands: []
+  visit-island:
+    Slot: 15
+    Permission: "none"
+    Material: "FEATHER"
+    Custom-model-data: 0
+    Displayname: "&a参观岛屿"
+    Lore:
+    - "&e点击参观！"
+    Close-on-click: true
+    Commands:
+    - "islandvisit {TARGET}"
+  trade-request:
+    Slot: 16
+    Permission: "none"
+    Material: "EMERALD"
+    Custom-model-data: 0
+    Displayname: "&a交易"
+    Lore:
+    - "&e点击交易！"
+    Close-on-click: true
+    Commands:
+    - "trade {TARGET}"
+  island-invite:
+    Slot: 24
+    Permission: "none"
+    Material: "RED_ROSE"
+    Custom-model-data: 0
+    Displayname: "&a岛屿邀请"
+    Lore:
+    - "&e点击邀请！"
+    Close-on-click: true
+    Commands:
+    - "is invite {TARGET}"
+  island-coop:
+    Slot: 25
+    Permission: "none"
+    Material: "DIAMOND"
+    Custom-model-data: 0
+    Displayname: "&a发送合作请求"
+    Lore:
+    - "&e点击发送！"
+    Close-on-click: true
+    Commands:
+    - "nocoop"

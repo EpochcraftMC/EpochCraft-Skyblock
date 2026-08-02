@@ -1,0 +1,331 @@
+no_player: '&c&l你不是玩家'
+no_permission: '&c你没有权限这样做'
+inventory_full: '&c&l你的背包已满！'
+base_mana: 100
+base_defense: 0
+base_health: 100
+base_strength: 10
+base_crit_chance: 10
+base_crit_damage: 10
+starting_money: 10000
+enchantment_table_success_commands:
+   slot1: "usbc skills xp add ENCHANTING <player> 5"
+   slot2: "usbc skills xp add ENCHANTING <player> 10"
+   slot3: "usbc skills xp add ENCHANTING <player> 15"
+anvil:
+   inventoryname: "铁砧"
+   combineitems: "&a合并物品"
+   combineitemslore1: "&7合并下方左右槽位"
+   combineitemslore2: "&7中的物品。"
+   close: "&c关闭"
+   itemtoupgrade: "&6要升级的物品"
+   itemtoupgradelore1: "&7你想要升级的物品"
+   itemtoupgradelore2: "&7应放在这一侧"
+   itemtoupgradelore3: "&7的槽位中"
+   itemtosacrifice: "&6献祭物品"
+   itemtosacrificelore1: "&7你用来升级左侧物品的"
+   itemtosacrificelore2: "&7献祭物品应放在"
+   itemtosacrificelore3: "&7这一侧的槽位中。"
+   itemtosacrificelore4: "&7"
+   itemtosacrificelore5: "&7"
+   anvilitem: "&c铁砧"
+   anvilitemlore1: "&7将目标物品放在左侧"
+   anvilitemlore2: "&7槽位，将献祭物品放在"
+   anvilitemlore3: "&7右侧槽位以合并"
+   anvilitemlore4: "&7附魔"
+   error: "&c错误！"
+   errorlore: "&7你不能合并这些物品！"
+   cost: "&7费用："
+   explevels: " 经验等级"
+   clicktocombine: "&e点击合并"
+   anviluses: "&7铁砧使用次数"
+   anviluses2: "&7铁砧使用次数：&c"
+   anviluses1: "&7铁砧使用次数：&c1"
+   anviluses3: "&7铁砧使用次数："
+inventorys:
+   bookname: "&9附魔书"
+   titleenchant: "附魔物品"
+   enchantingitem1: "&a附魔物品 &8- &6"
+   enchantingitem2: " 等级"
+   notenoughtlevels: "&c等级不足！"
+   clicktoenchant: "&e点击附魔！"
+   guaranteesatleast: "&7保证至少："
+   enchantitem: "&c附魔物品"
+   enchantitemlore1: "&7将物品放在空槽位中"
+   enchantitemlore2: "&7即可附魔！"
+   close: "&c关闭"
+   notenchantable: "&c无法附魔！"
+   notenchantablelore: "&7此物品无法附魔！"
+   alredyenchanted: "&c已附魔！"
+   alredyenchantedlore1: "&7此物品已经附魔过了！"
+   alredyenchantedlore2: "&7使用铁砧来添加"
+   alredyenchantedlore3: "&7更多附魔！"
+actionbar:
+# %cur_health% = players current health
+# %max_health% = players max health
+# %cur_mana% = players current mana
+# %max_mana% = players max mana
+# %cur_strength% = players current strength
+# %cur_defense% = players current defense 
+# %cur_crit_chance% = players current crit chance
+# %cur_crit_damage% = players current crit damage
+   msg: '&c%cur_health%/%max_health%❤   &a%cur_defense%❇ 防御   &b%cur_mana%/%max_mana%✎ 法力'
+enchantments:
+#max 3 lines of description
+   aiming: 
+      name: '&9瞄准'
+      ench_table_name: '&7瞄准'
+      description:
+         line_1: '&7箭矢会追踪附近'
+         line_2: '&7&a%%% &7格内的'
+         line_3: '&7怪物'
+   aqua_affinity:
+      name: '&9水下速掘'
+      ench_table_name: '&7水下速掘'
+      description:
+         line_1: '&7提高你的水下'
+         line_2: '&7挖掘速度'
+         line_3: 
+   bane_of_arthropods:
+      name: '&9节肢杀手'
+      ench_table_name: '&7节肢杀手'
+      description: 
+         line_1: '&7对蜘蛛、蠹虫和洞穴蜘蛛'
+         line_2: '&7造成的伤害提高 &a%%%'
+         line_3:
+   blast_protection:
+      name: '&9爆炸保护'
+      ench_table_name: '&7爆炸保护'
+      description:
+         line_1: '&7对爆炸获得'
+         line_2: '&7&a+%%% ❇ 防御'
+         line_3: 
+   critical:
+      name: '&9暴击'
+      ench_table_name: '&7暴击'
+      description:
+         line_1: '&7提高 &9☠ 暴击伤害'
+         line_2: '&a%%%&7。'
+         line_3:
+   cubism:
+      name: '&9立体效果'
+      ench_table_name: '&7立体效果'
+      description: 
+         line_1: '&7对岩浆怪、史莱姆'
+         line_2: '&7和苦力怕造成的'
+         line_3: '&7伤害提高 &a%%%'
+   depth_strider:
+      name: '&9深海探索者'
+      ench_table_name: '&7深海探索者'
+      description:
+         line_1: '&7减少你在水中'
+         line_2: '&7的减速效果'
+         line_3:
+   dragon_hunter:
+      name: '&9屠龙者'
+      ench_table_name: '&7屠龙者'
+      description:
+         line_1: '&7对末影龙造成的'
+         line_2: '&7伤害提高 &a%%%&7。'
+         line_3:  
+   efficiency:
+      name: '&9效率'
+      ench_table_name: '&7效率'
+      description:
+         line_1: '&7提高你的工具'
+         line_2: '&7挖掘方块的速度。'
+         line_3:
+   ender_slayer:
+      name: '&9末影杀手'
+      ench_table_name: '&7末影杀手'
+      description: 
+         line_1: '&7对末影龙和末影人'
+         line_2: '&7造成的伤害'
+         line_3: '&7提高 &a%%%'
+   feather_falling:
+      name: '&9摔落保护'
+      ench_table_name: '&7摔落保护'
+      description:
+         line_1: '&7摔落伤害降低 &a%%%'
+         line_2: '&7并在开始受到摔落伤害'
+         line_3:  '&7前增加 &a%%b &7格高度。'
+   fire_aspect:
+      name: '&9火焰附加'
+      ench_table_name: '&7火焰附加'
+      description:
+         line_1: '&7点燃你的敌人至少 &a%%%&7'
+         line_2: '&7秒，每秒造成'
+         line_3: '&7&a%%d &7伤害。'
+   fire_protection:
+      name: '&9火焰保护'
+      ench_table_name: '&7火焰保护'
+      description:
+         line_1: '&7对火焰和岩浆'
+         line_2: '&7获得 &a+%%% ❇ 防御'
+         line_3:
+   first_strike:
+      name: '&9先发制人'
+      ench_table_name: '&7先发制人'
+      description:
+         line_1: '&7对生物的第一击'
+         line_2: '&7近战伤害提高'
+         line_3: '&7&a%%%&7。'
+   flame:
+      name: '&9火矢'
+      ench_table_name: '&7火矢'
+      description:
+         line_1: '&7点燃目标 &a3 &7秒，'
+         line_2: '&7每秒造成 &a5 &7伤害'
+         line_3: 
+   fortune:
+      name: '&9时运'
+      ench_table_name: '&7时运'
+      description:
+         line_1: '&7方块掉落双倍物品'
+         line_2: '&7的几率提高'
+         line_3: '&7&a%%%&7。'
+   growth:
+      name: '&9生长'
+      ench_table_name: '&7生长'
+      description:
+         line_1: '&7获得 &a+%%% &c❤ 生命'
+         line_2: 
+         line_3: 
+   knockback:
+      name: '&9击退'
+      ench_table_name: '&7击退'
+      description:
+         line_1: '&7击退距离增加'
+         line_2: '&7&a%%% &7格。'
+         line_3:
+   life_steal:
+      name: '&9生命偷取'
+      ench_table_name: '&7生命偷取'
+      description:
+         line_1: '&7恢复你对生物造成'
+         line_2: '&7伤害的 &a%%%&7。'
+         line_3: 
+   looting:
+      name: '&9抢夺'
+      ench_table_name: '&7抢夺'
+      description:
+         line_1: '&7生物掉落物品的'
+         line_2: '&7几率提高 &a%%%&7。'
+         line_3: 
+   power:
+      name: '&9力量'
+      ench_table_name: '&7力量'
+      description: 
+         line_1: '&7弓的伤害提高 &a%%%&7。'
+         line_2:
+         line_3:
+   projectile_protection:
+      name: '&9弹射物保护'
+      ench_table_name: '&7弹射物保护'
+      description:
+         line_1: '&7对弹射物获得'
+         line_2: '&7&a+%%% ❇ 防御'
+         line_3:
+   protection:
+      name: '&9保护'
+      ench_table_name: '&7保护'
+      description: 
+         line_1: '&7获得 &a+%%% ❇ 防御&7。'
+         line_2:
+         line_3:
+   punch:
+      name: '&9冲击'
+      ench_table_name: '&7冲击'
+      description: 
+         line_1: '&7击退效果增加'
+         line_2: '&7&a%%%&7。'
+         line_3:
+   respiration:
+      name: '&9水下呼吸'
+      ench_table_name: '&7水下呼吸'
+      description:
+         line_1: '&7水下呼吸时间延长'
+         line_2: '&7&a%%% &7秒。'
+         line_3:
+   sharpness:
+      name: '&9锋利'
+      ench_table_name: '&7锋利'
+      description:
+         line_1: '&7近战伤害提高'
+         line_2: '&a%%%'
+         line_3:
+   silk_touch:
+      name: '&9精准采集'
+      ench_table_name: '&7精准采集'
+      description:
+         line_1: '&7挖掘的方块会掉落自身'
+         line_2: '&7而非正常掉落物'
+         line_3:
+   smite:
+      name: '&9亡灵杀手'
+      ench_table_name: '&7亡灵杀手'
+      description:
+         line_1: '&7对僵尸、骷髅、凋灵'
+         line_2: '&7和僵尸猪人造成的'
+         line_3: '&7伤害提高 &a%%%&7。'
+   snipe: 
+      name: '&9狙击'
+      ench_table_name: '&7狙击'
+      description:
+         line_1: '&7箭矢每飞行 &a10 &7格'
+         line_2: '&7伤害提高 &a+%%%'
+         line_3: 
+   telekinesis:
+      name: '&9意念控制'
+      ench_table_name: '&7意念控制'
+      description:
+         line_1: '&7方块和生物掉落物会'
+         line_2: '&7直接进入你的背包'
+         line_3: 
+   thorns:
+      name: '&9荆棘'
+      ench_table_name: '&7荆棘'
+      description:
+         line_1: '&7有 &a50% &7的几率将你受到的'
+         line_2: '&7&a%%% &7伤害反弹给攻击者'
+         line_3:
+commands:
+   anvil:
+      permission: 'specialitems.openanvilcmd'
+   attribute:
+      permission: 'specialitems.attribute'
+      usage: '&a请使用 &b/attribute add/remove <player> <attribute> <amount>'
+      attribute: '&a%player% 现在总共有 %amount% %attribute%'
+   health:
+      name: '生命'
+   defense: 
+      name: '防御'
+   intelligence:
+      name: '情报'
+   strength:
+      name: '强度'
+      permission: 'specialitems.addstrength'
+      usage: '&a请使用 &b/strength <数量> &a并手持一件物品'
+      strength: '&a已向你的物品添加 &c[strength] 强度'
+   damage:
+      name: '伤害'
+      permission: 'specialitems.adddamage'
+      usage: '&a请使用 &b/damage <数量> &a并手持一件物品'
+      damage: '&a已向你的物品添加 &c[damage] 伤害'
+   setrarity:
+      permission: 'specialitem.setrarity'
+      usage: '&a请使用 &b/setrarity <common/uncommon/rare/epic/legendary> &a并手持一件物品'
+      setrarity: '&a已将稀有度设置为 [rarity]'
+   crit_chance:
+      name: '暴击几率'
+      permission: 'specialitems.critchance'
+      usage: '&a请使用 &b/addcc <数量> &a并手持一件物品'
+      strength: '&a已向你的物品添加 &c[crit_chance] 暴击几率'
+   crit_damage:
+      name: '暴击伤害'
+      permission: 'specialitems.critdamage'
+      usage: '&a请使用 &b/addcd <数量> &a并手持一件物品'
+      strength: '&a已向你的物品添加 &c[crit_damage] 暴击伤害'
+   addench:
+      permission: 'specialitems.addench'
+      usage: '&a请使用 &b/addenchantment <first_strike/telekinesis/aiming/snipe/lifesteal> <1-10> &a并手持一件物品'

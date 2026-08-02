@@ -1,0 +1,22 @@
+name: 惩罚玩家
+title: 惩罚玩家
+author: Server
+generation: ORIGINAL
+lore:
+- 惩罚 GUI
+open_command: ''
+
+pages:
+  '1':
+  - '为禁言 %skript_1::{player}% 选择一个理由：'
+  - ''
+  - '<tooltip:&7点击以“歧视”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：14 天<br>&7<br>&7&e适用于：与肤色、性别或其他个人品质<br>&e相关的负面言论。><run command:/tempmute %skript_1::{player}% 14d Discrimination> &8⦿&0 歧视<reset>'
+  - '<tooltip:&7点击以“恶劣语言”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：7 天<br>&7<br>&7&e适用于：以任何方式侮辱其他玩家。><run command:/tempmute %skript_1::{player}% 7d Bad Language> &8⦿&0 恶劣语言<reset>'
+  - '<tooltip:&7点击以“泄露个人信息”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：30 天<br>&7<br>&7&e适用于：在公共聊天或私信中泄露其他玩家的<br>&e个人信息。><run command:/tempmute %skript_1::{player}% 30d Sharing Personal Information> &8⦿&0 泄露个人信息<reset>'
+  - '<tooltip:&7点击以“打广告”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：5 天<br>&7<br>&7&e适用于：发布 YouTube、Twitter、<br>&eSnapChat、域名等链接。><run command:/tempmute %skript_1::{player}% 5d Advertising> &8⦿&0 打广告<reset>'
+  - '<tooltip:&7点击以“刷屏”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：7 天<br>&7<br>&7&e适用于：反复粘贴相同或相似的<br>&e消息，或故意绕过聊天<br>&e过滤器。><run command:/tempmute %skript_1::{player}% 7d Spamming> &8⦿&0 刷屏<reset>'
+  - '<tooltip:&7点击以“不当行为”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：7 天<br>&7<br>&7&e适用于：怂恿暴力、违法活动或<br>&e对其他玩家的仇恨等。><run command:/tempmute %skript_1::{player}% 7d Inappropriate Behavior>&8 ⦿&0 不当行为<reset>'
+  - '<tooltip:&7点击以“其他”禁言 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时禁言<br>&b惩罚时长：7 天<br>&7<br>&7&e适用于：上述未列出的任何其他原因。><run command:/tempmute %skript_1::{player}% 7d Other>&8 ⦿&0 其他<reset>'
+  - ''
+  - '  <tooltip:&c点击取消><run command:/cancelpunishment>&c取消惩罚<reset>'
+  - '      <tooltip:&7点击更换惩罚类型><run command:/punish %skript_1::{player}%>&7更换类型<reset>'

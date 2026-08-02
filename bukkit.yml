@@ -1,0 +1,42 @@
+# 这是 Bukkit 的主配置文件。
+# 如你所见，在没有插件的情况下，需要配置的内容其实不多。
+# 关于此文件内每个变量的参考，请查看 Bukkit Wiki：
+# http://wiki.bukkit.org/Bukkit.yml
+# 
+# 如果你需要此文件的帮助，欢迎加入我们的 IRC 或在论坛留言寻求建议。
+# 
+# IRC: #spigot @ irc.spi.gt
+#    （如果这对你来说没有意义，只需访问 http://www.spigotmc.org/pages/irc/ ）
+# 论坛: http://www.spigotmc.org/
+# Bug 追踪: http://www.spigotmc.org/go/bugs
+
+
+settings:
+  allow-end: false
+  warn-on-overload: true
+  permissions-file: permissions.yml
+  update-folder: update
+  plugin-profiling: false
+  connection-throttle: -1
+  query-plugins: false
+  deprecated-verbose: default
+  shutdown-message: §c服务器正在重启，请几分钟后再回来。
+spawn-limits:
+  monsters: 0
+  animals: 0
+  water-animals: 0
+  ambient: 0
+chunk-gc:
+  period-in-ticks: 400
+  load-threshold: 0
+ticks-per:
+  animal-spawns: 400
+  monster-spawns: 4
+  autosave: 6000
+aliases: now-in-commands.yml
+database:
+  username: bukkit
+  isolation: SERIALIZABLE
+  driver: org.sqlite.JDBC
+  password: walrus
+  url: jdbc:sqlite:{DIR}{NAME}.db

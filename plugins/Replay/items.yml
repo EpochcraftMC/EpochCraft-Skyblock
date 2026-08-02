@@ -1,0 +1,38 @@
+items:
+  pause:
+    name: '&c暂停'
+    id: INK_SACK:8
+    slot: 4
+    enabled: true
+  backward:
+    name: '&a« 10 秒'
+    id: SKULL_ITEM:3
+    slot: 3
+    owner: MHF_ArrowLeft
+    enabled: true
+  teleport:
+    name: '&a传送'
+    id: COMPASS
+    slot: 0
+    enabled: true
+  speed:
+    name: '&c慢 &8[&e右键&8] &a快 &8[&eShift 右键&8]'
+    id: WATCH
+    slot: 1
+    enabled: false
+  forward:
+    name: '&a» 10 秒'
+    id: SKULL_ITEM:3
+    slot: 5
+    owner: MHF_ArrowRight
+    enabled: true
+  resume:
+    name: '&a继续'
+    id: INK_SACK:10
+    slot: 4
+    enabled: true
+  leave:
+    name: '&a离开'
+    id: IRON_DOOR
+    slot: 8
+    enabled: true

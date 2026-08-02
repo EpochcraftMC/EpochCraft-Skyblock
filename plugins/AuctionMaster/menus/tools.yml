@@ -1,0 +1,15 @@
+tools-menu-item: '280'
+tools-menu-name: '&d工具'
+tools-menu-lore:
+  - '&8分类'
+  - ''
+  - '&7示例:'
+  - '&8■ &7工具'
+
+#如果你有想放入此分类的自定义物品，
+#请在此处指定它们的名称
+custom-item-names:
+  - '&e&l示例 &6&l物品'
+
+custom-item-ids:
+  - '2266'

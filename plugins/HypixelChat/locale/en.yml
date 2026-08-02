@@ -1,0 +1,62 @@
+messages:
+  # 不可删除的行。
+  # 如果删除该行，将应用默认的英文本地化。
+  only-for-players: '&c此命令仅限玩家使用。'
+  chat-not-found: '&c未找到适用的聊天频道。你无法发送该消息。'
+  reload: '&a配置已成功重新加载！'
+  no-permission: '&c你没有权限。'
+  spy-on: '&a你已启用监控模式。'
+  spy-off: '&c你已禁用监控模式。'
+  cooldown: '&c请等待 {cooldown} 秒后再发送下一条聊天消息。'
+  not-enough-money: '&c你需要在聊天中发送消息需要 {money} 金币。'
+
+  clearchat-command:
+    usage: '&c用法: /{label} [all]'
+    clear-chat-for-all: '&a聊天已由 {player} 清除。'
+    clear-chat-for-yourself: '&a聊天已清除。'
+
+  msg-command:
+    usage: '&c用法: /{label} <玩家> <消息>'
+    player-not-found: '&c未找到玩家。'
+    cannot-message-yourself: '&c你不能给自己发消息。'
+
+  reply-command:
+    usage: '&c用法: /{label} <消息>'
+    target-not-found: '&c未找到玩家。'
+
+  ignore-command:
+    usage: '&c用法: /{label} <玩家>'
+    player-not-found: '&c未找到玩家。'
+    ignore-list: '&e你正在忽略: &6{players}。'
+    ignore-list-delimiter: '&8, &6'
+    add-ignore: '&c你正在忽略玩家 {player}。'
+    remove-ignore: '&a你不再忽略玩家 {player}。'
+    cannot-ignore-yourself: '&c你不能忽略自己。'
+
+  swears-command:
+    usage: '&c用法: /{label} add <单词>'
+    add-word: '&a你已将单词 {word} 添加到白名单。'
+
+  chat-command:
+    usage: '&c用法: /{label} <聊天>'
+    chat-not-found: '&c未找到此名称的聊天频道。'
+    chat-switched: '&a你已切换到 "{chat}" 聊天频道。'
+    no-chat-permission: '&c你没有此聊天频道的权限。'
+
+  prefix-command:
+    usage: '&c用法: /{label} <玩家> <<前缀>|clear>'
+    no-permissions-others: '&c你没有更改其他玩家前缀的权限。'
+    player-not-found: '&c未找到玩家。'
+    length-limit-min: '&c前缀不能短于 {limit} 个字符。'
+    length-limit-max: '&c前缀不能长于 {limit} 个字符。'
+    prefix-clear: '&a你已清除 {player} 的前缀。'
+    prefix-set: '&a你已为玩家 {player} 设置前缀 &r{prefix} '
+
+  suffix-command:
+    usage: '&c用法: /{label} <玩家> <<后缀>|clear>'
+    no-permissions-others: '&c你没有更改其他玩家后缀的权限。'
+    player-not-found: '&c未找到玩家。'
+    length-limit-min: '&c后缀不能短于 {limit} 个字符。'
+    length-limit-max: '&c后缀不能长于 {limit} 个字符。'
+    prefix-clear: '&a你已清除 {player} 的后缀。'
+    prefix-set: '&a你已为玩家 {player} 设置后缀 &r{suffix} '

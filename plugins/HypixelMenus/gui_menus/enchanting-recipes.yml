@@ -1,0 +1,579 @@
+menu_title: '(1/2) 附魔配方'
+open_command: 'enchanting-recipes'
+size: 54
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 1
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 44
+        - 45
+        - 46
+        - 47
+        - 50
+        - 51
+        - 52
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      enchanting:
+        material: 116
+        slot: 4
+        display_name: '&a附魔配方'
+        hide_attributes: true
+        lore:
+        - '&7查看你的附魔配方！'
+        left_click_commands: []
+        right_click_commands: []
+
+      THORNS-I:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 11
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_cactus%'
+              output: 1000
+        lore:
+        - ''
+        - '&9荆棘 I'
+        - '&a50% &7几率将你受到的 &a3%'
+        - '&7伤害反弹给攻击者'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview THORNS-I-BOOK'
+        right_click_commands:
+        - '[player] fc preview THORNS-I-BOOK'
+
+      FEATHER-FALLING-I:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 12
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_feather%'
+              output: 100
+        lore:
+        - ''
+        - '&9摔落保护 I'
+        - '&7减少 &a5% &7的摔落伤害'
+        - '&7并增加开始受到摔落伤害'
+        - '&7的高度 &a1 &7格。'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FEATHER-FALLING-I-BOOK'
+        right_click_commands:
+        - '[player] fc preview FEATHER-FALLING-I-BOOK'
+
+      PROJECTILE-PROTECTION-I:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 13
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_feather%'
+              output: 250
+        lore:
+        - ''
+        - '&9弹射物保护 I'
+        - '&7对抗弹射物时提供'
+        - '&7&a+4 ❇ 防御'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview PROJECTILE-PROTECTION-I-BOOK'
+        right_click_commands:
+        - '[player] fc preview PROJECTILE-PROTECTION-I-BOOK'
+
+      PROTECTION-IV:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 19
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&9附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_ironingot%'
+              output: 500
+        lore:
+        - ''
+        - '&9保护 IV'
+        - '&7提供 &a+12 ❇ 防御&7。'
+        - ''
+        - '&9&l稀有'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview PROTECTION-IV-BOOK'
+        right_click_commands:
+        - '[player] fc preview PROTECTION-IV-BOOK'
+
+      FORTUNE-II:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 20
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&9附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_goldingot%'
+              output: 500
+        lore:
+        - ''
+        - '&9时运 II'
+        - '&7增加方块掉落双倍'
+        - '&7物品数量的几率，'
+        - '&7提升 &a20%&7。'
+        - ''
+        - '&9&l稀有'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FORTUNE-II-BOOK'
+        right_click_commands:
+        - '[player] fc preview FORTUNE-II-BOOK'
+
+      LOOTING-II:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 21
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&9附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_goldingot%'
+              output: 2500
+        lore:
+        - ''
+        - '&9抢夺 II'
+        - '&7增加生物掉落物品的几率，'
+        - '&7提升 &a30%'
+        - ''
+        - '&9&l稀有'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview LOOTING-II-BOOK'
+        right_click_commands:
+        - '[player] fc preview LOOTING-II-BOOK'
+
+      EFFICIENCY-IV:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 24
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&9附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_redstone%'
+              output: 500
+        lore:
+        - ''
+        - '&9效率 IV'
+        - '&7提升你的工具'
+        - '&7破坏方块的速度。'
+        - ''
+        - '&9&l稀有'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview EFFICIENCY-IV-BOOK'
+        right_click_commands:
+        - '[player] fc preview EFFICIENCY-IV-BOOK'
+
+      SHARPNESS-IV:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 28
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&9附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_gravel%'
+              output: 250
+        lore:
+        - ''
+        - '&9锋利 IV'
+        - '&7提升近战伤害'
+        - '&a20%&7。'
+        - ''
+        - '&9&l稀有'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview SHARPNESS-IV-BOOK'
+        right_click_commands:
+        - '[player] fc preview SHARPNESS-IV-BOOK'
+
+      GRAND-XP-BOTTLE:
+        material: 384
+        priority: 1
+        slot: 29
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a高级经验瓶'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_lapislazuli%'
+              output: 500
+        lore:
+        - '&7打碎它来获得'
+        - '&7经验！'
+        - ''
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview GRAND-EXPERIENCE-BOTTLE'
+        right_click_commands:
+        - '[player] fc preview GRAND-EXPERIENCE-BOTTLE'
+
+      TITANIC-XP-BOTTLE:
+        material: 384
+        priority: 1
+        slot: 30
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&9巨型经验瓶'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_lapislazuli%'
+              output: 1000
+        lore:
+        - '&7打碎它来获得'
+        - '&7经验！'
+        - ''
+        - '&9&l稀有'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview TITANIC-EXPERIENCE-BOTTLE'
+        right_click_commands:
+        - '[player] fc preview TITANIC-EXPERIENCE-BOTTLE'
+
+      SMITE-IV:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 32
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_rottenflesh%'
+              output: 250
+        lore:
+        - ''
+        - '&9亡灵杀手 IV'
+        - '&7对僵尸、骷髅、凋灵'
+        - '&7和僵尸猪人造成的伤害提升 &a32%&7。'
+        - '&a20%&7。'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview SMITE-IV-BOOK'
+        right_click_commands:
+        - '[player] fc preview SMITE-IV-BOOK'
+
+      POWER-IV:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 33
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_bone%'
+              output: 500
+        lore:
+        - ''
+        - '&9力量 IV'
+        - '&7提升弓的伤害 &a32&7。'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview POWER-IV-BOOK'
+        right_click_commands:
+        - '[player] fc preview POWER-IV-BOOK'
+
+      SILK-TOUCH-I:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 34
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_bone%'
+              output: 500
+        lore:
+        - ''
+        - '&9精准采集 I'
+        - '&7被挖掘的方块掉落自身'
+        - '&7而不是正常掉落物'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview SILK-TOUCH-I-BOOK'
+        right_click_commands:
+        - '[player] fc preview SILK-TOUCH-I-BOOK'
+
+      BANE-OF-ARTHROPODS-IV:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 40
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_spidereye%'
+              output: 500
+        lore:
+        - ''
+        - '&9节肢杀手 IV'
+        - '&7对蜘蛛、蠹虫和洞穴蜘蛛的'
+        - '&7伤害提升 &a32%'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview BANE-OF-ARTHROPODS-IV-BOOK'
+        right_click_commands:
+        - '[player] fc preview BANE-OF-ARTHROPODS-IV-BOOK'
+
+      FIRE-ASPECT-I:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 42
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_blazerod%'
+              output: 500
+        lore:
+        - ''
+        - '&9火焰附加 I'
+        - '&7点燃你的敌人至少 &a3 &7秒，'
+        - '&7每秒造成 &a3 &7点伤害。'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FIRE-ASPECT-I-BOOK'
+        right_click_commands:
+        - '[player] fc preview FIRE-ASPECT-I-BOOK'
+
+      FLAME-I:
+        material: ENCHANTED_BOOK
+        priority: 1
+        slot: 43
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&f附魔书'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_blazerod%'
+              output: 1000
+        lore:
+        - ''
+        - '&9火矢 I'
+        - '&7箭矢点燃目标 &a3 &7秒，'
+        - '&7每秒造成 &a2 &7点伤害。'
+        - ''
+        - '&f&l常见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FLAME-I-BOOK'
+        right_click_commands:
+        - '[player] fc preview FLAME-I-BOOK'
+
+      locked:
+        material: INK_SACK
+        data: 8
+        priority: 2
+        slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        display_name: '&c???'
+        lore:
+        - '&7你还没有解锁'
+        - '&7这个配方。'
+        left_click_commands: []
+        right_click_commands: []
+
+      next-page:
+        material: ARROW
+        priority: 3
+        slot: 53
+        display_name: '&a下一页'
+        lore:
+        - '&e第 2 页'
+        left_click_commands:
+        - '[openguimenu] enchanting-recipes-2'
+        right_click_commands:
+        - '[openguimenu] enchanting-recipes-2'
+
+      go-back:
+        material: ARROW
+        slot: 48
+        priority: 5
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] recipe-book'
+        right_click_commands:
+        - '[openguimenu] recipe-book'
+
+      close:
+        material: BARRIER
+        slot: 49
+        display_name: '&c关闭'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'

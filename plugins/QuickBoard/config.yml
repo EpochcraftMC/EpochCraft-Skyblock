@@ -1,0 +1,10 @@
+scoreboard:
+  MVdWPlaceholderAPI: false
+  PlaceholderAPI: true
+  onjoin:
+    use: true
+messages:
+  noperms: '&c你没有权限执行此命令！'
+  ontoggle:
+    'true': '&e计分板已&a启用&e！'
+    'false': '&e计分板已&c禁用&e！'

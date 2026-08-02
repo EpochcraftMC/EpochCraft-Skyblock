@@ -1,0 +1,13 @@
+############################
+#         Real Time        #
+#      world time sync     #
+############################
+
+# Time sync speed
+Speed: 1
+
+# List timezones https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Example: "<world_name>;<timezone>"
+Worlds:
+- "Server;Asia/Bangkok"
+- "Islands;Asia/Bangkok"

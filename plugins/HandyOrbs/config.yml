@@ -1,0 +1,275 @@
+#在控制台中记录玩家活动
+#示例: 放置宝珠、捡起宝珠、编辑名称、重置名称
+#使用超活跃模式、将宝珠转换为服务器宝珠
+use-logger: true
+
+#如果设置为 true，宝珠将停止上下浮动
+#只进行旋转
+orb-rotate-only: true
+
+#使用合成配方将农耕宝珠转换
+#为另一种农耕宝珠
+use-crafting-recipes: false
+
+#通过命令 /handyorbs 或 /handyorbs <玩家> 打开菜单所需的权限
+open-own-orbs-menu-permission: 'none'
+open-other-orbs-menu-permission: 'handyorbs.menu.open.other'
+
+#通过命令 /handyorbs get 打开菜单所需的权限
+open-get-menu-permission: 'handyorbs.admin.orbs'
+
+#命令 /handyorbs give <玩家> <宝珠> 所需的权限
+give-permission: 'handyorbs.give.orbs'
+
+#/handyorbs 描述:
+handyorbs-description: ' &7- &f打开自己的宝珠菜单'
+#/handyorbs <玩家> 描述
+handyorbs-player-description: ' &7- &f打开其他玩家的宝珠菜单'
+#/handyorbs get 描述
+handyorbs-get-description: ' &7- &f从管理员菜单获取宝珠'
+#/handyorbs give 描述
+handyorbs-give-description: ' &7- &f将宝珠给予其他玩家'
+
+given-orb-message: '&a宝珠已给予 %player%！'
+no-permission-message: '&c你没有权限使用这个。'
+can-not-find-player-message: '&c我找不到那个玩家...'
+player-has-no-orbs: '&c那个玩家没有任何宝珠。'
+
+#这是玩家放置宝珠后
+#宝珠显示的名称
+#使用 %owner% 显示玩家的用户名
+#使用 %owner-display-name% 显示玩家的显示名
+#使用 %orb-name% 显示宝珠的名称
+#注意！%owner% 必须包含在内！！
+orb-with-owner-display-name: '&f%owner% 的 %orb-name%'
+
+not-enough-space-to-place: '&c你只能在空方块上方放置宝珠。'
+
+#宝珠周围 3 格范围内不能放置另一个宝珠
+other-orb-too-near: '&c你不能把宝珠放在离另一个宝珠太近的地方。'
+
+#只有宝珠的主人才能捡起宝珠/进入宝珠的菜单
+#但如果你拥有下面的权限就可以绕过这个限制
+bypass-claim-permission: 'handyorbs.bypass.owner'
+can-not-claim-message: '&c你不能与别人的宝珠互动！'
+
+#-----------------限制宝珠数量帮助---------------------------
+#限制玩家可以拥有的宝珠数量
+#每种宝珠最多 7 个
+#但你可以进一步限制
+#给玩家权限来限制他们的宝珠
+#通用权限: handyorbs.limit.type.number
+#其中 type 是类别，number 是宝珠上限
+#示例:
+#handyorbs.limit.wheat.3 - 玩家总共可以拥有 3 个小麦宝珠
+#handyorbs.limit.carrots.3
+#handyorbs.limit.sugar-cane.3
+#handyorbs.imit.nether-wart.2
+#handyorbs.limit.fishing.3 - 玩家总共可以拥有 3 个钓鱼宝珠
+#handyorbs.limit.rainbow.2 - 玩家总共可以拥有 3 个彩虹宝珠
+orb-limit-reached-message: '&c你已达到该类别的宝珠上限，不能再放置这种宝珠了！'
+
+#如果玩家是管理员（拥有管理员宝珠使用权限）
+#当他们达到上限时，宝珠仍然会被放置
+#但它将归属于服务器
+extra-admin-limit-reach-message: '&f因为你是管理员，你的宝珠变成了 &c服务器宝珠&f！'
+
+permanent-orbs:
+  farmer:
+    #如果设置为 true，光线不足时宝珠不会种植
+    check-light-level: false
+    minimum-light-level: 9
+    permission: 'none'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 15
+    #技能冷却时间（秒）
+    ability-cooldown: 5
+    wheat:
+      skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGUzY2E1YjM5MGQxZTVmMjk3MjgzMjU3Y2U5MGFjNmY4NzgzZDc4NmVjYWVlMDk1YjQ5Y2M2Yjk0NGQ3MmQifX19'
+      orb-name: '&a农夫宝珠 &7| &e小麦'
+      orb-lore:
+        - '&7放置这个宝珠'
+        - '&7它就会开始'
+        - '&7种植 &a小麦&7！'
+        - ''
+        - '&7范围: 15'
+    carrots:
+      skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQzYTZiZDk4YWMxODMzYzY2NGM0OTA5ZmY4ZDJkYzYyY2U4ODdiZGNmM2NjNWIzODQ4NjUxYWU1YWY2YiJ9fX0'
+      orb-name: '&a农夫宝珠 &7| &e胡萝卜'
+      orb-lore:
+        - '&7放置这个宝珠'
+        - '&7它就会开始'
+        - '&7种植 &a胡萝卜&7！'
+        - ''
+        - '&7范围: 15'
+    potatoes:
+      skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjcyOWE4YTY1ZTM5NDIxZjNkMGFiY2I3ZDRhNzg1MjZlNzgyN2VkNzljNmE1N2U1M2Y3MThhYmMzNTM0MzYifX19'
+      orb-name: '&a农夫宝珠 &7| &e土豆'
+      orb-lore:
+        - '&7放置这个宝珠'
+        - '&7它就会开始'
+        - '&7种植 &a土豆&7！'
+        - ''
+        - '&7范围: 15'
+    beetroot:
+      skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmMzZlYTIyOGM0ZmQ5YWZlZDVhZGQ2ZDA1MjZkZTcxYjdhYzA1NTllYWJmYzJmNjBkZTZjNGFhNzMzZjUifX19'
+      orb-name: '&a农夫宝珠 &7| &c甜菜根'
+      orb-lore:
+        - '&7放置这个宝珠'
+        - '&7它就会开始'
+        - '&7种植 &c甜菜根&7！'
+        - ''
+        - '&7范围: 15'
+  fishing:
+    permission: 'none'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 15
+    #钓鱼速度提升多少？(1 - 100)
+    boost-percent: 50
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3OTliZmFhM2EyYzYzYWQ4NWRkMzc4ZTY2ZDU3ZDlhOTdhM2Y4NmQwZDlmNjgzYzQ5ODYzMmY0ZjVjIn19fQ'
+    orb-name: '&9钓鱼宝珠'
+    orb-lore:
+      - '&7放置这个宝珠'
+      - '&7它会将钓鱼'
+      - '&7速度提升 &a50%&7！'
+      - ''
+      - '&7范围: 15'
+  nether-wart:
+    permission: 'none'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 15
+    #技能冷却时间（秒）
+    ability-cooldown: 5
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExYTNjZWM3YWFmOTA0MjEyY2NmOTNiYjY3YTNjYWYzZDY0OTc4M2JhOTBiOGI2MGJiNjNjNzY4N2ViMzlmIn19fQ'
+    orb-name: '&c下界疣宝珠'
+    orb-lore:
+      - '&7放置这个宝珠'
+      - '&7它就会开始'
+      - '&7种植 &c下界疣&7！'
+      - ''
+      - '&7范围: 15'
+  sugar-cane:
+    permission: 'none'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 15
+    ability-cooldown: 5
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODYyNGJhY2I1ZjE5ODZlNjQ3N2FiY2U0YWU3ZGNhMTgyMGE1MjYwYjYyMzNiNTViYTFkOWJhOTM2Yzg0YiJ9fX0'
+    orb-name: '&e甘蔗宝珠'
+    orb-lore:
+      - '&7放置这个宝珠'
+      - '&7它就会开始'
+      - '&7种植 &e甘蔗&7！'
+      - ''
+      - '&7它只会在沙子上'
+      - '&7靠近水的地方种植！'
+      - ''
+      - '&7范围: 15'
+  flower:
+    permission: 'vip'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 10
+    ability-cooldown: 4
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODliYzQ4MmFhZjU1MzZjN2VmZWE3ODUxZTM2Yzg1Y2YyY2VkYWU1NWFmY2YwZTA3NjFlZjI2MTk1NmRiYjAifX19'
+    orb-name: '&3花朵宝珠'
+    orb-lore:
+      - '&7放置这个宝珠'
+      - '&7它就会开始'
+      - '&7种植 &3花朵&7！'
+      - ''
+      - '&7它只会在'
+      - '&7草方块上种植！'
+      - ''
+      - '&7范围: 10'
+  rainbow:
+    permission: 'vip'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 5
+    ability-cooldown: 4
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdiNzQ3YjM3OGE0MWEwYTZlZGM4NmMwMDBmMDQwYzY5OTRhODMzMjUxMTk2YzlkNTJjMmEyMzBmOTUxNjBjYyJ9fX0'
+    orb-name: '&c彩&4虹&6宝&e珠'
+    orb-lore:
+      - ''
+      - '&f放置这个宝珠'
+      - '&f它就会开始'
+      - '&f创造 &a烟花&f！'
+      - ''
+      - '&f范围: 5'
+
+
+temporary-orbs:
+  radiant-orb:
+    permission: 'none'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 10
+    cooldown-in-seconds: 20
+    cooldown-message: '&f这个宝珠正在恢复能量。你可以在 &c%cooldown% 秒&f 后再次使用'
+    already-placed-message: '&f你已经放置了一个 &a光辉能量宝珠&f！'
+    regen-percent-per-second: 5
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FiNGM0ZDZlZTY5YmMyNGJiYTJiOGZhZjY3YjlmNzA0YTA2YjAxYWE5M2YzZWZhNmFlZjdhOTY5NmM0ZmVlZiJ9fX0'
+    orb-name: '&a光辉能量宝珠'
+    orb-subname: '&e%cooldown% 秒'
+    orb-lore:
+      - '&7放置这个宝珠'
+      - '&7它就会开始'
+      - '&7每秒恢复你 &c5%&7 的'
+      - '&c生命值&7'
+      - '&7持续 30 秒！'
+      - ''
+      - '&8范围: &a10'
+      - '&8冷却: &a20 秒'
+  saving-grace-orb:
+    permission: 'none'
+    no-permission-message: '&c你没有使用这个宝珠的权限！'
+    action-radius: 20
+    cooldown-in-seconds: 60
+    cooldown-message: '&f这个宝珠正在恢复能量。你可以在 &c%cooldown% 秒&f 后再次使用'
+    already-placed-message: '&f你已经放置了一个 &6救赎恩典&f！'
+    saved-message: '&c你死了！&f 但你的 &6救赎恩典&f 拯救了你，它也因此被摧毁了。'
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjdhZjgyNGE5NTRjNTUzMmRkMjA0Yjc0MDA5YzIwYjExMGU0MWRmZjM2OTA0ZmE0YThmNDhmNjY2MDdlMTczNyJ9fX0'
+    orb-name: '&6救赎恩典'
+    orb-subname: '&e%cooldown% 秒'
+    orb-lore:
+      - '&7当这个宝珠被'
+      - '&7放置时，它会'
+      - '&7让你免于死亡'
+      - '&7但会在过程中'
+      - '&7被摧毁。'
+      - ''
+      - '&7如果宝珠没有拯救'
+      - '&7你，30 秒后它会'
+      - '&7回到你的'
+      - '&7背包中。'
+      - ''
+      - '&8范围: &a20'
+      - '&8冷却: &a60 秒'
+
+#管理员宝珠没有主人
+#它们属于服务器
+#宝珠名称是显示的完整标题
+admin-orbs-use-permission: 'handyorbs.admin.orbs'
+admin-orb-deny: '&f你不能与 &c服务器宝珠&f 互动！'
+admin-orbs:
+  tree-spawner:
+    action-radius: 20
+    ability-cooldown: 20
+    skull-skin: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWFlODI2ZTdkYjg0NDdmYmQ2Mjk4OGZlZTBlODNiYmRkNjk0Mzc4YWVmMTJkMjU3MmU5NzVmMDU5YTU0OTkwIn19fQ'
+    orb-name: '&a树木管理宝珠'
+    orb-lore:
+      - '&f如果你放置这个宝珠'
+      - '&f它会移除其范围内'
+      - '&f找到的所有树木'
+      - '&f并一棵一棵地'
+      - '&f重新生成它们。'
+      - ''
+      - '&f如果你添加了新的树木'
+      - '&f你需要重新放置宝珠。'
+      - ''
+      - '&c管理员宝珠'
+
+#传送到你的宝珠所需的权限
+teleport-own-orb-permission: 'handyorbs.teleport.own'
+#传送到其他玩家宝珠所需的权限
+teleport-other-orb-permission: 'handyorbs.teleport.other'
+
+#请勿修改此项:
+version: 2.0

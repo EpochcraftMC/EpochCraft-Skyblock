@@ -1,0 +1,110 @@
+en-Version: 7
+
+Prefix: '&7'
+
+General:
+  failedOverwrite: '&c无法给你 &4%failcount% &c个物品，你不允许覆盖物品！'
+  failedInventory: '&c无法给你 &4%failcount% &c个物品，你的背包已满！'
+  itemChargeSuccess: '&a成功为 &e$%cost%&a 执行了命令。'
+  itemChargeFailed: '&c你没有足够的余额来执行此命令！ /n &c你需要 &4$%cost%&c，而你只有 &4$%balance%&c。'
+  itemWarmingUp: '&a物品 [%item%&a] 正在预热...'
+  itemWarming: '&a将在 &2%timeleft% &a秒后执行 [%item%&a]。'
+  itemWarmingHalted: '&c[&c%item%&4] 的执行已取消！'
+
+Commands:
+  Default:
+    unknownCommand: '&f未知命令。'
+    noPermission: '&f未知命令。'
+    configReload: '&a配置文件已重新加载！'
+    notPlayer: '&c你必须是一名玩家才能执行该命令！'
+    targetNotFound: '&c找不到玩家 &c%targetplayer% &c！'
+  UI:
+    creatorLaunched: '&a物品创建器已打开。'
+    itemSaved: '&e%item% &a已成功保存。'
+    notInteger: '&c&l&n错误:&c 输入值 &4%input% &c不是整数！'
+    noMatch: '&c&l&n错误:&c 输入值 &4%input% &c不是有效的材质！'
+    inputType: '&a输入你想放在物品上的 &e%type% &a。'
+    inputSet: '&a物品的 &e%type% &a已成功设置！'
+    normalExample: '&a示例: %example%'
+  Item:
+    notInHand: '&c你手中没有拿着物品！'
+    invalidItem: '&c物品 &b%item% &c不存在！'
+  Info:
+    material: '&a物品 ID（材质类型）: &e&l%item%'
+    dataValue: '&a物品值（数据类型）: &e&l%item%'
+  Save:
+    playerSavedItem: '&a物品 &b%item% &a已保存到 items.yml。 /n &a请更改使用此物品创建的任何默认值并重新加载配置。'
+    playerFailedSavedItem: '&c物品 &b%item% &c无法保存，你手中没有 &b拿着 &c物品！'
+    invalidSyntax: '&c用法错误！语法: /itemjoin save <自定义名称>！'
+  List:
+    worldHeader: '&a&l%world%:'
+    itemRow: '&a&l   &a%item%'
+    noItemsDefined: '&c&l   &c此世界未定义任何物品。'
+  World:
+    worldHeader: '&a你所在的世界:'
+    worldRow: '&e- %world%'
+    worldsFoundHeader: '&a找到的世界:'
+  Updates:
+    checking: '&4%player% 已请求检查更新！'
+    forcing: '&4%player% 已请求强制更新插件！'
+  Get:
+    toYou: '&a'
+    toTarget: '&a你给了 %targetplayer% &b%amount%x &7[&e%item%&7]&a。'
+    youHaveItem: '&c你已经拥有物品 &7[&b%item%&7]&c！'
+    triedGive: '&4'
+    targetHasItem: '&4%targetplayer% &c已经拥有物品 &7[&b%item%&7]&c！'
+    noPermission: '&c你不满足接收物品 &7[&b%item%&7]&c 的权限要求。'
+    targetNoPermission: '&4%targetplayer% &c不满足接收物品 &7[&b%item%&7]&c 的权限要求。'
+    invalidSyntax: '&c用法错误！语法: /itemjoin get <物品名> &l或 &c/itemjoin get <物品名> <数量>！'
+    usageSyntax: '&c作为控制台，你应该使用 /ItemJoin get <物品名> <玩家>。'
+    toOnlinePlayers: '&a你已将物品 &b%amount%x &7[&b%item%&7]&a 给予玩家 &e%players%&c。'
+    onlinePlayersHaveItem: '&4所有在线玩家 &c都已经拥有物品 &7[&b%item%&7]&c！'
+    invalidOnlineSyntax: '&c用法错误！语法: /itemjoin getOnline <物品名> &l或 &c/itemjoin getOnline <物品名> <数量>！'
+  GetAll:
+    toYou: '&a你已获得 &b所有物品&a。'
+    toTarget: '&a你已给予 %targetplayer% &b所有物品&a。'
+    noPermission: '&c你缺少某些物品的权限，因此 &l不会 &c给予 &b所有物品&c。'
+    targetNoPermission: '&4%targetplayer% &c缺少某些物品的权限，因此 &l不会 &c给予 &b所有物品&c。'
+    triedGive: '&4%targetplayer% &c试图给你 &b所有物品 &c，但它们已经在你的背包中了！'
+    youHaveItems: '&c你已经拥有 &b所有物品&c！'
+    targetHasItems: '&4%targetplayer% &c已经拥有 &b所有物品&c！'
+  Remove:
+    fromYou: '&b%amount%x &7[&e%item%&7]&c 已从你的背包中移除。'
+    fromTarget: '&c你已从 &4%targetplayer%&c 的背包中移除 &b%amount%x &7[&e%item%&7]&c。'
+    triedRemove: '&4%targetplayer% &c试图移除 &7[&b%item%&7]&c，但它不在你的背包中！'
+    invalidSyntax: '&c用法错误！语法: /itemjoin remove <物品名>！'
+    usageSyntax: '&c作为控制台，你应该使用 /ItemJoin remove <物品名> <玩家>。'
+    notInInventory: '&c物品 &7[&e%item%&7] &c不在你的背包中！'
+    notInTargetInventory: '&c物品 &7[&e%item%&7] &c不在 &4%targetplayer% &c的背包中！'
+    fromOnlinePlayers: '&c你已从玩家 &4%players%&c 的背包中移除物品 &b%amount%x &7[&b%item%&7]&c。'
+    notInOnlinePlayersInventory: '&c物品 &b%item% &c不在任何 &4在线玩家 &c的背包中。'
+    invalidOnlineSyntax: '&c用法错误！语法: /itemjoin removeOnline <物品名>！'
+  RemoveAll:
+    fromYou: '&b所有物品 &a已从你的背包中移除。'
+    fromTarget: '&a你已从 &b%targetplayer%&a 的背包中移除 &b所有物品&a。'
+    triedRemove: '&4%targetplayer% &c试图移除 &b所有物品 &c，但你的背包中没有任何物品！'
+    noItemsInInventory: '&c你的背包中没有任何 &b已定义的物品&c！'
+    noItemsInTargetInventory: '&b没有已定义的物品 &c存在于 &4%targetplayer% &c的背包中！'
+  Database:
+    purgeWarn: '&a清除数据库将删除 &b%targetplayer%&a 的 &c全部 &a%purgedata% 数据。'
+    purgeSuccess: '&a你已清除 &b%targetplayer%&a 的 %purgedata% 数据库文件！'
+    purgeConfirm: '&a你有 5 秒时间输入 &e%command% &a以确认清除数据库。'
+    purgeTimeOut: '&c你没有在 &b5 秒内 &c确认清除数据库，清除已取消！'
+  Enabled:
+    forPlayer: '&a你已为 &e%targetplayer%&a &e启用 &b所有物品&a。'
+    forTarget: '&a%player% 已为你 &e启用 &b所有物品&a。'
+    forPlayerFailed: '&c物品已经为 &e%player%&c &e启用 &c了。'
+    forPlayerWorld: '&a你已为 &e%player%&a &e启用 &7[&e%world%&7] 物品&a。'
+    forTargetWorld: '&a%player% 已为你 &e启用 &7[&e%world%&7] 物品。'
+    forPlayerWorldFailed: '&c你已经为 &e%player%&c &e启用 &7[&e%world%&7] 物品&c 了。'
+    globalPlayers: '&a你已为 &e所有玩家&a &e启用 &b所有物品&a。'
+    globalPlayersFailed: '&c物品已经为 &e所有玩家&c &e启用 &c了。'
+  Disabled:
+    forPlayer: '&a你已为 &e%player%&a &e禁用 &b所有物品&a。'
+    forTarget: '&a%player% 已为你 &e禁用 &b所有物品&a。'
+    forPlayerFailed: '&c物品已经为 &e%player%&c &e禁用 &c了。'
+    forPlayerWorld: '&a你已为 &e%player%&a &e禁用 &7[&e%world%&7] 物品&a。'
+    forTargetWorld: '&a%player% 已为你 &e启用 &7[&e%world%&7] 物品。'
+    forPlayerWorldFailed: '&c你已经为 &e%player%&c &e禁用 &7[&e%world%&7] 物品&c 了。'
+    globalPlayers: '&a你已为 &e所有玩家&a &e禁用 &b所有物品&a。'
+    globalPlayersFailed: '&c物品已经为 &e所有玩家&c &e禁用 &c了。'

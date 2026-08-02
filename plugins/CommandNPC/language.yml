@@ -1,0 +1,34 @@
+General:
+  PluginTag: '&8[&2CommandNPC&8] &6'
+  ErrorTag: '&0[&c错误&0] &c'
+CmdNPC:
+  Cooldown: 你现在还不能这样做！
+  NoMoney: 你没有足够的钱来做这件事！
+  Executed: 命令已执行。
+Commands:
+  NoPermission: 你没有权限这样做！
+  WrongArgs: 参数错误。使用 /commandnpc reload
+  MustBeNumeric: 参数 '%arg' 必须是数字！
+  AlreadyExists: 名为 %type 的已存在！
+  DoesNotExist: 名为 %type 的不存在！
+  List:
+    Header: '可用的%type：'
+    Line: ' &8 -&a %name'
+    InfoHeader: 'NPC ''%id'' 的信息：'
+    InfoLineHeader: '  &7%name: &6%value'
+    InfoLinePrefix: '  &8- '
+    InfoLine: '&2%name: &b%value'
+  SetTo:
+    Header: '你已设置以下变量：'
+    Line: '  &8- &6%variable为&8: &b%value'
+    Nothing: '  &8- &4没有变化...'
+  CmdNPC:
+    Reload: 你已成功重新加载 commandnpc 配置文件！
+  Citizens:
+    Add: 你已成功将命令添加到 NPC！
+    Reset: 你已成功重置该 NPC 的命令！
+    Removed: 你已成功移除该命令！
+    NumBetween: 你必须输入 %num1 到 %num2 之间的数字！
+    ValueFlagT: 对于值标记 't'，你必须使用 'left'、'right' 或 'both'！
+    NoCmdInput: 你没有输入命令！
+    NoCommands: 该 NPC 当前没有设置命令！

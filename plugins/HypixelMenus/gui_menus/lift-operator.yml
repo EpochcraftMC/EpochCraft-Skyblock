@@ -1,0 +1,248 @@
+menu_title: '&8电梯操作员'
+open_command:
+- lift
+- liftoperator
+size: 45
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 2
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 12
+        - 14
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 30
+        - 32
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      gold-mine:
+        material: GOLD_INGOT
+        slot: 11
+        display_name: '&a金矿'
+        lore:
+        - '&7将你传送到'
+        - '&6金矿&7！'
+        - ''
+        - '&e点击传送！'
+        left_click_commands:
+        - '[console] warp goldmine %player_name%'
+        right_click_commands:
+        - '[console] warp goldmine %player_name%'
+
+      lapis-mine:
+        material: 351
+        priority: 1
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: 'zone.lapis-quarry'
+        data: 4
+        slot: 13
+        display_name: '&a青金石采石场'
+        lore:
+        - '&7将你传送到'
+        - '&9青金石采石场&7！'
+        - ''
+        - '&e点击传送！'
+        left_click_commands:
+        - '[console] warp lapismine %player_name%'
+        right_click_commands:
+        - '[console] warp lapismine %player_name%'
+
+      lapis-mine-locked:
+        material: 351
+        priority: 2
+        data: 4
+        slot: 13
+        display_name: '&a青金石矿'
+        lore:
+        - '&7将你传送到'
+        - '&9青金石矿&7！'
+        - ''
+        - '&c你还没有解锁这里！'
+        left_click_commands: []
+        right_click_commands: []
+
+
+
+
+      redstone-mine:
+        material: redstone
+        slot: 15
+        priority: 1
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: 'zone.redstone-mine'
+        display_name: '&a红石矿'
+        lore:
+        - '&7将你传送到'
+        - '&c红石矿&7！'
+        - ''
+        - '&e点击传送！'
+        left_click_commands:
+        - '[console] warp redstonemine %player_name%'
+        right_click_commands:
+        - '[console] warp redstonemine %player_name%'
+
+      redstone-mine-locked:
+        material: redstone
+        priority: 2
+        slot: 15
+        display_name: '&a红石矿'
+        lore:
+        - '&7将你传送到'
+        - '&c红石矿&7！'
+        - ''
+        - '&c你还没有解锁这里！'
+        left_click_commands: []
+        right_click_commands: []
+
+
+
+
+
+
+      emerald-mine:
+        material: emerald
+        slot: 29
+        priority: 1
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: 'zone.emerald-sanctuary'
+        display_name: '&a绿宝石圣殿'
+        lore:
+        - '&7将你传送到'
+        - '&2绿宝石圣殿&7！'
+        - ''
+        - '&e点击传送！'
+        left_click_commands:
+        - '[console] warp emeraldmine %player_name%'
+        right_click_commands:
+        - '[console] warp emeraldmine %player_name%'
+
+      emerald-mine-locked:
+        material: emerald
+        priority: 2
+        slot: 29
+        display_name: '&a绿宝石矿'
+        lore:
+        - '&7将你传送到'
+        - '&2绿宝石矿&7！'
+        - ''
+        - '&c你还没有解锁这里！'
+        left_click_commands: []
+        right_click_commands: []
+
+
+
+      diamond-mine:
+        material: diamond
+        priority: 1
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: 'zone.diamond-reserve'
+        slot: 31
+        display_name: '&a钻石保护区'
+        lore:
+        - '&7将你传送到'
+        - '&b钻石保护区&7！'
+        - ''
+        - '&e点击传送！'
+        left_click_commands:
+        - '[console] warp diamondmine %player_name%'
+        right_click_commands:
+        - '[console] warp diamondmine %player_name%'
+
+      diamond-mine-locked:
+        material: diamond
+        priority: 2
+        slot: 31
+        display_name: '&a钻石矿'
+        lore:
+        - '&7将你传送到'
+        - '&b钻石矿&7！'
+        - ''
+        - '&c你还没有解锁这里！'
+        left_click_commands: []
+        right_click_commands: []
+
+
+
+
+      obsidian-mine:
+        material: obsidian
+        slot: 33
+        priority: 1
+        display_name: '&a黑曜石圣殿'
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: 'zone.obsidian-sanctuary'
+        lore:
+        - '&7将你传送到'
+        - '&5黑曜石圣殿&7！'
+        - ''
+        - '&e点击传送！'
+        left_click_commands:
+        - '[console] warp obsidianmine %player_name%'
+        right_click_commands:
+        - '[console] warp obsidianmine %player_name%'
+
+      obsidian-mine-locked:
+        material: obsidian
+        priority: 2
+        slot: 33
+        display_name: '&a黑曜石矿'
+        lore:
+        - '&7将你传送到'
+        - '&5黑曜石矿&7！'
+        - ''
+        - '&c你还没有解锁这里！'
+        left_click_commands: []
+        right_click_commands: []

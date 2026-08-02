@@ -1,0 +1,18 @@
+# LuckPerms UUID lookup cache
+70632cb2-c56f-4906-b8cd-3d5809d7675a:BjornLV
+e5ed0949-72e7-4b3f-8c58-e7bb643c3942:Spaetzle_
+0e97f849-9e16-4194-ac11-cc10e6dfe540:joseda007
+6563b729-f844-4403-8fba-93695f489f34:SuperSteveB
+d28becaa-af55-467e-ab22-1bbbbaa771d7:firebreakHD
+42b10dcb-f015-3eb2-a59c-a8f01b6b2a1e:Duccumaxto
+d6ae0bf9-f117-45a8-be4e-180987f206bb:Huys
+94c8dfe9-f43a-45fd-a595-8fe7cc6835db:CryslX
+40899665-97e8-4fe0-ae38-074173b18b47:Blue_Void82
+72012053-ebe6-4bc6-8cdf-32d53c2024b7:Tyrlox
+2d6be134-97c6-484a-86f3-8caff547797a:Gustau
+608ae35d-2e2a-4680-a877-b9fe4afd333e:Sphinx_HD
+74d983b1-c70a-4686-a551-d55167cccb12:bowdyyy
+e9604283-5a80-4885-a54e-d1b712801ba4:WienerNips
+556945d5-7ffe-4d60-a826-2163fe443f38:MediaCube
+3d482406-7d31-3611-bc19-a6116a17484a:MiniFlexJAV
+bb9172c2-8766-4d1e-97a5-c4b7f8e943ae:HeatingSoda6724

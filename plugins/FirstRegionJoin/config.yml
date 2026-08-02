@@ -1,0 +1,261 @@
+auction-house:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &6&l拍卖行
+- whisper %player% &7
+- whisper %player% &8  ➤ &e与拍卖行管理员对话
+- whisper %player% &8  ➤ &e拍卖一件物品
+- whisper %player% &8  ➤ &e在随机拍卖中出价
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"拍卖行","bold":true,"color":"gold"}
+bank:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &6&l银行
+- whisper %player% &7
+- whisper %player% &8  ➤ &e从你的银行账户取出硬币
+- whisper %player% &8  ➤ &e购买银行账户升级
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"银行","bold":true,"color":"gold"}
+gold-mine:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &6&l金矿
+- whisper %player% &7
+- whisper %player% &8  ➤ &e电梯操作员会带你前往
+- whisper %player% &8    &e金矿。
+- whisper %player% &8  ➤ &e开采钻石矿石
+- whisper %player% &8  ➤ &e小心，怪物可能非常致命！
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"金矿","bold":true,"color":"gold"}
+- lp user %player% permission set zone.gold-mine true
+lapis-quarry:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &9&l青金石采石场
+- whisper %player% &7
+- whisper %player% &8  ➤ &e开采一些青金石
+- whisper %player% &8  ➤ &e击杀一只青金石僵尸
+- whisper %player% &8  ➤ &e找到前往红石矿的路
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"青金石采石场","bold":true,"color":"blue"}
+- lp user %player% permission set zone.lapis-quarry true
+redstone-mine:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &c&l红石矿
+- whisper %player% &7
+- whisper %player% &8  ➤ &e开采一些红石
+- whisper %player% &8  ➤ &e击杀一只僵尸猪人
+- whisper %player% &8  ➤ &e找到前往绿宝石保护区的路
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"红石矿","bold":true,"color":"red"}
+- lp user %player% permission set zone.redstone-mine true
+emerald-sanctuary:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &a&l绿宝石保护区
+- whisper %player% &7
+- whisper %player% &8  ➤ &e开采一些绿宝石
+- whisper %player% &8  ➤ &e击杀一只蠹虫
+- whisper %player% &8  ➤ &e找到前往钻石保护区的路
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"绿宝石保护区","bold":true,"color":"green"}
+- lp user %player% permission set zone.emerald-sanctuary true
+diamond-reserve:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &b&l钻石保护区
+- whisper %player% &7
+- whisper %player% &8  ➤ &e开采一些钻石
+- whisper %player% &8  ➤ &e击杀一只钻石僵尸
+- whisper %player% &8  ➤ &e找到前往黑曜石保护区的路
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"钻石保护区","bold":true,"color":"aqua"}
+- lp user %player% permission set zone.diamond-reserve true
+obsidian-sanctuary:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &5&l黑曜石保护区
+- whisper %player% &7
+- whisper %player% &8  ➤ &e开采一些黑曜石
+- whisper %player% &8  ➤ &e击杀一只黑曜石僵尸
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"黑曜石保护区","bold":true,"color":"dark_purple"}
+- lp user %player% permission set zone.obsidian-sanctuary true
+coal-mine:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &b&l煤矿
+- whisper %player% &7
+- whisper %player% &8  ➤ &e拜访铁匠
+- whisper %player% &8  ➤ &e开采煤炭
+- whisper %player% &8  ➤ &e前往金矿
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"煤矿","bold":true,"color":"aqua"}
+spiders-den:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &c&l蜘蛛巢穴
+- whisper %player% &7
+- whisper %player% &8  ➤ &e击杀一些蜘蛛和骷髅
+- whisper %player% &8  ➤ &e达到战斗 X 级
+- whisper %player% &8  ➤ &e前往下界
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"蜘蛛巢穴","bold":true,"color":"red"}
+- lp user %player% permission set zone.spiders-den true
+the-nether:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &c&l下界
+- whisper %player% &7
+- whisper %player% &8  ➤ &e击败岩浆怪 Boss
+- whisper %player% &8  ➤ &e获得一把余烬之杖
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"下界","bold":true,"color":"red"}
+- lp user %player% permission set zone.the-nether true
+oak-forest:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &2&l橡木森林
+- whisper %player% &7
+- whisper %player% &8  ➤ &e砍伐一些橡木原木
+- whisper %player% &8  ➤ &e前往金合欢森林
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"橡木森林","bold":true,"color":"dark_green"}
+- lp user %player% permission set zone.oak-forest true
+acacia-forest:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &2&l金合欢森林
+- whisper %player% &7
+- whisper %player% &8  ➤ &e砍伐一些金合欢原木
+- whisper %player% &8  ➤ &e前往深色橡木森林
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"金合欢森林","bold":true,"color":"dark_green"}
+- lp user %player% permission set zone.acacia-forest true
+dark-oak-forest:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &2&l深色橡木森林
+- whisper %player% &7
+- whisper %player% &8  ➤ &e砍伐一些深色橡木原木
+- whisper %player% &8  ➤ &e前往云杉森林
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"深色橡木森林","bold":true,"color":"dark_green"}
+spruce-forest:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &2&l云杉森林
+- whisper %player% &7
+- whisper %player% &8  ➤ &e砍伐一些云杉原木
+- whisper %player% &8  ➤ &e前往白桦森林
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"云杉森林","bold":true,"color":"dark_green"}
+birch-forest:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &2&l白桦森林
+- whisper %player% &7
+- whisper %player% &8  ➤ &e砍伐一些白桦原木
+- whisper %player% &8  ➤ &e前往丛林
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"白桦森林","bold":true,"color":"dark_green"}
+jungle-forest:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &2&l丛林
+- whisper %player% &7
+- whisper %player% &8  ➤ &e砍伐一些丛林原木
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"丛林","bold":true,"color":"dark_green"}
+farm:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &a&l农场
+- whisper %player% &7
+- whisper %player% &8  ➤ &e收获小麦、胡萝卜和土豆
+- whisper %player% &8  ➤ &e击杀牛、鸡和猪
+- whisper %player% &8  ➤ &e给牛挤奶
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"农场","bold":true,"color":"green"}
+- lp user %player% permission set zone.farm true
+the-barn:
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- whisper %player% &a&l  新区域 &8- &a&l谷仓
+- whisper %player% &7
+- whisper %player% &8  ➤ &e收集一些甘蔗、仙人掌、红
+- whisper %player% &7    &e蘑菇和棕色蘑菇
+- whisper %player% &7
+- whisper %player% &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+- title %player% subtitle {"text":"发现新区域！","color":"green"}
+- title %player% title {"text":"谷仓","bold":true,"color":"green"}
+- lp user %player% permission set zone.the-barn true
+diamond-reserve visitors:
+- c4d17cbd-957f-20d1-9ab1-c3fd130ce527
+obsidian-sanctuary visitors:
+- 1d58506e-dc5b-2eda-baf4-36974046d5dd
+spiders-den visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+the-barn visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+- 42b10dcb-f015-3eb2-a59c-a8f01b6b2a1e
+- 3d482406-7d31-3611-bc19-a6116a17484a
+coal-mine visitors:
+- 556945d5-7ffe-4d60-a826-2163fe443f38
+emerald-sanctuary visitors:
+- 3220e5ee-9de6-2b95-90aa-715534787c7f
+the-nether visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+spruce-forest visitors:
+- 3d482406-7d31-3611-bc19-a6116a17484a
+acacia-forest visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+- 3d482406-7d31-3611-bc19-a6116a17484a
+oak-forest visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+- 42b10dcb-f015-3eb2-a59c-a8f01b6b2a1e
+- 3d482406-7d31-3611-bc19-a6116a17484a
+- 5898846e-8534-27b8-aa04-c47a8403162a
+dark-oak-forest visitors:
+- 3d482406-7d31-3611-bc19-a6116a17484a
+auction-house visitors:
+- 42b10dcb-f015-3eb2-a59c-a8f01b6b2a1e
+- 46afb4ee-fe9c-2572-8b0a-1d9716c848bd
+- 3d482406-7d31-3611-bc19-a6116a17484a
+bank visitors:
+- 8594a143-46a3-2fc7-9a53-686aa4f29fc8
+- 6e75734c-1671-330f-b60f-328db34427b3
+birch-forest visitors:
+- 3d482406-7d31-3611-bc19-a6116a17484a
+redstone-mine visitors:
+- 3f7e35dc-cefb-280c-bd57-3f4fc585e013
+farm visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+- 42b10dcb-f015-3eb2-a59c-a8f01b6b2a1e
+- 3d482406-7d31-3611-bc19-a6116a17484a
+lapis-quarry visitors:
+- 41e0caab-8bcd-25c6-a8bf-ac1d9fd74f09
+jungle-forest visitors:
+- 3d482406-7d31-3611-bc19-a6116a17484a
+gold-mine visitors:
+- 6e75734c-1671-330f-b60f-328db34427b3
+- cf353ea3-1dd2-2414-acf6-d7f5ad3536ce

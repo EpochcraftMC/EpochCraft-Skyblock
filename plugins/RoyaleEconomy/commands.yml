@@ -1,0 +1,279 @@
+commands:
+  royaleeconomy:
+    command-help:
+      - '&7&m---------------[-&r &c管理命令 &7&m-]---------------'
+      - '&c/royaleeconomy purse &7- &f查看钱包命令。'
+      - '&c/royaleeconomy bank &7- &f查看银行命令。'
+      - '&c/royaleeconomy sharedbank &7- &f查看共享银行命令。'
+      - '&c/royaleeconomy shops &7- &f查看商店命令。'
+      - '&c/royaleeconomy reload &7- &f重载插件。'
+      - '&7&m---------------[-&r &e其他命令 &7&m-]---------------'
+      - '&e/talismans help &7- &f查看护符命令。'
+      - '&e/killcoins &7- &f查看击杀硬币统计。'
+      - '&e/interest help &7- &f查看利息命令。'
+      - '&e/coinsbag &7- &f查看硬币袋命令。'
+      - '&e/reshop &7- &f查看商店命令。'
+      - '&e/balancetop &7- &f查看余额排行命令。'
+      - '&e/sharedbank help &7- &f查看共享银行命令。'
+      - '&e/bank help &7- &f查看银行命令。'
+      - '&e/piggybank &7- &f查看存钱罐命令。'
+    player-not-found: '&c你输入的玩家未在数据库中注册。'
+    invalid-number: '&c你输入了无效的数字。'
+    shops:
+      command-help:
+        - '&c/royaleeconomy shop create'
+        - '&c/royaleeconomy shop manager'
+        - '&c/royaleeconomy shop sortSellItems'
+        - '&c/royaleeconomy shop reload'
+    purse:
+      command-help:
+        - '&c/royaleeconomy purse add <player> <amount>'
+        - '&c/royaleeconomy purse remove <player> <amount>'
+        - '&c/royaleeconomy purse set <player> <amount>'
+      #Use %amount% for amount and %player% for player username
+      add-done-message: '&6%amount% 硬币 &f已发送给 &e%player%&f！'
+      add-done-player-message: '&6%amount% 硬币 &f已添加到你的钱包！'
+      remove-done-message: '&6%amount% 硬币 &f已从 &e%player%&f 处扣除！'
+      remove-done-player-message: '&6%amount% 硬币 &f已从你的钱包中扣除！'
+      set-done-message: '&e%player%&f 的钱包现在有 &6%amount% 硬币&f！'
+      set-done-player-message: '&f你的钱包现在有 &6%amount% 硬币&f！'
+    bank:
+      command-help:
+        - '&c/royaleeconomy bank add <player> <amount>'
+        - '&c/royaleeconomy bank remove <player> <amount>'
+        - '&c/royaleeconomy bank set <player> <amount>'
+      #Use %amount% for amount and %player% for player username
+      add-done-message: '&6%amount% 硬币 &f已发送到 &e%player%&f 的银行！'
+      add-done-player-message: '&6%amount% 硬币 &f已添加到你的银行！'
+      remove-done-message: '&6%amount% 硬币 &f已从 &e%player%&f 的银行扣除！'
+      remove-done-player-message: '&6%amount% 硬币 &f已从你的银行扣除！'
+      set-done-message: '&e%player%&f 的个人银行现在有 &6%amount% 硬币&f！'
+      set-done-player-message: '&f你的银行现在有 &6%amount% 硬币&f！'
+    sharedbank:
+      command-help:
+        - '&c/royaleeconomy sharedbank add <player> <amount>'
+        - '&c/royaleeconomy sharedbank remove <player> <amount>'
+        - '&c/royaleeconomy sharedbank set <player> <amount>'
+      #Use %amount% for amount and %player% for player username
+      add-done-message: '&6%amount% 硬币 &f已发送到 &e%player%&f 的共享银行！'
+      add-done-player-message: '&6%amount% 硬币 &f已添加到你的银行！'
+      remove-done-message: '&6%amount% 硬币 &f已从 &e%player%&f 的共享银行扣除！'
+      remove-done-player-message: '&6%amount% 硬币 &f已从你的共享银行扣除！'
+      set-done-message: '&e%player%&f 的共享银行现在有 &6%amount% 硬币&f！'
+      set-done-player-message: '&f你的共享银行现在有 &6%amount% 硬币&f！'
+      not-shared-bank: '&c该玩家没有共享银行！'
+  balance:
+    #Use %balance% for amount of coins
+    output: '&f你有 &6%balance% 硬币&f！'
+    #Use %player-name% for the name of the player
+    output-other: '&e%player-name% &f有 &6%balance% 硬币&f！'
+  reshop:
+    command-help:
+      - '&c/reshop open <name>'
+      - '&c/reshop forceopen <player> <name>'
+    shop-not-found: '&c没有这个名字的商店。'
+    player-not-found: '&c未找到该玩家。'
+    success: '&a成功打开商店！'
+  pay:
+    disable-self-pay: false
+    pay-self-message: '&c你不能给自己付款！'
+    no-args-message: '&c使用 /pay <player> <amount>'
+    invalid-number: '&c无效的数字。'
+    no-coins-message: '&c你的硬币不够。'
+    #Use %coins% for amount of coins
+    #Use %to-player% for the player that receives the coins
+    #Use %from-player% for the player that gives the coins
+    coins-received-message: '&f你从 &e%from-player%&f 处收到了 &6%coins% 硬币&f！'
+    coins-given-message: '&f你给了 &e%to-player%&f &6%coins% 硬币&f！'
+    invalid-player: '&c你要给钱的玩家必须在线！'
+  balancetop:
+    command-help:
+      - '&e/balancetop purse &7- &f按钱包硬币排行'
+      - '&e/balancetop bank &7- &f按银行硬币排行'
+      - '&e/balancetop sharedbank &7- &f按硬币排行银行'
+      - '&f排行每 &e&n5 分钟&f 更新一次！'
+    #How many players should be displayed per page
+    display-per-page: 10
+    #If you set this to play, there will be no pages
+    #And the display-per-page will represent how many players
+    #to show
+    display-all: true
+    broadcast-top-changes:
+      #Broadcasts balance top 10 modifications (if there are any)
+      broadcast-purse: false
+      broadcast-bank: false
+      broadcast-sharedbank: false
+      broadcast-header:
+        - '&7&m-------&r &e余额排行变动 &7&m-------'
+      broadcast-purse-structure: '&e#%position% 钱包：&f从 &7%from-player-name% &8(&6%from-player-coins%&8) &f到 &7%to-player-name% &8(&6%to-player-coins%&8)'
+      broadcast-bank-structure: '&e#%position% 银行：&f从 &7%from-player-name% &8(&6%from-player-coins%&8) &f到 &7%to-player-name% &8(&6%to-player-coins%&8)'
+      broadcast-sharedbank-structure: '&e#%position% 共享银行：&f从 &7%from-player-name% &8(&6%from-player-coins%&8) &f到 &7%to-player-name% &8(&6%to-player-coins%&8)'
+      broadcast-footer:
+        - '&7&m------------------------------------------'
+        - '&8如果你想在下次服务器重启前'
+        - '&7禁用此广播，请执行 &c/balancetop toggleBroadcast'
+      toggle-enabled: '&a余额排行变动已启用！'
+      toggle-disabled: '&c余额排行变动已禁用！'
+    #Names that you enter here will be excluded from all tops
+    #Useful for admins who needs huge amount of money to test stuff
+    hidden-players: []
+    top-format:
+      #Use %top-position% for the position the playe is on
+      #Use %player-name% for the player's username
+      #Use %coins% for the number of coins the player has
+      #Use %page-number% for the number of the current page
+      sharedbank-top:
+        header: '&7&m-----[-&f &e共享银行排行 &7&m-]-------'
+        #%player-name% here means the owner of the shared bank's name
+        top-player-structure: '&e#%top-position% &f%player-name% 的银行 &7- &6%coins%'
+        footer: '&7&m---------[-&f &e第 %page-number% 页 &7&m-]-----------'
+      bank-top:
+        header: '&7&m---------[-&f &e银行排行 &7&m-]---------'
+        top-player-structure: '&e#%top-position% &f%player-name% &7- &6%coins%'
+        footer: '&7&m---------[-&f &ePage %page-number% &7&m-]-----------'
+      purse-top:
+        header: '&7&m---------[-&f &e钱包排行 &7&m-]--------'
+        top-player-structure: '&e#%top-position% &f%player-name% &7- &6%coins%'
+        footer: '&7&m---------[-&f &e第 %page-number% 页 &7&m-]-----------'
+  bank:
+    command-help:
+      - '&e/bank &7- &f打开银行菜单。'
+      - '&e/bank balance &7- &f查看你拥有的硬币数量。'
+      - '&e/bank balance <player> &7- &f查看其他玩家的硬币数量。'
+      - '&e/bank withdraw &7- &f打开取款菜单'
+      - '&e/bank deposit &7- &f打开存款菜单'
+    #Use %balance% for amount of coins
+    output:  '&f你的银行里有 &6%balance% 硬币&f！'
+    #Use %player-name% for the name of the player
+    output-other: '&e%player-name% &f的银行里有 &6%balance% 硬币&f！'
+    player-not-found: '&c你输入的玩家未在数据库中注册。'
+  sharedbank:
+    command-help:
+      - '&e/sharedbank &7- &f打开共享银行菜单。'
+      - '&e/sharedbank create &7- &f创建共享银行'
+      - '&e/sharedbank transfer <player> &7- &f转移所有权'
+      - '&e/sharedbank disband &7- &f解散共享银行'
+      - '&e/sharedbank leave &7- &f退出共享银行'
+      - '&e/sharedbank invite <player> &7- &f邀请成员加入共享银行'
+      - '&e/sharedbank accept <player> &7- &f接受银行邀请'
+      - '&e/sharedbank kick <player> &7- &f将玩家踢出共享银行'
+      - '&e/sharedbank info <player> &7- &f查看某人的共享银行信息'
+      - '&e/sharedbank balance &7- &f查看你拥有的硬币数量。'
+      - '&e/sharedbank balance <player> &7- &f查看其他玩家的硬币数量。'
+      - '&e/sharedbank withdraw &7- &f打开取款菜单'
+      - '&e/sharedbank deposit &7- &f打开存款菜单'
+    #Use %balance% for amount of coins
+    output:  '&f你的银行里有 &6%balance% 硬币&f！'
+    #Use %player-name% for the name of the player
+    output-other: '&e%player-name% &f的银行里有 &6%balance% 硬币&f！'
+    player-not-found: '&c你输入的玩家未在数据库中注册。'
+    no-shared-bank: '&c你不属于任何共享银行。'
+    create-success: '&a你的共享银行已创建！'
+    create-fail: '&c你已经有一个共享银行了！'
+    delete-success: '&f你的共享银行已删除！'
+    bank-leave: '&f你已退出你的共享银行！'
+    bank-leave-fail: '&c你是所有者，不能退出！'
+    invite-sent:
+      - '&e%from-player% &f给你发送了一个银行邀请。'
+      - '&e/sharedbank accept %from-player% &f 以接受邀请。'
+    invite-sent2: '&f邀请已成功发送给 &e%to-player%&f！'
+    invite-already-sent: '&f你已经向该玩家发送过邀请了。'
+    invite-no-invite: '&f你没有来自该玩家的邀请。'
+    must-be-owner: '&c你必须是银行所有者才能执行此操作。'
+    invite-accept: '&f你已接受来自 &e%from-player%&f 的银行邀请！'
+    invite-accept2: '&e%to-player% &f已接受你的银行邀请！'
+    player-online: '&c该玩家必须在线！'
+    player-has-bank: '&c该玩家已经有一个共享银行了。'
+    transfer-ownership-fail: '&c该玩家不属于你的银行。'
+    transfer-ownership-success: '&f你已将所有权转让给 &e%to-player%&f！'
+    transfer-ownership-success2: '&f你现在是你的共享银行的所有者了！'
+    kick-fail: '&c该玩家不属于你的银行。'
+    kick-success: '&f你已将 &e%player% &f踢出你的共享银行！'
+    kick-player: '&f你已被踢出共享银行！'
+    confirm-message: '&f确定吗？输入 &e%command%&f。'
+    bank-info:
+      no-bank: '&c该玩家不属于任何共享银行。'
+      header-message:
+        - '&7&m-------[-&e 银行信息 &7&m-]-------'
+        - '&7 * 所有者：&b%owner%'
+        - '&7 * 成员：'
+      members-display-structure: '&7     - &b%member%'
+      no-members: '&c     暂无成员'
+      footer-message:
+        - '&7 * 余额：&6%balance% 硬币'
+  talismans:
+    command-help:
+      - '&e/talismans &7- &f打开一个可领取护符的菜单'
+      - '&e/talismans give <player> <random-coins/death-save/percent-reducer> <tier>'
+    output:  '&a护符已成功发放！'
+    tier-not-found: '&c未找到所选等级。'
+    player-not-found: '&c未找到你输入的玩家'
+  killcoins:
+    not-enabled: '&c击杀怪物获得硬币的统计已禁用。'
+    structure:
+      no-coins-message:
+        - '&c你还没有硬币可在此显示。'
+        - '&c击杀一些怪物后再次执行命令'
+        - '&c即可查看统计。'
+      header:
+        - '&8&m-----------------------------'
+        - '&f获得硬币：&6%total% 硬币&f'
+        - '&f击杀更多怪物以获得更多硬币！'
+        - ''
+        - '&f这些统计每天重置！'
+        - ''
+        - '&f击杀详情：'
+      kill-structure: '&7 - %mob-display-name% 击杀&f：%kill-count% &8(&6%amount% 硬币&8)'
+      #The footer won't be displayed if there are 0 additional kills
+      footer:
+        - ''
+        - '&f除了上面列出的之外，你'
+        - '&f还额外击杀了 &a%other-kills% 个生物'
+        - '&f共获得 &6%other-amount% 硬币&f！'
+        - '&8&m-----------------------------'
+  piggybank:
+    command-help:
+      - '&e/piggybank get &7- &f获取一个存钱罐'
+      - '&e/piggybank give <player> &7- &f给玩家一个存钱罐'
+    success: '&a存钱罐已发放！'
+    piggy-bank-received: '&f你收到了一个 &a存钱罐&f！'
+    player-not-found: '&c玩家必须在线。'
+  moneybag:
+    command-help:
+      - '&e/moneybag get <amount> &7- &f将硬币装进袋子里获取'
+      - '&e/moneybag adminget <amount> &7- &f不扣除硬币获取一个袋子'
+      - '&e/moneybag give <player> <amount> &7- &f发送给玩家一个硬币袋'
+    #Use %amount% for the amount of coins the bag contains
+    output-fail: '&c你的硬币不够！'
+    output: '&f你刚刚获得了一个装有 &6%amount% 硬币 &f的 &e硬币袋&f！'
+    output-give: '&f你已发送一个硬币袋！'
+    give-invalid-player: '&c该玩家必须在线！'
+    invalid-number: '&c请输入有效的数字。'
+  interest:
+    command-help:
+      - '&e/interest &7- &f查看距离利息发放还有多长时间。'
+      - '&e/interest speedup <number of hours> &7- &f从剩余时间中扣除若干小时。'
+      - '&e/interest slowdown <number of hours> &7- &f向剩余时间添加若干小时。'
+      - '&e/interest force &7- &f强制发放一次银行利息。'
+      - '&e/interest reset &7- &f重置计时器但不触发利息。'
+    #Use %interest-cooldown% for the cooldown (format example: 2 Days)
+    #Use %interest-cooldown-detailed% for the detailed cooldown (format example: 2 Days 3 Hours 1 Minute)
+    #Use %interest-cooldown-short% for the short cooldown (format example: 2d3h1m)
+    interest-output:
+      - '&f距离利息发放还有 &b%interest-cooldown-detailed%&f。'
+      - '&f常规利息冷却：&b31 小时'
+    reset:
+      output: '&a利息冷却已重置！'
+    slowdown:
+      output: '&a利息已延迟！'
+      invalid-number: '&c你输入的小时数无效。'
+    speedup:
+      output: '&a利息已提前！'
+      invalid-number: '&c你输入的小时数无效。'
+    force:
+      output: '&a利息已强制发放。'
+    broadcast:
+      message: '&f你已收到你的 &e银行利息&f！'
+      #If you set this to something else than 'none' only players with this permission
+      #will receive an interest message
+      permission: 'none'

@@ -1,0 +1,42 @@
+motd:
+  # 你想启用此模块吗？
+  enabled: true
+
+  # 占位符: %onlineplayers% %maxplayers% "&a                 Skyblock Setup  &c[1.8-1.16]%newline%     &e&lNEW: &d&lMINIONS&7, &b&lMANA&7, &6&lUPGRADES &e&l+ MORE!"
+  # 使用 %newline% 分隔行。
+  motds:
+    - "&a&lEpochCraft Skyblock  &c[1.8-1.16]%newline%         &e&lQQ群: &b&l139447432"
+ 
+# 缓存请求，只向玩家的第一个 ping 数据包发送图标。
+# 这可以防止机器人攻击导致的崩溃并提高性能。
+# 仅适用于 BungeeCord，因为 Spigot 似乎已经缓存了图标。
+cache:
+  # 你想启用此模块吗？
+  enabled: true
+
+  # 缓存清除后的时间（毫秒）。
+  time: 30000
+
+maxplayers:
+  # 你想启用此模块吗？
+  enabled: true
+
+  # 更改最大玩家数。
+  maxplayers: 2022
+
+  # 根据在线玩家数更改最大玩家数。
+  # 示例: 12/13 名玩家在线。
+  justonemore: false
+
+# 仅适用于 BungeeCord，因为在 Ping 事件中没有方法修改此项。
+fakeplayers:
+  # 你想启用此模块吗？
+  enabled: false
+
+  # 设置假玩家数量。
+  amount: 3
+
+  # "STATIC": 将假玩家数量加到在线玩家数上。
+  # "RANDOM": 在 1 和假玩家数量之间随机添加玩家数。
+  # "DIVISION": 添加在线玩家数除以假玩家数量的值。
+  mode: "DIVISION"

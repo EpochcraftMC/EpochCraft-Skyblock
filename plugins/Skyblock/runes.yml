@@ -1,0 +1,417 @@
+fusions:
+- DIAMOND_SWORD
+- STONE_SWORD
+- WOOD_SWORD
+- GOLD_SWORD
+- IRON_SWORD
+- DIAMOND_AXE
+- STONE_AXE
+- WOOD_AXE
+- GOLD_AXE
+- IRON_AXE
+- DIAMOND_PICKAXE
+- STONE_PICKAXE
+- WOOD_PICKAXE
+- GOLD_PICKAXE
+- IRON_PICKAXE
+- BOW
+runeitems:
+  ice:
+    probability: 10
+    particle: CLOUD
+    name: '&f♦ 寒冰符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjNTdjNzVhZGYzOWVjNmYwZTA5MTYwNDlkZDk2NzFlOThhOGExZTYwMDEwNGU4NGU2NDVjOTg4OTUwYmQ3In19fQ==
+    addLore: |-
+      &7
+      <name>:
+      &7击杀怪物时
+      &7产生冰冻效果！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8武器
+      &7
+      &7击杀怪物时
+      &7产生冰冻效果！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &f&l常见
+    levels:
+      level1:
+        level: 1
+        dropChance: 10
+        requiredLevel: 2
+      level2:
+        level: 2
+        dropChance: 5
+        requiredLevel: 3
+      level3:
+        level: 3
+        dropChance: 3
+        requiredLevel: 4
+      level4:
+        level: 4
+        dropChance: 1
+        requiredLevel: 5
+  hearts:
+    probability: 5
+    particle: HEART
+    name: '&d♦ 爱心符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxYzE3OWFkNTE5NTVmMTUyMmM0OGVhOTkzMWYwOWMxNjI3NDFiNDVlMjJlOWQzZmViNjgyYzdlNWVkODI3NCJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7用爱心沐浴你的敌人！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8武器
+      &7
+      &7用爱心沐浴你的敌人！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &9&l稀有
+    levels:
+      level1:
+        level: 1
+        dropChance: 2
+        requiredLevel: 3
+      level2:
+        level: 2
+        dropChance: 1
+        requiredLevel: 4
+      level3:
+        level: 3
+        dropChance: 0.5
+        requiredLevel: 5
+      level4:
+        level: 4
+        dropChance: 0.25
+        requiredLevel: 6
+  music:
+    probability: 2
+    particle: NOTE
+    name: '&b♦ 音乐符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I0ODFjMzFkYzY4M2JkY2I3ZDM3NWE3YzVkYjdhYzdhZGY5ZTlmZThiNmMwNGE2NDkzMTYxM2UyOWZlNDcwZSJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7用甜美的旋律让怪物
+      &7解脱痛苦！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8武器
+      &7
+      &7用甜美的旋律让怪物
+      &7解脱痛苦！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &5&l史诗
+    levels:
+      level1:
+        level: 1
+        dropChance: 2
+        requiredLevel: 3
+      level2:
+        level: 2
+        dropChance: 1
+        requiredLevel: 4
+      level3:
+        level: 3
+        dropChance: 0.5
+        requiredLevel: 5
+      level4:
+        level: 4
+        dropChance: 0.25
+        requiredLevel: 6
+  smokey:
+    probability: 10
+    particle: SMOKE_NORMAL
+    name: '&7♦ 烟雾符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkOGE4ZDUyN2Y2NWE0ZjQzNGY4OTRmN2VlNDJlYjg0MzAxNWJkYTc5MjdjNjNjNmVhOGE3NTRhZmU5YmIxYiJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7在你的箭矢后面
+      &7留下燃烧的轨迹！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8弓
+      &7
+      &7在你的箭矢后面
+      &7留下燃烧的轨迹！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &f&l常见
+    levels:
+      level1:
+        level: 1
+        dropChance: 10
+        requiredLevel: 2
+      level2:
+        level: 2
+        dropChance: 5
+        requiredLevel: 3
+      level3:
+        level: 3
+        dropChance: 3
+        requiredLevel: 4
+      level4:
+        level: 4
+        dropChance: 1
+        requiredLevel: 5
+  magical:
+    probability: 2
+    particle: CRIT_MAGIC
+    name: '&d♦ 魔法符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQ0ODBlMzllYTYzZTM0N2QyNjhkZTgzMDkwZDA5OTg0YmYzNDM5NDExODg0ODM0OGJmNGViNTc0OTBjZTlkMiJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7你的箭矢具有魔法
+      &7光芒！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8弓
+      &7
+      &7你的箭矢具有魔法
+      &7光芒！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &9&l稀有
+    levels:
+      level1:
+        level: 1
+        dropChance: 2
+        requiredLevel: 3
+      level2:
+        level: 2
+        dropChance: 1
+        requiredLevel: 4
+      level3:
+        level: 3
+        dropChance: 0.5
+        requiredLevel: 5
+      level4:
+        level: 4
+        dropChance: 0.25
+        requiredLevel: 6
+  lava:
+    probability: 10
+    particle: LAVA
+    name: '&4♦ 岩浆符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEzZDkwM2Y2MDEwMzRhYzM0MDBkMjYyNWZlZjEwNGU5YjA5NDA3NDZjNTU0MTkzZjZkOWU4NWE4NGE5NjZhMSJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7射出岩浆箭矢！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8弓
+      &7
+      &7射出岩浆箭矢！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &f&l常见
+    levels:
+      level1:
+        level: 1
+        dropChance: 10
+        requiredLevel: 2
+      level2:
+        level: 2
+        dropChance: 5
+        requiredLevel: 3
+      level3:
+        level: 3
+        dropChance: 3
+        requiredLevel: 4
+      level4:
+        level: 4
+        dropChance: 1
+        requiredLevel: 5
+  gem:
+    probability: 10
+    particle: VILLAGER_HAPPY
+    name: '&2♦ 宝石符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhMWFkNGZjYzQyZmI2M2M2ODEzMjhlNDJkNjNjODNjYTE5M2IzMzNhZjJhNDI2NzI4YTI1YThjYzYwMDY5MiJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7在你的箭矢后面
+      &7产生宝石效果！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8弓
+      &7
+      &7在你的箭矢后面
+      &7产生宝石效果！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &f&l常见
+    levels:
+      level1:
+        level: 1
+        dropChance: 10
+        requiredLevel: 2
+      level2:
+        level: 2
+        dropChance: 5
+        requiredLevel: 3
+      level3:
+        level: 3
+        dropChance: 3
+        requiredLevel: 4
+      level4:
+        level: 4
+        dropChance: 1
+        requiredLevel: 5
+  golden:
+    probability: 2
+    particle: CLOUD
+    name: '&e♦ 金色符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVmNDg2MWFhNWIyMmVlMjhhOTBlNzVkYWI0NWQyMjFlZmQxNGMwYjFlY2M4ZWU5OThmYjY3ZTQzYmI4ZjNkZSJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7用金色箭矢炫耀你的
+      &7财富！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8弓
+      &7
+      &7用金色箭矢炫耀你的
+      &7财富！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &5&l史诗
+    levels:
+      level1:
+        level: 1
+        dropChance: 2
+        requiredLevel: 3
+      level2:
+        level: 2
+        dropChance: 1
+        requiredLevel: 4
+      level3:
+        level: 3
+        dropChance: 0.5
+        requiredLevel: 5
+      level4:
+        level: 4
+        dropChance: 0.25
+        requiredLevel: 6
+  blood:
+    probability: 10
+    particle: REDSTONE
+    name: '&c♦ 血液符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdhN2E4OTQwNTdkNGExZmYyMmExNjFkNzY2MDBmNzE5ZGE1NzkxNjYzM2Y2ODM4MDhjZjRkMzU4YmI3M2EyMSJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7击杀怪物时
+      &7产生血液效果！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8武器
+      &7
+      &7击杀怪物时
+      &7产生血液效果！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &f&l常见
+    levels:
+      level1:
+        level: 1
+        dropChance: 10
+        requiredLevel: 2
+      level2:
+        level: 2
+        dropChance: 5
+        requiredLevel: 3
+      level3:
+        level: 3
+        dropChance: 3
+        requiredLevel: 4
+      level4:
+        level: 4
+        dropChance: 1
+        requiredLevel: 5
+  lightning:
+    probability: 1
+    particle: CLOUD
+    name: '&9♦ 闪电符文 <level>'
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg1YmNmN2Y4MmQzNGRiODlhOTVhZGRmOGU1MzI1M2UyZDk1NTRjNmZkMmYyZTM5ZTI0MzYyZDI0M2EwY2NmNyJ9fX0=
+    addLore: |-
+      &7
+      <name>:
+      &7有一定几率对你击败的
+      &7敌人降下闪电！
+      &7
+    lore: |-
+      &8需要等级 <level>
+      &8武器
+      &7
+      &7有一定几率对你击败的
+      &7敌人降下闪电！
+      &7
+      &7将此符文应用到武器上或
+      &7在符文祭坛将两个符文
+      &7融合在一起
+      &7
+      &6&l传说
+    levels:
+      level1:
+        level: 1
+        dropChance: 1
+        requiredLevel: 5
+      level2:
+        level: 2
+        dropChance: 0.5
+        requiredLevel: 7
+      level3:
+        level: 3
+        dropChance: 0.2
+        requiredLevel: 9
+      level4:
+        level: 4
+        dropChance: 0.1
+        requiredLevel: 11
+runes:
+  spawn:
+    loc: Server;40.5;98.0;-61.5;255.6128;85.90202

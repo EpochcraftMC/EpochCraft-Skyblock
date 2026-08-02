@@ -1,0 +1,406 @@
+type: COMBAT
+simple: "战斗"
+name: "&a战斗技能"
+levelName: "&a战斗 <level>"
+level: "战斗等级 <level>"
+desc:
+  - "&7与怪物和玩家战斗来"
+  - "&7获得战斗经验值！"
+levelIcon:
+  - "&e战士 <level>"
+  - "&a<chance>%&f 对怪物造成"
+  - "&f更多伤害。"
+levelDesc:
+  - "&7奖励："
+  - "<rewards>"
+icon:
+  material: STONE_SWORD
+  data: 0
+  amount: 1
+  mainSlot: 21
+  levelSlot: 0
+specialIcon:
+  material: HAY_BLOCK
+  data: 0
+levels:
+  level1:
+    level: 1
+    slot: 9
+    page: 1
+    levelUp: 50
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:25"
+    lore:
+      - "&7 &e战士 I"
+      - "&7  &f对怪物造成 &a4%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&625 &7硬币"
+  level2:
+    level: 2
+    slot: 18
+    page: 1
+    levelUp: 125
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:50"
+    lore:
+      - "&7 &e战士 II"
+      - "&7  &f对怪物造成 &84➜&a8%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&650 &7硬币"
+  level3:
+    level: 3
+    slot: 27
+    page: 1
+    levelUp: 250
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:100"
+      - "COMMAND:lp user <player> permission set jumppad.spiders-den true"
+    lore:
+      - "&7 &e战士 III"
+      - "&7  &f对怪物造成 &88➜&a12%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &a可进入 &c蜘蛛巢穴"
+      - "&7 &8+&6100 &7硬币"
+  level4:
+    level: 4
+    slot: 28
+    page: 1
+    levelUp: 500
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:200"
+    lore:
+      - "&7 &e战士 IV"
+      - "&7  &f对怪物造成 &812➜&a16%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6200 &7硬币"
+  level5:
+    level: 5
+    slot: 29
+    page: 1
+    levelUp: 1000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:300"
+    lore:
+      - "&7 &e战士 V"
+      - "&7  &f对怪物造成 &816➜&a20%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6300 &7硬币"
+  level6:
+    level: 6
+    slot: 20
+    page: 1
+    levelUp: 1500
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:400"
+    lore:
+      - "&7 &e战士 VI"
+      - "&7  &f对怪物造成 &820➜&a24%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6400 &7硬币"
+  level7:
+    level: 7
+    slot: 11
+    page: 1
+    levelUp: 2000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:500"
+    lore:
+      - "&7 &e战士 VII"
+      - "&7  &f对怪物造成 &824➜&a28%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6500 &7硬币"
+  level8:
+    level: 8
+    slot: 2
+    page: 1
+    levelUp: 2500
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:600"
+    lore:
+      - "&7 &e战士 VIII"
+      - "&7  &f对怪物造成 &828➜&a32%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6600 &7硬币"
+  level9:
+    level: 9
+    slot: 3
+    page: 1
+    levelUp: 3000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:700"
+    lore:
+      - "&7 &e战士 IX"
+      - "&7  &f对怪物造成 &832➜&a36%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6700 &7硬币"
+  level10:
+    level: 10
+    slot: 4
+    page: 1
+    levelUp: 3500
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:800"
+      - "COMMAND:lp user <player> permission set jumppad.nether true"
+    lore:
+      - "&7 &e战士 X"
+      - "&7  &f对怪物造成 &836➜&a40%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &a可进入 &c下界"
+      - "&7 &8+&6800 &7硬币"
+  level11:
+    level: 11
+    slot: 13
+    page: 1
+    levelUp: 4500
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:900"
+    lore:
+      - "&7 &e战士 XI"
+      - "&7  &f对怪物造成 &840➜&a44%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6900 &7硬币"
+  level12:
+    level: 12
+    slot: 22
+    page: 1
+    levelUp: 6000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1000"
+      - "COMMAND:lp user <player> permission set jumppad.the-end true"
+    lore:
+      - "&7 &e战士 XII"
+      - "&7  &f对怪物造成 &844➜&a48%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &a可进入 &d末地"
+      - "&7 &8+&61,000 &7硬币"
+  level13:
+    level: 13
+    slot: 31
+    page: 1
+    levelUp: 7500
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1100"
+    lore:
+      - "&7 &e战士 XIII"
+      - "&7  &f对怪物造成 &848➜&a52%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,100 &7硬币"
+  level14:
+    level: 14
+    slot: 32
+    page: 1
+    levelUp: 9000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1200"
+    lore:
+      - "&7 &e战士 XIV"
+      - "&7  &f对怪物造成 &852➜&a56%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,200 &7硬币"
+  level15:
+    level: 15
+    slot: 33
+    page: 1
+    levelUp: 11000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1300"
+    lore:
+      - "&7 &e战士 XV"
+      - "&7  &f对怪物造成 &856➜&a60%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,300 &7硬币"
+  level16:
+    level: 16
+    slot: 24
+    page: 1
+    levelUp: 13000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1400"
+    lore:
+      - "&7 &e战士 XVI"
+      - "&7  &f对怪物造成 &860➜&a64%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,400 &7硬币"
+  level17:
+    level: 17
+    slot: 15
+    page: 1
+    levelUp: 15000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1500"
+    lore:
+      - "&7 &e战士 XII"
+      - "&7  &f对怪物造成 &844➜&a48%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,000 &7硬币"
+  level18:
+    level: 18
+    slot: 6
+    page: 1
+    levelUp: 20000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1600"
+    lore:
+      - "&7 &e战士 XVII"
+      - "&7  &f对怪物造成 &864➜&a68%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,500 &7硬币"
+  level19:
+    level: 19
+    slot: 7
+    page: 1
+    levelUp: 25000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:1800"
+    lore:
+      - "&7 &e战士 IX"
+      - "&7  &f对怪物造成 &832➜&a36%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&6700 &7硬币"
+  level20:
+    level: 20
+    slot: 8
+    page: 1
+    levelUp: 30000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:2000"
+    lore:
+      - "&7 &e战士 XX"
+      - "&7  &f对怪物造成 &876➜&a80%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&62,000 &7硬币"
+  level21:
+    level: 21
+    slot: 17
+    page: 1
+    levelUp: 33000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:2200"
+    lore:
+      - "&7 &e战士 XXI"
+      - "&7  &f对怪物造成 &880➜&a84%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&62,200 &7硬币"
+  level22:
+    level: 22
+    slot: 26
+    page: 1
+    levelUp: 40000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:2400"
+    lore:
+      - "&7 &e战士 XXII"
+      - "&7  &f对怪物造成 &884➜&a88%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&62,400 &7硬币"
+  level23:
+    level: 23
+    slot: 35
+    page: 1
+    levelUp: 42000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:2600"
+    lore:
+      - "&7 &e战士 XVIII"
+      - "&7  &f对怪物造成 &868➜&a72%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,600 &7硬币"
+  level24:
+    level: 24
+    slot: 44
+    page: 1
+    levelUp: 45000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:2800"
+    lore:
+      - "&7 &e战士 XIX"
+      - "&7  &f对怪物造成 &872➜&a76%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&61,800 &7硬币"
+  level25:
+    level: 25
+    slot: 53
+    page: 1
+    levelUp: 50000
+    rewards:
+      - "ADDDAMAGE:4"
+      - "ADDCRITCHANCE:0.5"
+      - "COINS:3000"
+    lore:
+      - "&7 &e战士 XXV"
+      - "&7  &f对怪物造成 &896➜&a100%&f 更多"
+      - "&7  &f伤害。"
+      - "&7 &8+&a0.5% &9<crit>&9暴击几率"
+      - "&7 &8+&63,000 &7硬币"

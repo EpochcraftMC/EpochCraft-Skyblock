@@ -1,0 +1,96 @@
+#
+apply:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: false
+    list:
+      - {player}
+  sound:
+    enabled: false
+    type: 'villager_yes'
+    volume: 1
+    pitch: 0
+#
+remove:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: false
+    list:
+      - {player}
+  sound:
+    enabled: false
+    type: 'villager_no'
+    volume: 1
+    pitch: 0
+#
+set-data:
+  1:
+    type: hand
+    damage-increase: 1.34
+    damage-cause: ENTITY_ATTACK
+#
+set-pieces:
+  hand:
+    name: '&6迈达斯之剑'
+    item: gold_sword
+    data: 0
+    lore:
+      - '&7伤害: &c+150'
+      - '           '
+      - '&6物品技能: 贪婪'
+      - '&7此物品的力量和伤害加成取决于'
+      - '&7在 &5黑暗&5拍卖&7 中为其支付的'
+      - '&7价格！'
+      - '&7如果出价达到 &650,000,000 金币 &7或更高，'
+      - '&7此物品的最大加成为 &c120 &7。'
+      - '&4&4'
+      - '&6&l传奇之剑'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+#
+gui:
+  name: '&8生成物品'
+  type: none
+  size: 27
+  1:
+    slot: 0
+    action: hand
+    name: '&6迈达斯之剑'
+    item: gold_sword
+    data: 0
+    lore:
+      - '&7伤害: &c+150'
+      - '           '
+      - '&6物品技能: 贪婪'
+      - '&7此物品的力量和伤害加成取决于'
+      - '&7在 &5黑暗&5拍卖&7 中为其支付的'
+      - '&7价格！'
+      - '&7如果出价达到 &650,000,000 金币 &7或更高，'
+      - '&7此物品的最大加成为 &c120 &7。'
+      - '&4&4'
+      - '&6&l传奇之剑'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  5:
+    slot: 22
+    action: back
+    name: '&a返回'
+    item: ARROW
+    data: 0
+    lore:
+    enchantments:
+    item-flags:

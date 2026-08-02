@@ -1,0 +1,22 @@
+name: 举报玩家
+title: 举报玩家
+author: Server
+generation: ORIGINAL
+lore:
+- 举报
+open_command: ''
+
+pages:
+  '1':
+  - '为举报 %skript_1::{player}% 选择一个理由：'
+  - ''
+  - '<tooltip:&7点击以“杀戮光环”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% KillAura> &8⦿&0 杀戮光环<reset>'
+  - '<tooltip:&7点击以“自动瞄准”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% Aimbot> &8⦿&0 自动瞄准<reset>'
+  - '<tooltip:&7点击以“防击退”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% AntiKnockback> &8⦿&0 防击退<reset>'
+  - '<tooltip:&7点击以“飞行”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% Fly> &8⦿&0 飞行<reset>'
+  - '<tooltip:&7点击以“水上行走”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% Jesus> &8⦿&0 水上行走<reset>'
+  - '<tooltip:&7点击以“快速挖掘”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% FastBreak> &8⦿&0 快速挖掘<reset>'
+  - '<tooltip:&7点击以“快速放置”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% FastPlace> &8⦿&0 快速放置<reset>'
+  - '<tooltip:&7点击以“其他”举报 %skript_1::{player}%><run command:/areport %skript_1::{player}% Other> &8⦿&0 其他<reset>'
+  - ''
+  - '    <tooltip:&c点击取消><run command:/cancelreport>&c取消举报<reset>'

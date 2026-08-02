@@ -1,0 +1,15 @@
+name: 商店退款
+title: 商店退款
+author: Server
+generation: ORIGINAL
+lore:
+- 商店退款
+open_command: ''
+
+pages:
+  '1':
+  - '&c注意！&0'
+  - '在商店最近进行的一次购买正在被申请争议以撤销付款。'
+  - ''
+  - '请联系'
+  - '<tooltip:&b点击加入我们的 Discord 服务器><link:http://discord.gg/8xh2P9Q>&b&nEpochCraft 支持团队<reset>&r &0以解决此事，否则你将被永久封禁。'

@@ -1,0 +1,475 @@
+# 不要删除此行
+config-version: '2.0'
+
+# ******************************************************
+# * Chatty (版本 2.18)
+#   适用于 Bukkit 服务器的通用聊天系统。
+#
+#   作者: MrBrikster
+#
+# * 可选依赖:
+#   Vault, PlaceholderAPI, NameTagEdit。
+# ******************************************************
+
+# * 通用
+# * GENERAL
+general:
+  # 插件本地化。
+  #
+  # en - 英语。
+  # ru - 俄语。
+  # de - 德语。
+  locale: en
+
+  # 聊天监听器优先级。
+  # 可能的值:
+  # lowest, low, normal, high, highest。
+  priority: highest
+
+  # 在 "plugins/Chatty/logs/" 中记录聊天日志。
+  log: false
+
+  # 完全取消聊天事件，
+  # 如果它被审核方法取消
+  # （而不是清空收件人）。
+  completely-cancel: false
+
+  # 玩家数据的存储模式。
+  # true - 数据将按 UUID 存储。
+  # false - 数据将按昵称存储。
+  uuid: false
+
+  # 启用对 "-3" 聊天范围的支持。
+  # 来自这些聊天的消息将发送到所有安装了 Chatty 的 BungeeCord 服务器。
+  #
+  # 注意:
+  # * 控制台日志不会在空的 BungeeCord 服务器上显示（无法修复）
+  # * 因此 Chatty 要向另一台服务器发送消息，必须有同名的聊天且范围为 -3。
+  #
+  # ！！！ Chatty 也必须安装在 BungeeCord 上 ！！！
+  bungeecord: false
+
+# * 聊天
+# * CHATS
+#
+# 服务器上可以有不同的聊天，具有不同的设置，
+# 无论是捐赠聊天、管理员聊天，还是通常的本地和全局聊天。
+#
+# 权限:
+# chatty.chat.<聊天> - 写入和查看消息的权限。
+# chatty.chat.<聊天>.write - 写入消息的权限。
+# chatty.chat.<聊天>.see - 查看消息的权限。
+#
+# 聊天具有以下选项:
+# *enable*      - 聊天开关。
+# *format*      - 聊天格式字符串。
+# *range*       - 聊天范围。-1 为全服聊天，-2 为跨世界聊天，-3 为跨 BungeeCord 聊天。
+# *symbol*      - 消息开头应包含的字符。
+# *cooldown*    - 消息冷却时间（秒）（绕过权限 - chatty.cooldown.<聊天>）。
+# *money*       - 消息价格（取决于 Vault）。
+# *permission*  - 检查此聊天的权限？默认: true。
+# *command*     - 用于切换到聊天的命令，以便在未指定符号时默认使用。默认: 空。
+chats:
+  default:
+    enable: true
+    format: '%vault_prefix%%player_displayname%&7: &7{message}'
+    range: -2
+    cooldown: 2
+    command: 'default'
+  staff:
+    permission: true
+    enable: true
+    format: '&f[管理聊天] %vault_prefix%%player_displayname%&7: &f{message}'
+    range: -2
+    symbol: '!s'
+    command: 'staff'
+
+# * 私信
+# * PRIVATE MESSAGING
+pm:
+  # 启用私信功能。
+  enable: true
+
+  # 允许控制台给玩家发送消息
+  # 以及玩家给控制台发送消息。
+  allow-console: true
+
+  # 消息格式
+  #
+  # 变量:
+  # {sender-name}, {recipient-name} - 发送者和接收者的昵称。
+  # {sender-prefix}, {recipient-prefix} - 发送者和接收者的前缀。
+  # {sender-suffix}, {recipient-suffix} - 发送者和接收者的后缀。
+  # {message} - 私信消息。
+  format:
+    recipient: '&d来自 &7{sender-prefix}{sender-name}&d: &f{message}'
+    sender: '&d发给 &7{recipient-prefix}{recipient-name}&d: &f{message}'
+
+  commands:
+    msg:
+      # 启用 "/msg" 命令。
+      # 权限: chatty.command.msg
+      enable: true
+      # "/msg" 命令的别名。
+      aliases: ['message', 'pm', 'm', 'w', 'tell', 'etell', 'emessage', 'epm', 'msg']
+
+    reply:
+      # 启用 "/reply" 命令。
+      # 权限: chatty.command.reply
+      enable: true
+      # "/reply" 命令的别名。
+      aliases: ['r', 'ereply', 'r',]
+
+    ignore:
+      # 启用 "/ignore" 命令。
+      # 权限: chatty.command.ignore
+      enable: false
+      # "/ignore" 命令的别名。
+      aliases: []
+
+# * 监控
+# * SPY
+#
+# 监控聊天和私信的模式。
+spy:
+  enable: true
+
+  # 监控模式的消息格式。
+  format:
+    # 权限: chatty.spy.<聊天>
+    chat: '&c[⚠] &r{format}'
+
+    # 权限: chatty.spy.pm
+    #
+    # 使用发送者的私信格式。
+    # 支持变量:
+    # {format}, {sender-prefix}, {sender-name}, {sender-suffix},
+    # {recipient-prefix}, {recipient-name}, {recipient-suffix}, {message}
+    pm: '&c[⚠] &7{sender-prefix}{sender-name} &c» &7{recipient-prefix}{recipient-name}&c: &f{message}'
+
+# * JSON
+#
+# 带有额外交互功能的聊天格式。
+#
+# 1.7.10 及以上版本。
+json:
+  enable: true
+
+  # 点击玩家姓名时（由玩家）执行的命令或文本。
+  #
+  # *** 你只能使用 "command"、"suggest" 或 "link" 中的一种。
+  #
+  # 支持 PlaceholderAPI。
+  # 你可以在这里使用 "{player}" 变量。
+  command: /home
+
+  # 点击玩家姓名时建议输入的命令或文本。
+  #
+  # *** 你只能使用 "command"、"suggest" 或 "link" 中的一种。
+  #
+  # 支持 PlaceholderAPI。
+  # 你可以在这里使用 "{player}" 变量。
+  suggest: '/msg {player} '
+
+  # 点击玩家姓名时打开的 URL。
+  #
+  # 你必须使用 "http://" 或 "https://" 前缀，否则会使 Minecraft 客户端崩溃 :D
+  #
+  # *** 你只能使用 "command"、"suggest" 或 "link" 中的一种。
+  #
+  # 支持 PlaceholderAPI。
+  # 你可以在这里使用 "{player}" 变量。
+  link: 'http://google.com'
+
+  # 玩家姓名的悬停提示。
+  # 支持 PlaceholderAPI。
+  #
+  # 你可以在这里使用 "{player}" 变量。
+  tooltip:
+  - '&f玩家 &e{player}'
+  - '&f此提示支持'
+  - '&fPlaceholderAPI 占位符！'
+
+  # 脏话悬停提示。
+  #
+  # 可用属性:
+  # tooltip, suggest
+  #
+  # 权限: chatty.swears.see
+  swears:
+    enable: true
+    tooltip:
+    - '&o{word}'
+    - ''
+    - '&e点击此处将单词加入白名单。'
+    suggest: /swears add {word}
+
+  # 聊天格式的替换。
+  #
+  # 你可以将一些纯文本替换为可点击的部分，
+  # 使聊天更具互动性。
+  #
+  # 可用属性:
+  # text, tooltip, command, suggest, link。
+  replacements:
+    '[RANK]':
+      original: '[RANK]'
+      text: '%vault_prefix%'
+      tooltip:
+      - ''
+
+# * 通知
+# * NOTIFICATIONS
+#
+# 有四种类型的通知:
+# 通过聊天、标题 (1.8.8 及以上)、动作栏 (1.8.8 及以上) 和进度 (1.12 及以上)。
+notifications:
+  # 聊天通知。
+  chat:
+    # 聊天通知开关。
+    enable: false
+
+    # 通知列表。
+    lists:
+      # 列表 "default"。
+      # 权限: chatty.notification.chat.default
+      default:
+        # 消息间隔。
+        time: 99
+
+        # 消息前缀。
+        prefix: ''
+
+        # 消息列表。
+        messages:
+        - '&c该服务器正在使用 Chatty！\n&a我们的地址: 127.0.0.1\n&a访问我们的网站: example.com'
+        - '&a该服务器正在使用 Chatty！'
+
+        # 查看通知所需的权限。
+        # 默认: true
+        permission: false
+
+  # 动作栏通知。
+  # 它是静态通知，
+  # 按间隔更改消息。
+  #
+  # 权限: chatty.notification.actionbar
+  actionbar:
+    # 动作栏通知开关。
+    # 仅限 1.8+
+    enable: false
+
+    # 单条消息的时间。
+    time: 2
+
+    # 消息前缀。
+    prefix: '&7'
+
+    # 消息列表。
+    messages:
+    - '&cxddd'
+    - '&c%player_health_rounded%/%player_max_health_rounded%❤    &a%currdata_defense%❇ 防御    &b100/100✎ 蓝量'
+
+    # 查看通知所需的权限。
+    # 默认: true
+    permission: true
+
+  # 标题通知。
+  title:
+    # 标题通知开关。
+    enable: false
+
+    # 通知列表。
+    lists:
+      # 列表 "default"。
+      # 权限: chatty.notification.title.default
+      default:
+        # 消息间隔。
+        time: 60
+
+        # 消息列表。
+        messages:
+        - '&c该服务器正在使用 Chatty！\n&e我们的地址: 127.0.0.1'
+        - '&a该服务器正在使用 Chatty！'
+
+        # 查看通知所需的权限。
+        # 默认: true
+        permission: false
+
+  # 进度（成就）通知。
+  advancements:
+    # 进度通知。
+    # 仅限 1.12 及以上。
+    enable: false
+    # 通知列表。
+    lists:
+      # 列表 "default"。
+      # 权限: chatty.notification.advancements.default
+      default:
+        # 消息间隔。
+        time: 60
+
+        # 消息列表。
+        messages:
+        - icon: 'minecraft:diamond'
+          header: '&bChatty v.2.18'
+          footer: '&f感谢使用！'
+        - icon: 'minecraft:gold_ingot'
+          header: '&eChatty v.2.18'
+          footer: '&f感谢使用！'
+
+        # 查看通知所需的权限。
+        # 默认: true
+        permission: false
+
+# * 审核
+# * MODERATION
+#
+# 自动聊天审核工具。
+# 适用于私信。
+moderation:
+  caps:
+    # 全大写保护开关。
+    # 绕过权限: chatty.moderation.caps
+    enable: true
+
+    # 进行全大写检查的消息最小长度。
+    length: 6
+
+    # 触发全大写检查的最小大写百分比。
+    percent: 80
+
+    # 全大写消息拦截开关。
+    # 当为 false 时，消息将以小写发送。
+    block: true
+
+  advertisement:
+    # 广告保护开关。
+    # 绕过权限: chatty.moderation.advertisement
+    enable: false
+
+    # IP 地址和网站的常规表达式。
+    patterns:
+      ip: '(?:\d{1,3}[.,-:;\/()=?}+ ]{1,4}){3}\d{1,3}'
+      web: '[-a-zA-Zа-яА-Я0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Zа-яА-Я0-9@:%_\+~#?&//=]*)?'
+
+    # 全大写消息拦截开关。
+    # 当为 false 时，广告将被替换。
+    block: false
+
+    # 广告的替换文本。
+    replacement: '<advertisement>'
+
+    # 白名单 IP 地址和网站。
+    whitelist:
+    - 'example.com'
+    - 'vk.com'
+    - 'google.com'
+    - 'youtube.com'
+    - 'yandex.ru'
+    - '192.168.1.1'
+    - '127.0.0.1'
+
+  swear:
+    # 脏话保护开关。
+    # 绕过权限: chatty.moderation.swear
+    enable: true
+
+    # 脏话消息拦截开关。
+    # 当为 false 时，脏话将被替换。
+    block: true
+
+    # 脏话的替换文本。
+    replacement: '<swear>'
+    # 带脏话的文件位于 "Chatty/swears"
+
+# * 其他
+# * MISCELLANEOUS
+miscellaneous:
+  commands:
+    # 用于切换默认聊天（当未指定符号时）: /chat <聊天>
+    # 权限: chatty.command.chat
+    chat:
+      enable: true
+      aliases: ['chats', 'switchchat']
+
+    # 为你自己清除聊天: /clearchat
+    # 权限: chatty.command.clearchat
+    #
+    # 为所有人清除聊天: /clearchat all
+    # 权限: chatty.command.clearchat.all
+    clearchat:
+      enable: true
+      aliases: ['chatclear']
+
+    # 更改聊天（以及 NametagEdit，如果启用）前缀
+    # /prefix <玩家> <前缀>
+    #
+    # 权限:
+    # chatty.command.prefix
+    # chatty.command.prefix.others
+    prefix:
+      enable: false
+
+      # 在前缀后自动附加一个子字符串。
+      after-prefix: ' '
+
+      # 限制前缀长度（包含 "after-prefix"）
+      length-limit:
+        min: 3
+        max: 16
+
+      # 在 NametagEdit 中自动应用。
+      # （需要 NameTagEdit 插件）。
+      auto-nte: false
+
+    # 更改聊天（以及 NametagEdit，如果启用）后缀
+    # /suffix <玩家> <后缀>
+    #
+    # 权限:
+    # chatty.command.suffix
+    # chatty.command.suffix.others
+    suffix:
+      enable: true
+
+      # 在后缀前自动附加一个子字符串。
+      before-suffix: ' '
+
+      # 限制后缀长度（包含 "before-suffix"）
+      length-limit:
+        min: 3
+        max: 16
+
+      # 在 NametagEdit 中自动应用。
+      # （需要 NameTagEdit 插件）。
+      auto-nte: false
+
+  # 更改原版 Minecraft 消息。
+  vanilla:
+    join:
+      enable: false
+
+      # 设置为 '' 可将其隐藏。
+      message: '&e{prefix}{player}{suffix} &e加入了服务器。'
+
+      # 权限: chatty.misc.joinmessage
+      # 默认: true
+      permission: false
+    quit:
+      enable: false
+
+      # 设置为 '' 可将其隐藏。
+      message: '&e{prefix}{player}{suffix} &e离开了服务器。'
+
+      # 权限: chatty.misc.quitmessage
+      # 默认: true
+      permission: false
+    death:
+      enable: false
+
+      # 设置为 '' 可将其隐藏。
+      message: '&c ☠&r %player_display% &7死亡或被击杀。'
+
+      # 权限: chatty.misc.deathmessage
+      # 默认: true
+      permission: false

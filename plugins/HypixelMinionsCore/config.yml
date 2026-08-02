@@ -1,0 +1,139 @@
+placeholders:
+  defense:
+    name: 'defense'
+    zero-display: '0'
+    normal-display: '%value%'
+  bonusdefense:
+    name: 'bonusdefense'
+    zero-display: '0'
+    normal-display: '%value%'
+  strength:
+    name: 'strength'
+    zero-display: '0'
+    normal-display: '%value%'
+  bonusstrength:
+    name: 'bonusstrength'
+    zero-display: '0'
+    normal-display: '%value%'
+  speed:
+    name: 'speed'
+    zero-display: '100'
+    normal-display: '%value%'
+  bonusspeed:
+    name: 'bonusspeed'
+    zero-display: '0'
+    normal-display: '%value%'
+  critdamage:
+    name: 'critdamage'
+    zero-display: '0'
+    normal-display: '%value%'
+  bonuscritdamage:
+    name: 'bonuscritdamage'
+    zero-display: '0'
+    normal-display: '%value%'
+  critchance:
+    name: 'critchance'
+    zero-display: '0'
+    normal-display: '%value%'
+  bonuscritchance:
+    name: 'bonuscritchance'
+    zero-display: '0'
+    normal-display: '%value%'
+  intelligence:
+    name: 'intelligence'
+    zero-display: '0'
+    normal-display: '%value%'
+  bonusintelligence:
+    name: 'bonusintelligence'
+    zero-display: '0'
+    normal-display: '%value%'
+  collections:
+    name: 'collections'
+    zero-display: '0'
+    normal-display: '%value%'
+  recipes:
+    name: 'recipes'
+    zero-display: '0'
+    normal-display: '%value%'
+  trades:
+    name: 'trades'
+    zero-display: '0'
+    normal-display: '%value%'
+  farmingcollection:
+    name: 'farmingcollection'
+    zero-display: '0'
+    normal-display: '%value%'
+  miningcollection:
+    name: 'miningcollection'
+    zero-display: '0'
+    normal-display: '%value%'
+  combatcollection:
+    name: 'combatcollection'
+    zero-display: '0'
+    normal-display: '%value%'
+  foragingcollection:
+    name: 'foragingcollection'
+    zero-display: '0'
+    normal-display: '%value%'
+  farmingrecipes:
+    name: 'farmingrecipes'
+    zero-display: '0'
+    normal-display: '%value%'
+  miningrecipes:
+    name: 'miningrecipes'
+    zero-display: '0'
+    normal-display: '%value%'
+  combatrecipes:
+    name: 'combatrecipes'
+    zero-display: '0'
+    normal-display: '%value%'
+  foragingrecipes:
+    name: 'foragingrecipes'
+    zero-display: '0'
+    normal-display: '%value%'
+  enchantingrecipes:
+    name: 'enchantingrecipes'
+    zero-display: '0'
+    normal-display: '%value%'
+  totalfairysouls:
+    name: 'totalfairysouls'
+    zero-display: '62'
+    normal-display: '%value%'
+  fairysouls:
+    name: 'fairysouls'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_village:
+    name: 'fairysouls_village'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_deepcaverns:
+    name: 'fairysouls_deepcaverns'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_farm:
+    name: 'fairysouls_farm'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_barn:
+    name: 'fairysouls_barn'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_forests:
+    name: 'fairysouls_forests'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_spidersden:
+    name: 'fairysouls_spidersden'
+    zero-display: '0'
+    normal-display: '%value%'
+  fairysouls_nether:
+    name: 'fairysouls_nether'
+    zero-display: '0'
+    normal-display: '%value%'
+
+placeholders-text:
+  mission:
+    name: 'mission'
+    zero-display: '无'
+    normal-display: '%value%'

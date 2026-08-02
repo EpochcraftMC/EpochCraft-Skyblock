@@ -1,0 +1,28 @@
+on first join:
+    make the server execute command "/lp user %player's name% permission set skyblock.menu.locked true"
+    make the server execute command "/lp user %player's name% permission set missions.break-a-log true"
+    make the server execute command "/customplaceholders set %player's name% mission 砍一棵原木"
+    message ""
+    message ""
+    message "&7正在传送到你的岛屿……"
+    message "&e▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    message "&f&l          欢迎来到空岛，&7%player's name%&f&l！"
+    message ""
+    message "&e               这是你的岛屿，空岛"
+    message "&e            宇宙中有许多土地等待你去发现，"
+    message "&e         有秘密等待你去揭开，还有人们等待你去结识。"
+    message "&e            收集资源、合成物品，并"
+    message "&e         完成任务以在空岛中不断前进。"
+    message "&e                          祝你玩得开心！"
+    message ""
+    message "&e▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    message ""
+    message "&7  &6&l新目标"
+    message "&f  砍伐一棵原木"
+    message ""
+    wait 20 ticks
+    make the server execute command "/ij get skyblock-menu-locked %player's name%"
+
+on join:
+    wait 3 ticks
+    make the player execute command "/is"

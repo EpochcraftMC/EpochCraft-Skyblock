@@ -1,0 +1,252 @@
+#
+apply:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: true
+    list:
+      - usbc skills give defense {player} 80
+      - usbc skills give health {player} 40
+  sound:
+    enabled: false
+    type: 'villager_yes'
+    volume: 1
+    pitch: 0
+#
+remove:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: true
+    list:
+      - usbc skills remove defense {player} 80
+      - usbc skills remove health {player} 40
+  sound:
+    enabled: false
+    type: 'villager_no'
+    volume: 1
+    pitch: 0
+#
+set-data:
+  1:
+    type: basic
+    damage-increase: -1
+    damage-reduction: -1
+    health: -1
+    kb: -1
+    speed:
+      walk:
+        set: 0.20
+        default: 0.20
+      fly:
+        set: 0.20
+        default: 0.20
+    status-effects:
+#
+set-pieces:
+  helmet:
+    commands:
+      apply:
+        - usbc skills give defense {player} 50
+      remove:
+        - usbc skills remove defense {player} 50
+    name: '&9绿宝石头盔'
+    item: leather_helmet
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+50'
+      - '           '
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有头盔'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  chestplate:
+    commands:
+      apply:
+        - usbc skills give defense {player} 100
+      remove:
+        - usbc skills remove defense {player} 100
+    name: '&9绿宝石胸甲'
+    item: leather_chestplate
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+100'
+      - '           '
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有胸甲'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  leggings:
+    commands:
+      apply:
+        - usbc skills give defense {player} 75
+      remove:
+        - usbc skills remove defense {player} 75
+    name: '&9绿宝石护腿'
+    item: leather_leggings
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+75'
+      - '           '
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有护腿'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  boots:
+    commands:
+      apply:
+        - usbc skills give defense {player} 45
+      remove:
+        - usbc skills remove defense {player} 45
+    name: '&9绿宝石靴子'
+    item: leather_boots
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+45'
+      - '           '
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有靴子'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+#
+gui:
+  name: '&8生成物品'
+  type: none
+  size: 27
+  1:
+    slot: 0
+    action: helmet
+    name: '&9绿宝石头盔'
+    item: leather_helmet
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+50'
+      - '&7&c'
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有头盔'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  2:
+    slot: 1
+    action: chestplate
+    name: '&9绿宝石胸甲'
+    item: leather_chestplate
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+100'
+      - '&7&c'
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有胸甲'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  3:
+    slot: 2
+    action: leggings
+    name: '&9绿宝石护腿'
+    item: leather_leggings
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+75'
+      - '&7&c'
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有护腿'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  4:
+    slot: 3
+    action: boots
+    name: '&9绿宝石靴子'
+    item: leather_boots
+    data: 0
+    color: 51:255:51
+    lore:
+      - '&7防御: &a+45'
+      - '&7&c'
+      - '&6全套加成: 坦克'
+      - '&7将 &a❇ 防御&7 提升 &a+80'
+      - '&7并将 &c❤ 生命值&7 提升 &a+40 HP&7。'
+      - '&8&4'
+      - '&9&l稀有靴子'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  5:
+    slot: 22
+    action: back
+    name: '&a返回'
+    item: ARROW
+    data: 0
+    lore:
+    enchantments:
+    item-flags:

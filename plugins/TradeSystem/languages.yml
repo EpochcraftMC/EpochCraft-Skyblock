@@ -1,0 +1,86 @@
+do:not:touch:this: default
+money_trade_inventory:
+  money_not_added: '&c交易中未添加金钱'
+  title: '&6向交易中添加金钱'
+  cancel_item:
+    name: '&c取消'
+  confirm_item:
+    name: '&e将 &6%money% &e添加到交易中'
+  vault:
+    not_enough_money: '&c你的金钱不够'
+  cannot_remove_money: '&c金钱不能低于 0'
+  money_added: '&a已向交易中添加 &2%money%&a'
+blacklist_command:
+  syntax: '&c无效语法，请使用 /tblacklist <add/remove> <player>'
+  unblacklisted: '&a你将接收来自 &2&l%name% 的交易请求'
+  already_blacklisted: '&c你已将 &4&l%name% 加入黑名单'
+  blacklisted: '&a你将不会收到来自 &4&l%name% 的交易请求'
+  not_blacklisted: '&4&l%name% 不在黑名单中'
+trade_inventory:
+  unlocking_item:
+    name: '&6&l正在解锁物品...'
+  accept_item:
+    name: '&a&l接受交易'
+  cancel_item:
+    name: '&c&l取消交易'
+  invalid_item: '&c此物品无法交易'
+  title: '&8交易中...'
+  lock_item:
+    name: '&c&l物品已锁定'
+  slots_full: '&c槽位已满'
+  money_item:
+    name: '&6%name% 的金钱：&e%money%'
+  end_trading_item:
+    name: '&9&l交易将在 %seconds% 秒后完成'
+prefix: '&9&l交易 '
+trade_request:
+  accept:
+    hover: '&a接受 &2%from%&a 的交易请求'
+    text: '               &2&l接受 '
+  deny:
+    text: "&4&l拒绝            \n&r&8&l&m+----------------------------+"
+    hover: '&c拒绝 &4%from%&c 的交易请求'
+  sent: '&b已向 &9&l%to% 发送交易请求'
+  received: |-
+    &8&l&m+----------------------------+
+    &r
+           &9&l%from% &b想与你交易
+inventories_empty: '&c双方背包都是空的'
+trade_request_expired:
+  sender: '&c发给 &4&l%to% 的交易请求已过期'
+  receiver: '&c来自 &4&l%from% 的交易请求已过期'
+spectate_trade_command:
+  not_trading: '&4%name%&c 没有在交易'
+  syntax: '&c无效语法，请使用 /spectatetrade <player>'
+  stop_spectating: '&c不再观看交易'
+  spectating: '&a正在观看 &2&l%sender%&a -> &2&l%receiver%&a 的交易'
+trade_deny_command:
+  syntax: '&c无效语法，请使用 /tradedeny <player>'
+  not_requested: '&c抱歉，你没有来自 &4&l%name%&c 的交易请求'
+trade_completed: '&a交易成功完成'
+trade_accept_command:
+  not_requested: '&c抱歉，你没有来自 &4&l%name%&c 的交易请求'
+  inventory_open: '&4&l%name%&c 打开了背包，无法开始交易'
+  syntax: '&c无效语法，请使用 /tradeaccept <player>'
+  invalid_player: '&c玩家离线或不存在'
+  creative_trade: '&c服务器禁止创造模式的玩家之间交易'
+trade_request_denied:
+  sender: '&c你发给 &4&l%to%&c 的交易请求已被拒绝'
+  receiver: '&c你拒绝了来自 &4&l%from% 的交易请求'
+trade_cancelled: '&4&l%name%&c 取消了交易'
+trade_command:
+  syntax: '&c无效语法，请使用 /trade <player>'
+  invalid_world: '&c你或 &4&l%name%&c 所在的世界禁止交易'
+  invalid_player: '&c玩家离线、不存在或无效'
+  different_worlds: '&c你和 &4&l%name%&c 不在同一个世界'
+  trades_off: '&4&l%name%&c 已关闭交易'
+  player_too_far: '&4&l%name%&c 离得太远了！'
+not_enough_space: '&4&l%name%&c 的背包空间不足'
+trade_request_accepted:
+  sender: '&9&l%to%&b 已接受你的交易请求'
+  receiver: '&b已接受 &9&l%from%&b 的交易请求'
+no_permission: '&c抱歉，你没有足够的权限这样做'
+wait_expire_time: '&c请等待发给该玩家的上一个请求过期'
+on_cooldown: '&c抱歉，你与 &4&l%name%&c 的交易请求正在冷却中'
+toggletrades_command:
+  toggled: '&b交易已切换为 &9&l%state%'

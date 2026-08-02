@@ -1,0 +1,118 @@
+on rightclick on a villager:
+    player is in "Islands":
+        make the server execute command "/dm open jerry %player%"
+
+
+command /test [<player>]:
+    permission: test.test
+    trigger:
+        if arg 1 is set:
+            if arg 1 is in "Islands":
+                make arg 1 execute command "/is"    
+                stop
+            if arg 1 is in "Server":
+                make arg 1 execute command "/spawn"
+                stop
+        else:
+            stop
+
+on rightclick holding a experience bottle:
+    held item's name is "&aGrand Experience Bottle":
+        make the server execute command "/xp 800 %player's name%"
+        wait 2 ticks
+        make the server execute command "/xp 500 %player's name%"
+        wait 3 ticks
+        make the server execute command "/xp 200 %player's name%"
+        stop
+    held item's name is "&9Titanic Experience Bottle":
+        make the server execute command "/xp 20800 %player's name%"
+        wait 2 ticks
+        make the server execute command "/xp 15500 %player's name%"
+        wait 3 ticks
+        make the server execute command "/xp 13500 %player's name%"
+        stop
+    else:
+        stop
+
+on death of cave spider:
+    attacker is a player
+    if event-world is "Server":
+        send " &5◇ &dYou killed a &5Runic Cave Spider&d! &5◇" to attacker
+        make the server execute command "/skills xp add RUNECRAFTING %attacker's name% 15"
+        stop
+    else:
+        stop
+
+on death of a witch:
+    attacker is a player
+    if event-world is "Server":
+        send " &5◇ &dYou killed a &5Runic Witch&d! &5◇" to attacker
+        make the server execute command "/skills xp add RUNECRAFTING %attacker's name% 25"
+        stop
+    else:
+        stop
+
+command /nocoop:
+    trigger:
+        message "&c你不能发送合作请求，因为你不属于任何 &b合作&c 岛屿！"
+        
+
+command /islandvisit [<player>]:
+    usage: /islandvisit <player>
+    trigger:
+        if arg 1 is set:
+            set {1::%player%} to "%arg 1%"
+            wait 1 ticks
+            make the server execute command "/dm open visit-island %player's name%"
+            stop
+        else:
+            delete {1::%player%}
+            stop
+
+command /delete:
+    trigger:    
+        delete {1::%player%}
+
+on death:
+    attacker is a player
+    victim is a zombie
+    victim's name is "Lvl 7":
+        chance of 2%:
+            make the server execute command "/a+ give lapis-armor %attacker's name% helmet"
+            stop
+        chance of 2%:
+            make the server execute command "/a+ give lapis-armor %attacker's name% chestplate"
+            stop
+        chance of 2%:
+            make the server execute command "/a+ give lapis-armor %attacker's name% leggings"
+            stop
+        chance of 2%:
+            make the server execute command "/a+ give lapis-armor %attacker's name% boots"
+            stop
+
+on damage:
+    attacker is a player
+    attacker's held item's name is "&6Midas's Sword":
+        add 75 to damage
+        stop
+    attacker's held item's name is "&fSpider Sword":
+        victim is a spider, silverfish or a cave spider:
+            add 10 to damage
+            stop
+        else:
+            add 5 to damage
+            stop
+    attacker's held item's name is "&9End Sword":
+        victim is a enderman:
+            add 10 to damage
+            stop
+        else:
+            add 3.5 to damage
+            stop
+    attacker's held item's name is "&fUndead Sword":
+        if victim is a skeleton, zombie or zombie pigman:
+            add 12.5 to damage
+            stop
+        else:
+            add 7.5 to damage
+            stop

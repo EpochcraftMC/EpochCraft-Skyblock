@@ -1,0 +1,11 @@
+messages:
+  noPermission: "&c你没有权限使用此命令！"
+  disablePlace: "&c你不能将物品存放进背包中！"
+  disableCraft: "&c你不能用这种方式合成背包！"
+  giveMessage: "&6{player} &a给了你 &6{backpack}"
+  cooldown: "&c请稍等片刻再打开背包！"
+showContents: true
+
+cooldown: 3000
+displayItemInLore: '&f{item_name} &7x{number}'
+otherItemsInLore: '&7以及另外 &f{amount} &7个物品！' 

@@ -1,0 +1,25 @@
+# 这是 TacoSpigot 的主配置文件。
+# 如你所见，这里有很多可以配置的内容。有些选项可能会影响游戏玩法，请谨慎使用，
+# 并在配置前确保你了解每个选项的作用。
+# 
+# 如果你在配置方面需要帮助或有任何与 TacoSpigot 相关的问题，
+# 欢迎加入我们的 IRC。
+# 
+# IRC: #taco @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=taco )
+
+config-version: 1
+useArraysForBlockStates: true
+world-settings:
+  default:
+    verbose: false
+    hopper:
+      push-based: true
+      fire-InventoryMoveItemEvent: false
+    allow-non-player-entities-on-scoreboards: false
+    redstone-fire-BlockPhysicsEvent: false
+    tnt:
+      optimize-movement: true
+      optimize-liquid-explosions: true
+    armor-stand:
+      optimize-movement: true
+    grass-ignores-light: false

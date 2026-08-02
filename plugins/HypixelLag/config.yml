@@ -1,0 +1,463 @@
+#--------------------------------------------------------------------#
+#                        ClearLag 配置文件                            #
+#--------------------------------------------------------------------#
+# 按你的喜好进行配置，输入 /lagg reload 即可重载配置                    #
+#                                -                                   #
+#             这里有一份关于此配置的有用教程！（已更新）                 #
+# http://dev.bukkit.org/bukkit-plugins/clearlagg/pages/config-setup/ #
+#--------------------------------------------------------------------#
+#             所有可能的生物名称: https://goo.gl/cch8YK               #
+#--------------------------------------------------------------------#
+config-version: 17
+
+# -- 'use-internal-tps' 是否让 ClearLag 直接使用计算出的内部 TPS？（提高准确性）
+# -- 'language' ClearLag 支持多种语言（英语、西班牙语、日语），由社区翻译
+settings:
+  language: English
+  auto-update: false
+  enable-api: false
+  use-internal-tps: false
+
+#控制 ClearLag 的所有广播。禁用此项将关闭 ClearLag 的全部广播
+# -- 'enabled' ClearLag 是否广播消息？（例如：自动清理、警告等）
+# -- 'use-permission-for-broadcasts' ClearLag 是否使用权限？
+# -- 'permission' 使用什么权限？（默认使用 bukkit 的默认权限）
+global-broadcasts:
+  enabled: false
+  use-permission-for-broadcasts: false
+  permission: bukkit.broadcast
+
+#监控服务器主线程的锁定/冻结情况，帮助找出造成延迟尖峰的原因
+# 注意: 这主要会输出堆栈跟踪信息，需要由你来解读这些堆栈跟踪
+# 注意: (!重要!) ClearLag 会将所有信息打印到你的 Spigot/Bukkit 服务器日志中！
+# 注意: 较长的 'Garbage collection time' 通常意味着尖峰是由垃圾回收器引起的（基本上是内存问题）
+# -- 'enabled' 是否启用此功能（数据打印到日志中，而非游戏内聊天）
+# -- 'min-elapsed-time' 服务器单次 tick 耗时（毫秒）达到多少算作卡顿/冻结？不建议低于 ~80
+# -- 'check-interval' 多久（毫秒）检查一次服务器？数值越小，计时越精确
+# -- 'follow-stack' 堆栈跟踪每次变化时 ClearLag 是否持续打印（可能非常刷屏）？
+# 帮助-> https://dev.bukkit.org/projects/clearlagg/pages/finding-the-cause-of-lag-spikes
+lag-spike-helper:
+  enabled: false
+  min-elapsed-time: 500
+  check-interval: 100
+  follow-stack: true
+
+#限制单个区块内所有漏斗的物品传输次数
+# -- 'transfer-limit' 每个检查周期内允许传输多少次，超过后漏斗将被禁用
+# -- 'check-interval' 以秒为单位，每隔多久重置一次传输限制
+hopper-limiter:
+  enabled: false
+  transfer-limit: 5
+  check-interval: 1
+
+#监测你的内存使用量。如果超过 'limit'，则执行 'commands:'
+# 注意: 服务器占用大量内存是完全正常的。JVM 的垃圾回收器会自动释放内存。
+# 注意: 仅当你的内存很少、无法支撑服务器运行时才使用此功能
+# -- 'ram-limit' 单位为 MB，不要设置为与你分配的最大内存完全相同
+# -- 'interval' ClearLag 每隔多久检查一次你的内存使用情况
+# -- 'commands' 列出达到内存上限后将要执行的命令
+ram-meter:
+  enabled: false
+  interval: 20
+  ram-limit: 5000
+  commands:
+    - 'lagg killmobs'
+    - 'lagg clear'
+
+#配置 '/lagg halt' 命令的行为
+# -- 'remove-entities' 移除实体，如物品、已点燃的 TNT 和生物
+# -- 'disable-natural-entity-spawning' 禁用服务器世界的自然生成
+# -- 'halted' 此部分定义在 '/lagg halt' 期间应停止哪些行为
+halt-command:
+  remove-entities: true
+  disable-natural-entity-spawning: true
+  halted:
+    fire: true
+    fire-burn: true
+    explosion: true
+    decay: true
+    block-fade: true
+    block-form: true
+    block-spread: true
+    block-natural-change: true
+
+#限制玩家在单个 tick 内（每秒 20 tick）步行或飞行移动的最大速度
+#我强烈建议在提高了玩家速度/飞行速度的服务器上使用此功能，以防止区块过载
+#如果你的版本支持，也可以使用 Spigot 内置的速度限制器达到同样效果（性能更好）
+# -- 'move-max-speed' 步行最大速度
+# -- 'fly-max-speed'  飞行最大速度
+player-speed-limiter:
+  enabled: false
+  move-max-speed: 0.7
+  fly-max-speed: 0.8
+
+#设置特定物品首次生成时的年龄，使它们比其它物品自然消失得更快或更慢
+#推荐给地面有大量无用物品（如石头）实体的服务器使用
+#材质列表: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# -- 'items' 列出各实体材质的名称及其生成年龄（单位：秒）
+item-spawn-age-setter:
+  enabled: false
+  items:
+    stone: 240
+    grass: 240
+    cobblestone: 240
+    log: 240
+    stone_axe: 240
+    stone_pickaxe: 240
+    stone_sword: 240
+    wooden_axe: 240
+    wooden_pickaxe: 240
+    wooden_sword: 240
+    rotten_flesh: 240
+    gravel: 240
+    dirt: 240
+    leather: 200
+    sand: 240
+    bone: 240
+    beef: 240
+    chicken: 160
+    rabbit: 240
+    salmon: 240
+    cactus: 210
+    wool: 180
+    arrow: 160
+    PORKCHOP: 240
+    potato: 240
+    RED_TULIP: 240
+
+#是否削弱生物以防止过度繁殖，从而减少 CPU 占用（并可能提升 TPS）
+#当生物挤在一起时，碰撞检测极其耗费性能，会给服务器带来相当大的负载
+# -- 'max-mobs' 表示在 'check-radius' 范围内允许有多少幼年/成年动物
+# -- 'check-radius' ClearLag 检查 'max-mobs' 时的半径范围
+mob-breeding-limiter:
+  enabled: false
+  max-mobs: 6
+  check-radius: 15
+
+#服务器启动时是否清理 /logs 目录下的日志？
+# -- 'days-old' 表示日志可以有多旧（多少天前）才被删除
+log-purger:
+  enabled: false
+  days-old: 3
+
+#执行 /lagg area 时哪些类型的实体不应被移除？
+area-filter:
+    - Itemframe
+    - Minecart
+    - Wolf
+    - Witch
+    - Villager
+    - Horse
+    - ARMOR_STAND
+
+#ClearLag 在更新时是重置配置，还是尝试更新你的配置？
+# -- 'force-update' ClearLag 是否会用更新版本重置你的配置
+# -- 将其设为 false 将使 ClearLag 更新你的配置而不是重置
+config-updater:
+  force-update: false
+
+#限制刷怪蛋生成的生物数量，防止玩家用它们"挤爆"服务器
+# -- 'check-radius' ClearLag 检查附近实体的半径
+# -- 'max-mobs' 半径内最多允许多少实体，超过后阻止生成
+mobegg-limiter:
+  enabled: false
+  check-radius: 8
+  max-mobs: 5
+
+#禁用新区块生成，或限制同时加载的区块数量上限。
+#在 Spigot 1.8+ 上可能导致许多问题，不推荐使用！
+# -- 'create-new-chunks' 禁用或启用区块创建。设为 false 将禁止生成新区块
+# -- !在 SPIGOT 版本上不稳定!
+chunk-limiter:
+  enabled: false
+  limit: 6000
+  create-new-chunks: true
+
+#修改实体的视野范围
+# -- 数值越低，实体 tick 性能越好，节省的 CPU 周期越多
+# -- 如果太高，可能会出现 Bug / 大量卡顿
+mob-range:
+  enabled: false
+  zombie: 30
+  skeleton: 30
+  creeper: 20
+
+#物品/生物应在地面上保留多长时间
+# -- 生存时间以 tick 为单位（每秒 20 tick）
+live-time:
+  enabled: false
+  interval: 10
+  mobtimer: true
+  itemtimer: true
+  arrowtimer: true
+  arrowkilltime: 15
+  moblivetime: 600
+  itemlivetime: 240
+
+#此选项禁止放置过多的 TNT 矿车
+# -- 'radius' ClearLag 检查 TNT 矿车的半径
+tnt-minecart:
+  enabled: false
+  max: 2
+  radius: 6
+
+#此选项降低全局发射器的发射频率
+# -- 'time' 单位为毫秒
+dispenser-reducer:
+  enabled: false
+  time: 100
+
+#此选项减少大量 TNT 的爆炸，并降低 TNT 造成的卡顿
+# -- 'check-radius' ClearLag 检查已点燃 TNT 的半径
+# -- 'max-primed' 在 ClearLag 开始移除前，半径内允许的最大已点燃 TNT 数量
+tnt-reducer:
+  enabled: false
+  check-radius: 5
+  max-primed: 3
+
+#此选项降低火焰蔓延速度
+# -- 'time' 单位为毫秒
+firespread-reducer:
+  enabled: false
+  time: 2000
+
+#单个区块最多允许多少实体？
+# -- 'entities' 列出所有将被统计的实体，
+#     以及可能被移除的实体。
+chunk-entity-limiter:
+  enabled: false
+  limit: 10
+  entities:
+    - Squid
+    - Zombie
+    - Skeleton
+    - Creeper
+    - Chicken
+    - Pig
+    - Sheep
+    - Cow
+    - Horse
+  # - Pig <- 如果此生物存活时间达到 100 tick（5 秒），它将被移除
+
+#全局允许生成多少生物
+# -- 'interval' 检查当前生成数量的间隔时间
+spawn-limiter:
+  enabled: false
+  interval: 15
+  mobs: 300
+  animals: 300
+
+#监测你的 TPS，如果过低，就执行你下面写的命令！
+# -- 'interval' tps-meter 检查 TPS 的频率
+# -- 'tps-trigger' 当 TPS 达到多少时执行命令
+# -- 'tps-recover' 执行 'tps-trigger' 后，TPS 恢复到多少才视为稳定
+# -- 'commands' 列出达到 tps-trigger 时将执行的命令
+# -- 'recover-commands' 列出达到 tps-recover 时将执行的命令
+# -- 'trigger-broadcast-message' 指定 tps-trigger 触发时应广播的消息
+# -- 'recover-broadcast-message' 指定 TPS 恢复时应广播的消息
+# -- 'broadcast-enabled' 定义 tps-meter 是否应该广播
+tps-meter:
+  enabled: false
+  trigger-broadcast-message: '&6[ClearLag] &c服务器过载，正在执行防卡顿措施'
+  recover-broadcast-message: '&6[ClearLag] &a服务器不再过载！'
+  broadcast-enabled: false
+  interval: 15
+  tps-trigger: 14.0
+  tps-recover: 19.0
+  commands:
+    - 'lagg killmobs'
+    - 'lagg clear'
+    - 'lagg halt on'
+  recover-commands:
+    - 'lagg halt off'
+
+#这是 /lagg killmobs，把你不希望被移除的实体放进来！
+# -- 'remove-named'，当为 FALSE 时，带有自定义名称的实体将不会被移除
+# -- 'mob-filter' 列出在执行 /lagg killmobs 时将被忽略的生物
+kill-mobs:
+   remove-named: false
+   mob-filter:
+   - Villager
+   - Wolf
+#  - Pig !name="Test" <- 如果名称不等于 "Test"，此实体将被过滤
+#  - Zombie hasName <- 如果实体有名称，它将被过滤
+   - ARMOR_STAND
+   - Horse
+
+#削弱刷怪笼（自然生成的和玩家制作的）
+#-------------------------------------------------
+#此功能按区块而不是按刷怪笼计算。这是为了防止
+#在小区域内大量堆积刷怪笼来"绕过"
+#你设置的上限。同时也能更方便地生成键值
+#从而提高性能
+# -- 'max-spawn' 单个刷怪笼最多允许生成的生物数量
+# -- 'remove-mobs-on-chunk-unload' 区块卸载时 ClearLag 是否移除
+# --  由刷怪笼生成的生物（强烈推荐）
+mobspawner:
+  enabled: false
+  max-spawn: 4
+  remove-mobs-on-chunk-unload: true
+
+#如果你有 CB++ 或 Spigot，请不要使用！
+item-merger:
+  enabled: false
+  radius: 6
+
+#自动清理选项
+# -- warnings 的用法如下；time = 发出警告的时间，msg = 该时间点的警告消息
+# -- 注意: 下面的 'remove' 部分同样适用于此清理器！
+# -- 注意: 把间隔设得太低会导致问题！
+# -- 注意: 要禁用"警告"，请将其设置为 "warnings: []"
+# -- 注意: bukkit.broadcast.user 权限允许玩家看到广播（如果默认未启用）
+#
+#        !==[ 所有字符串值必须放在 '' 内 ]==!
+#
+# -- 'remove-entities' 列出清理时应被移除的实体
+# -- 'warnings' 列出在指定时间发出的警告
+# -- 'item-filter' 清理期间哪些地面物品不应被移除
+# -- 'remove-entities' 清理期间哪些实体应当被移除
+auto-removal:
+  enabled: true
+  broadcast-message: '&e&lClearLagg &7> &7已移除 &c+RemoveAmount &7个实体！'
+  broadcast-removal: false
+  autoremoval-interval: 460
+  world-filter:
+  # - this_world <-清理时此世界将被忽略！
+  boat: true
+  falling-block: true
+  experience-orb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  item-filter:
+  # - Stone <-清理时此物品 ID 将被忽略！
+  # - Grass
+  remove-entities:
+  - Zombie
+  - Silverfish
+  - Skeleton
+  - Spider
+  - Magmacube
+  - Blaze
+  - Pigzombie
+  - CaveSpider
+  - Wolf
+  - Enderman
+  - Endermite
+  - IronGolem
+  warnings:
+        - 'time:400 msg:&e&lClearLagg &7> &7Ground items will be removed in &c+remaining &7seconds!'
+        - 'time:440 msg:&e&lClearLagg &7> &7Ground items will be removed in &c+remaining &7seconds!'
+
+#/lagg clear 应移除什么内容，与自动清理几乎相同
+command-remove:
+  world-filter:
+  # - this_world <-清理时此世界将被忽略！
+  broadcast-removal: false
+  boat: true
+  falling-block: true
+  experience-orb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  item-filter:
+  # - Stone <-清理时此物品 ID 将被忽略！
+  # - Grass
+  remove-entities:
+  - Zombie
+  - Silverfish
+  - Skeleton
+  - Spider
+  - Magmacube
+  - Blaze
+  - Pigzombie
+  - CaveSpider
+  - Wolf
+  - Enderman
+  - Endermite
+  - IronGolem
+
+#非常非常古老，但仍然可用。只是指定一个全局实体上限。我更推荐使用 'custom-trigger-removal'
+# -- 'max' 触发实体移除前允许的最大实体数量
+limit:
+  enabled: false
+  max: 1000
+  check-interval: 60
+  broadcast-message: '&6[ClearLag] &aLimit reached, removed +RemoveAmount Entities!'
+  world-filter:
+  # - this_world <-清理时此世界将被忽略！
+  broadcast-removal: true
+  boat: true
+  falling-block: true
+  experience-orb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  item-filter:
+  # - Stone
+  # - Grass <-清理时此物品 ID 将被忽略！
+
+
+# 创建你自己的自定义清理配置！
+# -- warnings 的用法如下；time = 发出警告的时间，msg = 该时间点的警告消息
+# -- 注意: 下面的 'remove' 部分同样适用于此清理器！
+# \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/
+# >     寻求帮助请阅读 -> https://dev.bukkit.org/projects/clearlagg/pages/config-setup <- 寻求帮助请阅读    <
+# /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\
+custom-trigger-removal:
+  enabled: false
+  triggers:
+    trigger1:
+      trigger-type: tps-trigger
+      run-interval: 5
+      tps-trigger: 14.0
+      tps-recover: 19.0
+      jobs:
+        command-executor:
+          commands:
+            - 'lagg killmobs'
+            - 'lagg clear'
+            - 'lagg halt'
+          recover-commands:
+            - 'lagg halt'
+        entity-clearer:
+          execute-job-time: 120
+          warnings:
+            - 'time:60 msg:&4[ClearLag] &cEntities/drops will be purged in &7+remaining &cseconds!'
+            - 'time:100 msg:&4[ClearLag] &cEntities/drops will be purged in &720 &cseconds!'
+            - 'time:110 msg:&4[ClearLag] &cEntities/drops will be purged in &710 &cseconds!'
+          world-filter:
+          # - world <-清理时此世界将被忽略
+          removeEntities:
+            - item
+            - zombie !hasName
+            - skeleton !hasName
+            - pig !hasName
+            - cow !hasName
+    trigger2:
+      trigger-type: entity-limit-trigger
+      run-interval: 25
+      limit: 200
+      world-filter:
+        # - world <-检查时此世界将被忽略
+      entity-limits:
+        - zombie
+        - skeleton
+        - enderman
+      jobs:
+        entity-clearer:
+          world-filter:
+          # - world <-清理时此世界将被忽略
+          remove-entities:
+            - zombie
+            - skeleton
+            - enderman

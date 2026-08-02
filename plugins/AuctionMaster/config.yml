@@ -1,0 +1,338 @@
+#你可以在 menus 文件夹中的 menu_name.yml 里编辑具体的菜单设置。
+#背景颜色：
+#填 0 为白色
+#填 1 为橙色
+#填 2 为品红色
+#填 3 为浅蓝色
+#填 4 为黄色
+#填 5 为黄绿色
+#填 6 为粉色
+#填 7 为灰色
+#填 8 为浅灰色
+#填 9 为青色
+#填 10 为紫色
+#填 11 为蓝色
+#填 12 为棕色
+#填 13 为绿色
+#填 14 为红色
+#填 15 为黑色
+weapons-menu-color: 1
+armor-menu-color: 11
+tools-menu-color: 10
+blocks-menu-color: 12
+others-menu-color: 13
+consumables-menu-color: 14
+
+background-color: 15
+
+#当玩家出价时，你想给拍卖添加多少时间：
+#时间单位是秒
+add-time-to-auction: 15
+
+#此选项允许玩家随时结束
+#自己的拍卖
+use-end-own-auction: true
+#如果你只想让部分玩家拥有此选项
+use-end-own-auction-permission: 'none'
+end-own-auction-fee: 500
+end-own-auction-item: '347'
+end-own-auction-name: '&a立即结束拍卖'
+end-own-auction-lore:
+  - '&7立即结束这个拍卖。'
+  - ''
+  - '&7结束费用: &6500 金币'
+end-own-auction-message: '&a你的拍卖已结束！'
+end-own-auction-no-money-message: '&c你没有足够的金币来结束这个拍卖。'
+
+#启用全局分类可能会对
+#插件性能产生影响
+#是否使用由你决定
+#如果你启用全局分类，它将被设置为
+#打开菜单时的默认分类
+use-global-category: false
+global-menu-color: 15
+global-category-item: 'skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0MDk0MmYzNjRmNmNiY2VmZmNmMTE1MTc5NjQxMDI4NmE0OGIxYWViYTc3MjQzZTIxODAyNmMwOWNkMSJ9fX0='
+global-category-name: '&9全局物品'
+global-category-lore:
+  - '&f来自每个分类的'
+  - '&f所有物品都在'
+  - '&f同一个地方！'
+
+#如果你想使用铁砧界面而不是告示牌界面
+#请将下面的选项设为 true
+#告示牌的行将变成铁砧界面中
+#纸片的描述
+use-anvil-instead-sign: false
+
+#如果你想使用聊天而不是告示牌界面
+#请将下面的选项设为 true
+#告示牌的行将变成聊天中发送的消息
+#玩家有 10 秒时间给出价格，之后
+#监听器将关闭
+listener-expire-message: '&c你花了太长时间.. 你的聊天监听器已过期。'
+use-chat-instead-sign: false
+
+#数据库多久更新一次
+#默认在插件卸载时更新
+#但为了防止强制停止或崩溃，我们
+#会时不时地更新数据库。
+#这是以分钟为单位的时间，请只填一个代表分钟数的数字！
+update-period: 60
+
+#设为 false 可让玩家不能给自己加价
+outbid-yourself: false
+can-not-outbid-message: '&c你不能给自己加价！'
+
+broadcast-new-auction: true
+#使用 %seller-username% 代表卖家名称
+#使用 %seller-display-name% 代表卖家的显示名称
+#使用 %item-display-name% 代表物品的显示名称
+#使用 %coins% 代表起拍价
+broadcast-new-auction-message: '&6[拍卖] %seller-display-name% &f为 %item-display-name%&f 创建了一个拍卖！&e&l点击查看'
+broadcast-new-auction-permission: 'none'
+#如果你想执行命令，请在 broadcast-commands 设置中创建一个列表
+#如果你只想使用命令并取消拍卖消息，请将其设为 'none'
+broadcast-commands: []
+
+#如果持续时间加载缓慢，这是加载时
+#显示的消息
+auction-loading-placeholder: '&e加载中...'
+
+#如果你将其设为 true，插件将开始检查
+#玩家的 'auctionmaster.limit.bids.number' 权限
+#其中 number 是玩家同时可以拥有的最大出价数。
+#如果找不到权限，将设置为最大值 (28)
+#如果玩家有 2 个权限，更大的数字优先
+#示例: 拥有 'auctionmaster.limit.bids.6' 权限的玩家最多可以有 6 个
+#同时进行的出价
+use-bid-limit: false
+bid-limit-reached-message: '&c你已达到最大出价上限。在领取一个出价之前，你不能对另一个拍卖出价。'
+
+#如果你将其设为 true，插件将开始检查
+#玩家的 'auctionmaster.limit.auctions.number' 权限
+#其中 number 是玩家同时可以拥有的最大拍卖数。
+#如果找不到权限，将设置为最大值 (28)
+#如果玩家有 2 个权限，更大的数字优先
+#示例: 拥有 'auctionmaster.limit.auctions.6' 权限的玩家最多可以有 6 个
+#同时进行的拍卖
+use-auction-limit: true
+auction-limit-reached-message: '&c你已达到最大拍卖上限。在领取一个拍卖之前，你不能创建另一个拍卖。'
+
+#如果你将其设为 true，插件将开始检查
+#玩家的 'auctionmaster.limit.duration.number' 权限
+#其中 number 是玩家拍卖的最大小时数。
+#如果玩家有 2 个权限，更大的数字优先
+#示例: 拥有 'auctionmaster.limit.duration.6' 权限的玩家可以有最长 6
+#小时的拍卖
+#注意！不要将你的默认时长设置为你给予的限制之上，因为
+#插件不会检查它。
+#再次注意！你最多可以将小时数限制为 48 小时，插件不会检查更多
+use-duration-limit: false
+duration-limit-reached-message: '&c所选时长超过你的上限。已自动设置为你允许的最大值。'
+
+
+#浏览分类时，添加到分类物品描述上的消息
+category-browsing: '&a当前正在浏览！'
+
+#未浏览分类时，添加到分类物品描述上的消息
+category-no-browsing: '&e点击查看物品！'
+
+#注意: 请不要在菜单中使用相同的物品名称
+#或相同的菜单名称，有些检查是基于名称的，
+#如果你给同一背包中的两个物品相同的名称，
+#可能会使系统出错
+
+go-back-item: '262'
+go-back-item-name: '&a返回'
+go-back-item-lore:
+  - '&7返回拍卖菜单'
+
+previous-page-item: '262'
+#使用 %page-number% 代表当前页码
+previous-page-item-name: '&a第 %page-number% 页'
+previous-page-item-lore:
+  - '&7点击前往'
+  - '&7上一页。'
+
+next-page-item: '262'
+#使用 %page-number% 代表当前页码
+next-page-item-name: '&a第 %page-number% 页'
+next-page-item-lore:
+  - '&7点击前往'
+  - '&7下一页。'
+
+starting-menu-name: '&8拍卖菜单'
+close-menu-item: '166'
+close-menu-item-name: '&c关闭菜单'
+close-menu-item-lore:
+  - '&7关闭菜单'
+
+browsing-menu-name: '&8拍卖浏览'
+browsing-menu-item: '41'
+browsing-menu-item-name: '&6拍卖浏览'
+browsing-menu-item-lore:
+  - '&7查找服务器上其他玩家'
+  - '&7出售的物品！'
+  - ''
+  - '&7这里提供的物品以'
+  - '&6拍卖&7方式出售，意味着你必须'
+  - '&7出价最高才能得到它们！'
+  - ''
+  - '&e点击浏览！'
+
+view-bids-menu-name: '&8拍卖出价查看'
+view-bids-menu-item: '396'
+#使用 %total-bids% 代表玩家出价的拍卖数量
+#使用 %total-top-bid% 代表玩家持有最高出价的拍卖数量
+view-bids-menu-item-name: '&a查看出价'
+view-bids-menu-item-lore:
+  with-bids:
+    - '&7你在 &a%total-bids% 个&7待处理的'
+    - '&7拍卖中出过价。'
+    - ''
+    - '&7你在其中的'
+    - '&7(&a%total-top-bid%&7/&a%total-bids%&7) 个拍卖中'
+    - '&7持有最高出价。'
+    - ''
+    - '&e点击查看！'
+  without-bids:
+    - '&7你没有在任何待处理的拍卖中'
+    - '&7出过价。'
+    - ''
+    - '&7在物品上出价，然后点击'
+    - '&7这里查看它们！'
+    - ''
+    - '&c你没有任何出价！'
+
+no-bids-message: '&c你没有任何出价！'
+
+delivery-menu-name: '&8领取菜单'
+
+#这是主菜单中领取物的物品
+delivery-menu-item-name: '&a领取物'
+delivery-menu-item-lore:
+  - '&7这里存放管理员发送的'
+  - '&7物品和金币！'
+
+delivery-have-message: '&a你有待领取的交付物！'
+
+#这是领取菜单中的领取物物品
+delivery-item:
+  no-delivery-name: '&c没有交付物'
+  no-delivery-lore:
+    - '&7你没有需要'
+    - '&7领取的交付物。:('
+  #使用 %coins% 代表玩家交付物中的金币数量
+  #使用 %items-count% 代表玩家交付物中的物品数量
+  yes-delivery-name: '&a领取交付物'
+  yes-delivery-lore:
+    - '&7你有一个交付物！'
+    - ''
+    - '&7交付物包含：'
+    - '&7 - &6%coins% 金币'
+    - '&7 - &e%items-count% 个物品'
+    - ''
+    - '&a点击领取！'
+
+delivery-claimed-message: '&a你刚刚领取了你的交付物！'
+not-enough-space-delivery: '&c你没有足够的空间领取整个交付物！'
+no-delivery-to-claim: '&c你没有可领取的交付物！'
+
+delivery-alert-join-message: '&6[拍卖] &f你有未领取的交付物！'
+
+#此消息在交付物被发送时显示，并且仅当
+#玩家在线时
+#使用 %coins% 代表金币
+#使用 %item-count% 代表物品数量
+delivery-got-message: '&6[拍卖] &f你收到了 &6%coins% 金币 &f和 &e%item-count% 个物品&f！'
+
+#当玩家执行 /ah help 时在聊天中显示的消息
+#附注: /ahadmin 不会被翻译，你是管理员，你懂英语
+#你知道如何使用命令，因此不需要翻译
+player-commands-help-display:
+  - '&7&m---------------------------------------'
+  - '&c/auctionhouse &8- &7打开拍卖菜单'
+  - '&c/ah <玩家名> &8- &7打开某个玩家的拍卖'
+  - '&c/ah delivery &8- &7打开领取菜单'
+  - '&4/ahadmin &8- &7打开管理菜单'
+  - '&4/ahadmin help &8- &7显示管理员帮助命令'
+  - '&7&m---------------------------------------'
+
+#你希望拍卖只对拥有特定权限的玩家开放吗？
+#在这里设置，如果不需要，请将权限
+#设为 'none'
+#注意: 此选项也会阻止 NPC（如果你使用了 NPC）
+auction-use-permission: 'none'
+auction-no-permission: '&f未知命令。'
+
+#也许你只想让部分玩家使用 '/ah name' 命令
+#如果你想知道这个选项和上面的有什么区别：
+#这个只阻止命令，上面的选项还会阻止 NPC
+auction-command-use-permission: 'none'
+auction-command-deny: '&f未知命令。'
+
+#使用管理员命令/菜单的权限
+admin-perks-use-permission: 'auctionmaster.admin'
+admin-perks-deny: '&c你不能使用管理员命令！'
+
+#此选项将使 '/ah' 命令打开主菜单
+#如果设置为 false，该命令将需要玩家作为参数
+auction-command-menu: true
+
+#当上面的选项为 false 时发送的消息
+auction-command-missing: '&c你应该使用 /ah <玩家名>！'
+
+#使用 %player% 代表玩家的用户名
+player-auction-menu-name: '&8%player% 的拍卖'
+
+#当输入的玩家没有任何拍卖时发送的消息
+no-auctions-message: '&e该玩家没有任何正在进行的拍卖。'
+
+#默认关闭，因为使用它需要 Citizens 和 HolographicDisplays
+#将其设为 true 后只需使用 /ahadmin npc
+#如果标题显示异常，使用 /ahadmin debugNames 重新生成它们
+auction-npc-use: false
+#只能有 2 行，抱歉
+auction-npc-title:
+  line-1: '&6拍卖大师'
+  line-2: '&e&l点击'
+
+#当下面的选项为 false 时，将使用 'auction-npc-skin-name' 设置
+#当下面的选项为 true 时，将使用 'auction-npc-skin-signature' 和 'auction-npc-skin-data'
+#你可以使用 https://mineskin.org/ 上传自定义皮肤
+auction-npc-skin-texture: true
+
+#NPC 的皮肤可以填一个玩家的名字
+#此设置仅在 'auction-npc-skin-texture' 为 false 时生效
+auction-npc-skin-name: 'qKing12'
+
+auction-npc-skin-signature: 'SbvoR6xYRP30lvCJqIumNCul8IdwHXuBTh4/Gukr4HzFMpouEM1boRvRwPRzRo45UFlxQnsYZzbBnAeCHAYVgql6jvIbXLpQmhdSH1kSKZ6pmjhTzufK/R6S3pWLZlv77oaTfFT+7Ccd7bXFSwimG0wIK4jHhfrKa2kdMMZi7Y21ecVZr3DoJTYpJi9k18ewy1KSPm4aqkxE8rFr0U79IKoUBm1glT/jJYsMVARCJlouHMLEk0x2fHuwPF/Tpf3+yPdCQXCQrqKug0klcyhTNYqv238aqws/x0RsFyegvoxl3fwfIshjqXEVQpnmJ9N9tcD6MzKqm2mC1TjycEpYHvfaxircs7XU9hRbNbiLTKFVGYda9OMh40GmoCriJItYZBLngliNUCbIysE3YKosjXQdOTPVSU/9hZbTN242dL035to2a1r+rq5kkj5YabbvGIFyyaYDg/6plnb7ZWstMJlb6yzEldyfk+7hVb5W1ahsbZ+DCZIeEhewdJDghaiizWHE7m5L+L+49Q9QAyW/I+mM0MS7JlDSUNn/CeaijMB0YfWI12EoM7KVEJC8RnVc09HFs1HSXNA7Gcy073NrNOWxlCXG2NYSosYTiZ/2UWIHBkH0KTwHHwWdQSgtdl6o0gz40OsqzwuU8DyxQk8RfGb7RKdwiIPxukExSNyn+EQ='
+auction-npc-skin-data: 'eyJ0aW1lc3RhbXAiOjE1Njc5NjQyNTU5OTUsInByb2ZpbGVJZCI6IjgyYzYwNmM1YzY1MjRiNzk4YjkxYTEyZDNhNjE2OTc3IiwicHJvZmlsZU5hbWUiOiJOb3ROb3RvcmlvdXNOZW1vIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82NWRhZjZlN2Y1ZTExOGZjYTQwOGUzZTQzMzM0ZmQxZmIxMzNiMzFkYWE3Yjk4MTRiYjVlMGRhZWQ4YzA0NjhiIiwibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn19fX0='
+
+#如果你想禁止某个物品 ID 上架拍卖
+#请在这里指定，默认情况下，无法放入
+#任何分类的物品会进入 "其他菜单"
+blacklist-item-id:
+  - '399'
+  - '2267'
+#这是自定义物品的设置，如果你想禁止某个物品名称
+blacklist-item-name:
+  - '&a小背包'
+  - '&a中背包'
+  - '&a大背包'
+
+blacklist-item-lore:
+  1:
+    - '&e第1行'
+    - '&e第2行'
+  2:
+    - '&e1 第1行'
+    - '&e1 第2行'
+
+blacklist-item-message: '&c这个物品不能上架拍卖！'
+
+#你可以让自定义物品名称进入特定分类
+#此选项可在菜单文件中配置。
+
+#请勿修改此项
+version: 2.3

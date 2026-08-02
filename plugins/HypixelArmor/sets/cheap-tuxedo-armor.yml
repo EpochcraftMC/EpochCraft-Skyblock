@@ -1,0 +1,241 @@
+#
+apply:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: true
+    list:
+      - usbc skills give health {player} 100
+      - usbc skills give strength {player} 10
+  sound:
+    enabled: false
+    type: 'villager_yes'
+    volume: 1
+    pitch: 0
+#
+remove:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: true
+    list:
+      - usbc skills remove health {player} 100
+      - usbc skills remove strength {player} 10
+  sound:
+    enabled: false
+    type: 'villager_no'
+    volume: 1
+    pitch: 0
+#
+set-data:
+  1:
+    type: basic
+    damage-increase: -1
+    damage-reduction: -1
+    health: -1
+    kb: -1
+    speed:
+      walk:
+        set: 0.20
+        default: 0.20
+      fly:
+        set: 0.20
+        default: 0.20
+    status-effects:
+#
+set-pieces:
+  chestplate:
+    commands:
+      apply:
+        - usbc skills give defense {player} 15
+        - usbc skills give critchance {player} 50
+        - usbc skills give itelligence {player} 50
+      remove:
+        - usbc skills remove defense {player} 15
+        - usbc skills remove critchance {player} 50
+        - usbc skills remove itelligence {player} 50
+    name: '&5廉价燕尾服胸甲'
+    item: leather_chestplate
+    data: 0
+    color: 120:120:120
+    lore:
+      - '&7暴击几率: &c+50%'
+      - ''
+      - '&7防御: &a+15'
+      - '&7智力: &a+50'
+      - '           '
+      - '&6全套加成: 迅捷！'
+      - '&7获得 &a+100 &c❤ 生命值。'
+      - '&7暴击伤害减少 &c-25%&7。'
+      - '&7普通攻击伤害提升 &c+50%&7。'
+      - '&c&c'
+      - '&5&l史诗胸甲'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  leggings:
+    commands:
+      apply:
+        - usbc skills give defense {player} 15
+        - usbc skills give critchance {player} 25
+        - usbc skills give itelligence {player} 25
+      remove:
+        - usbc skills remove defense {player} 15
+        - usbc skills remove critchance {player} 25
+        - usbc skills remove itelligence {player} 25
+    name: '&5廉价燕尾服护腿'
+    item: leather_leggings
+    data: 0
+    color: 199:199:199
+    lore:
+      - '&7暴击几率: &c+25%'
+      - ''
+      - '&7防御: &a+15'
+      - '&7智力: &a+25'
+      - '           '
+      - '&6全套加成: 迅捷！'
+      - '&7获得 &a+100 &c❤ 生命值。'
+      - '&7暴击伤害减少 &c-25%&7。'
+      - '&7普通攻击伤害提升 &c+50%&7。'
+      - '&c&c'
+      - '&5&l史诗护腿'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  boots:
+    commands:
+      apply:
+        - usbc skills give defense {player} 15
+        - usbc skills give critchance {player} 25
+        - usbc skills give itelligence {player} 25
+      remove:
+        - usbc skills remove defense {player} 15
+        - usbc skills remove critchance {player} 25
+        - usbc skills remove itelligence {player} 25
+    name: '&5廉价燕尾服靴子'
+    item: leather_boots
+    data: 0
+    color: 120:120:120
+    lore:
+      - '&7暴击几率: &c+25%'
+      - ''
+      - '&7防御: &a+15'
+      - '&7智力: &a+25'
+      - '           '
+      - '&6全套加成: 迅捷！'
+      - '&7获得 &a+100 &c❤ 生命值。'
+      - '&7暴击伤害减少 &c-25%&7。'
+      - '&7普通攻击伤害提升 &c+50%&7。'
+      - '&c&c'
+      - '&5&l史诗靴子'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+#
+gui:
+  name: '&8生成物品'
+  type: none
+  size: 27
+  1:
+    slot: 0
+    action: chestplate
+    name: '&5廉价燕尾服胸甲'
+    item: leather_chestplate
+    data: 0
+    color: 120:120:120
+    lore:
+      - '&7暴击几率: &c+50%'
+      - ''
+      - '&7防御: &a+15'
+      - '&7智力: &a+50'
+      - '           '
+      - '&6全套加成: 迅捷！'
+      - '&7获得 &a+100 &c❤ 生命值。'
+      - '&7暴击伤害减少 &c-25%&7。'
+      - '&7普通攻击伤害提升 &c+50%&7。'
+      - '&c&c'
+      - '&5&l史诗胸甲'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  2:
+    slot: 1
+    action: leggings
+    name: '&5廉价燕尾服护腿'
+    item: leather_leggings
+    data: 0
+    color: 199:199:199
+    lore:
+      - '&7暴击几率: &c+25%'
+      - ''
+      - '&7防御: &a+15'
+      - '&7智力: &a+25'
+      - '           '
+      - '&6全套加成: 迅捷！'
+      - '&7获得 &a+100 &c❤ 生命值。'
+      - '&7暴击伤害减少 &c-25%&7。'
+      - '&7普通攻击伤害提升 &c+50%&7。'
+      - '&c&c'
+      - '&5&l史诗护腿'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  3:
+    slot: 2
+    action: boots
+    name: '&5廉价燕尾服靴子'
+    item: leather_boots
+    data: 0
+    color: 120:120:120
+    lore:
+      - '&7暴击几率: &c+25%'
+      - ''
+      - '&7防御: &a+15'
+      - '&7智力: &a+25'
+      - '           '
+      - '&6全套加成: 迅捷！'
+      - '&7获得 &a+100 &c❤ 生命值。'
+      - '&7暴击伤害减少 &c-25%&7。'
+      - '&7普通攻击伤害提升 &c+50%&7。'
+      - '&c&c'
+      - '&5&l史诗靴子'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  5:
+    slot: 22
+    action: back
+    name: '&a返回'
+    item: ARROW
+    data: 0
+    lore:
+    enchantments:
+    item-flags:

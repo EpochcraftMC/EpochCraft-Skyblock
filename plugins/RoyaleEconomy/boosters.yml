@@ -1,0 +1,79 @@
+use-boosters: false
+
+never-expire-message: '无限时间'
+
+booster-command:
+  permission: 'rec.active.boosters.view'
+  no-permission: '&c你没有权限查看激活中的加成。'
+  active-booster-display:
+    header:
+      - '&7&m-------&r &e激活中的加成 &7&m-------'
+      - '&f当前激活中的加成：'
+    middle-structure: '  &7- %booster-name% &7(%category-name%&7) &f- &e%time-left% 剩余'
+    middle-structure-no-boosters:
+      - '  &7当前没有激活中的加成 :('
+    footer:
+      - '&7&m----------------------------'
+
+booster-admin-command-permission: 'rec.booster.admin'
+global-booster-broadcast: '&e全局加成 > &f已激活一个全局加成，持续 &e%booster-duration%&f！%booster-name% &7(%booster-category%&7)'
+personal-booster-broadcast: '&e个人加成 > &f已激活一个个人加成，持续 &e%booster-duration%&f！%booster-name% &7(%booster-category%&7)'
+
+boosters:
+  shops-buy:
+    use: false
+    category-name: '&e商店购买'
+    lore-addition:
+      - ''
+      - '%booster-name%'
+      - '&f如果你购买'
+      - '&f可少付 &6%amount% 硬币&f！'
+    boosters:
+      booster-1:
+        exclusive-for-shops:
+          - 'shop1'
+          - 'shop2'
+        booster-name: '&6x1.2 加成'
+        permission: 'none'
+        #Boost percent 1-100
+        percent-boost: 20
+      booster-2:
+        booster-name: '&6x1.5 加成'
+        permission: 'booster.1.5'
+        percent-boost: 50
+  shops-sell:
+    use: false
+    category-name: '&e商店出售'
+    lore-addition:
+      - ''
+      - '%booster-name%'
+      - '&f如果你出售'
+      - '&f可多得 &6%amount% 硬币&f！'
+    boosters:
+      booster-1:
+        exclusive-for-shops:
+          - 'shop1'
+          - 'shop2'
+        booster-name: '&6x1.2 加成'
+        permission: 'none'
+        #Boost percent 1-100
+        percent-boost: 20
+      booster-2:
+        booster-name: '&6x1.5 加成'
+        permission: 'booster.1.5'
+        percent-boost: 50
+  kill-coins:
+    use: false
+    category-name: '&e击杀硬币'
+    message: '&e加成 > &f由于 %booster-name% &f已激活，你获得了额外的 &6%amount% 硬币&f！'
+    boosters:
+      booster-1:
+        booster-name: '&6x1.2 加成'
+        permission: 'none'
+        #Boost percent 1-100
+        percent-boost: 20
+      booster-2:
+        booster-name: '&6x1.5 加成'
+        permission: 'booster.1.5'
+        permission-permanent: 'booster.permanent.1.5'
+        percent-boost: 50

@@ -1,0 +1,4 @@
+# %dmg% = 造成的伤害
+#
+normal-hit: '&7%dmg%'
+crit-hit: '&c%dmg%'

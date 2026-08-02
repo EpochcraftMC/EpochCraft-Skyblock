@@ -1,0 +1,451 @@
+menu_title: '(1/2) 战斗配方'
+open_command: 'combat-recipes'
+size: 54
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 1
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 44
+        - 45
+        - 46
+        - 47
+        - 50
+        - 51
+        - 52
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      enchanted-rotten-flesh:
+        material: ROTTEN_FLESH
+        priority: 1
+        slot: 10
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔腐肉'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_rottenflesh%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-ROTTEN-FLESH'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-ROTTEN-FLESH'
+
+      zombie-chestplate:
+        material: DIAMOND_CHESTPLATE
+        priority: 1
+        slot: 11
+        hide_attributes: true
+        amount: 1
+        display_name: '&5僵尸胸甲'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_rottenflesh%'
+              output: 500
+        lore:
+        - '&7生命值：&a+200 HP'
+        - '&7防御：&a+40'
+        - '           '
+        - '&6套装加成：弹射物吸收'
+        - '&7被弹射物击中时，每秒为穿戴者'
+        - '&7治疗 &c5 ❤ 生命值，持续 &a3 &7秒。'
+        - '&8&5'
+        - '&5&l史诗胸甲'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ZOMBIE-CHESTPLATE'
+        right_click_commands:
+        - '[player] fc preview ZOMBIE-CHESTPLATE'
+
+      zombie-leggings:
+        material: DIAMOND_LEGGINGS
+        priority: 1
+        slot: 12
+        hide_attributes: true
+        amount: 1
+        display_name: '&5僵尸护腿'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_rottenflesh%'
+              output: 500
+        lore:
+        - '&7生命值：&a+160 HP'
+        - '&7防御：&a+30'
+        - '           '
+        - '&6套装加成：弹射物吸收'
+        - '&7被弹射物击中时，每秒为穿戴者'
+        - '&7治疗 &c5 ❤ 生命值，持续 &a3 &7秒。'
+        - '&8&5'
+        - '&5&l史诗护腿'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ZOMBIE-LEGGINGS'
+        right_click_commands:
+        - '[player] fc preview ZOMBIE-LEGGINGS'
+
+      zombie-boots:
+        material: DIAMOND_BOOTS
+        priority: 1
+        slot: 13
+        hide_attributes: true
+        amount: 1
+        display_name: '&5僵尸靴子'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_rottenflesh%'
+              output: 500
+        lore:
+        - '&7生命值：&a+120 HP'
+        - '&7防御：&a+25'
+        - '           '
+        - '&6套装加成：弹射物吸收'
+        - '&7被弹射物击中时，每秒为穿戴者'
+        - '&7治疗 &c5 ❤ 生命值，持续 &a3 &7秒。'
+        - '&8&5'
+        - '&5&l史诗靴子'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ZOMBIE-BOOTS'
+        right_click_commands:
+        - '[player] fc preview ZOMBIE-BOOTS'
+
+      enchanted-bone:
+        material: BONE
+        priority: 1
+        slot: 20
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔骨头'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_bone%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-BONE'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-BONE'
+
+      enchanted-bone-meal:
+        material: INK_SACK
+        data: 15
+        priority: 1
+        slot: 21
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔骨粉'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_bone%'
+              output: 250
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-BONE-MEAL'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-BONE-MEAL'
+
+      enchanted-string:
+        material: STRING
+        priority: 1
+        slot: 29
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔线'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_string%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-STRING'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-STRING'
+
+      grappling-hook:
+        material: FISHING_ROD
+        priority: 1
+        slot: 30
+        hide_attributes: true
+        amount: 1
+        display_name: '&a抓钩'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_string%'
+              output: 250
+        lore:
+        - '&7用这个抓钩潇洒地四处移动。'
+        - '&82 秒冷却时间'
+        - ''
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview GRAPPLING-HOOK'
+        right_click_commands:
+        - '[player] fc preview GRAPPLING-HOOK'
+
+      enchanted-spider-eye:
+        material: SPIDER_EYE
+        priority: 1
+        slot: 33
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔蜘蛛眼'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_spidereye%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-SPIDER-EYE'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-SPIDER-EYE'
+
+      enchanted-fermented-spider-eye:
+        material: FERMENTED_SPIDER_EYE
+        priority: 1
+        slot: 34
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔发酵蛛眼'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_spidereye%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-FERMENTED-SPIDER-EYE'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-FERMENTED-SPIDER-EYE'
+
+      spider-sword:
+        material: IRON_SWORD
+        priority: 1
+        slot: 37
+        hide_attributes: true
+        amount: 1
+        display_name: '&f蜘蛛剑'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_spidereye%'
+              output: 1000
+        lore:
+        - '&7伤害：&c+10'
+        - ''
+        - '&7对蜘蛛、洞穴蜘蛛'
+        - '&7和蠹虫造成'
+        - '&a+100% &7额外伤害。'
+        - ''
+        - '&f&l常见剑'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview SPIDER-SWORD'
+        right_click_commands:
+        - '[player] fc preview SPIDER-SWORD'
+
+      enchanted-ender-pearl:
+        material: ENDER_PEARL
+        priority: 1
+        slot: 40
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔末影珍珠'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_enderpearl%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-ENDER-PEARL'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-ENDER-PEARL'
+
+      enchanted-ender-eye:
+        material: 381
+        priority: 1
+        slot: 41
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔末影之眼'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_enderpearl%'
+              output: 250
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-EYE-OF-ENDER'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-EYE-OF-ENDER'
+
+      combat:
+        material: STONE_SWORD
+        slot: 4
+        display_name: '&a战斗配方'
+        hide_attributes: true
+        lore:
+        - '&7查看你的战斗配方！'
+        left_click_commands: []
+        right_click_commands: []
+
+      locked:
+        material: INK_SACK
+        data: 8
+        priority: 2
+        slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        display_name: '&c???'
+        lore:
+        - '&7你还没有解锁'
+        - '&7此配方。'
+        left_click_commands: []
+        right_click_commands: []
+
+      next-page:
+        material: ARROW
+        priority: 3
+        slot: 53
+        display_name: '&a下一页'
+        lore:
+        - '&e第 2 页'
+        left_click_commands:
+        - '[openguimenu] combat-recipes-2'
+        right_click_commands:
+        - '[openguimenu] combat-recipes-2'
+
+      go-back:
+        material: ARROW
+        slot: 48
+        priority: 5
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] recipe-book'
+        right_click_commands:
+        - '[openguimenu] recipe-book'
+
+      close:
+        material: BARRIER
+        slot: 49
+        display_name: '&c关闭'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'

@@ -1,0 +1,166 @@
+# CombatLogX 的默认消息
+# 不要将消息设置为 `false` 或 null
+# 不要删除任何消息
+# 
+# 要移除消息，请将其设置为 "" 或 ''
+messages:
+  plugin prefix: ""
+  expansion prefix: "&6&l[&fCombatLogX &7- &b{expansion}&6&l]&r"
+
+  loading expansion: "正在加载扩展 '{name} v{version}'"
+  loaded expansions: "已加载 {amount} 个扩展{s}"
+
+  enabling expansion: "正在启用扩展 '{name} v{version}'"
+  enabled expansions: "成功启用 {amount} 个扩展{s}"
+  
+  unknown entity name: "未知实体"
+
+  broadcasts:
+    on load: "§cCombatLogX 正在预加载扩展，这是 W.I.P 功能，请报告任何问题！"
+    on enable: "&2CombatLogX 现已启用。"
+    on disable: "&4CombatLogX 未禁用。"
+
+  commands:
+    no permission: "&f未知命令。"
+    invalid target: "&c无效目标 &c'&a{target}&c'&c。"
+
+    combatlogx:
+      reloaded: "&a你已成功重新加载所有配置。"
+      tag: "&a你已强制让 &f{target}&a 进入战斗状态。这可能会导致问题！"
+      untag: "&a你已强制让 &f{target}&a 退出战斗状态。这可能会导致问题！"
+      not in combat: "&c该玩家不在战斗中。"
+      help:
+      - "&f未知命令。"
+
+    combattime:
+      not in combat: "&c你不在战斗中。"
+      not in combat other: "&c{target} 不在战斗中。"
+      time left: "&a你还有 &c{time} 秒 &a的战斗时间。"
+      time left other: "&f{target}&a 还有 &c{time} 秒 &a的战斗时间"
+
+  combat:
+    expire: "&a你已退出战斗状态。"
+    enemy death: "&a你的敌人已经死亡。"
+    tagged:
+      attacked by player: "&c你现在处于战斗状态！"
+      attacker of player: "&c你现在处于战斗状态！"
+      attacked by mob: "&c你现在处于战斗状态！"
+      attacker of mob: "&c你现在处于战斗状态！"
+      unknown: "&c你现在处于战斗状态！"
+
+  expansions:
+    cheat prevention:
+      gamemode:
+        change: "&c你的游戏模式已更改为 &f{gamemode}&c，因为你被标记了。"
+        not allowed: "&c你不能在战斗中切换游戏模式。"
+
+      flight:
+        disabled: ""
+        not allowed: ""
+
+      elytra:
+        disabled: "&c你的鞘翅已被禁用，因为你被标记了。"
+        not allowed: "&c你不能在战斗中使用鞘翅。"
+        
+      riptide not allowed: "&c你不能在战斗中使用激流。"
+
+      command:
+        not allowed: "&c你不能在战斗中执行 &a{command} &c命令。"
+
+      teleport:
+        enderpearl:
+          not allowed: "&c你不能在战斗中使用末影珍珠"
+        other:
+          not allowed: "&c你不能在战斗中传送。"
+
+      inventory:
+        closed: "&c你的背包已被关闭，因为你被标记了。"
+        not allowed: "&c你不能在战斗中打开背包。"
+
+      chat:
+        not allowed: "&c你不能在战斗中发送聊天消息。"
+        
+      blocks:
+        breaking not allowed: "&c你不能在战斗中破坏方块。"
+        placing not allowed: "&c你不能在战斗中放置方块。"
+        interaction not allowed: "&c你不能在战斗中右键点击该方块。"
+        
+      items:
+        pick up not allowed: "&c你不能在战斗中拾取物品。"
+        dropping not allowed: "&c你不能在战斗中丢弃物品。"
+        
+      entities:
+        interaction not allowed: "&c你不能在战斗中与该实体互动。"
+
+
+    notcombatlogx:
+      all damage: "&c你受到了伤害。不要登出！"
+      damage tag:
+        contact: "&c你被仙人掌刺到了。不要登出！"
+        suffocation: "&c你在墙里窒息了。不要登出！"
+        fall: "&c你摔倒了。不要登出！"
+        fire: "&c你走进了火焰中。不要登出！"
+        fire tick: "&c你着火了。不要登出！"
+        lava: "&c你在岩浆里沸腾。不要登出！"
+        drowning: "&c你在溺水。不要登出！"
+        block explosion: "&c你被 TNT 炸到了。不要登出！"
+        lightning: "&c宙斯讨厌你。不要登出！"
+        starvation: "&c你快要饿死了。不要登出！"
+        poison: "&c你中毒了。不要登出！"
+        magic: "&c有人向你扔了一瓶药水。不要登出！"
+        wither: "&c你正在凋零。不要登出！"
+        falling block: "&c一个方块砸到了你。不要登出！"
+        custom: "&c你受到来自未知来源的伤害。不要登出！"
+        fly into wall: "&c你撞到了墙上。不要登出！"
+        hot floor: "&c地板是岩浆！不要登出！"
+        cramming: "&c你被挤压了。不要登出！"
+
+    factions compatibility:
+      no entry: "你不能在战斗中进入禁止 PVP 的区域"
+
+    towny compatibility:
+      no entry: "你不能在战斗中进入禁止 PVP 的区域"
+      
+    residence compatibility:
+      no entry: "你不能在战斗中进入禁止 PVP 的区域"
+      
+    lands compatibility:
+      no entry: "你不能在战斗中进入禁止 PVP 的区域"
+      
+    red protect compatibility:
+      no entry: "你不能在战斗中进入禁止 PVP 的区域"
+
+    worldguard compatibility:
+      no entry:
+        pvp: "你不能在战斗中进入禁止 PVP 的区域"
+        mob: "你被怪物标记时不能进入禁止怪物的区域"
+
+    placeholder compatibility:
+      zero time left: "不在战斗中"
+      unknown: "未知"
+      status:
+        fighting: "&c战斗中"
+        idling: "&a空闲"
+        in combat: "&a是"
+        not in combat: "&c否"
+      newbie helper:
+        in protection: "&a受保护"
+        not in protection: "&c未受保护"
+        
+    citizens compatibility:
+      kick message: "&c在你的替身被杀死或移除之前，你不允许重新登录。"
+      
+    newbie helper:
+      pvp:
+        enabled: "&7&lPVP: &a已启用"
+        disabled: "&7&lPVP: &c已禁用"
+      no pvp:
+        self: "&c你的 PVP 已禁用时不能攻击该玩家。"
+        other: "&c该玩家没有启用 PVP。"
+      disabled:
+        attacker: "你攻击了某人，因此你的新手保护已被禁用。"
+        expired: "你的新手保护已过期。"
+      check:
+        format: "&a{target} 的 PVP 设置为 {setting}"
+        setting enabled: "&a开"
+        setting disabled: "&c关"

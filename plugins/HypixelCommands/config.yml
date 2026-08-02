@@ -1,0 +1,204 @@
+# DeluxeCommands v1.9.0 主配置
+# 由 extended_clip 创建
+# 
+# 在下面创建命令！
+# 命令格式如下：
+# 
+# commands:
+#   <不带斜杠的命令>:
+#     permission: <使用命令所需的权限>
+#     no_permission_message: <玩家没有权限时发送的消息>
+#     message:
+#     - '[text]<如果以 [text] 标识开头，则此处为普通文本>'
+#     - '[playercommand] spawn'
+#     - '[consolecommand] eco give %executor% 100'
+#     - '{"text": "此处为 JSON 文本"}'
+#     - '{"text": "要在同一行有多个 JSON 组件"}&&{"text": "必须在它们之间使用 && 运算符！"}'
+#     target_permission: <使用带玩家参数的命令所需的权限: /<命令> (玩家)>
+#     target_no_permission_message: <玩家没有权限指定目标来设置占位符时发送的消息>
+#     target_message:
+#     - '[text]<你不需要指定此选项，仅当你想在指定目标时发送单独消息才需要>'
+#     - '{"text": "%player% 的统计信息:"}'
+#     - '{"text": "此消息仅在命令中指定了目标玩家时才发送！"}'
+#     aliases:
+#     - 'somealiasforthiscommand'
+# 
+# 你现在可以添加新条目来为每个命令定义不同的别名！
+#  只需将 "aliases" 选项添加到你想定义别名的命令上！
+# DeluxeCommands 会检测你是否安装了 DeluxeChat 或 PlaceholderAPI！你可以使用任何已启用的占位符！
+commands:
+  pl:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&f未知命令。'
+    target_message:
+    - '[text]&f未知命令。'
+    aliases:
+    - plugins
+  elist:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&f未知命令。'
+    target_message:
+    - '[text]&f未知命令。'
+    aliases:
+    - elistplayers
+    - ebal
+    - ebalance
+    - emoney
+    - ebalancetop
+    - help
+    - serverlag
+    - ehelp
+    - ebaltop
+    - server
+    - ip
+    - reload
+    - ebal
+    - ebalance
+    - emoney
+    - memoria
+    - ram
+    - alert
+    - emoneytop
+    - ekit
+    - ekits
+    - ewarp
+    - ewarps
+  bungee:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&c你没有权限！'
+    target_message:
+    - '[text]&c你没有权限！'
+    aliases:
+    - bungeecord
+    - perms
+  serverlag:
+    permission: hypixelcommands.admin
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.admin
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&8'
+    - '[text]&8  &e&l服务器状态'
+    - '[text]&8'
+    - '[text]&8  &f在线时间: &a%server_uptime%'
+    - '[text]&8  &fTPS: &a%server_tps_15_colored%, %server_tps_5_colored%, %server_tps_1_colored%'
+    - '[text]&8  '
+    - '[text]&8  &f内存: &a%server_ram_used%/%server_ram_total%MB &7(空闲: %server_ram_free%MB)'
+    - '[text]&8  '
+    - '[text]&f  已加载区块: &a%server_total_chunks%'
+    - '[text]&f  活跃实体: &a%server_total_living_entities%'
+    - '[text]&f  总实体: &a%server_total_entities%'
+    - '[text]&8'
+    target_message:
+    - '[text]&8'
+    - '[text]&8  &e&l服务器状态'
+    - '[text]&8'
+    - '[text]&8  &f在线时间: &a%server_uptime%'
+    - '[text]&8  &fTPS: &a%server_tps_15_colored%, %server_tps_5_colored%, %server_tps_1_colored%'
+    - '[text]&8  '
+    - '[text]&8  &f内存: &a%server_ram_used%/%server_ram_total%MB &7(空闲: %server_ram_free%MB)'
+    - '[text]&8  '
+    - '[text]&f  已加载区块: &a%server_total_chunks%'
+    - '[text]&f  活跃实体: &a%server_total_living_entities%'
+    - '[text]&f  总实体: &a%server_total_entities%'
+    - '[text]&8'
+    aliases:
+    - elag
+    - tps
+    - memory
+    - memoria
+    - ram
+  money:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&a你的钱包里有 &6%vault_eco_balance_commas% 金币 &a！'
+    target_message:
+    - '[text]&a玩家 &7%player_displayname% &a的钱包里有 &6%vault_eco_balance_commas% 金币
+      &a！'
+    aliases:
+    - balance
+    - bal
+    - coins
+  serverlist:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&e'
+    - '[text]&e&l  在线玩家: &7%listplayers_with_perm_rank.default%'
+    - '[text]&e'
+    target_message:
+    - '[text]&e'
+    - '[text]&e&l  在线玩家: &7%listplayers_with_perm_rank.default%'
+    - '[text]&e'
+    aliases:
+    - glist
+    - elist
+    - list
+    - listplayers
+  ping:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&a你的延迟为 &a%player_colored_ping%毫秒'
+    target_message:
+    - '[text]&a玩家 &7%player_displayname% &a的延迟为 &a%player_colored_ping%毫秒'
+    aliases:
+    - lag
+    - ms
+    - miping
+  discord:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&8'
+    - '[text]&8  &e&lDISCORD'
+    - '[text]&f    www.example.com &7(点击)'
+    - '[text]&8'
+    target_message:
+    - '[text]&8'
+    - '[text]&8  &e&lDISCORD'
+    - '[text]&f    www.example.com &7(点击)'
+    - '[text]&8'
+    aliases:
+    - disc
+    - di
+    - discordserver
+  buy:
+    permission: hypixelcommands.user
+    no_permission_message: '&f未知命令。'
+    target_permission: hypixelcommands.user
+    target_no_permission_message: '&f未知命令。'
+    message:
+    - '[text]&8'
+    - '[text]&8  &e&l商店'
+    - '[text]&f    www.example.com &7(点击)'
+    - '[text]&8'
+    target_message:
+    - '[text]&8'
+    - '[text]&8  &e&l商店'
+    - '[text]&f    www.example.com &7(点击)'
+    - '[text]&8'
+    aliases:
+    - shop
+    - store

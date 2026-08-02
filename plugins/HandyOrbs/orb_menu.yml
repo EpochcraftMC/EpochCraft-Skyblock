@@ -1,0 +1,107 @@
+menu-title: '&8宝珠菜单'
+#必须是 9 的倍数
+menu-size: 36
+
+use-background-item: true
+background-item: '160:15'
+background-item-name: ' '
+background-item-lore: []
+
+edit-orb-title-item: '386'
+#槽位编号从 0 开始
+edit-orb-title-slot: 10
+#如果玩家没有下面的权限
+#该物品将不会显示
+#设置为 'none' 可禁用权限检查
+edit-orb-title-permission: 'handyorbs.orb.edit.title'
+edit-orb-title-name: '&a编辑宝珠标题'
+edit-orb-title-lore:
+  - '&f将宝珠的名称'
+  - '&f改为其他内容。'
+
+reset-orb-title-item: '331'
+#槽位编号从 0 开始
+reset-orb-title-slot: 12
+#如果玩家没有下面的权限
+#该物品将不会显示
+#设置为 'none' 可禁用权限检查
+reset-orb-title-permission: 'handyorbs.orb.edit.title'
+reset-orb-title-name: '&a重置宝珠标题'
+reset-orb-title-lore:
+  - '&f将宝珠的名称重置'
+  - '&f为默认设置。'
+
+toggle-title-visibility:
+  permission: 'handyorbs.orb.edit.title'
+  slot: 14
+  title-hidden-item:
+    item: '351:8'
+    name: '&f状态: &7已隐藏'
+    lore:
+      - '&f宝珠的标题'
+      - '&f当前已隐藏。'
+      - ''
+      - '&e点击显示标题！'
+  title-shown-item:
+    item: '351:10'
+    name: '&f状态: &a已显示'
+    lore:
+      - '&f宝珠的标题'
+      - '&f当前已显示。'
+      - ''
+      - '&e点击隐藏标题！'
+
+pickup-orb-item: '54'
+pickup-orb-slot: 16
+pickup-orb-name: '&a捡起宝珠'
+pickup-orb-lore:
+  - '&f点击捡起'
+  - '&f这个宝珠。'
+
+make-server-orb-item: '137'
+make-server-orb-slot: 20
+make-server-orb-permission: 'handyorbs.admin'
+make-server-orb-name: '&c设为服务器宝珠'
+make-server-orb-lore:
+  - '&f将这个宝珠转换'
+  - '&f为服务器宝珠。'
+  - ''
+  - '&f当前的主人将被'
+  - '&f替换为服务器。'
+
+#并非所有宝珠都有超活跃模式，如果有的话
+#这个设置会让宝珠在 1 秒内超活跃
+#示例: 超活跃的农耕宝珠会在 1 秒内
+#在其范围内的所有耕地上种植作物
+hyper-activity-item: '399'
+hyper-activity-slot: 24
+hyper-activity-permission: 'handyorbs.hyperactivity'
+#冷却时间（秒）
+hyper-activity-cooldown: 600
+hyper-activity-cooldown-bypass-permission: 'handyorbs.hyperactivity.bypass'
+hyper-activity-cooldown-message: '&f这个宝珠正在从上次的 &6超活跃&f 中恢复能量！'
+no-hyper-activity-message: '&c这个宝珠没有超活跃模式！'
+hyper-activity-name: '&6超活跃'
+hyper-activity-lore:
+  - '&f让宝珠在 1 秒内'
+  - '&f处于超活跃状态。'
+  - ''
+  - '&f所有活动都会达到最大值！'
+  - ''
+  - '&f冷却时间: &e10 分钟'
+
+close-menu-item: '262'
+close-menu-item-slot: 31
+close-menu-item-name: '&c关闭菜单'
+close-menu-item-lore:
+  - '&f点击关闭'
+  - '&f这个菜单。'
+
+#这是铁砧界面中的纸张
+edit-paper-lore:
+  - '&8^^^^^^^^^^^^^'
+  - '&f输入你将要'
+  - '&f使用的新标题。'
+
+#请勿修改此项
+version: 1.0

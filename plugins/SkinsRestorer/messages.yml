@@ -1,0 +1,73 @@
+PREFIX: '&e[&2SkinsRestorer&e] '
+HELP_HELP_COMMAND: ' [help]'
+HELP_SKIN_SET: 更改你的皮肤。
+HELP_SKIN_SET_OTHER: 为目标玩家设置皮肤。
+HELP_SKIN_SET_OTHER_URL: 从 URL 为目标玩家设置皮肤。
+HELP_SKIN_CLEAR: 清除你的皮肤。
+HELP_SKIN_CLEAR_OTHER: 清除目标玩家的皮肤。
+HELP_SKIN_SEARCH: 搜索你想要的皮肤
+HELP_SKIN_UPDATE: 更新你的皮肤。
+HELP_SKIN_UPDATE_OTHER: 更新目标玩家的皮肤。
+HELP_SR_RELOAD: 重载配置文件。
+HELP_SR_STATUS: 检查插件所需的 API 服务。
+HELP_SR_DROP: 删除玩家或皮肤数据。
+HELP_SR_PROPS: 显示玩家当前的皮肤属性。
+HELP_SR_APPLY_SKIN: 为目标用户重新应用皮肤。
+HELP_SR_CREATECUSTOM: 创建全服自定义皮肤。
+SYNTAX_DEFAULTCOMMAND: ' <skin/url>'
+SYNTAX_SKINSET: ' <skin>'
+SYNTAX_SKINSET_OTHER: ' <target> <skin/url>'
+SYNTAX_SKINURL: ' <skinurl> [classic/slim]'
+SYNTAX_SKINSEARCH: ' <search>'
+SYNTAX_SKINUPDATE_OTHER: ' <target>'
+SYNTAX_SKINCLEAR_OTHER: ' <target>'
+COMPLETIONS_SKIN: <Skin>
+COMPLETIONS_SKINNAME: <SkinName>
+COMPLETIONS_SKINURL: <SkinUrl>
+COMMAND_SERVER_NOT_ALLOWED_MESSAGE: '&4错误&8：&c服务器 %server% 已禁用命令。'
+PLAYER_HAS_NO_PERMISSION_SKIN: '&4错误&8：&c你没有权限设置此皮肤。'
+PLAYER_HAS_NO_PERMISSION_URL: '&4错误&8：&c你没有权限通过 URL 设置皮肤。'
+SKIN_DISABLED: '&4错误&8：&c此皮肤已被管理员禁用。'
+SKINURL_DISALLOWED: '&4错误&8：&c此域名未被管理员允许。'
+NOT_PREMIUM: '&4错误&8：&c不存在该名字的正版玩家。'
+INVALID_PLAYER: '&4错误&8：&c%player 不是有效的用户名或 URL。'
+SKIN_COOLDOWN: '&4错误&8：&c你可以在 &e%s &c秒后再次更换皮肤。'
+SKIN_CHANGE_SUCCESS: '&2你的皮肤已更换。'
+SKIN_CLEAR_SUCCESS: '&2你的皮肤已清除。'
+SKIN_CLEAR_ISSUER: '&2已为玩家 %player 清除皮肤。'
+MS_UPDATING_SKIN: '&2正在上传皮肤，请稍候……（可能需要一些时间）'
+SUCCESS_CREATE_SKIN: '&2皮肤 %skin 已创建！'
+SUCCESS_UPDATING_SKIN: '&2你的皮肤已更新。'
+SUCCESS_UPDATING_SKIN_OTHER: '&2已为玩家 %player 更新皮肤。'
+ERROR_UPDATING_SKIN: '&4错误&8：&c更新皮肤时出错。请稍后再试！'
+ERROR_UPDATING_URL: "&4错误&8：&c你无法更新自定义 URL 皮肤！\n&c请使用 /skin url 重新请求"
+ERROR_UPDATING_CUSTOMSKIN: '&4错误&8：&c皮肤无法更新，因为它是自定义的。'
+ERROR_INVALID_URLSKIN: "&4错误&8：&c皮肤 URL 或格式无效，\n&c请尝试将皮肤上传到 imgur 并右键点击'复制图片地址'\n&c指南参见：&c&oskinsrestorer.net/skinurl"
+ERROR_MS_FULL: '&4MS 错误&8：&c上传皮肤时 API 超时。请稍后再试。（MineSkin）'
+ERROR_MS_GENERIC: '&4MS 错误&8：&c%error%'
+GENERIC_ERROR: '&4错误&8：&c请求皮肤数据时出错，请稍后再试！'
+WAIT_A_MINUTE: '&4错误&8：&c请等待一分钟后再请求该皮肤。（限流）'
+ERROR_NO_SKIN: '&4错误&8：&c该玩家没有设置皮肤。'
+SKINSMENU_OPEN: '&2正在打开皮肤菜单……'
+SKINSMENU_TITLE_NEW: '&9皮肤菜单 - 第 %page 页'
+SKINSMENU_NEXT_PAGE: '&a&l»&7 下一页&a&l »'
+SKINSMENU_PREVIOUS_PAGE: '&e&l«&7 上一页&e&l «'
+SKINSMENU_CLEAR_SKIN: '&c&l[ &7移除皮肤&c&l ]'
+SKINSMENU_SELECT_SKIN: '&2点击选择此皮肤'
+SKIN_SEARCH_MESSAGE: "&2你可以在以下位置找到与\"&a%SearchString%&2\"匹配的皮肤：\n&ahttps://namemc.com/minecraft-skins/tag/%SearchString% \n\n&2如果没有找到皮肤，你总是可以在 https://namemc.com/minecraft-skins/tag 找到一些皮肤\n你可以使用皮肤链接设置皮肤：\n /skin https://namemc.com/skin/"
+ADMIN_SET_SKIN: '&2你已设置 %player 的皮肤。'
+DATA_DROPPED: '&2已删除 %playerOrSkin "%targets" 的数据。'
+ADMIN_APPLYSKIN_SUCCES: '&2玩家皮肤已刷新！'
+ADMIN_APPLYSKIN_ERROR: '&4错误&8：&c玩家皮肤无法刷新！'
+STATUS_OK: '&2Mojang API 连接成功！'
+ALT_API_FAILED: '&4错误&8：&c皮肤数据 API 过载，请稍后再试！'
+MS_API_FAILED: '&4错误&8：&cMineSkin API 过载，请稍后再试！'
+NO_SKIN_DATA: '&4错误&8：&c未获取到皮肤数据！该玩家有皮肤吗？'
+RELOAD: '&2配置和语言文件已重载！'
+OUTDATED: "&4你正在运行旧版本的 SkinsRestorer！\n&c请在 Spigot 上更新到最新版本：\n&ehttps://www.spigotmc.org/resources/skinsrestorer.2124/"
+SR_LINE: '&7&m----------------------------------------'
+CUSTOM_HELP_IF_ENABLED: |2-
+    &2&lSkinsRestorer &7- &f&l版本 v%ver%
+     &2/skin <皮肤名> &7-&f 更改你的皮肤。
+      &2/skin update &7-&f 更新你的皮肤。
+      &2/skin clear &7-&f 清除你的皮肤。

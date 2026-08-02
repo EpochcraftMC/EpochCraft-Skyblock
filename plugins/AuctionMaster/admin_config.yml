@@ -1,0 +1,181 @@
+#在这里你可以编辑管理菜单中的消息
+
+npccreate-item-name: '&a创建 NPC'
+npccreate-item-lore:
+  - '&7在你当前的位置创建一个'
+  - '&a拍卖大师 NPC。'
+  - ''
+  - '&7NPC 创建后，你可以在'
+  - '&7它身上使用基本的 Citizens 命令'
+  - ''
+  - '&7你需要 &aCitizens &7和 &aHolographicDisplays'
+  - '&7才能使此选项正常工作！'
+
+npc-debug-item-name: '&a调试 NPC'
+npc-debug-item-lore:
+  - '&7如果你有多个 NPC'
+  - '&7并且它们的标题没有'
+  - '&7与实体对齐，请点击'
+  - '&7这个物品。'
+
+manage-ended-auctions-item-name: '&a管理已结束的拍卖'
+manage-ended-auctions-item-lore:
+  - '&7管理已结束或过期的拍卖，'
+  - '&7可强制删除它们。'
+  - ''
+  - '&7你可以通过两种方式删除拍卖：'
+  - ''
+  - '&7通过 &a交付&7 方式归还物品和金币。'
+  - ''
+  - '&7或完全删除拍卖，'
+  - '&7玩家将失去他们的金币和物品。'
+
+manage-auctions-item-name: '&a管理拍卖'
+manage-auctions-item-lore:
+  - '&7管理未结束的拍卖。'
+  - '&7你可以为拍卖加时、删除、'
+  - '&7修改价格、结束拍卖、移除出价。'
+  - ''
+  - '&7你还可以复制拍卖中的'
+  - '&7物品并放入你的背包。'
+
+delivery-item-name: '&a发送交付物'
+delivery-item-lore:
+  - '&7向玩家发送 &a交付物&7。'
+  - '&7你也可以使用命令'
+  - '&7删除玩家的交付物。'
+  - '&a/ahadmin delivery'
+
+help-item-name: '&a命令帮助'
+help-item-lore:
+  - '&7使用 &a/ahadmin help&7 或'
+  - '&7点击此物品查看'
+  - '&7可用的管理员命令列表'
+
+delete-auction-item:
+  with-delivery-name: '&a删除拍卖（含交付物）'
+  with-delivery-lore:
+    - '&7点击删除该拍卖'
+    - '&7并清除其所有数据，'
+    - '&7但会将所有未领取的'
+    - '&7出价金币和物品通过 &a交付物&7 发送。'
+  without-delivery-name: '&a删除拍卖'
+  without-delivery-lore:
+    - '&7点击删除该拍卖'
+    - '&7并清除其所有数据。'
+    - ''
+    - '&c注意！'
+    - '&7所有参与该拍卖的玩家'
+    - '&7将失去他们的出价和金币！'
+
+#这是针对已结束拍卖的管理出价物品
+manage-bids-item-name: '&a删除未领取的出价'
+manage-bids-item-lore:
+  - '&7在这里你可以强制'
+  - '&7移除未领取的出价。'
+  - ''
+  - '&7你可以通过交付物将'
+  - '&7金币/物品归还给出价者'
+  - '&7或直接删除它们。'
+
+#这是针对未结束拍卖的管理出价物品
+manage-bids-item-name2: '&a删除出价'
+manage-bids-item-lore2:
+  - '&7在这里你可以强制'
+  - '&7移除拍卖中的出价。'
+  - ''
+  - '&7你可以通过交付物将'
+  - '&7金币归还给出价者'
+  - '&7或直接删除它们。'
+
+get-item-copy-name: '&a获取物品副本'
+get-item-copy-lore:
+  - '&7将拍卖持有的物品'
+  - '&7复制到你的背包中。'
+
+force-end-auction-name: '&a结束拍卖'
+force-end-auction-lore:
+  - '&7点击强制结束'
+  - '&7拍卖，将其结束时间'
+  - '&7设置为当前时间。'
+  - ''
+  - '&c注意！'
+  - '&7此操作不可撤销！'
+
+edit-duration-item-name: '&a编辑拍卖时长'
+edit-duration-item-lore:
+  - '&7点击修改拍卖的'
+  - '&7时长，可设置或'
+  - '&7增加/减少时间。'
+  - ''
+  - '&7所有修改以分钟为单位'
+  - '&7以获得更精确的结果，如果你想'
+  - '&7用小时/天，请自行计算...'
+  - ''
+  - '&e左键点击设置时长'
+  - '&b右键点击增加/减少'
+
+selected-player-item-name: '&a已选择的玩家'
+selected-player-item-lore:
+  - '&7点击选择一名玩家，你将在'
+  - '&7下方选项中对其应用操作。'
+  - ''
+  - '&7已选择的玩家: &a%player%'
+  - ''
+  - '&7注意！即使输入的玩家名'
+  - '&7不存在，交付物也会被发送！'
+  - ''
+  - '&7当前交付数据：'
+  - '&7交付物品: &e%items-count%'
+  - '&7交付金币: &e%coins%'
+
+delivery-send-item-name: '&a发送交付物'
+delivery-send-item-lore:
+  - '&7点击配置一个'
+  - '&7交付物并发送给'
+  - '&7已选择的玩家。'
+
+delivery-set-item-name: '&a设置交付物'
+delivery-set-item-lore:
+  - '&7点击配置一个'
+  - '&7将覆盖已选择玩家'
+  - '&7现有交付物的'
+  - '&7交付物。'
+
+
+delivery-remove-item-name: '&a移除交付物'
+delivery-remove-item-lore:
+  - '&7点击移除已选择玩家'
+  - '&7交付物中的所有'
+  - '&7物品和金币。'
+
+delivery-item-clone-name: '&a获取交付物品'
+delivery-item-clone-lore:
+  - '&7将玩家交付物中的物品取到'
+  - '&7你的背包中。如果你的空间不足，'
+  - '&7剩余物品将掉落到地上。'
+
+no-selected-player-message: '&c你必须先选择一名玩家才能点击这个！'
+
+no-delivery-to-send: '&c我没有什么可发送的，请选择一些金币和/或将一些物品放入空槽位！'
+no-delivery-to-set: '&c我没有什么可设置的，如果你想移除他们的交付物，请使用正确的设置。'
+no-delivery-to-work-with: '&c所选玩家没有交付物，因此此操作将无法执行！'
+
+delivery-coins-item-name: '&a交付金币'
+delivery-coins-item-lore:
+  - '&7当前金币: &6%coins% 金币'
+  - ''
+  - '&7点击编辑此交付物将'
+  - '&7包含的金币数量。'
+
+confirm-action-item-name: '&a完成！'
+confirm-action-item-lore:
+  - '&7如果你认为已经完成'
+  - '&7并想完成此操作，'
+  - '&7请点击这里！'
+
+cancel-action-item-name: '&c取消'
+cancel-action-item-lore:
+  - '&7取消此操作并'
+  - '&7返回上一个菜单。'
+

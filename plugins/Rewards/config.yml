@@ -1,0 +1,175 @@
+check-for-updates: false
+
+storage-method: YAML
+
+host: localhost
+port: 3306
+database: rewards
+table: players
+username: root
+password: ''
+
+click-message: '&7'
+cooldown-message: '&c你可以在 &e%days%d %hours%h %minutes%m %seconds%s&c 后领取此奖励！'
+
+title: '奖励'
+rows: 3
+keep-open: false
+
+fill-blank-space:
+  enabled: true
+  item: STAINED_GLASS_PANE
+  data-value: 15
+
+
+Items:
+
+  daily:
+    name: '&a每日奖励'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 10
+    lore:
+      - '&7此奖励每 24 小时'
+      - '&7可领取一次。'
+      - ''
+      - '&7奖励：'
+      - '  &8+&6100 &7硬币'
+      - '  &8+&310 &7经验'
+      - ''
+      - '&e点击领取！'
+    give-money: 100
+    commands:
+      - 'console: whisper %player% &6[奖励] &f你已领取你的 &6每日奖励&f，请 24 小时后回来！'
+      - 'console: xp %player% 10'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: rank.default
+    no-permission-message: "&c你没有权限领取此奖励！"
+
+  daily-vip:
+    name: '&a每日 VIP 奖励'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 12
+    lore:
+      - '&7此奖励每 24 小时'
+      - '&7可领取一次。'
+      - ''
+      - '&7奖励：'
+      - '  &8+&6250 &7硬币'
+      - '  &8+&350 &7经验'
+      - ''
+      - '&e点击领取！'
+      - '&c需要 &aVIP &c或更高'
+    give-money: 250
+    commands:
+      - 'console: whisper %player% &6[奖励] &f你已领取你的 &6每日 VIP 奖励&f，请 24 小时后回来！'
+      - 'console: xp %player% 50'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: rank.vip
+    no-permission-message: "&c你需要 &aVIP &c或更高才能领取此奖励！"
+
+  daily-vip+:
+    name: '&a每日 VIP+ 奖励'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 13
+    lore:
+      - '&7此奖励每 24 小时'
+      - '&7可领取一次。'
+      - ''
+      - '&7奖励：'
+      - '  &8+&6500 &7硬币'
+      - '  &8+&3100 &7经验'
+      - ''
+      - '&e点击领取！'
+      - '&c需要 &aVIP&6+ &c或更高'
+    give-money: 500
+    commands:
+      - 'console: whisper %player% &6[奖励] &f你已领取你的 &6每日 VIP+ 奖励&f，请 24 小时后回来！'
+      - 'console: xp %player% 100'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: rank.vip+
+    no-permission-message: "&c你需要 &aVIP&6+ &c或更高才能领取此奖励！"
+
+  daily-mvp:
+    name: '&a每日 MVP 奖励'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 14
+    lore:
+      - '&7此奖励每 24 小时'
+      - '&7可领取一次。'
+      - ''
+      - '&7奖励：'
+      - '  &8+&61,000 &7硬币'
+      - '  &8+&3200 &7经验'
+      - ''
+      - '&e点击领取！'
+      - '&c需要 &bMVP &c或更高'
+    give-money: 1000
+    commands:
+      - 'console: whisper %player% &6[奖励] &f你已领取你的 &6每日 MVP 奖励&f，请 24 小时后回来！'
+      - 'console: xp %player% 200'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: rank.mvp
+    no-permission-message: "&c你需要 &bMVP &c或更高才能领取此奖励！"
+
+
+  daily-mvp+:
+    name: '&a每日 MVP+ 奖励'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 15
+    lore:
+      - '&7此奖励每 24 小时'
+      - '&7可领取一次。'
+      - ''
+      - '&7奖励：'
+      - '  &8+&62,500 &7硬币'
+      - '  &8+&3500 &7经验'
+      - ''
+      - '&e点击领取！'
+      - '&c需要 &bMVP&c+ &c或更高'
+    give-money: 2500
+    commands:
+      - 'console: whisper %player% &6[奖励] &f你已领取你的 &6每日 MVP+ 奖励&f，请 24 小时后回来！'
+      - 'console: xp %player% 500'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: rank.mvp+
+    no-permission-message: "&c你需要 &bMVP&c+ &c或更高才能领取此奖励！"
+
+  daily-mvp++:
+    name: '&a每日 MVP++ 奖励'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 16
+    lore:
+      - '&7此奖励每 24 小时'
+      - '&7可领取一次。'
+      - ''
+      - '&7奖励：'
+      - '  &8+&65,000 &7硬币'
+      - '  &8+&31,000 &7经验'
+      - ''
+      - '&e点击领取！'
+      - '&c需要 &6MVP&2++ &c或更高'
+    give-money: 5000
+    commands:
+      - 'console: whisper %player% &6[奖励] &f你已领取你的 &6每日 MVP++ 奖励&f，请 24 小时后回来！'
+      - 'console: xp %player% 1000'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: rank.mvp++
+    no-permission-message: "&c你需要 &6MVP&2++ &c或更高才能领取此奖励！"

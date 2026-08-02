@@ -1,0 +1,20 @@
+name: 惩罚玩家
+title: 惩罚玩家
+author: Server
+generation: ORIGINAL
+lore:
+- 惩罚 GUI
+open_command: ''
+
+pages:
+  '1':
+  - '为封禁 %skript_1::{player}% 选择一个理由：'
+  - ''
+  - '<tooltip:&7点击以“不公平优势”封禁 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时封禁<br>&b惩罚时长：30 天<br>&7<br>&7&e适用于：使用任何类型的不公平优势或<br>&e外部程序/软件。例如：杀戮光环、飞行等。><run command:/tempban %skript_1::{player}% 30d Unfair Advantage> &8⦿&0 不公平优势<reset>'
+  - '<tooltip:&7点击以“利用漏洞”封禁 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时封禁<br>&b惩罚时长：14 天<br>&7<br>&7&e适用于：使用任何通过给予游戏内物品/货币<br>&e来获取对其他玩家非法优势的漏洞。<br>&e例如：物品和硬币复制、崩溃错误等。><run command:/tempban %skript_1::{player}% 14d Exploit Usage> &8⦿&0 利用漏洞<reset>'
+  - '<tooltip:&7点击以“不当行为”封禁 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时封禁<br>&b惩罚时长：5 天<br>&7<br>&7&e适用于：怂恿自杀、威胁其他玩家、<br>&e工作人员等。><run command:/tempban %skript_1::{player}% 5d Inappropriate Behavior> &8⦿&0 不当行为<reset>'
+  - '<tooltip:&7点击以“威胁服务器”封禁 %skript_1::{player}%<br>&7<br>&b惩罚类型：永久封禁<br>&b惩罚时长：永久<br>&7<br>&7&e适用于：威胁服务器<br>&e或其软件/资源的玩家。><run command:/ban %skript_1::{player}% Server Threats> &8⦿&0 威胁服务器<reset>'
+  - '<tooltip:&7点击以“其他”封禁 %skript_1::{player}%<br>&7<br>&b惩罚类型：临时封禁<br>&b惩罚时长：7 天<br>&7<br>&7&e适用于：上述未列出的任何其他原因。><run command:/tempban %skript_1::{player}% 7d Other> &8⦿&0 其他<reset>'
+  - ''
+  - '  <tooltip:&c点击取消><run command:/cancelpunishment>&c取消惩罚<reset>'
+  - '      <tooltip:&7点击更换惩罚类型><run command:/punish %skript_1::{player}%>&7更换类型<reset>'

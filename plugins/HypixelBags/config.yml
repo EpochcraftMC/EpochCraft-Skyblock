@@ -1,0 +1,10 @@
+messages:
+  disablePlace: "&c你不能将这个物品放入此袋子！"
+ 
+titles:
+  arrow: "&8箭袋"
+  potion: "&8药水袋"
+  talisman: "&8护符袋"
+  bag: "&8末影箱"
+  
+arrowCommand: "menu"

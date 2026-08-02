@@ -1,0 +1,134 @@
+#--------- 获取宝珠菜单配置 ----------------
+#该菜单将使用与 orb_menu.yml 中
+#宝珠菜单相同的背景物品
+use-background-item: true
+
+get-orbs-book-1:
+  name: '&2永久宝珠'
+  lore:
+    - ''
+    - '&a   农耕'
+    - '&f下面是能够'
+    - '&f种植作物的宝珠。'
+get-orbs-book-2:
+  name: '&2永久宝珠'
+  lore:
+    - ''
+    - '&e   其他'
+    - '&f下面是永久生效但'
+    - '&f不会种植作物的宝珠。'
+get-orbs-book-3:
+  name: '&2永久宝珠'
+  lore:
+    - ''
+    - '&d   特殊'
+    - '&f下面是虽然没有特定'
+    - '&f用途但很特殊的宝珠。'
+get-orbs-book-4:
+  name: '&e临时宝珠'
+  lore:
+    - ''
+    - '&f下面是具有临时用途'
+    - '&f且不会永久存在的宝珠。'
+get-orbs-book-5:
+  name: '&c管理员宝珠'
+  lore:
+    - ''
+    - '&f如果使用不当会不稳定'
+    - '&f的宝珠，因此'
+    - '&f仅限 &c管理员&f 使用。'
+
+#该片段会添加到获取宝珠菜单中
+#宝珠配置的 lore 末尾
+get-orbs-lore-addition:
+  - '&e点击获取'
+  - '&e这个宝珠！'
+
+#----------------- 我的宝珠主菜单 -----------------
+#玩家名称会添加到标题末尾
+own-orbs-menu-title: '&8宝珠管理器 |'
+#该菜单将使用与 orb_menu.yml 中
+#宝珠菜单相同的背景物品
+own-use-background-item: true
+
+own-orbs-book-1:
+  name: '&a农耕'
+  lore:
+    - ''
+    - '&f下面是能够'
+    - '&f种植作物的宝珠。'
+own-orbs-book-2:
+  name: '&e其他'
+  lore:
+    - ''
+    - '&f下面是永久生效但'
+    - '&f不会种植作物的宝珠。'
+own-orbs-book-3:
+  name: '&d特殊'
+  lore:
+    - ''
+    - '&f下面是虽然没有特定'
+    - '&f用途但很特殊的宝珠。'
+own-orbs-book-4:
+  name: '&2我的宝珠'
+  #使用 %total-orbs% 显示玩家拥有的宝珠数量
+  #使用 %farming-wheat-name% 显示小麦宝珠的配置显示名称
+  #使用 %farming-wheat-total% 显示玩家拥有的小麦宝珠总数
+  #使用 %farming-carrots-name% 显示胡萝卜宝珠的配置显示名称
+  #使用 %farming-carrots-total% 显示玩家拥有的胡萝卜宝珠总数
+  #使用 %farming-potatoes-name% 显示土豆宝珠的配置显示名称
+  #使用 %farming-potatoes-total% 显示玩家拥有的土豆宝珠总数
+  #其他占位符的描述与上面相同:
+  #%nether-wart-name%, %sugar-cane-name%, %fishing-name%, %flower-name%, %rainbow-name%
+  #%nether-wart-total%, %sugar-cane-total%, %fishing-total%, %flower-total%, %rainbow-total%
+  lore:
+    - ''
+    - '&f你总共有'
+    - '&f&a%total-orbs% &f个宝珠！'
+    - '&8&m-------------------'
+    - '  &a小麦宝珠 &7- &a%farming-wheat-total%'
+    - '  &a胡萝卜宝珠 &7- &a%farming-carrots-total%'
+    - '  &a土豆宝珠 &7- &a%farming-potatoes-total%'
+    - ''
+    - '  %nether-wart-name% &7- &c%nether-wart-total%'
+    - '  %sugar-cane-name% &7- &e%sugar-cane-total%'
+    - '  %fishing-name% &7- &9%fishing-total%'
+    - ''
+    - '  %flower-name% &7- &3%flower-total%'
+    - '  %rainbow-name% &7- &2%rainbow-total%'
+
+#该片段会添加到管理我的宝珠菜单中
+#宝珠配置的 lore 末尾
+#使用 %orbs% 显示宝珠数量
+own-orbs-lore-addition:
+  - '&a你拥有 %orbs% 个'
+  - '&a这种宝珠'
+
+#如果玩家拥有某个类别的宝珠
+#该片段会添加到 lore 末尾
+click-to-view-lore-addition:
+  - ''
+  - '&a点击查看你的'
+  - '&a宝珠位置！'
+
+#从我的宝珠主菜单打开菜单时的设置
+orb-view-name: '%orb-name% #%number%'
+orb-view-lore:
+  - '&7宝珠位置:'
+  - '&7X: &f%orb-x%'
+  - '&7Y: &f%orb-y%'
+  - '&7Z: &f%orb-z%'
+
+#如果玩家拥有传送权限
+#该片段会添加到 lore 末尾
+orb-teleport-addition:
+  - '&7点击传送'
+
+go-back-item: '262'
+go-back-item-name: '&a返回'
+go-back-item-lore:
+  - '&f返回到'
+  - '&f上一个菜单。'
+
+#请勿修改此项
+version: 1.0

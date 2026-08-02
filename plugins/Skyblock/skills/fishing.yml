@@ -1,0 +1,425 @@
+type: FISHING
+simple: "钓鱼"
+name: "&a钓鱼技能"
+levelName: "&a钓鱼 <level>"
+level: "钓鱼等级 <level>"
+desc:
+  - "&7去当地池塘钓鱼"
+  - "&7获得钓鱼经验值！"
+levelIcon:
+  - "&e宝藏猎人 <level>"
+  - "&a<chance>%&f 提高找到"
+  - "&f宝藏的几率。"
+levelDesc:
+  - "&7奖励："
+  - "<rewards>"
+icon:
+  material: FISHING_ROD
+  data: 0
+  amount: 1
+  mainSlot: 23
+  levelSlot: 0
+specialIcon:
+  material: HAY_BLOCK
+  data: 0
+levels:
+  level1:
+    level: 1
+    slot: 9
+    page: 1
+    levelUp: 50
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:25"
+    lore:
+      - "&7 &e宝藏猎人 I"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &a0.2%。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&625 &7硬币"
+  level2:
+    level: 2
+    slot: 18
+    page: 1
+    levelUp: 125
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:50"
+    lore:
+      - "&7 &e宝藏猎人 II"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &80.2➜&a0.4%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&650 &7硬币"
+  level3:
+    level: 3
+    slot: 27
+    page: 1
+    levelUp: 250
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:100"
+    lore:
+      - "&7 &e宝藏猎人 III"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &80.4➜&a0.6%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6100 &7硬币"
+  level4:
+    level: 4
+    slot: 28
+    page: 1
+    levelUp: 500
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:200"
+    lore:
+      - "&7 &e宝藏猎人 IV"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &80.6➜&a0.8%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6200 &7硬币"
+  level5:
+    level: 5
+    slot: 29
+    page: 1
+    levelUp: 1000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:300"
+    lore:
+      - "&7 &e宝藏猎人 V"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &80.8➜&a1%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6300 &7硬币"
+  level6:
+    level: 6
+    slot: 20
+    page: 1
+    levelUp: 1500
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:400"
+    lore:
+      - "&7 &e宝藏猎人 VI"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &81➜&a1.2%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6400 &7硬币"
+  level7:
+    level: 7
+    slot: 11
+    page: 1
+    levelUp: 2000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:500"
+    lore:
+      - "&7 &e宝藏猎人 VII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &81.2➜&a1.4%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6500 &7硬币"
+  level8:
+    level: 8
+    slot: 2
+    page: 1
+    levelUp: 2500
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:600"
+    lore:
+      - "&7 &e宝藏猎人 VIII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &81.4➜&a1.6%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6600 &7硬币"
+  level9:
+    level: 9
+    slot: 3
+    page: 1
+    levelUp: 3000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:700"
+    lore:
+      - "&7 &e宝藏猎人 IX"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &81.6➜&a1.8%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6700 &7硬币"
+  level10:
+    level: 10
+    slot: 4
+    page: 1
+    levelUp: 3500
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:800"
+    lore:
+      - "&7 &e宝藏猎人 X"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &81.8➜&a2%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6800 &7硬币"
+  level11:
+    level: 11
+    slot: 13
+    page: 1
+    levelUp: 4500
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:900"
+    lore:
+      - "&7 &e宝藏猎人 XI"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &82➜&a2.2%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&6900 &7硬币"
+  level12:
+    level: 12
+    slot: 22
+    page: 1
+    levelUp: 6000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:1000"
+    lore:
+      - "&7 &e宝藏猎人 XII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &82.2➜&a2.4%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&61,000 &7硬币"
+  level13:
+    level: 13
+    slot: 31
+    page: 1
+    levelUp: 7500
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:1100"
+    lore:
+      - "&7 &e宝藏猎人 XIII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &82.4➜&a2.6%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&61,100 &7硬币"
+  level14:
+    level: 14
+    slot: 32
+    page: 1
+    levelUp: 9000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:2"
+      - "COINS:1200"
+    lore:
+      - "&7 &e宝藏猎人 XIV"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &82.6➜&a2.8%&f。"
+      - "&7 &8+&a2 HP &c<heart>&a 生命"
+      - "&7 &8+&61,200 &7硬币"
+  level15:
+    level: 15
+    slot: 33
+    page: 1
+    levelUp: 11000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:3"
+      - "COINS:1300"
+    lore:
+      - "&7 &e宝藏猎人 XV"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &82.8➜&a3%&f。"
+      - "&7 &8+&a3 HP &c<heart>&a 生命"
+      - "&7 &8+&61,300 &7硬币"
+  level16:
+    level: 16
+    slot: 24
+    page: 1
+    levelUp: 13000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:3"
+      - "COINS:1400"
+    lore:
+      - "&7 &e宝藏猎人 XVI"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &83➜&a3.2%&f。"
+      - "&7 &8+&a3 HP &c<heart>&a 生命"
+      - "&7 &8+&61,400 &7硬币"
+  level17:
+    level: 17
+    slot: 15
+    page: 1
+    levelUp: 15000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:3"
+      - "COINS:1500"
+    lore:
+      - "&7 &e宝藏猎人 XVII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &83.2➜&a3.4%&f。"
+      - "&7 &8+&a3 HP &c<heart>&a 生命"
+      - "&7 &8+&61,500 &7硬币"
+  level18:
+    level: 18
+    slot: 6
+    page: 1
+    levelUp: 20000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:3"
+      - "COINS:1600"
+    lore:
+      - "&7 &e宝藏猎人 XVIII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &83.4➜&a3.6%&f。"
+      - "&7 &8+&a3 HP &c<heart>&a 生命"
+      - "&7 &8+&61,600 &7硬币"
+  level19:
+    level: 19
+    slot: 7
+    page: 1
+    levelUp: 25000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:3"
+      - "COINS:1800"
+    lore:
+      - "&7 &e宝藏猎人 XIX"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &83.6➜&a3.8%&f。"
+      - "&7 &8+&a3 HP &c<heart>&a 生命"
+      - "&7 &8+&61,800 &7硬币"
+  level20:
+    level: 20
+    slot: 8
+    page: 1
+    levelUp: 30000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:4"
+      - "COINS:2000"
+    lore:
+      - "&7 &e宝藏猎人 XX"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &83.8➜&a4%&f。"
+      - "&7 &8+&a4 HP &c<heart>&a 生命"
+      - "&7 &8+&62,000 &7硬币"
+  level21:
+    level: 21
+    slot: 17
+    page: 1
+    levelUp: 33000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:4"
+      - "COINS:2200"
+    lore:
+      - "&7 &e宝藏猎人 XXI"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &84➜&a4.2%&f。"
+      - "&7 &8+&a4 HP &c<heart>&a 生命"
+      - "&7 &8+&62,200 &7硬币"
+  level22:
+    level: 22
+    slot: 26
+    page: 1
+    levelUp: 40000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:4"
+      - "COINS:2400"
+    lore:
+      - "&7 &e宝藏猎人 XXII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &84.2➜&a4.4%&f。"
+      - "&7 &8+&a4 HP &c<heart>&a 生命"
+      - "&7 &8+&62,400 &7硬币"
+  level23:
+    level: 23
+    slot: 35
+    page: 1
+    levelUp: 42000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:4"
+      - "COINS:2600"
+    lore:
+      - "&7 &e宝藏猎人 XXIII"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &84.4➜&a4.6%&f。"
+      - "&7 &8+&a4 HP &c<heart>&a 生命"
+      - "&7 &8+&62,600 &7硬币"
+  level24:
+    level: 24
+    slot: 44
+    page: 1
+    levelUp: 45000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:4"
+      - "COINS:2800"
+    lore:
+      - "&7 &e宝藏猎人 XXIV"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &84.6➜&a4.8%&f。"
+      - "&7 &8+&a4 HP &c<heart>&a 生命"
+      - "&7 &8+&62,800 &7硬币"
+  level25:
+    level: 25
+    slot: 53
+    page: 1
+    levelUp: 50000
+    rewards:
+      - "ADDFISHING:0.2"
+      - "ADDHEALTH:4"
+      - "COINS:3000"
+    lore:
+      - "&7 &e宝藏猎人 XXV"
+      - "&7  &f提高钓鱼时找到"
+      - "&7  &f宝藏的几率"
+      - "&7  &84.8➜&a5%&f。"
+      - "&7 &8+&a4 HP &c<heart>&a 生命"
+      - "&7 &8+&63,000 &7硬币"

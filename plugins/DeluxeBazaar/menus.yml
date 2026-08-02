@@ -1,0 +1,923 @@
+# _ _____ _____ _____ _____ _____ _____ _____ _____ _
+#|_|_____|_____|_____|_____|_____|_____|_____|_____|_|
+#| |    _____  ______ _     _    ___   ________    | |
+#| |   |  __ \|  ____| |   | |  | \ \ / /  ____|   | |
+#|_|   | |  | | |__  | |   | |  | |\ V /| |__      |_|
+#| |   | |  | |  __| | |   | |  | | > < |  __|     | |
+#| |   | |__| | |____| |___| |__| |/ . \| |____    | |
+#|_|   |_____/|______|______\____//_/ \_\______|   |_|
+#| |                                               | |
+#| |          DeluxeBazaar | SedatTR#8666          | |
+#|_|_____ _____ _____ _____ _____ _____ _____ _____|_|
+#|_|_____|_____|_____|_____|_____|_____|_____|_____|_|
+#
+# 如果你有任何问题或建议，请联系我。
+# Discord: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+# Wiki: https://sedattr.gitbook.io/deluxebazaar
+# 如果你正在使用这个插件，即表示你接受服务条款（TOS）。
+
+# 如果你想在物品中使用自定义头颅皮肤，你需要这样写：
+# material: SKULL_ITEM（1.13+ 版本写 PLAYER_HEAD）
+# data: 3（1.13+ 版本写 0）
+# skull: hdb-100（用于 HeadDatabase）
+# skull: 皮肤值（用于自定义头颅皮肤）
+items:
+  glass:
+    material: STAINED_GLASS_PANE
+    data: 15
+    name: "&r"
+  close:
+    material: BARRIER
+    data: 0
+    name: "&c关闭"
+  goBack:
+    material: ARROW
+    data: 0
+    name: "&e返回"
+
+menus:
+  main:
+    sounds:
+      category:
+        enabled: false
+        type: "ORB_PICKUP"
+        volume: 1
+        pitch: 1
+      item:
+        enabled: false
+        type: "ORB_PICKUP"
+        volume: 1
+        pitch: 1
+    title: "&8集市 ➜ %category% (%currentpage%/%totalpage%)"
+    size: 45
+    glass: [2,3,4,5,6,7,8,9,11,18,20,27,29,36,38,40,42,45]
+    close: 41
+    manage:
+      material: BOOK
+      data: 0
+      slot: 43
+      name: "&a管理订单"
+      lore:
+        none:
+          - "&7你没有任何进行中的订单。"
+          - "&r"
+          - "&e点击管理！"
+        order:
+          - "&7订单数：&e%order%"
+          - "&7托管金币：&6%price%"
+          - "&7物品数量：&a%amount%&7x"
+          - "&r"
+          - "&e点击管理！"
+        collectable:
+          - "&7订单数：&e%order%"
+          - ""
+          - "&2你有 &a%count% 个物品 &2可以领取！"
+          - "&e你有 &6%price% 金币 &e可以领取！"
+          - "&r"
+          - "&e点击管理！"
+    sell:
+      maximum: 10 # lore 中显示的最大物品数量。
+      material: CHEST
+      data: 0
+      slot: 39
+      items:
+        sellable: " &e%number%- &a%count%&7x &f%name% &7售价 &6%itemprice% 金币"
+        more: " &7等等..."
+      name: "&a出售背包"
+      lore:
+        nothing:
+          - "&7你没有任何可出售的物品。"
+        header:
+          - "&7你有可出售的物品。"
+          - "&r"
+        footer:
+          - "&r"
+          - "&7你将获得：&6%price% 金币"
+          - "&r"
+          - "&e点击出售！"
+    previous:
+      material: ARROW
+      data: 0
+      slot: 40
+      name: "&c上一页"
+      lore:
+        - "&c返回！"
+    next:
+      material: ARROW
+      data: 0
+      slot: 42
+      name: "&a下一页"
+      lore:
+        - "&c前往其他页面！"
+    modes:
+      direct:
+        material: IRON_ORE
+        data: 0
+        name: "&a直接模式"
+        lore:
+          - "&8集市视图"
+          - "&r"
+          - "&7查看每种物品的收购"
+          - "&7与出售价格。"
+          - "&r"
+          - "&e点击切换视图"
+        slot: 44
+      advanced:
+        material: GOLD_ORE
+        data: 0
+        name: "&a高级模式"
+        lore:
+          - "&8集市视图"
+          - "&r"
+          - "&7查看价格、订单量、"
+          - "&7近期交易等"
+          - "&7每种物品的信息。"
+          - "&r"
+          - "&e点击切换视图"
+        slot: 44
+
+  items: # 分组菜单
+    title: "&8%category% ➜ %name%"
+    size: 27
+    glass: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,25,26,27]
+    close: 23
+    back: 22
+    sell:
+      material: CHEST
+      data: 0
+      slot: 20
+      items:
+        sellable: " &e%number%- &a%count%&7x &f%name% &7售价 &6%itemprice% 金币"
+        more: " &7等等..."
+      name: "&a出售物品"
+      lore:
+        nothing:
+          - "&7你没有任何可出售的 %name%&7。"
+        header:
+          - "&7你有可出售的 %item%&7。"
+          - "&r"
+        footer:
+          - "&r"
+          - "&7你将获得：&6%price% 金币"
+          - "&r"
+          - "&e点击出售！"
+    manage:
+      material: BOOK
+      data: 0
+      slot: 24
+      name: "&a管理订单"
+      lore:
+        none:
+          - "&7你没有任何进行中的订单。"
+          - "&r"
+          - "&e点击管理！"
+        order:
+          - "&7订单数：&e%order%"
+          - "&7托管金币：&6%price%"
+          - "&7物品数量：&a%amount%&7x"
+          - "&r"
+          - "&e点击管理！"
+        collectable:
+          - "&7订单数：&e%order%"
+          - ""
+          - "&2你有 &a%count% 个物品 &2可以领取！"
+          - "&e你有 &6%price% 金币 &e可以领取！"
+          - "&r"
+          - "&e点击管理！"
+
+  item:
+    title: "&8%item% ➜ %name%"
+    size: 27
+    glass: [1,2,3,4,5,6,7,8,9,10,13,15,18,19,20,21,24,25,26,27]
+    close: 23
+    back: 22
+    example: 14
+    buy:
+      material: GOLD_BARDING
+      data: 0
+      slot: 11
+      name: "&a立即购买"
+      lore:
+        - "&8%item%"
+        - "&r"
+        - "&7单价：&6%price% 金币"
+        - "&7整组价格：&6%stackprice% 金币"
+        - "&r"
+        - "&e点击选择数量！"
+    sell:
+      material: HOPPER
+      data: 0
+      slot: 12
+      name: "&6立即出售"
+      lore:
+        none:
+          - "&8%item%"
+          - "&r"
+          - "&7背包物品：&c无！"
+          - "&7单价：&6%price% 金币"
+          - "&r"
+          - "&8你的背包里没有可出售的物品！"
+        sell:
+          - "&8%item%"
+          - "&r"
+          - "&7背包物品：&a%count% 个"
+          - "&r"
+          - "&7数量：&a%count%&7x"
+          - "&7总计：&6%price% 金币"
+          - "&r"
+          - "&e点击打开出售菜单！"
+    buyOrder:
+      material: MAP
+      data: 0
+      slot: 16
+      name: "&a创建收购单"
+      lore:
+        order: "&8- 单价 &6%price% 金币 &7| &f%order% &7个订单中共 &a%count%&7x"
+        nothing:
+          - "&8%item%"
+          - "&r"
+          - "&7我找不到这个物品的任何收购单。"
+          - "&e点击创建第一笔收购单！"
+        header:
+          - "&8%item%"
+          - "&r"
+          - "&a热门收购单："
+        footer:
+          - "&r"
+          - "&e点击创建收购单！"
+    sellOffer:
+      material: EMPTY_MAP
+      data: 0
+      slot: 17
+      name: "&6创建出售单"
+      lore:
+        offer: "&8- 单价 &6%price% 金币 &8| 来自 &f%offer% &7个出售单共 &a%count%&7x"
+        nothing:
+          - "&8%item%"
+          - "&r"
+          - "&7我找不到这个物品的任何出售单。"
+          - "&e点击创建第一笔出售单！"
+        header:
+          - "&8%item%"
+          - "&r"
+          - "&6热门出售单："
+        footer:
+          - "&r"
+          - "&e点击创建出售单！"
+    stats:
+      material: PAPER
+      data: 0
+      slot: 24
+      name: "&e统计"
+      lore:
+        - "&8%item%"
+        - "&r"
+        - "&7收购价格：&a%buyprice% 金币"
+        - "&7出售价格：&6%sellprice% 金币"
+        - "&r"
+        - "&7收购数量：&a%buycount%&7x"
+        - "&7出售数量：&6%sellcount%&7x"
+
+  buy:
+    title: "&8%name% ➜ 购买"
+    size: 27
+
+    items: # 你可以无限添加，或删除任意一个。不要为 fill 或 custom 类型的物品写 material。
+      buy1:
+        type: "normal" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 1
+        count: 1 # 购买数量
+        slot: 11
+        name: "&a购买 1x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7价格：&6%price% 金币"
+      buy16:
+        type: "normal" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 16
+        count: 16 # 购买数量
+        slot: 13
+        name: "&a购买 16x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7价格：&6%price% 金币"
+      buy32:
+        type: "normal" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 32
+        count: 32 # 购买数量
+        slot: 15
+        name: "&a购买 32x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7价格：&6%price% 金币"
+      customamount:
+        type: "custom" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 1
+        slot: 17
+        default:
+          material: SIGN # 普通物品
+          data: 0
+          glow: false
+          name: "&a自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7最多购买 &a%maximum%x"
+            - "&r"
+            - "&e点击指定数量！"
+        invalid:
+          material: REDSTONE_BLOCK # 无效物品
+          data: 0
+          glow: false
+          name: "&a自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7无效的数量！"
+            - "&r"
+            - "&e点击重新输入！"
+      fillinventory:
+        type: "fill" # normal（普通）、custom（自定义）或 fill（装满）
+        material: CHEST # 普通物品
+        data: 0
+        slot: 24
+        glow: true
+        name: "&a装满背包"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%maximum%x"
+          - "&r"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%totalprice% 金币"
+    glass: [1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,18,19,20,21,24,25,26,27]
+    close: 23
+    back: 22
+
+  sell:
+    title: "&8%name% ➜ 出售"
+    size: 27
+    items: # 你可以无限添加，或删除任意一个。不要为 fill 或 custom 类型的物品写 material。
+      sell1:
+        type: "normal" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 1
+        count: 1 # 出售数量
+        slot: 11
+        name: "&a出售 1x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7你将获得：&6%price% 金币"
+      sell16:
+        type: "normal" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 16
+        count: 16 # 出售数量
+        slot: 13
+        name: "&a出售 16x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7你将获得：&6%price% 金币"
+      sell32:
+        type: "normal" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 32
+        count: 32 # 出售数量
+        slot: 15
+        name: "&a出售 32x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7你将获得：&6%price% 金币"
+      customamount:
+        type: "custom" # normal（普通）、custom（自定义）或 fill（装满）
+        amount: 1
+        slot: 17
+        default:
+          material: SIGN # 普通物品
+          data: 0
+          glow: false
+          name: "&a自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7最多出售 &a%maximum%x"
+            - "&r"
+            - "&e点击指定数量！"
+        invalid:
+          material: REDSTONE_BLOCK # 无效物品
+          data: 0
+          glow: false
+          name: "&a自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7无效的数量！"
+            - "&r"
+            - "&e点击重新输入！"
+      sellinventory:
+        type: "all" # normal（普通）、custom（自定义）或 all（全部）
+        material: CHEST # 普通物品
+        data: 0
+        amount: 1
+        slot: 24
+        glow: true
+        name: "&a出售背包"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%maximum%x"
+          - "&r"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7你将获得：&6%totalprice% 金币"
+    glass: [1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,18,19,20,21,24,25,26,27]
+    close: 23
+    back: 22
+
+  order:
+    title: "&8管理订单"
+    size: 36
+    items:
+      buy: [11,12,13,14,15,16,17]
+      sell: [20,21,22,23,24,25,26]
+    glass: [1,2,3,4,5,6,7,8,9,10,18,19,27,28,29,30,31,32,33,34,35,36]
+    close: 32
+    back: 31
+
+  orderSettings:
+    title: "&8订单选项"
+    size: 27
+    glass: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,24,25,26,27]
+    close: 23
+    back: 22
+    cancel:
+      material: STAINED_CLAY
+      data: 14
+      slot: 12
+      name: "&c取消订单"
+      lore:
+        - "&7你将获得 &6%price% 金币退款"
+        - "&7来自 &a%amount%&7x 未完成的物品。"
+        - "&r"
+        - "&e点击取消！"
+    change:
+      material: NAME_TAG
+      data: 0
+      slot: 16
+      name: "&a更改价格"
+      lore:
+        buy:
+          - "&7直接为 &a%amount%&7x 个物品"
+          - "&7创建新的收购单。"
+          - "&r"
+          - "&7当前单价：&6%orderprice% 金币"
+          - "&7集市单价：&6%unitprice% 金币"
+          - "&r"
+          - "&e点击更改！"
+        sell:
+          - "&7直接为 &a%amount%&7x 个物品"
+          - "&7创建新的收购单。"
+          - "&r"
+          - "&7当前单价：&6%orderprice% 金币"
+          - "&7集市单价：&6%unitprice% 金币"
+          - "&r"
+          - "&e点击更改！"
+
+  confirm:
+    buyOrder:
+      title: "&8确认收购单"
+      size: 27
+      glass: [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,24,25,26,27]
+      close: 23
+      back: 22
+      item:
+        name: "&a收购单"
+        slot: 14
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7订单：&a%amount%x %name%"
+          - "&r"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击提交订单！"
+
+    sellOffer:
+      title: "&8确认出售单"
+      size: 27
+      glass: [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,24,25,26,27]
+      close: 23
+      back: 22
+      item:
+        name: "&a出售单"
+        slot: 14
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7订单：&a%amount%x %name%"
+          - "&r"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击提交订单！"
+
+    buy:
+      title: "&8确认购买"
+      size: 27
+      item:
+        name: "&a自定义数量"
+        slot: 14
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7价格：&6%price% 金币"
+          - "&r"
+          - "&e点击立即购买！"
+      glass: [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,24,25,26,27]
+      close: 23
+      back: 22
+
+    sell:
+      title: "&8确认出售"
+      size: 27
+      item:
+        name: "&a自定义数量"
+        slot: 14
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+          - "&7你将获得：&6%price% 金币"
+          - "&r"
+          - "&e点击立即出售！"
+      glass: [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,24,25,26,27]
+      close: 23
+      back: 22
+
+  sellAll:
+    title: "&8你确定吗？"
+    size: 27
+    confirm:
+      notSold:
+        material: CHEST
+        data: 0
+        slot: 12
+        name: "&a确认"
+        lore:
+          - "&7你将出售：&a%count%&7x 个物品"
+          - "&7你将获得：&6%price% 金币"
+          - "&r"
+          - "&e点击确认！"
+      sold:
+        material: STAINED_CLAY
+        data: 13
+        slot: 12
+        name: "&a物品已出售"
+        lore:
+          - "&7你出售了 &a%count%&7x 个物品，"
+          - "&6共获得 %price% 金币！"
+    cancel:
+      material: STAINED_CLAY
+      data: 14
+      slot: 16
+      name: "&c取消"
+      lore:
+        - "&7点击取消！"
+    back: 23
+
+  buyOrder:
+    title: "&8创建收购单"
+    size: 36
+    glass: [1,2,3,4,5,6,7,8,9,10,12,14,16,18,19,20,21,22,23,24,25,26,27,28,29,30,33,34,35,36]
+    close: 32
+    back: 31
+    items:
+      order1:
+        type: "normal"
+        amount: 1 # 菜单中的物品数量
+        count: 1 # 收购单数量
+        slot: 11
+        name: "&a收购单 1x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+      order32:
+        type: "normal"
+        amount: 32 # 菜单中的物品数量
+        count: 32 # 收购单数量
+        slot: 13
+        name: "&a收购单 32x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+      order64:
+        type: "normal"
+        amount: 64 # 菜单中的物品数量
+        count: 64 # 收购单数量
+        slot: 15
+        name: "&a收购单 64x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&a%amount%x"
+      customamount:
+        type: "custom"
+        amount: 1
+        slot: 17
+        default:
+          material: SIGN
+          data: 0
+          glow: false
+          name: "&a自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7最多收购 &a%maximum%x"
+            - "&r"
+            - "&e点击指定数量！"
+        invalid:
+          material: REDSTONE_BLOCK
+          data: 0
+          glow: false
+          name: "&a自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7无效的数量！"
+            - "&r"
+            - "&e点击重新输入！"
+
+  sellOffer:
+    title: "&8创建出售单"
+    size: 36
+    glass: [1,2,3,4,5,6,7,8,9,10,12,14,16,18,19,20,21,22,23,24,25,26,27,28,29,30,33,34,35,36]
+    close: 32
+    back: 31
+    items:
+      offer1:
+        type: "normal"
+        amount: 1 # 菜单中的物品数量。
+        count: 1 # 出售单数量。
+        slot: 11
+        name: "&6出售单 1x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&6%amount%x"
+      offer32:
+        type: "normal"
+        amount: 32
+        count: 32
+        slot: 13
+        name: "&6出售单 32x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&6%amount%x"
+      offer64:
+        type: "normal"
+        amount: 64 # 菜单中的物品数量
+        count: 64 # 出售单数量
+        slot: 15
+        name: "&6出售单 64x"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7数量：&6%amount%x"
+      customamount:
+        type: "custom"
+        amount: 1
+        slot: 17
+        default:
+          material: SIGN
+          data: 0
+          glow: false
+          name: "&6自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7最多出售 &6%maximum%x"
+            - "&r"
+            - "&e点击指定数量！"
+        invalid:
+          material: REDSTONE_BLOCK
+          data: 0
+          glow: false
+          name: "&6自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7无效的数量！"
+            - "&r"
+            - "&e点击重新输入！"
+
+  setBuyOrder:
+    title: "&8你愿意支付多少？"
+    size: 36
+    glass: [1,2,3,4,5,6,7,8,9,10,12,14,16,18,19,20,21,22,23,24,25,26,27,28,29,30,33,34,35,36]
+    close: 32
+    back: 31
+    items:
+      sameOrder:
+        type: "same"
+        material: GOLD_BLOCK
+        data: 0
+        slot: 11
+        name: "&6与最高收购单相同"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7使用该物品最高收购单的"
+          - "&7相同价格。"
+          - "&r"
+          - "&7收购：&a%amount%&7x"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击继续！"
+      topOrder:
+        type: "top"
+        material: GOLD_NUGGET
+        data: 0
+        slot: 13
+        price: 0.1
+        name: "&6最高收购单 +0.1"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7出价超过最高收购单，"
+          - "&7这样你的订单会先成交。"
+          - "&r"
+          - "&7收购：&a%amount%&7x"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击继续！"
+      spread:
+        type: "spread"
+        material: GOLD_BARDING
+        data: 0
+        slot: 15
+        spread: 5
+        name: "&6价差的 5%"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7最低售价：&6%sellprice% 金币"
+          - "&7最高收购价：&6%buyprice% 金币"
+          - "&7价差：&6%sellprice% &7- &6%buyprice% &7= &6%spread% 金币"
+          - "&r"
+          - "&7收购：&a%amount%&7x"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击继续！"
+      custom:
+        type: "custom"
+        slot: 17
+        default:
+          material: SIGN
+          data: 0
+          name: "&6自定义数量"
+          lore:
+            order: "&8- 单价 &6%price% 金币 &7| &f%order% &7个订单中共 &a%count%&7x"
+            nothing:
+              - "&8%item%"
+              - "&r"
+              - "&7我找不到这个物品的任何收购单。"
+              - "&r"
+              - "&e点击指定数量！"
+            header:
+              - "&8%item%"
+              - "&r"
+              - "&7设置你愿意支付的"
+              - "&7单价。"
+              - "&r"
+              - "&7收购：&a%amount%&7x"
+              - "&r"
+              - "&a热门收购单："
+            footer:
+              - "&r"
+              - "&e点击指定数量！"
+        invalid:
+          material: REDSTONE_BLOCK
+          data: 0
+          name: "&6自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7无效的数量！"
+            - "&r"
+            - "&e点击重新输入！"
+
+  setSellOffer:
+    title: "&8你希望售价多少？"
+    size: 36
+    glass: [1,2,3,4,5,6,7,8,9,10,12,14,16,18,19,20,21,22,23,24,25,26,27,28,29,30,33,34,35,36]
+    close: 32
+    back: 31
+    items:
+      sameOrder:
+        type: "same"
+        material: GOLD_BLOCK
+        data: 0
+        slot: 11
+        name: "&6与最佳出售单相同"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7使用该物品最低出售单的"
+          - "&7相同价格。"
+          - "&r"
+          - "&7出售：&a%amount%&7x"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击继续！"
+      topOrder:
+        type: "top"
+        material: GOLD_NUGGET
+        data: 0
+        slot: 13
+        price: 0.1
+        name: "&6最佳出售单 -0.1"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7出价低于最佳出售单，"
+          - "&7这样你的订单会先成交。"
+          - "&r"
+          - "&7出售：&a%amount%&7x"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击继续！"
+      spread:
+        type: "spread"
+        material: GOLD_BARDING
+        data: 0
+        slot: 15
+        spread: 10
+        name: "&6价差的 10%"
+        lore:
+          - "&8%item%"
+          - "&r"
+          - "&7最低售价：&6%sellprice% 金币"
+          - "&7最高收购价：&6%buyprice% 金币"
+          - "&7价差：&6%sellprice% &7- &6%buyprice% &7= &6%spread% 金币"
+          - "&r"
+          - "&7出售：&a%amount%&7x"
+          - "&7单价：&6%unitprice% 金币"
+          - "&7总价：&6%price% 金币"
+          - "&r"
+          - "&e点击继续！"
+      custom:
+        type: "custom"
+        slot: 17
+        default:
+          material: SIGN
+          data: 0
+          name: "&6自定义数量"
+          lore:
+            order: "&8- 单价 &6%price% 金币 &7| &f%order% &7个订单中共 &a%count%&7x"
+            nothing:
+              - "&8%item%"
+              - "&r"
+              - "&7我找不到这个物品的任何出售单。"
+              - "&r"
+              - "&e点击指定数量！"
+            header:
+              - "&8%item%"
+              - "&r"
+              - "&7设置你想要的"
+              - "&7单价。"
+              - "&r"
+              - "&7出售：&a%amount%&7x"
+              - "&r"
+              - "&a热门出售单："
+            footer:
+              - "&r"
+              - "&e点击指定数量！"
+        invalid:
+          material: REDSTONE_BLOCK
+          data: 0
+          name: "&6自定义数量"
+          lore:
+            - "&8%item%"
+            - "&r"
+            - "&7无效的数量！"
+            - "&r"
+            - "&e点击重新输入！"

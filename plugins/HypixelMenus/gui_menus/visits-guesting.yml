@@ -1,0 +1,84 @@
+menu_title: '&8杰瑞的做客指南'
+open_command: '128321163'
+size: 36
+items:
+
+
+      FEATHER:
+        material: FEATHER
+        slot: 10
+        display_name: '&a参观玩家岛屿'
+        lore:
+        - '&7你可以使用 &a/islandvisit'
+        - '&a<玩家>&7 在其他'
+        - '&7岛屿上做客。'
+        - ''
+        - '&7访客&c无法与世界交互&7，'
+        - '&7但看看其他玩家在做什么'
+        - '&7总是很有趣！'
+        left_click_commands: []
+        right_click_commands: []
+
+      TALLGRASS:
+        material: 31
+        data: 1
+        slot: 12
+        display_name: '&a访客上限'
+        lore:
+        - '&7你只能同时在你的岛屿上'
+        - '&7接待有限数量的 &a访客&7。'
+        - ''
+        - '&7上限取决于你的等级:'
+        - '&7- &c[&fYOUTUBE&c] &f= &a15'
+        - '&7- &6[MVP&4++&6] &f= &a7'
+        - '&7- &b[MVP] &f= &a5'
+        - '&7- &a[VIP] &f= &a3'
+        - '&7- &7默认 &f= &a1'
+        - ''
+        - '&b合作档案使用搭档中'
+        - '&b等级最高的那个人的上限！'
+        - ''
+        - '&e&l特殊！&6[MVP&e++&6]'
+        - '&7可以超出访客上限加入岛屿！'
+        - '&7（最多超出 10 人）'
+        - ''
+        - '&e可在 store.example.com 购买等级'
+        left_click_commands: []
+        right_click_commands: []
+
+      FENCE:
+        material: FENCE
+        slot: 14
+        display_name: '&a访问权限'
+        lore:
+        - '&7你可以在你的 &e岛屿设置&7 中'
+        - '&7编辑谁可以到你的'
+        - '&7岛屿做客。'
+        - ''
+        - '&7使用 &c/is ban <玩家>'
+        - '&7阻止特定玩家加入。'
+        left_click_commands: []
+        right_click_commands: []
+
+      REPEATER:
+        material: 356
+        slot: 16
+        display_name: '&a管理'
+        lore:
+        - '&7使用 &e访客管理&7 菜单'
+        - '&7管理在线访客。'
+        - ''
+        - '&7或者，使用 &c/is kick &7命令'
+        - '&7或 &a点击访客&7。'
+        left_click_commands: []
+        right_click_commands: []
+
+      go-back:
+        material: ARROW
+        slot: 31
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] jerry'
+        right_click_commands:
+        - '[openguimenu] jerry'

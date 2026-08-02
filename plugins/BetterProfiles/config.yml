@@ -1,0 +1,212 @@
+#          ___      _   _           ___          __ _ _
+#         | _ ) ___| |_| |_ ___ _ _| _ \_ _ ___ / _(_) |___ ___
+#         | _ \/ -_)  _|  _/ -_) '_|  _/ '_/ _ \  _| | / -_|_-<
+#         |___/\___|\__|\__\___|_| |_| |_| \___/_| |_|_\___/__/
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#
+
+Messages:
+  No-permission: "&c你没有权限这样做。"
+  View-command-no-permission: "none"
+  #玩家在交互时没有权限打开档案时发送的消息。设置为 "none" 则不发送任何消息。
+  View-interact-no-permission: "none"
+  Reloaded: "&a部分消息和选项已重新加载。其他可能需要重启！"
+  Invalid-player: "&c玩家不在线！"
+  Disabled-world: "&c此世界已禁用档案功能 :("
+  Please-reconnect: "&c出了点问题！请重新连接服务器。"
+  Please-reconnect-other: "&c出了点问题！玩家需要重新连接服务器。"
+  Profile-disabled-command: "&c命令已禁用！请右键点击玩家查看档案！"
+  Profile:
+    Title: "&8{PLAYER} 的档案"
+    Profile-is-locked: "&c该玩家的档案已锁定。"
+  Toggle-profiles:
+    No-permission: "&c你没有权限这样做。"
+    Profiles-locked: "&c档案已禁用！你现在无法查看玩家的档案。"
+    Profiles-unlocked: "&a档案已启用！你现在可以查看玩家的档案。"
+  Toggle-profile:
+    No-permission: "&c你没有权限这样做。"
+    Profile-locked: "&c档案已锁定！玩家现在无法查看你的档案。"
+    Profile-unlocked: "&a档案已解锁！玩家现在可以查看你的档案。"
+  Help:
+    Admin:
+    - "&6 /profile &f- &e查看你的档案"
+    - "&6 /profile <玩家> &f- &e查看玩家的档案"
+    - "&6 /betterprofiles &f- &e查看你的档案"
+    - "&6 /betterprofiles view <玩家> &f- &e打开玩家的档案"
+    - "&6 /betterprofiles toggle <viewer/profile>&f- &e切换查看/显示档案"
+    - "&6 /betterprofiles reload &f- &e重新加载配置"
+    User:
+    - "&6 /profile &f- &e查看你的档案"
+    - "&6 /betterprofiles &f- &e查看你的档案"
+    - "&6 /betterprofiles view <玩家> &f- &e查看玩家的档案"
+    - "&6 /betterprofiles toggle <viewer/profile>&f- &e切换查看/显示档案"
+
+Items:
+  No-main-hand:
+    #如果你使用自定义材质包。(仅限 1.14+)
+    #如果你不知道这是什么，请设为 0。
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&e主手"
+    #查看此栏位所需的权限。设置为 "none" 则不需要权限
+    Permission: "none"
+    Lore:
+    - "&c空的！"
+    Lore-hidden:
+    - "&c你看不到这个栏位。"
+  No-off-hand:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&e副手"
+    Permission: "none"
+    Lore:
+    - "&c空的！"
+    Lore-hidden:
+    - "&c你看不到这个栏位。"
+  No-helmet:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&e头盔"
+    Permission: "none"
+    Lore:
+    - "&c空的！"
+    Lore-hidden:
+    - "&c你看不到这个栏位。"
+  No-chestplate:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&e胸甲"
+    Permission: "none"
+    Lore:
+    - "&c空的！"
+    Lore-hidden:
+    - "&c你看不到这个栏位。"
+  No-leggings:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&e护腿"
+    Permission: "none"
+    Lore:
+    - "&c空的！"
+    Lore-hidden:
+    - "&c你看不到这个栏位。"
+  No-boots:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&e靴子"
+    Permission: "none"
+    Lore:
+    - "&c空的！"
+    Lore-hidden:
+    - "&c你看不到这个栏位。"
+  Close:
+    Custom-model-data: 0
+    Displayname: "&c关闭"
+    Lore: []
+
+Options:
+  Debug: false
+  #This option is for 1.9+ servers.
+  #THIS PREVENTS profiles being opened IF player holds a SHIELD in main hand or off hand.
+  Prevent-shield: true
+  #THIS PREVENTS profiles being opened IF player holds a SHIELD in main hand or off hand.
+  Prevent-interact: true
+  #Enabling this makes the profile only accessible when right clicking while sneaking.
+  Only-sneak: false
+  #If enabled the plugin will attempt to update the inventory if the player updates the equipment.
+  #Includes main hand and off hand if available. Modifying this requires a restart.
+  Update-equipment: true
+  #用自定义边框物品填满所有空槽位。不支持显示名和描述。
+  #边框物品是黑色染色玻璃板。
+  Fill-empty:
+    Enabled: true
+    #边框物品的自定义模型数据。如果你想使用自定义材质包并让它看起来像真正的 RPG 背包。
+    #仅限 1.14 及以上版本。如果你不在服务器上使用自定义资源包，请设为 0。
+    Custom-model-data: 0
+    #这适用于边框中的所有物品。
+    #允许的颜色有: WHITE,ORANGE,MAGENTA,LIGHT_BLUE,YELLOW,LIME,PINK,GRAY,LIGHT_GRAY,CYAN,PURPLE,BLUE,BROWN,GREEN,RED,BLACK
+    Color-frame: BLACK
+  Empty-slot:
+    #这适用于玩家装备槽为空时使用的所有物品。
+    #允许的颜色有: WHITE,ORANGE,MAGENTA,LIGHT_BLUE,YELLOW,LIME,PINK,GRAY,LIGHT_GRAY,CYAN,PURPLE,BLUE,BROWN,GREEN,RED,BLACK
+    Color-frame: RED
+  Hidden-slot:
+    #这适用于玩家看不到的所有槽位。
+    Color-frame: BLACK
+  #启用后，如果执行操作/命令的玩家看不到玩家模型，将发送 "Invalid player" 消息。
+  #（应能与隐身插件兼容）
+  Check-visibility: true
+  Slots:
+    Close: 49
+    Helmet: 10
+    Chestplate: 19
+    Leggings: 28
+    Boots: 37
+    Main-hand: 20
+    Off-hand: 29
+  View:
+    #如果为 true，可以通过右键打开档案。
+    Interact: true
+    #如果为 true，可以通过命令打开档案。
+    Command: true
+  #右键或使用命令时不会打开档案的世界。
+  #这不影响拥有管理员权限的玩家。
+  Disabled-worlds:
+  - "world_pvp"
+  #将声音设置为 "none" 可禁用声音。
+  Sounds:
+    #打开玩家档案时的声音。
+    Open: "none"
+    #关闭玩家档案时的声音。
+    Close: "none"
+
+Permissions:
+  Admin: "betterprofiles.admin"
+  #通过右键查看档案的权限。
+  #设置为 "none" 可禁用此权限。
+  View-interact: "none"
+  #通过命令 /betterprofiles view <玩家> 或 /profile <玩家> 查看档案的权限。
+  #设置为 "none" 可禁用此权限。
+  View-command: "betterprofiles.view.command"
+  #切换查看他人背包的权限。
+  #启用/禁用查看他人的档案。设置为 "none" 可禁用此权限。
+  Toggle-view-profiles: "none" #示例: "betterprofiles.toggle.others-profiles"
+  #切换他人查看自己档案的权限。
+  #启用/禁用他人查看你的档案。设置为 "none" 可禁用此权限。
+  Toggle-profile: "betterprofiles.toggle.profile"
+  #绕过档案切换。忽略玩家已禁用的档案查看。
+  Bypass: "betterprofiles.view.bypass"
+  #使用 /profile 查看自己档案的权限
+  Own-profile: "none" #示例: "betterprofiles.view.myprofile"
+
+Database:
+  #可用类型: MySQL 和 SQLite
+  #你可以使用 MySQL 实现全局共享，或使用 SQLite 实现本地存储。
+  #MySQL 需要服务器（本地或外部）
+  #SQLite 不需要任何东西，它保存在文件夹中的 db 文件里。
+  Type: "SQLite"
+  Table: "betterprofiles"
+  #如果类型是 SQLite
+  File: "database-betterprofiles"
+  #如果类型是 MySQL
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "betterprofiles"
+  Username: "root"
+  Password: "12345"
+  #此选项用于防止连接超时。
+  #时间单位为分钟。每隔 X 分钟插件将运行一次测试查询以保持连接。
+  Keep-alive-interval: 30
+
+Updates:
+  #自动更新配置？启用将删除注释。
+  Auto-update-configuration: false
+  #检查更新？建议保持启用。
+  Check-updates: false
+  #当拥有权限的玩家加入服务器时通知更新？
+  Notify-updates: false
+  #接收更新消息所需的权限。
+  Permission: "betterprofiles.update"
+  #发现更新时发送的消息。
+  Message: "&6[BetterProfiles] &e发现新更新！你正在使用版本 {CURRENT}。在此下载版本 {NEW} &c{LINK}"

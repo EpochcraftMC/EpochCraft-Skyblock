@@ -1,0 +1,46 @@
+items-Version: 6
+items-Delay: 2
+items-Overwrite: true
+items-Spamming: false
+items-RestrictCount: false
+items:
+  skyblock-menu-locked:
+    id: NETHER_STAR
+    slot: 8
+    name: '&a空岛菜单 &7(右键)'
+    permission-node: 'skyblock.menu.locked'
+    lore:
+    - '<delay:20>&7你必须完成以下'
+    - '<delay:20>&7空岛目标才能获得'
+    - '<delay:20>&7空岛菜单的使用权限。'
+    - ''
+    - '<delay:20>  %player_has_permission_missions.completed.break-a-log% 砍伐一棵原木'
+    - '<delay:20>  %player_has_permission_missions.completed.craft-a-workbench% 合成工作台'
+    - '<delay:20>  %player_has_permission_missions.completed.craft-a-pickaxe% 合成镐'
+    - '<delay:20>  &c✖&e 通过传送门'
+    - ''
+    commands:
+      right-click:
+        - 'message: &c你必须完成基础空岛挑战才能获得空岛菜单的使用权限。将鼠标悬停在此物品上查看它们。'
+    itemflags: inventory-modify, death-drops, self-drops, dynamic, placement
+    triggers: join, respawn, world-change
+    enabled-worlds: Islands
+  skyblock-menu-unlocked:
+    id: NETHER_STAR
+    slot: 8
+    name: '<delay:20>&a空岛菜单 &7(右键)'
+    permission-node: 'missions.completed.go-through-the-portal'
+    lore:
+    - '<delay:20>&7查看你所有的空岛'
+    - '<delay:20>&7进度，包括你的技能、'
+    - '<delay:20>&7收藏、配方等更多内容！'
+    - ''
+    - '<delay:20>&e点击打开！'
+    commands:
+      right-click:
+        - 'player: menu'
+    commands-cooldown: 2
+    cooldown-message: '&c请等待 %timeleft% 秒后再打开空岛菜单！'
+    itemflags: inventory-modify, death-drops, self-drops, dynamic, placement
+    triggers: join, respawn, world-change
+    enabled-worlds: ALL

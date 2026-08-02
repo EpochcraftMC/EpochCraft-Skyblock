@@ -1,0 +1,18 @@
+name: 惩罚玩家
+title: 惩罚玩家
+author: Server
+generation: ORIGINAL
+lore:
+- 惩罚 GUI
+open_command: ''
+
+pages:
+  '1':
+  - '为警告 %skript_1::{player}% 选择一个理由：'
+  - ''
+  - '<tooltip:&7点击以“不当聊天行为”警告 %skript_1::{player}%<br>&7<br>&b惩罚类型：警告<br>&b惩罚时长：5 天<br>&7<br>&7&e适用于：不当的聊天行为。><run command:/warn %skript_1::{player}% Inappropriate Chat Behavior> &8⦿&0 不当聊天行为<reset>'
+  - '<tooltip:&7点击以“不当游戏行为”警告 %skript_1::{player}%<br>&7<br>&b惩罚类型：警告<br>&b惩罚时长：5 天<br>&7<br>&7&e适用于：不当的游戏行为。><run command:/warn %skript_1::{player}% Inappropriate Game Behavior> &8⦿&0 不当游戏行为<reset>'
+  - '<tooltip:&7点击以“其他”警告 %skript_1::{player}%<br>&7<br>&b惩罚类型：警告<br>&b惩罚时长：5 天<br>&7<br>&7&e适用于：上述未列出的任何原因。><run command:/warn %skript_1::{player}% Other> &8⦿&0 其他<reset>'
+  - ''
+  - '  <tooltip:&c点击取消><run command:/cancelpunishment>&c取消惩罚<reset>'
+  - '      <tooltip:&7点击更换惩罚类型><run command:/punish %skript_1::{player}%>&7更换类型<reset>'

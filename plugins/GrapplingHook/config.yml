@@ -1,0 +1,37 @@
+Plugin:
+  prefix: '&7[&6抓钩&7] '
+  grapplingHookName: '&a抓钩'
+  useAir: false
+  useInAllWorlds: true
+  onFishingDisable: false
+  crafting: false
+  cooldown: 2.0
+Messages:
+  reload: '&7配置已重新加载！'
+  noperm: '&4你没有权限这样做。'
+  unknownCMD: '&7未知命令或语法错误。'
+  onlyNumbers: '&4只能是数字！'
+  useInAllWorlds: '&7已启用所有世界中的抓钩。'
+  useInIndividualWorlds: '&7现在每个世界单独启用抓钩。'
+  setSound: '&7你已将声音设置为: %sound%。'
+  setWorld: '&2世界: %world% 已添加到列表中。'
+  removeWorld: '&4世界: %world% 已从列表中移除。'
+  alreadyInList: '&7世界: %world% 已经在列表中了。'
+  isNotInList: '&7世界: %world% 不在列表中。'
+  cooldown: '&c请等待 %timeLeft% 秒后再使用抓钩！'
+  setCooldown: '&7新的冷却时间: %newTime% 秒'
+  useAir: '&7UseAir 现在是: %state%'
+  crafting: '&7合成现在是: %state%'
+Sound:
+  grapplinghookSound: ENDERMAN_TELEPORT
+Recipe:
+  slot1: ''
+  slot2: ''
+  slot3: Stick
+  slot4: ''
+  slot5: Stick
+  slot6: String
+  slot7: Stick
+  slot8: ''
+  slot9: Iron_Ingot
+WorldList: []

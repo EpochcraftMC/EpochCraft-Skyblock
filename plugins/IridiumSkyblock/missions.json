@@ -1,0 +1,471 @@
+{
+  "missions": [
+    {
+      "name": "宝藏猎人",
+      "levels": {
+        "1": {
+          "crystalReward": 5,
+          "vaultReward": 1000,
+          "amount": 9999999,
+          "type": "EXPERIENCE",
+          "conditions": []
+        },
+        "2": {
+          "crystalReward": 10,
+          "vaultReward": 5000,
+          "amount": 9999999,
+          "type": "EXPERIENCE",
+          "conditions": []
+        },
+        "3": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "EXPERIENCE",
+          "conditions": []
+        }
+      },
+      "item": {
+        "material": "EXPERIENCE_BOTTLE",
+        "amount": 1,
+        "title": "&b&l宝藏猎人 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b收集 {amount} 经验值",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 10
+      }
+    },
+    {
+      "name": "竞争者",
+      "levels": {
+        "1": {
+          "crystalReward": 5,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "VALUE_INCREASE",
+          "conditions": []
+        },
+        "2": {
+          "crystalReward": 10,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "VALUE_INCREASE",
+          "conditions": []
+        },
+        "3": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "VALUE_INCREASE",
+          "conditions": []
+        },
+        "4": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "VALUE_INCREASE",
+          "conditions": []
+        },
+        "5": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "VALUE_INCREASE",
+          "conditions": []
+        }
+      },
+      "item": {
+        "material": "GOLD_INGOT",
+        "amount": 1,
+        "title": "&b&l竞争者 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b获得 {amount} 岛屿价值",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 11
+      }
+    },
+    {
+      "name": "矿工",
+      "levels": {
+        "1": {
+          "crystalReward": 1,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "COAL_ORE",
+            "DIAMOND_ORE",
+            "EMERALD_ORE",
+            "GOLD_ORE",
+            "IRON_ORE",
+            "LAPIS_ORE",
+            "NETHER_QUARTZ_ORE",
+            "REDSTONE_ORE"
+          ]
+        },
+        "2": {
+          "crystalReward": 5,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "COAL_ORE",
+            "DIAMOND_ORE",
+            "EMERALD_ORE",
+            "GOLD_ORE",
+            "IRON_ORE",
+            "LAPIS_ORE",
+            "NETHER_QUARTZ_ORE",
+            "REDSTONE_ORE"
+          ]
+        },
+        "3": {
+          "crystalReward": 10,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "COAL_ORE",
+            "DIAMOND_ORE",
+            "EMERALD_ORE",
+            "GOLD_ORE",
+            "IRON_ORE",
+            "LAPIS_ORE",
+            "NETHER_QUARTZ_ORE",
+            "REDSTONE_ORE"
+          ]
+        },
+        "4": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "COAL_ORE",
+            "DIAMOND_ORE",
+            "EMERALD_ORE",
+            "GOLD_ORE",
+            "IRON_ORE",
+            "LAPIS_ORE",
+            "NETHER_QUARTZ_ORE",
+            "REDSTONE_ORE"
+          ]
+        },
+        "5": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "COAL_ORE",
+            "DIAMOND_ORE",
+            "EMERALD_ORE",
+            "GOLD_ORE",
+            "IRON_ORE",
+            "LAPIS_ORE",
+            "NETHER_QUARTZ_ORE",
+            "REDSTONE_ORE"
+          ]
+        }
+      },
+      "item": {
+        "material": "DIAMOND_ORE",
+        "amount": 1,
+        "title": "&b&l矿工 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b破坏 {amount} 个矿石",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 12
+      }
+    },
+    {
+      "name": "农夫",
+      "levels": {
+        "1": {
+          "crystalReward": 1,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "RIPE",
+            "MELON",
+            "CACTUS",
+            "PUMPKIN",
+            "SUGAR_CANE"
+          ]
+        },
+        "2": {
+          "crystalReward": 5,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "RIPE",
+            "MELON",
+            "CACTUS",
+            "PUMPKIN",
+            "SUGAR_CANE"
+          ]
+        },
+        "3": {
+          "crystalReward": 10,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "RIPE",
+            "MELON",
+            "CACTUS",
+            "PUMPKIN",
+            "SUGAR_CANE"
+          ]
+        },
+        "4": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "RIPE",
+            "MELON",
+            "CACTUS",
+            "PUMPKIN",
+            "SUGAR_CANE"
+          ]
+        },
+        "5": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_BREAK",
+          "conditions": [
+            "RIPE",
+            "MELON",
+            "CACTUS",
+            "PUMPKIN",
+            "SUGAR_CANE"
+          ]
+        }
+      },
+      "item": {
+        "material": "SUGAR_CANE",
+        "amount": 1,
+        "title": "&b&l农夫 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b收获 {amount} 个农作物",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 13
+      }
+    },
+    {
+      "name": "猎人",
+      "levels": {
+        "1": {
+          "crystalReward": 1,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "ENTITY_KILL",
+          "conditions": []
+        },
+        "2": {
+          "crystalReward": 5,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "ENTITY_KILL",
+          "conditions": []
+        },
+        "3": {
+          "crystalReward": 10,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "ENTITY_KILL",
+          "conditions": []
+        },
+        "4": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "ENTITY_KILL",
+          "conditions": []
+        },
+        "5": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "ENTITY_KILL",
+          "conditions": []
+        }
+      },
+      "item": {
+        "material": "BLAZE_POWDER",
+        "amount": 1,
+        "title": "&b&l猎人 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b击杀 {amount} 个怪物",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 14
+      }
+    },
+    {
+      "name": "渔夫",
+      "levels": {
+        "1": {
+          "crystalReward": 1,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "FISH_CATCH",
+          "conditions": []
+        },
+        "2": {
+          "crystalReward": 5,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "FISH_CATCH",
+          "conditions": []
+        },
+        "3": {
+          "crystalReward": 10,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "FISH_CATCH",
+          "conditions": []
+        },
+        "4": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "FISH_CATCH",
+          "conditions": []
+        },
+        "5": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "FISH_CATCH",
+          "conditions": []
+        }
+      },
+      "item": {
+        "material": "FISHING_ROD",
+        "amount": 1,
+        "title": "&b&l渔夫 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b钓到 {amount} 条鱼",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 15
+      }
+    },
+    {
+      "name": "建造者",
+      "levels": {
+        "1": {
+          "crystalReward": 1,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_PLACE",
+          "conditions": []
+        },
+        "2": {
+          "crystalReward": 5,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_PLACE",
+          "conditions": []
+        },
+        "3": {
+          "crystalReward": 10,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_PLACE",
+          "conditions": []
+        },
+        "4": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_PLACE",
+          "conditions": []
+        },
+        "5": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_PLACE",
+          "conditions": []
+        },
+        "6": {
+          "crystalReward": 15,
+          "vaultReward": 10000,
+          "amount": 9999999,
+          "type": "BLOCK_PLACE",
+          "conditions": []
+        }
+      },
+      "item": {
+        "material": "COBBLESTONE",
+        "amount": 1,
+        "title": "&b&l建造者 等级 {level}",
+        "lore": [
+          "&7完成岛屿任务获得水晶，",
+          "&7水晶可用于购买加成和升级。",
+          "",
+          "&b&l信息:",
+          "&b&l * &7目标: &b放置 {amount} 个方块",
+          "&b&l * &7当前进度: &b{status}",
+          "&b&l * &7奖励: &b{crystalsReward} 岛屿水晶和 ${vaultReward}",
+          "",
+          "&b&l[!] &b完成任务获得奖励。"
+        ],
+        "slot": 16
+      }
+    }
+  ]
+}

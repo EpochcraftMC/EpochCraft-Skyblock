@@ -1,0 +1,273 @@
+lift-operator-5:
+  location: Server, -352.5, 33.6, 139.5
+  lines:
+  - '&b电梯操作员'
+  - '&e&l点击'
+lift-operator-1:
+  location: Server, -352.5, 102.6, 139.5
+  lines:
+  - '&b电梯操作员'
+  - '&e&l点击'
+lift-operator-3:
+  location: Server, -352.5, 71.6, 139.5
+  lines:
+  - '&b电梯操作员'
+  - '&e&l点击'
+lift-operator-4:
+  location: Server, -352.5, 55.6, 139.5
+  lines:
+  - '&b电梯操作员'
+  - '&e&l点击'
+npc-auction-master:
+  location: Server, 39.5, 91.7, 38.5
+  lines:
+  - '&6拍卖行管理员'
+  - '&e&l点击'
+npc-armorer:
+  location: Server, 47.5, 90.7, -19.5
+  lines:
+  - '&f盔甲匠'
+  - '&e&l点击'
+npc-bank:
+  location: Server, -2.5, 91.6, -38.5
+  lines:
+  - '&6银行家'
+  - '&e&l点击'
+npc-builder:
+  location: Server, 55.5, 90.7, -2.5
+  lines:
+  - '&f建筑匠'
+  - '&e&l点击'
+npc-enchanter:
+  location: Server, -34.5, 90.7, -21.5
+  lines:
+  - '&f附魔师'
+  - '&e&l点击'
+npc-farmer:
+  location: Server, 31.5, 90.7, 19.5
+  lines:
+  - '&f农夫'
+  - '&e&l点击'
+npc-fisher:
+  location: Server, 28.5, 90.7, -22.5
+  lines:
+  - '&f渔夫'
+  - '&e&l点击'
+npc-hunter:
+  location: Server, 37.5, 90.7, -20.5
+  lines:
+  - '&f猎人'
+  - '&e&l点击'
+npc-lumberjack:
+  location: Server, 36.5, 90.7, 5.5
+  lines:
+  - '&f伐木工'
+  - '&e&l点击'
+npc-merchant:
+  location: Server, -9.5, 91.6, -17.5
+  lines:
+  - '&d商人'
+  - '&e&l点击'
+npc-miner:
+  location: Server, 45.5, 90.7, -1.5
+  lines:
+  - '&f矿工'
+  - '&e&l点击'
+npc-weaponsmith:
+  location: Server, 21.5, 90.7, -31.5
+  lines:
+  - '&f武器匠'
+  - '&e&l点击'
+npc-witch:
+  location: Server, -29.5, 91.8, 11.5
+  lines:
+  - '&5女巫'
+  - '&e&l点击'
+spiders-den-end:
+  location: Server, 454.1, 158.5, 14.5
+  lines:
+  - '&b传送到：'
+  - '&d末地'
+  - ''
+  - '&c需要战斗 XII'
+lfit-operator-6:
+  location: Server, -352.5, 16.6, 139.5
+  lines:
+  - '&b电梯操作员'
+  - '&e&l点击'
+spiders-den-nether:
+  location: Server, 473.5, 175.5, -34.0
+  lines:
+  - '&b传送到：'
+  - '&c下界'
+  - ''
+  - '&c需要战斗 X'
+teleport-farm2-farm:
+  location: Server, 76.5, 101.5, 308.5
+  lines:
+  - '&b传送到：'
+  - '&a农场'
+teleport-farm-farm2:
+  location: Server, 77.0, 93.5, 243.5
+  lines:
+  - '&b传送到：'
+  - '&a谷仓'
+  - ''
+  - '&c需要农耕 III'
+teleport-farm-village:
+  location: Server, 57.9, 89.5, 155.5
+  lines:
+  - '&b传送到：'
+  - '&a村庄'
+teleport-forest2-village:
+  location: Server, 147.0, 90.5, -190.5
+  lines:
+  - '&b传送到：'
+  - '&a村庄'
+teleport-forest-acacia-dark:
+  location: Server, 4.8, 109.5, -262.5
+  lines:
+  - '&b传送到：'
+  - '&a深色森林'
+teleport-forest-birch-jungle:
+  location: Server, 177.0, 98.5, -274.5
+  lines:
+  - '&b传送到：'
+  - '&a丛林'
+teleport-forest-birch-spruce:
+  location: Server, 177.5, 98.5, -323.5
+  lines:
+  - '&b传送到：'
+  - '&a云杉森林'
+teleport-forest-dark-acacia:
+  location: Server, 22.1, 118.5, -313.1
+  lines:
+  - '&b传送到：'
+  - '&a金合欢森林'
+teleport-forest-dark-spruce:
+  location: Server, 53.5, 116.5, -361.5
+  lines:
+  - '&b传送到：'
+  - '&a云杉森林'
+teleport-forest-jungle-birch:
+  location: Server, 172.0, 90.5, -231.5
+  lines:
+  - '&b传送到：'
+  - '&a白桦森林'
+teleport-forest-spruce-birch:
+  location: Server, 138.5, 110.5, -352.5
+  lines:
+  - '&b传送到：'
+  - '&a白桦森林'
+teleport-forest-spruce-dark:
+  location: Server, 97.5, 111.5, -363.5
+  lines:
+  - '&b传送到：'
+  - '&a深色森林'
+teleport-forest-village:
+  location: Server, 5.5, 109.5, -207.5
+  lines:
+  - '&b传送到：'
+  - '&a村庄'
+teleport-mines-village:
+  location: Server, -251.5, 109.5, 82.0
+  lines:
+  - '&b传送到：'
+  - '&a煤矿'
+teleport-spiders-den-village:
+  location: Server, 271.5, 74.5, -40.5
+  lines:
+  - '&b传送到：'
+  - '&c墓地'
+teleport-the-nether-spiders-den:
+  location: Server, 606.5, 95.2, -28.5
+  lines:
+  - '&b传送到：'
+  - '&c蜘蛛巢穴'
+teleport-village-farm:
+  location: Server, 59.0, 86.2, 118.5
+  lines:
+  - '&b传送到：'
+  - '&a农场'
+teleport-village-forest:
+  location: Server, 59.5, 91.2, -97.5
+  lines:
+  - '&b传送到：'
+  - '&a金合欢森林'
+teleport-village-forest2:
+  location: Server, 118.5, 95.2, -113.5
+  lines:
+  - '&b传送到：'
+  - '&a丛林'
+teleport-village-island:
+  location: Server, 12.5, 90.5, 0.5
+  lines:
+  - '&b传送到：'
+  - '&a你的岛屿'
+teleport-village-mines:
+  location: Server, -174.5, 108.2, 70.0
+  lines:
+  - '&b传送到：'
+  - '&a矿场'
+  - ''
+  - '&c需要挖掘 III'
+teleport-village-spiders-den:
+  location: Server, 207.5, 83.2, -39.0
+  lines:
+  - '&b传送到：'
+  - '&c蜘蛛巢穴'
+  - ''
+  - '&c需要战斗 III'
+lift-operator-2:
+  location: Server, -352.5, 86.6, 139.5
+  lines:
+  - '&b电梯操作员'
+  - '&e&l点击'
+npc-gladiator:
+  location: Server, 112.500, 92.700, 19.500
+  lines:
+  - '&b角斗士'
+  - '&6&l即将推出'
+gladiator-arena:
+  location: Server, 111.500, 92.200, 23.500
+  lines:
+  - '&a&l竞技场'
+  - '&e与其他玩家对战'
+  - '&e并参加特殊活动。'
+end:
+  location: Server, 534.500, 25.200, 363.500
+  lines:
+  - '&5龙巢'
+  - '&c即将到来……'
+npc-rewards:
+  location: Server, 7.500, 90.7000, 20.500
+  lines:
+  - '&6奖励管理员'
+  - '&e&l点击'
+spawn-runic-pedestal:
+  location: Server, 40.500, 100.400, -61.500
+  lines:
+  - '&d符文祭坛'
+  - '&e&l点击打开'
+npc-seymour:
+  location: Server, -58.500, 96.600, -56.500
+  lines:
+  - '&6西摩'
+  - '&e&l点击'
+npc-sirius:
+  location: Server, -7.500, 88.600, -103.500
+  lines:
+  - '&6天狼星'
+  - '&e&l点击'
+npc-sirius2:
+  location: Server, 130.500, 40.600, -7.500
+  lines:
+  - '&6天狼星'
+  - '&e&l点击'
+'1':
+  location: Server, 0.383, 90.748, 14.383
+  lines:
+  - '&e&lEpochCraft Skyblock'
+  - '&7欢迎来到本服务器！'
+  - '&e&lQQ群: &b139447432'
+  - '&7祝你玩得开心！'

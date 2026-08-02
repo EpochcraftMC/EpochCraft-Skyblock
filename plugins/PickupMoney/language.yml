@@ -1,0 +1,10 @@
+# Put the message between 2 " so it will work with color code.
+pickup: '&6+{money} 硬币（已拾取）'
+reload: '&a插件已重载！'
+noPermission: '&c你没有权限！'
+nameSyntax: '&6{money}'
+dropOut: '&a你丢出了 {money}$'
+noMoney: '&c你的金钱不够'
+miniumCmdDrop: '&c最小金额为 {money}'
+clearLimit: '&a已成功清除上限'
+limit: '&c无法拾取更多金钱。你已达到上限。'

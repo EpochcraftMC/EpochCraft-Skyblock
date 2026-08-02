@@ -1,0 +1,958 @@
+percent: '&e<percent>%'
+unlocked: '&a解 锁'
+amount: x<amount>
+maxed: '&c最大'
+tradingOptions: §e右键查看更多交易选项!
+stats:
+- '&c无显示内容...'
+messages:
+  noUnlockedCraft: '&c你还没有解锁这个制作.'
+  dragonBar: <name> &7- &a<health>&7/&c<max>
+  alreadySpawned: '&c已经有一条龙.'
+  spawned: '&d&l<dragon>&d&l 龙生成了!'
+  alreadyEye: '&c这个地方已经有一个末影之眼.'
+  putEye: '&5☬ &d您放置了召唤眼! &7(&e<now>&7/&a<max>&7)'
+  othersEye: '&5☬ &7<player>&d 放置了召唤之眼! &7(&e<now>&7/&a<max>&7)'
+  spawning: '&a召唤仪式已经完成，龙会出现.'
+  noOnline: '&c此玩家未在线.'
+  needEqual: '&c只能合并相同类型的符文.'
+  noType: '&c这不是可合并的项目类型.'
+  noLevel: '&c你没有足够的等级来把这些材料放在一起.'
+  noFusion: '&c您无法合并这两个项目，因为该项目已经具有符文.'
+  noRune: '&c请输入一个符文进行祭祀.'
+  maxLevel: '&c这个宠物已达到最高等级，你正在失去经验.'
+  noPet: '&c没有那把钥匙的宠物.'
+  noRuneKey: '&c这里没有这个钥匙的符文.'
+  reload: '&a插件已正确重新加载.'
+  noHas: '&c您在背包中不包含此商品.'
+  traded: '&a您已成功交易.'
+  findCollection: '&c您需要找到此项目才能解锁此收藏.'
+  alreadySoul: '&d&l灵魂！&d你已经找到了这个仙女的灵魂.'
+  foundSoul: |-
+    &d&l灵魂！ &f你找到了一个 &d仙女的灵魂&f！
+    &d&l灵魂！ &f你收到了：<reward>
+titles:
+  dragon:
+    title: '&5龙的生成'
+    subtitle: '&6生成 <time>'
+  spawned:
+    title: '&c<dragon>'
+    subtitle: '&7生成'
+setup:
+  noCraftName: '&c这个名字没有对应的制作配方.'
+  setDragonSpawn: '&a龙的生成地点已经建立.'
+  alreadyAltar: '&c这已经是一个祭坛.'
+  savedAltar: '&a所有祭坛位置均已保存.'
+  noSetupAltar: '&c你没有设置祭坛.'
+  noAltar: '&c这不是祭坛.'
+  addAltar: '&a在当前位置添加了祭坛 &e<loc>&a.'
+  removeAltar: '&c移除了当前位置的祭坛 &e<loc>&c.'
+  alreadySetupAltar: '&c您已经在祭坛设置中.'
+  setupAltar: |-
+    &a右键 &e在将被视为祭坛的头上.
+    &c左键 &e移除祭坛.
+  setRunetable: '&c添加了符文表.'
+  noResult: '&c你还没有确定这个制作的结果.'
+  alreadySetupFairy: '&c你已经在仙女灵魂设置中.'
+  noSetupFairy: '&c你不是在设置仙女灵魂.'
+  savedFairy: '&a所有仙女灵魂的头颅都已保存.'
+  addFairy: '&a在当前位置添加了一个仙女 &e<loc>&a.'
+  removeFairy: '&c移除了当前位置的一位仙女 &e<loc>&c.'
+  setupFairy: |-
+    &a右键 &e在将被视为仙女灵魂的头上.
+    &c左键 &e删除仙女灵魂.
+  alreadyFairy: '&c这已经是一个仙女的灵魂.'
+  noFairy: '&c这不是仙女的灵魂.'
+  savedMine: '&a共 &e<mines>&a 已保存.'
+  setPos1: '&a设定点编号 1.'
+  setPos2: '&a设定点编号 2.'
+  noTwoPoint: '&c您尚未设置两个选择点.'
+  noInSetup: '&c您没有任何选择可供抓取.'
+  giveWand: '&a你得到了一根矿杖 &e<mine>&a.'
+  giveMine: '&a您已获得代表矿井的物品.'
+  noMine: '&c没有这个矿井的钥匙.'
+  newMine: '&a一个新的 &e<mine>&a 类型矿井已在&e<loc>&a.'
+  noHand: '&c您需要手头有物品.'
+  needBlock: '&c你需要物品是一个方块，否则你不能打破它.'
+  setType: '&a您已选择集合类型 &e<type>&a.'
+  noNumber: '&c请写一个数字.'
+  noItem: '&c您必须放置要保存的项目.'
+  writeCommands: '&a键入要添加的命令.'
+  setCommands: '&a此命令 &e<command> &a已添加到奖励中.'
+  setName: '&a现在这个名字是 &e<name>&a.'
+  writeAttribute: '&a在聊天中写下此属性的数量.'
+  setAttribute: '&a此属性的数量已设置为 &e<amount>&a.'
+  writeChange: '&a在聊天中写下值.'
+  setChange: '&a此值已设置为&e<change>&a.'
+  saveItem: '&a此项目已另存为此类型的表示形式.'
+  saveCraft: '&a此制作配方已保存.'
+  saveCollectionLevel: '&a收藏等级已保存.'
+  saveCollection: '&a收藏已保存.'
+  saveTrade: '&a此交易已保存.'
+  saveMine: '&a矿井已保存.'
+  save: '&a这件盔甲已保存.'
+  noMoreRemove: '&c没有要删除的更多命令.'
+  removedLast: '&c您删除了最后一个命令.'
+  createNewLevel: '&a您已创建关卡 &e<level>&a.'
+  editingLevel: '&a您正在编辑关卡 &e<level>&a.'
+  notSet:
+    noCraft: '&c你还没有建立任何制作配方.'
+    noArmor: '&c您尚未设置代表盔甲的物品.'
+    noCost: '&c您没有成本项目.'
+    noGive: '&c您没有赠送商品'
+    noItem: '&c您尚未设置表示此收藏的物品.'
+    noLevels: '&c您尚未添加任何等级.'
+items:
+  eye:
+    nameItem: '&5召唤之眼'
+    loreItem: |-
+      &7在&5Ender祭坛上使用它
+      &7在 &5 龙之巢 &7to
+      &7召唤末影龙!
+      &7
+      &5&l史诗
+  wand:
+    nameItem: '&e矿用魔杖'
+    loreItem: |-
+      &a左键单击到第 1 点.
+      &c右键单击以点 2.
+collections:
+  FARMING: Farming
+  MINING: Mining
+  COMBAT: Combat
+  FORAGING: Foraging
+  FISHING: Fishing
+attributes:
+  INTELLIGENCE: '&7情报: &a<amount>'
+  STRENGTH: '&7强度: &a<amount>'
+  SPEED: '&7速度: &a<amount>'
+actionBar:
+  withoutDefense: '&c<health>/<maxHealth><heart>            &b<mana>/<maxMana>✎ 法力'
+  withDefense: '&c<health>/<maxHealth><heart>   &a<defense>❇ 防御   &b<mana>/<maxMana>✎
+    法力'
+  progress: '&c<health>/<maxHealth><heart>   &3+<add> <skill> (<skillNow>/<skillMax>)   &b<mana>/<maxMana>✎
+    法力'
+collectionUnlocked:
+- '&6&l  收藏已解锁 &e<collection>'
+collectionLevelUp:
+- '&e▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&6&l  收集等级提升 &e<name> &8<nowLevel>➜&e<newLevel>'
+- '&7'
+- '&e&l  奖励'
+- <rewards>
+- '&e▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+skillLevelUp:
+- '&3▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&b&l 技能等级提升 &3<skill> <level>'
+- '&7'
+- '&a&l 奖励'
+- <rewards>
+- '&3▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+progress:
+- '&7进展: &e<percent>%'
+- <bar> &e<now>&6/&e<max>
+progressBar:
+  symbol: '-'
+  in: '&2'
+  out: '&f'
+  finish: <progress>
+  max: '&c最大'
+pet:
+  levelUp: '&a您的宠物已升级至 &9<level>&a.'
+  spawn: '&a点击生成!'
+  despawn: '&c点击去取消生成!'
+  alreadyPet: '&c您已经生成了宠物.'
+  name: '&8[&7等级<level>&8] <rarity><player>的<name>'
+  lore:
+  - '&8<type> 宠物'
+  - '&7'
+  - <attributes>
+  - '&7'
+  - '&6组'
+  - <extra>
+  - '&8最大 <max> <name>'
+  - '&7'
+  - <ability>
+  progress:
+  - '&7'
+  - '&7进度到等级 <level>: &e<percent>%'
+  - <bar> &e<now>&6/&e<max>
+  - '&7'
+  - <status>
+menus:
+  profile:
+    title: 你的空岛生存个人资料
+    head:
+      nameItem: '&a您的空岛生存个人资料'
+      loreItem: |-
+        &7  &c生命 &f%us_health%
+        &7  &a防御 &f%us_defense%
+        &7  &c强度 &f%us_force%
+        &7  &f速度 &f%us_speed%
+        &7  &9暴击几率 &f%us_critchance%
+        &7  &9暴击伤害 &f%us_critdamage%
+        &7  &b情报 &f%us_intelligence%
+    health:
+      nameItem: '&c血量 &f%us_health%'
+      loreItem: |-
+        &7血量是您的总最大值
+        &7血量.您的自然
+        &7再生给予 &a%us_regen_health%
+        &7每次.
+        &7
+        &7基本运行状况: &a%us_health_simple%
+        &7  &8&o通过以下方式增加您的基本生命值
+        &7  &8&o平整你的农业和
+        &7  &8&o钓鱼技巧和 &dFairy&8&o.
+        &7
+        &7奖励血量: &8+&e%us_health_armor%
+        &7  &8&o增加您的奖励血量
+        &7  &8&o通过装备装甲和持甲
+        &7  &8&o物品栏中的护身符.
+    defense:
+      nameItem: '&a防御 &f%us_defense%'
+      loreItem: |-
+        &7防御可以减少你受到的
+        &7来自敌人的伤害.
+        &7
+        &7基础防御: &a%us_defense_simple%
+        &7  &8&o通过升级你的挖掘
+        &7  &8&o技能和 &d仙女&8&o
+        &7  &8&o来增加你的基础防御.
+        &7
+        &7奖励防御: &8+&e%us_defense_armor%
+        &7  &8&o通过装备护甲和持有
+        &7  &8&o护身符来增加你的
+        &7  &8&o奖励防御.
+    force:
+      nameItem: '&c强度 &f%us_force%'
+      loreItem: |-
+        &7强度可以增加你的基础
+        &7近战伤害，包括徒手
+        &7和武器攻击.
+        &7
+        &7基础强度: &a%us_force_simple%
+        &7  &8&o通过升级你的砍伐和
+        &7  &8&o钓鱼技能和 &d仙女&8&o
+        &7  &8&o来增加你的基础强度.
+        &7
+        &7奖励强度: &8+&e%us_force_armor%
+        &7  &8&o通过装备护甲和持有
+        &7  &8&o护身符来增加你的
+        &7  &8&o奖励强度.
+    speed:
+      nameItem: '&f速度 &f%us_speed%'
+      loreItem: |-
+        &7速度可以增加你的行走速度.
+        &7
+        &7基础速度: &a%us_speed_simple%
+        &7  &8&o通过 &d仙女&8&o
+        &7  &8&o来增加你的基础
+        &7  &8&o速度.
+        &7
+        &7奖励速度: &8+&e%us_speed_armor%
+        &7  &8&o通过装备护甲和持有
+        &7  &8&o护身符来增加你的
+        &7  &8&o奖励速度.
+    critChance:
+      nameItem: '&9暴击几率 &f%us_critchance%%'
+      loreItem: |-
+        &7暴击几率是你对敌人
+        &7造成额外伤害的几率.
+        &7
+        &7基础暴击几率: &a%us_critchance_simple%%
+        &7  &8&o通过升级你的战斗技能
+        &7  &8&o和 &d仙女&8&o 来增加你的
+        &7  &8&o基础暴击几率.
+        &7
+        &7奖励暴击几率: &8+&e<critchance_armor>%
+        &7  &8&o通过装备护甲和持有
+        &7  &8&o护身符来增加你的
+        &7  &8&o奖励暴击几率.
+    critDamage:
+      nameItem: '&9暴击伤害 &f%us_critdamage%%'
+      loreItem: |-
+        &7暴击伤害是你在暴击时
+        &7造成的额外伤害量.
+        &7
+        &7基础暴击伤害: &a%us_critdamage_simple%%
+        &7  &8&o通过探索世界来
+        &7  &8&o增加你的基础暴击伤害!
+        &7
+        &7奖励暴击伤害: &8+&e<critdamage_armor>%
+        &7  &8&o通过装备护甲和持有
+        &7  &8&o护身符来增加你的
+        &7  &8&o奖励暴击伤害.
+    intelligence:
+      nameItem: '&b情报 &f%us_intelligence%'
+      loreItem: |-
+        &7情报可以增加你的法力值
+        &7上限和魔法物品的
+        &7伤害.
+        &7
+        &7基础情报: &a%us_intelligence_simple%
+        &7  &8&o通过升级你的附魔和
+        &7  &8&o炼金技能来增加你的
+        &7  &8&o基础情报.
+        &7
+        &7奖励情报: &8+&e%us_intelligence_armor%
+        &7  &8&o通过装备护甲和持有
+        &7  &8&o护身符来增加你的
+        &7  &8&o奖励情报.
+        &7
+        &7法力值上限: &b%us_mana%
+    back:
+      nameItem: '&a返回'
+      loreItem: '&7点击返回技能菜单.'
+    close:
+      nameItem: '&c关闭'
+      loreItem: '&7关闭此菜单.'
+  preview:
+    title: 制作预览
+    crafting:
+      nameItem: '&a工作台'
+      loreItem: |-
+        &7这是制作台的
+        &7配方.
+    close:
+      nameItem: '&c关闭'
+      loreItem: '&7关闭此菜单.'
+  runetable:
+    title: 符文祭坛
+    upgrade:
+      nameItem: '&6要升级的物品'
+      loreItem: |-
+        &7你想升级的物品或符文
+        &7应该放在
+        &7这一侧的槽位中.
+    sacrifice:
+      nameItem: '&6祭祀符文'
+      loreItem: |-
+        &7为了升级左侧物品而
+        &7献祭的符文应该
+        &7放在这一侧的
+        &7槽位中.
+    pedestal:
+      nameItem: '&c符文祭坛'
+      loreItem: |-
+        &7将目标物品放在左侧槽位，
+        &7将献祭符文放在右侧槽位，
+        &7即可将符文效果添加到物品上，
+        &7或放入两个符文尝试融合它们!
+    apply:
+      nameItem: '&a应用符文或融合两个符文'
+      loreItem: |-
+        &7将符文添加到你的
+        &7物品上，或提供
+        &7两个符文尝试
+        &7融合它们.
+    combine:
+      nameItem: '&a合并物品'
+      loreItem: |-
+        &7合并所提供的符文和
+        &7物品.
+        &7
+        &e点击合并！
+  pets:
+    title: 你的宠物
+    pet:
+      nameItem: '&7[等级 <level>] <rarity><name>'
+      loreItem:
+      - <lore>
+      - '&7'
+      - '&7价格'
+      - <price>
+      - '&7'
+      - '&e点击交易！'
+  craft:
+    title: 制作物品
+  mines:
+    title: '&a设置矿井'
+    key:
+      nameItem: '&a矿井标识符'
+      loreItem: |-
+        &7这是矿井标识符:
+        &7
+        &b键: &e<key>
+        &7
+    item:
+      nameItem: '&a矿井材质'
+      loreItem: |-
+        &7这是矿井的材质.
+        &7
+        &b材质: &e<material>
+        &7
+    countdown:
+      nameItem: '&a矿井倒计时'
+      loreItem: |-
+        &7这是矿井的倒计时.
+        &7
+        &b倒计时: &e<countdown>
+        &7
+        &e点击更改！
+    save:
+      nameItem: '&a保存矿井'
+      loreItem: |-
+        &7保存这个矿井.
+        &7
+        &e点击保存！
+  last:
+    nameItem: '&a上一页'
+    loreItem: |-
+      &7点击返回上一
+      &7页.
+  next:
+    nameItem: '&a下一页'
+    loreItem: |-
+      &7点击前往下一
+      &7页.
+  back:
+    nameItem: '&a返回'
+    loreItem: '&7前往 <back>'
+  close:
+    nameItem: '&c关闭'
+    loreItem: |-
+      &7点击关闭
+      &7此菜单.
+  collectionsLevels:
+    title: <type> 收藏
+    icon:
+      nameItem: '&e<name> <level>'
+      loreItem: |-
+        &7查看你所有的 <name> 收藏
+        &7进度和奖励!
+        &7
+        &7总共收集: &e<collected>
+    blocked:
+      nameItem: '&c<name> <level>'
+      loreItem: |-
+        &7
+        &7进度: &e<progress>%
+        <bar> &e<now>&6/&e<max>
+        &7
+        &7奖励:
+        <rewards>
+        &7
+        &e点击查看奖励！
+    now:
+      nameItem: '&e<name> <level>'
+      loreItem: |-
+        &7
+        &7进度: &e<progress>%
+        <bar> &e<now>&6/&e<max>
+        &7
+        &7奖励:
+        <rewards>
+        &7
+        &e点击查看奖励！
+    unblocked:
+      nameItem: '&a<name> <level>'
+      loreItem: |-
+        &7
+        &7进度: &a100%
+        <bar> &e<now>&6/&e<max>
+        &7
+        &7奖励:
+        <rewards>
+        &7
+        &e点击查看奖励！
+  collectionsType:
+    title: <type> 收藏
+    blocked:
+      nameItem: '&c<name>'
+      loreItem: |-
+        &7找到这个物品来将它添加到
+        &7你的收藏中并解锁收藏
+        &7奖励!
+    unlocked:
+      nameItem: '&e<name> <level>'
+      loreItem: |-
+        &7查看你所有的 <name> 收藏
+        &7进度和奖励!
+        &7
+        &7距离 <name> <level> 的进度: &e<percent>&6%
+        <bar> &e<now>&6/&e<max>
+        &7
+        &7<name> <level> 奖励:
+        <rewards>
+        &7
+        &e点击查看！
+  collections:
+    title: 收藏
+    unlocked: 已解锁
+    maxed: 已满级
+    back: 收藏
+    collection:
+      nameItem: '&a收藏'
+      loreItem: |-
+        &7查看空岛生存中所有可用的物品.
+        &7收集更多物品以解锁
+        &7奖励，在成为
+        &7空岛大师的道路上前进!
+        &7
+        &7收藏已解锁: &e<percent>&6%
+        <bar> &e<now>&6/&e<max>
+    FARMING:
+      nameItem: '&a农耕收藏'
+      loreItem: |-
+        &7查看你的农耕收藏！
+        &7
+        &7收藏 <status>: &e<percent>&6%
+        <bar> &e<unlocked>&6/&e<max>
+        &7
+        &e点击查看！
+    MINING:
+      nameItem: '&a挖掘收藏'
+      loreItem: |-
+        &7查看你的挖掘收藏！
+        &7
+        &7收藏 <status>: &e<percent>&6%
+        <bar> &e<unlocked>&6/&e<max>
+        &7
+        &e点击查看！
+    COMBAT:
+      nameItem: '&a战斗收藏'
+      loreItem: |-
+        &7查看你的战斗收藏！
+        &7
+        &7收藏 <status>: &e<percent>&6%
+        <bar> &e<unlocked>&6/&e<max>
+        &7
+        &e点击查看！
+    FORAGING:
+      nameItem: '&a砍伐收藏'
+      loreItem: |-
+        &7查看你的砍伐收藏！
+        &7
+        &7收藏 <status>: &e<percent>&6%
+        <bar> &e<unlocked>&6/&e<max>
+        &7
+        &e点击查看！
+    FISHING:
+      nameItem: '&a钓鱼收藏'
+      loreItem: |-
+        &7查看你的钓鱼收藏！
+        &7
+        &7收藏 <status>: &e<percent>&6%
+        <bar> &e<unlocked>&6/&e<max>
+        &7
+        &e点击查看！
+  collectionSetupLevels:
+    title: '&a设置收藏等级'
+    main:
+      nameItem: '&a等级 &e<level>'
+      loreItem: |-
+        &7该等级具有以下特性：
+        &7
+        &b数量: &e<amount>
+        &b槽位: &e<slot>
+        &b页面: &e<page>
+        &7
+        &e点击更改！
+    name:
+      nameItem: '&a收藏名称'
+      loreItem: |-
+        &7这是代表该收藏的
+        &7名称.
+        &7
+        &b名称: &e<name>
+        &7
+        &e点击更改！
+    amount:
+      nameItem: '&a此等级所需数量'
+      loreItem: |-
+        &7当你达到此数量时，
+        &7将被视为达到此等级.
+        &7
+        &b数量: &e<amount>
+        &7
+        &e点击更改！
+    slot:
+      nameItem: '&a收藏等级槽位'
+      loreItem: |-
+        &7这是该等级
+        &7出现的位置.
+        &7
+        &b槽位: &e<amount>
+        &7
+        &e点击更改！
+    page:
+      nameItem: '&a收藏等级页面'
+      loreItem: |-
+        &7这是该等级
+        &7出现的页面.
+        &7
+        &b页面: &e<amount>
+        &7
+        &e点击更改！
+    commands:
+      nameItem: '&a命令'
+      loreItem: |-
+        &7达到此等级时将执行
+        &7这些命令.
+        &7
+        <commands>
+        &7
+        &e点击添加！
+        &c右键删除最后一条！
+    save:
+      nameItem: '&a保存'
+      loreItem: |-
+        &7保存此收藏等级.
+        &7
+        &e点击保存！
+  collectionLevels:
+    title: '&a设置收藏等级'
+    add:
+      nameItem: '&a添加等级'
+      loreItem: |-
+        &7添加收藏等级.
+        &7
+        &e点击添加！
+  collectionType:
+    title: '&a设置收藏类型'
+    FARMING:
+      nameItem: '&a农耕'
+      loreItem: |-
+        &7你将把收藏
+        &7类型选择为农耕.
+        &7
+        &e点击选择！
+    MINING:
+      nameItem: '&a挖掘'
+      loreItem: |-
+        &7你将把收藏
+        &7类型选择为挖掘.
+        &7
+        &e点击选择！
+    COMBAT:
+      nameItem: '&a战斗'
+      loreItem: |-
+        &7你将把收藏
+        &7类型选择为战斗.
+        &7
+        &e点击选择！
+    FORAGING:
+      nameItem: '&a砍伐'
+      loreItem: |-
+        &7你将把收藏
+        &7类型选择为砍伐.
+        &7
+        &e点击选择！
+    FISHING:
+      nameItem: '&a钓鱼'
+      loreItem: |-
+        &7你将把收藏
+        &7类型选择为钓鱼.
+        &7
+        &e点击选择！
+  collectionGive:
+    title: '&a设置收藏物品'
+    save:
+      nameItem: '&a保存收藏物品'
+      loreItem: |-
+        &7保存此收藏物品.
+        &7
+        &e点击保存！
+  collection:
+    title: '&a设置收藏'
+    key:
+      nameItem: '&a收藏键'
+      loreItem: |-
+        &7这是收藏在不同地方
+        &7被识别的键.
+        &7
+        &b键: &e<key>
+        &7
+    item:
+      nameItem: '&a收藏物品'
+      loreItem: |-
+        &7这个物品将是收集时
+        &7增加收藏
+        &7进度的物品.
+        &7
+        &e点击设置！
+    name:
+      nameItem: '&a收藏名称'
+      loreItem: |-
+        &7这是收藏的名称.
+        &7
+        &b名称: &e<name>
+        &7
+        &e点击更改！
+    type:
+      nameItem: '&a收藏类型'
+      loreItem: |-
+        &7这是收藏的类型.
+        &7
+        &b类型: &e<type>
+        &7
+        &e点击更改！
+    levels:
+      nameItem: '&a收藏等级'
+      loreItem: |-
+        &7这是收藏的等级.
+        &7
+        &e点击查看！
+    save:
+      nameItem: '&a保存收藏'
+      loreItem: |-
+        &7保存此收藏.
+        &7
+        &e点击保存！
+  trading:
+    title: '&8商店交易选项'
+  trades:
+    title: '&8交易'
+    blocked:
+      nameItem: '&c???'
+      loreItem: |-
+        &7推进你的物品
+        &7收藏并探索
+        &7世界以解锁新的交易！
+  tradeGive:
+    title: '&a设置交易给予'
+    save:
+      nameItem: '&a保存交易给予'
+      loreItem: |-
+        &7保存此交易给予.
+        &7
+        &e点击保存！
+  tradeCost:
+    title: '&a设置交易成本'
+    save:
+      nameItem: '&a保存交易成本'
+      loreItem: |-
+        &7保存此交易成本.
+        &7
+        &e点击保存！
+  trade:
+    title: '&a设置交易'
+    key:
+      nameItem: '&a交易键'
+      loreItem: |-
+        &7这是交易在不同地方
+        &7被识别的键.
+        &7
+        &b键: &e<key>
+        &7
+    permission:
+      nameItem: '&a交易权限'
+      loreItem: |-
+        &7这是玩家解锁此交易
+        &7所需的权限.
+        &7
+        &b权限: &e<permission>
+        &7
+        &e点击更改！
+    give:
+      nameItem: '&a给予物品'
+      loreItem: |-
+        &7这是玩家每次互动时
+        &7收到的物品.
+        &7
+        &e点击设置！
+    cost:
+      nameItem: '&a成本物品'
+      loreItem: |-
+        &7这是每次操作的
+        &7成本物品.
+        &7
+        &e点击设置！
+    slot:
+      nameItem: '&a交易槽位'
+      loreItem: |-
+        &7这是该交易
+        &7出现的槽位.
+        &7
+        &b槽位: &e<slot>
+        &7
+        &e点击更改！
+    page:
+      nameItem: '&a交易页面'
+      loreItem: |-
+        &7这是该交易
+        &7出现的页面.
+        &7
+        &b页面: &e<page>
+        &7
+        &e点击更改！
+    save:
+      nameItem: '&a保存交易'
+      loreItem: |-
+        &7保存此交易.
+        &7
+        &e点击保存！
+  attributes:
+    title: '&a设置护甲属性'
+    defense:
+      nameItem: '&a防御'
+      loreItem: |-
+        &7这件护甲会给你
+        &7设定数量的护甲.
+        &7
+        &b防御: &e<amount>
+        &7
+        &e点击更改！
+    force:
+      nameItem: '&4强度'
+      loreItem: |-
+        &7这件护甲会给你
+        &7设定数量的护甲.
+        &7
+        &b强度: &e<amount>
+        &7
+        &e点击更改！
+    health:
+      nameItem: '&c生命'
+      loreItem: |-
+        &7这件护甲会给你
+        &7设定数量的护甲.
+        &7
+        &b生命: &e<amount>
+        &7
+        &e点击更改！
+    speed:
+      nameItem: '&f速度'
+      loreItem: |-
+        &7这件护甲会给你
+        &7设定数量的护甲.
+        &7
+        &b速度: &e<amount>
+        &7
+        &e点击更改！
+    critDamage:
+      nameItem: '&9暴击伤害'
+      loreItem: |-
+        &7这件护甲会给你
+        &7设定数量的护甲.
+        &7
+        &b暴击伤害: &e<amount>
+        &7
+        &e点击更改！
+    intelligence:
+      nameItem: '&b情报'
+      loreItem: |-
+        &7这件护甲会给你
+        &7设定数量的护甲.
+        &7
+        &b情报: &e<amount>
+        &7
+        &e点击更改！
+    back:
+      nameItem: '&a返回主菜单'
+      loreItem: |-
+        &7当你点击时返回上一页.
+        &7
+        &e点击返回！
+  setupCraft:
+    title: '&a设置制作菜单'
+    save:
+      nameItem: '&a保存护甲制作'
+      loreItem: |-
+        &7保存此护甲制作.
+        &7
+        &e点击保存！
+  setupItem:
+    title: '&a设置物品菜单'
+    save:
+      nameItem: '&a保存护甲物品'
+      loreItem: |-
+        &7保存此护甲物品.
+        &7
+        &e点击保存！
+  setup:
+    title: '&a设置菜单'
+    key:
+      nameItem: '&a护甲键'
+      loreItem: |-
+        &7这是护甲在不同地方
+        &7被识别的键.
+        &7
+        &b键: &e<key>
+        &7
+    item:
+      nameItem: '&a护甲物品'
+      loreItem: |-
+        &7这是代表护甲的物品
+        &7（设置描述等），
+        &7
+        &e点击设置！
+    attributes:
+      nameItem: '&a护甲属性'
+      loreItem: |-
+        &7这些是穿戴护甲时
+        &7会增加的属性.
+        &7
+        <attributes>
+        &7
+        &e点击更改！
+    craft:
+      nameItem: '&a护甲制作'
+      loreItem: |-
+        &7这是护甲的制作配方.
+        &7
+        &e点击设置！
+    save:
+      nameItem: '&a保存护甲'
+      loreItem: |-
+        &7保存此护甲.
+        &7
+        &e点击保存！
+  skillsLevel:
+    title: <type> 技能
+  skills:
+    title: '&8技能菜单'
+    back:
+      name: 你的技能
+      nameItem: '&a返回'
+      loreItem: '&7前往 <back>'
+    multiplier:
+      store: '&ehttps://www.yourserverstore.net/'
+      nameItem: '&a经验倍率'
+      loreItem: |-
+        &7
+        &7通过拥有服务器头衔
+        &7获得更多经验.
+        &7
+        &a[VIP] &7: &51.1x &7经验
+        &a[VIP&6+&a] &7: &51.25x &7经验
+        &b[MVP] &7: &51.5x &7经验
+        &b[MVP&c+&b] &7: &52.0x &7经验
+        &6[MVP&2++&6] &7: &52.5x &7经验
+        &7
+        &7你的经验倍率: &5<multiplier>x
+        &7
+        &e点击访问商店！
+    close:
+      nameItem: '&c关闭'
+      loreItem: |-
+        &7点击关闭
+        &7此菜单.
+    skills:
+      nameItem: '&a你的技能'
+      loreItem: |-
+        &7查看你的技能进度和
+        &7奖励.
+    maxReward:
+    - '&7你已达到等级上限.'
+    - '&7该技能已满.'
+    mainLore:
+    - <desc>
+    - '&7'
+    - '&7到等级 <level> 的进度: &e<percent>%'
+    - <bar> &e<amount>&6/&e<max>
+    - '&7'
+    - '&7等级 <level> 奖励:'
+    - <rewards>
+    - '&7'
+    - '&e点击查看！'
+    levelIcon:
+    - <desc>
+    - '&7'
+    - '&7到等级 <level> 的进度: &e<percent>%'
+    - <bar> &e<amount>&6/&e<max>
+    - '&7'
+    - '&8提升你的&a <name>&8 等级以'
+    - '&8解锁特长、属性加成'
+    - '&8和更多内容！'

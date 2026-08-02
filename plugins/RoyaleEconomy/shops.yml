@@ -1,0 +1,158 @@
+sell-all:
+  #Cooldown in seconds
+  sell-all-command-cooldown: 0
+  #Applies to wands too, to set the cooldown of an wand just add 'cooldown: amount' in the wand's section
+  cooldown-bypass-permission: 'rec.sellall.cooldown.bypass'
+  sell-all-cooldown-message: '&c你还不能这样做！此操作还需冷却 %cooldown%'
+  sell-message: '&6[全部出售] &f你已出售 &e%item-count% 个物品 &f获得 &6%coins% 硬币&f！'
+  no-items-to-sell: '&c没有可出售的物品！'
+  use-sell-command: false
+  #Permission to use /sellall without mentioning a shop
+  #If users don't have permission, they need to specify a shop
+  #PER SHOP SELL PERMISSION: 'rec.shop.sellall.shopName' <--- CAN NOT BE CHANGED
+  global-sell-permission: 'rec.shop.sellall.global'
+  no-permission-to-sell-global: '&c你没有全局出售的权限！'
+  no-permission-to-sell-shop: '&c你没有向此商店出售的权限！'
+  use-sell-wands: false
+  need-to-click-chest: '&c魔杖出售箱子里的物品。你需要点击你的一个箱子！'
+  sell-wands:
+    #Sell wands check for sellall permission, if you don't have access to sell
+    #to a shop (rec.shop.sellall.shopName or the global permission) the items WILL NOT BE SOLD!
+    #Doesn't matter if the wand allows selling to that shop, the player needs permission for it too!
+    wand1:
+      #The maximum amount of uses, after which the wand breaks
+      #Set to 0 for no limit
+      uses: 500
+      material: '369'
+      #Leaving the shops to check empty means it checks for EVERY shop!
+      shops-to-check: []
+      name: '&a全局出售魔杖 &7(&a%uses%&7)'
+      lore:
+        - ''
+        - '&7将箱子中的物品'
+        - '&7立即出售到所有'
+        - '&7你有权限的商店！'
+        - ''
+        - '&7剩余使用次数：&a%uses%'
+    wand2:
+      #The maximum amount of uses, after which the wand breaks
+      #Set to 0 for no limit
+      uses: 0
+      material: '280'
+      #Leaving the shops to check empty means it checks for EVERY shop!
+      shops-to-check:
+        - 'shop1'
+        - 'shop2'
+      name: '&a出售魔杖 | 商店 1 和 商店 2'
+      lore:
+        - ''
+        - '&7将箱子中的物品'
+        - '&7立即出售到商店 1 和商店 2'
+        - '&7如果你有权限'
+        - '&7访问它们！'
+
+shop-buy-limit:
+  use: false
+  #This is the maximum amount of money you can use
+  #per day to buy stuff (is global, not for each shop)
+  limit-reached-message:
+    - '&c你不能再购买物品了！'
+    - '&c你已达到每日限额'
+    - '&c&6%coins% 硬币&c！'
+  limit-groups:
+    limit1:
+      permission: 'shop.limit1'
+      maximum-coins: 50000
+    limit2:
+      permission: 'shop.limit2'
+      maximum-coins: 10000
+
+shop-sell-limit:
+  use: false
+  #This is the maximum amount of money you can use
+  #per day to sell stuff (is global, not for each shop)
+  limit-reached-message:
+    - '&c你不能再出售物品了！'
+    - '&c你已达到每日限额'
+    - '&c&6%coins% 硬币&c！'
+  limit-groups:
+    limit1:
+      permission: 'shop.limit1'
+      maximum-coins: 50000
+    limit2:
+      permission: 'shop.limit2'
+      maximum-coins: 10000
+
+log-shop-activity: false
+next-page-item:
+  material: '262'
+  name: '&a下一页'
+  lore:
+    - '&f点击前往'
+    - '&f下一页。'
+
+previous-page-item:
+  material: '262'
+  name: '&a上一页'
+  lore:
+    - '&f点击前往'
+    - '&f上一页。'
+
+go-back-item:
+  material: '262'
+  name: '&a返回'
+  lore:
+    - '&f返回'
+    - '&f主商店。'
+
+sell-item:
+  material: '154'
+  name: '&a出售物品'
+  lore:
+    - '&7点击背包中的物品'
+    - '&7将其出售给此商店！'
+
+lore-sell-addition:
+  - ''
+  - '&7价格'
+  - '&6%amount% 硬币'
+  - ''
+  - '&e点击出售！'
+
+lore-cannot-buy-addition:
+  - ''
+  - '&c此物品无法'
+  - '&c购买！'
+
+lore-buy-addition:
+  - ''
+  - '&7价格'
+  - '&6%amount% 硬币'
+  - ''
+  - '&e点击购买！'
+
+#If the amounts are not set to 0 this
+#will be added to the lore
+lore-detailed-buy-addition:
+  - '&e右键查看更多交易选项！'
+
+lore-buyback-addition:
+  - ''
+  - '&7价格'
+  - '&6%amount% 硬币'
+  - ''
+  - '&e点击回购！'
+
+freshly-bought-lore:
+  - ''
+  - '&b刚刚购买的物品。'
+  - '&b重新打开商店才能'
+  - '&b出售它。'
+
+sell-message: '&a你出售了 %item-display-name% &8x%item-count% &a获得 &6%amount% 硬币&a！'
+buy-message: '&a你购买了 %item-display-name% &8x%item-count% &a花费 &6%amount% 硬币&a！'
+buyback-message: '&a你回购了 %item-display-name% &8x%item-count% 花费 &6%amount% 硬币&a！'
+not-enough-coins: '&c你的硬币不够！'
+not-enough-items: '&c你的物品不够！'
+not-enough-space: '&c你的背包空间不足！'
+too-fast-click: '&c慢一点！你点击太快了！'

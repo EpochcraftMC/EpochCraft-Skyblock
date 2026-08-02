@@ -1,0 +1,299 @@
+menu_title: '(2/2) 战斗配方'
+open_command: 'combat-recipes-2'
+size: 54
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 1
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 44
+        - 46
+        - 47
+        - 50
+        - 51
+        - 52
+        - 53
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      combat:
+        material: STONE_SWORD
+        slot: 4
+        display_name: '&a战斗配方'
+        hide_attributes: true
+        lore:
+        - '&7查看你的战斗配方！'
+        left_click_commands: []
+        right_click_commands: []
+
+      enchanted-blaze-rod:
+        material: BLAZE_ROD
+        priority: 1
+        slot: 10
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔烈焰棒'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_blazerod%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-BLAZE-ROD'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-BLAZE-ROD'
+
+      enchanted-blaze-powder:
+        material: 377
+        priority: 1
+        slot: 11
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔烈焰粉'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_blazerod%'
+              output: 250
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-BLAZE-POWDER'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-BLAZE-POWER'
+
+      enchanted-magma-cream:
+        material: MAGMA_CREAM
+        priority: 1
+        slot: 22
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔岩浆膏'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_magmacream%'
+              output: 250
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-MAGMA-CREAM'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-MAGMA-CREAM'
+
+      magma-helmet:
+        material: CHAINMAIL_HELMET
+        priority: 1
+        slot: 23
+        hide_attributes: true
+        amount: 1
+        display_name: '&5岩浆头盔'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_magmacream%'
+              output: 500
+        lore:
+        - '&7生命值：&a+15 HP'
+        - '&7防御：&a+50'
+        - '           '
+        - '&6套装加成：地狱领主'
+        - '&7穿戴时提供 &a+30 &c❁ 力量 &7和防火'
+        - '&7效果。当穿戴者着火或在地狱时，'
+        - '&7造成额外 &a+5% &7伤害。'
+        - '&c&a'
+        - '&5&l史诗头盔'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview MAGMA-HELMET'
+        right_click_commands:
+        - '[player] fc preview MAGMA-HELMET'
+
+      magma-chestplate:
+        material: CHAINMAIL_CHESTPLATE
+        priority: 1
+        slot: 24
+        hide_attributes: true
+        amount: 1
+        display_name: '&5岩浆胸甲'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_magmacream%'
+              output: 500
+        lore:
+        - '&7生命值：&a+100 HP'
+        - '&7防御：&a+30'
+        - '           '
+        - '&6套装加成：地狱领主'
+        - '&7穿戴时提供 &a+30 &c❁ 力量 &7和防火'
+        - '&7效果。当穿戴者着火或在地狱时，'
+        - '&7造成额外 &a+5% &7伤害。'
+        - '&c&a'
+        - '&5&l史诗胸甲'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview MAGMA-CHESTPLATE'
+        right_click_commands:
+        - '[player] fc preview MAGMA-CHESTPLATE'
+
+      magma-leggings:
+        material: CHAINMAIL_LEGGINGS
+        priority: 1
+        slot: 25
+        hide_attributes: true
+        amount: 1
+        display_name: '&5岩浆护腿'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_magmacream%'
+              output: 500
+        lore:
+        - '&7生命值：&a+75 HP'
+        - '&7防御：&a+25'
+        - '           '
+        - '&6套装加成：地狱领主'
+        - '&7穿戴时提供 &a+30 &c❁ 力量 &7和防火'
+        - '&7效果。当穿戴者着火或在地狱时，'
+        - '&7造成额外 &a+5% &7伤害。'
+        - '&c&a'
+        - '&5&l史诗护腿'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview MAGMA-LEGGINGS'
+        right_click_commands:
+        - '[player] fc preview MAGMA-LEGGINGS'
+
+      magma-boots:
+        material: CHAINMAIL_BOOTS
+        priority: 1
+        slot: 28
+        hide_attributes: true
+        amount: 1
+        display_name: '&5岩浆靴子'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_magmacream%'
+              output: 500
+        lore:
+        - '&7生命值：&a+45 HP'
+        - '&7防御：&a+15'
+        - '           '
+        - '&6套装加成：地狱领主'
+        - '&7穿戴时提供 &a+30 &c❁ 力量 &7和防火'
+        - '&7效果。当穿戴者着火或在地狱时，'
+        - '&7造成额外 &a+5% &7伤害。'
+        - '&c&a'
+        - '&5&l史诗靴子'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview MAGMA-BOOTS'
+        right_click_commands:
+        - '[player] fc preview MAGMA-BOOTS'
+
+      locked:
+        material: INK_SACK
+        data: 8
+        priority: 2
+        slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 28
+        - 29
+        - 30
+        display_name: '&c???'
+        lore:
+        - '&7你还没有解锁'
+        - '&7此配方。'
+        left_click_commands: []
+        right_click_commands: []
+
+      previous-page:
+        material: ARROW
+        priority: 3
+        slot: 45
+        display_name: '&a上一页'
+        lore:
+        - '&e第 1 页'
+        left_click_commands:
+        - '[openguimenu] combat-recipes'
+        right_click_commands:
+        - '[openguimenu] combat-recipes'
+
+      go-back:
+        material: ARROW
+        slot: 48
+        priority: 5
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] recipe-book'
+        right_click_commands:
+        - '[openguimenu] recipe-book'
+
+      close:
+        material: BARRIER
+        slot: 49
+        display_name: '&c关闭'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'

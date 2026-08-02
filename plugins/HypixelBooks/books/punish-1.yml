@@ -1,0 +1,19 @@
+name: 惩罚玩家
+title: 惩罚玩家
+author: Server
+generation: ORIGINAL
+lore:
+- 惩罚 GUI
+open_command: ''
+
+pages:
+  '1':
+  - '为 %skript_1::{player}% 选择一种惩罚类型：'
+  - ''
+  - '<tooltip:&7点击封禁 %skript_1::{player}%<br>&7<br>&c警告：请记住，错误地惩罚玩家<br>&c是违反规则的，会导致你的<br>&c头衔被移除！><run command:/aban %skript_1::{player}%> &8⦿&0 封禁 %skript_1::{player}%<reset>'
+  - '<tooltip:&7点击禁言 %skript_1::{player}%<br>&7<br>&c警告：请记住，错误地惩罚玩家<br>&c是违反规则的，会导致你的<br>&c头衔被移除！><run command:/amute %skript_1::{player}%> &8⦿&0 禁言 %skript_1::{player}%<reset>'
+  - '<tooltip:&7点击警告 %skript_1::{player}%<br>&7<br>&c警告：请记住，错误地惩罚玩家<br>&c是违反规则的，会导致你的<br>&c头衔被移除！><run command:/awarn %skript_1::{player}%> &8⦿&0 警告 %skript_1::{player}%<reset>'
+  - ''
+  - '选择惩罚类型后将询问更多惩罚详情。'
+  - ''
+  - '  <tooltip:&c点击取消><run command:/cancelpunishment>&c取消惩罚<reset>'

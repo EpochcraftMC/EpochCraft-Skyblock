@@ -1,0 +1,10 @@
+# 每次打开书籍时是否更新书的内容？
+update_books_on_use: true
+# 玩家加入服务器时打开的书
+open_book_on_join: ''
+# 玩家第一次加入服务器时打开的书
+open_book_on_first_join: ''
+# 玩家加入服务器时给予的书
+books_on_join: []
+# 玩家第一次加入服务器时给予的书
+books_on_first_join: []

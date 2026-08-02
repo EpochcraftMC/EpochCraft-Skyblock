@@ -1,0 +1,16 @@
+others-menu-item: '32'
+others-menu-name: '&2其他'
+others-menu-lore:
+  - '&8分类'
+  - ''
+  - '&7可以拍卖但不在'
+  - '&7其他分类中的'
+  - '&7任何物品。'
+
+#如果你有想放入此分类的自定义物品，
+#请在此处指定它们的名称
+custom-item-names:
+  - '&e&l示例 &6&l物品'
+
+custom-item-ids:
+  - '2266'

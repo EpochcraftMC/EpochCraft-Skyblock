@@ -1,0 +1,396 @@
+menu_title: 'SkyBlock 菜单'
+open_command:
+- menu
+size: 54
+update_interval: 1
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 99
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 52
+        - 53
+        - 11
+        - 12
+        - 14
+        - 32
+        - 46
+        - 47
+        - 32
+        - 15
+        - 16
+        - 17
+        - 18
+        - 26
+        - 27
+        - 28
+        - 40
+        - 29
+        - 30
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 32
+        - 37
+        - 38
+        - 39
+        - 41
+        - 42
+        - 43
+        - 44
+        - 47
+        - 51
+        - 53
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+      attributes:
+        material: head;%player_name%
+        slot: 13
+        display_name: '&a你的 SkyBlock 档案'
+        lore:
+        - ' &c❤ 生命值 &f%us_health% HP'
+        - ' &a❇ 防御 &f%us_defense%'
+        - ' &f❂ 真实防御 &f0'
+        - ' &c❁ 力量 &f%us_force%'
+        - ' &f✦ 速度 &f%us_speed%%'
+        - ' &9☣ 暴击几率 &f%us_critchance%%'
+        - ' &9☠ 暴击伤害 &f%us_critdamage%%'
+        - ' &e⚔ 额外攻击速度 &f0%'
+        - ' &b✎ 智力 &f%us_intelligence%'
+        - ' &3ð 海洋生物几率 &f%us_seacreature%%'
+        - ' &b✯ 魔法寻获 &f0'
+        - ' &d♠ 宠物幸运 &f0'
+        - ''
+        - '&e点击查看你的档案！'
+        left_click_commands:
+        - '[openguimenu] attributes'
+        right_click_commands:
+        - '[openguimenu] attributes'
+      missions:
+        material: 386
+        hide_attributes: true
+        slot: 23
+        display_name: '&a任务日志'
+        lore:
+        - '&7查看你当前的任务、'
+        - '&7进度和奖励。'
+        - ''
+        - '&e点击查看！'
+        left_click_commands:
+        - '[openguimenu] missions'
+        right_click_commands:
+        - '[openguimenu] missions'
+      collections:
+        material: PAINTING
+        slot: 20
+        display_name: '&a收集'
+        lore:
+        - '&7查看 SkyBlock 中所有可获得的'
+        - '&7物品。收集更多的物品，'
+        - '&7在成为 SkyBlock 大师的'
+        - '&7路上解锁奖励！'
+        - ''
+        - '&e点击查看！'
+        left_click_commands:
+        - '[player] collections menu'
+        right_click_commands:
+        - '[player] collections menu'
+      recipe-book:
+        material: BOOK
+        slot: 21
+        display_name: '&a配方书'
+        lore:
+        - '&7解锁配方将让你能够'
+        - '&7合成新的特殊物品！在此菜单中'
+        - '&7你可以看到它们的配方。'
+        - ''
+        - '&e点击查看！'
+        left_click_commands:
+        - '[openguimenu] recipe-book'
+        right_click_commands:
+        - '[openguimenu] recipe-book'
+      trades:
+        material: 388
+        slot: 22
+        display_name: '&a交易'
+        lore:
+        - '&7查看你可用的交易。'
+        - '&7这些交易随时可用，'
+        - '&7可通过 SkyBlock 菜单'
+        - '&7随时访问。'
+        - ''
+        - '&e点击查看！'
+        left_click_commands:
+        - '[player] trades'
+        right_click_commands:
+        - '[player] trades'
+      skills:
+        material: DIAMOND_SWORD
+        hide_attributes: true
+        slot: 19
+        display_name: '&a技能'
+        lore:
+        - '&7查看你的技能进度'
+        - '&7和奖励。'
+        - ''
+        - '&e点击查看！'
+        left_click_commands:
+        - '[player] usbc skills menu'
+        right_click_commands:
+        - '[player] usbc skills menu'
+      calendar:
+        material: 347
+        slot: 24
+        display_name: '&a日历'
+        lore:
+        - '&c即将推出！'
+        left_click_commands: []
+        right_click_commands: []
+      ender-chest:
+        material: ENDER_CHEST
+        slot: 25
+        display_name: '&a末影箱'
+        lore:
+        - '&7存放你想随时随地在'
+        - '&7SkyBlock 中任何地方'
+        - '&7取用的全局物品！'
+        - ''
+        - '&e点击打开！'
+        left_click_commands:
+        - '[player] bag'
+        right_click_commands:
+        - '[player] bag'
+      workbench:
+        material: 58
+        slot: 31
+        display_name: '&a工作台'
+        lore:
+        - '&7打开工作台。'
+        - ''
+        - '&e点击打开！'
+        left_click_commands:
+        - '[player] workbench'
+        right_click_commands:
+        - '[player] workbench'
+      bank:
+        display_name: '&a远程银行'
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ZTk0ZjZjMzRhMzU0NjVmY2U0YTkwZjJlMjU5NzYzODllYjk3MDlhMTIyNzM1NzRmZjcwZmQ0ZGFhNjg1MiJ9fX0='
+        lore:
+        - '&7使用银行存放你的金币'
+        - '&7并赚取利息！'
+        - ''
+        - '&e点击打开！'
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: 'bank.access'
+        priority: 1
+        data: 0
+        slot: 33
+        left_click_commands:
+        - '[player] bank'
+        right_click_commands:
+        - '[player] bank'
+      bank2:
+        display_name: '&a远程银行'
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ZTk0ZjZjMzRhMzU0NjVmY2U0YTkwZjJlMjU5NzYzODllYjk3MDlhMTIyNzM1NzRmZjcwZmQ0ZGFhNjg1MiJ9fX0='
+        lore:
+        - '&7使用银行存放你的金币'
+        - '&7并赚取利息！'
+        - ''
+        - '&c你还没有解锁此功能！'
+        priority: 2
+        data: 0
+        slot: 33
+        left_click_commands: []
+        right_click_commands: []
+      fast-travel:
+        material: COMPASS
+        slot: 45
+        priority: 5
+        display_name: '&b快速传送'
+        lore:
+        - '&7瞬间传送到你之前'
+        - '&7去过的地方！'
+        - ''
+        - '&e点击打开！'
+        left_click_commands:
+        - '[openguimenu] fast-travel'
+        right_click_commands:
+        - '[openguimenu] fast-travel'
+      profile-management:
+        material: 421
+        slot: 48
+        display_name: '&a档案管理'
+        lore:
+        - '&7你可以同时拥有'
+        - '&7多个 SkyBlock'
+        - '&7档案。'
+        - ''
+        - '&7每个档案都有自己独立的'
+        - '&7岛屿、背包、任务'
+        - '&7日志……'
+        - ''
+        - '&f档案数量：&a1&7/&a1'
+        - '&f正在游玩：&a默认'
+        - ''
+        - '&e点击管理！'
+        left_click_commands:
+        - '[openguimenu] profile-management'
+        right_click_commands:
+        - '[openguimenu] profile-management'
+      warp-to-island:
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzljODg4MWU0MjkxNWE5ZDI5YmI2MWExNmZiMjZkMDU5OTEzMjA0ZDI2NWRmNWI0MzliM2Q3OTJhY2Q1NiJ9fX0='
+        slot: 36
+        priority: 1
+        view_requirement:
+          requirements:
+            world:
+              type: string equals ignorecase
+              input: '%multiverse_world_name%'
+              output: Server
+        display_name: '&a传送至：&b你的岛屿'
+        lore:
+        - '&e点击传送！'
+        left_click_commands:
+        - '[player] is home'
+        right_click_commands:
+        - '[player] is home'
+      warp-to-village:
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzljODg4MWU0MjkxNWE5ZDI5YmI2MWExNmZiMjZkMDU5OTEzMjA0ZDI2NWRmNWI0MzliM2Q3OTJhY2Q1NiJ9fX0='
+        slot: 36
+        priority: 2
+        display_name: '&a传送至：&b主城岛屿'
+        lore:
+        - '&e点击传送！'
+        left_click_commands:
+        - '[player] hub'
+        right_click_commands:
+        - '[player] hub'
+      ARRROW-BAG:
+        display_name: '&a箭袋'
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDAxZDIzZDUyMjFjYTcxMzcxODQ5ZGI2NjQzNTFjODI5MDc3ZGIxMGI2OWI2MTRiY2E5NTRmNDk1YTE0Yzc1In19fQ=='
+        lore:
+        - '&7存放你的箭矢，'
+        - '&7随时随地在'
+        - '&7SkyBlock 中取用。'
+        - ''
+        - '&e点击打开！'
+        priority: 1
+        data: 0
+        slot: 44
+        left_click_commands:
+        - '[player] arrowbag'
+        right_click_commands:
+        - '[player] arrowbag'
+      POTION-BAG:
+        display_name: '&a药水袋'
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk2Y2UxM2ZmNjE1NWZkZjMyMzVkOGQyMjE3NGM1ZGU0YmY1NTEyZjFhZGVkYTFhZmEzZmMyODE4MGYzZjcifX19'
+        lore:
+        - '&7安全地存放你的药水，'
+        - '&7在你需要时取用。'
+        - ''
+        - '&e点击打开！'
+        priority: 1
+        data: 0
+        slot: 53
+        left_click_commands:
+        - '[player] potionbag'
+        right_click_commands:
+        - '[player] potionbag'
+      TALISMAN-BAG:
+        display_name: '&a护符袋'
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjg5MDNiNTkyYmE1MzFhNjFjNWYzZjRmNTY2NWViZmU4MDNkMzUyM2RlZGE4MGYxMzQzYzI0NDYxODJkYjIifX19'
+        lore:
+        - '&7专为存放你的护符而设计，'
+        - '&7不会占用你背包中'
+        - '&7的空间。'
+        - ''
+        - '&e点击打开！'
+        priority: 1
+        data: 0
+        slot: 52
+        left_click_commands:
+        - '[player] talismanbag'
+        right_click_commands:
+        - '[player] talismanbag'
+      SETTINGS:
+        material: 76
+        slot: 50
+        display_name: '&a设置'
+        lore:
+        - '&7查看并编辑你的 SkyBlock'
+        - '&7设置。'
+        - ''
+        - '&e点击打开！'
+        left_click_commands:
+        - '[openguimenu] settings'
+        right_click_commands:
+        - '[openguimenu] settings'
+      CLOSE:
+        material: BARRIER
+        slot: 49
+        display_name: '&c关闭'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'
+      wardrobe:
+        material: LEATHER_CHESTPLATE
+        hide_attributes: true
+        slot: 32
+        display_name: '&a衣柜'
+        lore:
+        - '&7存放装备套装并快速'
+        - '&7切换！'
+        - ''
+        - '&e点击查看！'
+        left_click_commands:
+        - '[message] &c你还没有解锁衣柜！'
+        right_click_commands:
+        - '[message] &c你还没有解锁衣柜！'
+      potion-effects:
+        material: POTION
+        slot: 29
+        display_name: '&a药水效果'
+        lore:
+        - ''
+        - '&7查看你所有生效中的'
+        - '&7效果。'
+        - ''
+        - '&e点击打开！'
+        left_click_commands:
+        - '[message] &c你没有任何生效中的药水效果！'
+        right_click_commands:
+        - '[message] &c你没有任何生效中的药水效果！'
+      pets:
+        material: BONE
+        slot: 30
+        display_name: '&a宠物'
+        lore:
+        - '&7查看并管理你的所有'
+        - '&7宠物。'
+        - ''
+        - '&e点击打开！'
+        left_click_commands:
+        - '[player] usbc pets menu'
+        right_click_commands:
+        - '[player] usbc pets menu'

@@ -1,0 +1,114 @@
+anticroptrample: true
+no-region: '&7无区域'
+###区域；你可以添加新区域：
+###区域-(新编号):
+#####id: (WorldGuard 区域 id)
+#####name: (显示名称)
+region-1:
+  id: 'village'
+  name: '&b村庄'
+region-2:
+  id: 'auction-house'
+  name: '&6拍卖行'
+region-3:
+  id: 'bank'
+  name: '&6银行'
+region-4:
+  id: 'graveyard'
+  name: '&c墓地'
+region-5:
+  id: 'coliseum'
+  name: '&b竞技场'
+region-6:
+  id: 'magic-cave'
+  name: '&5魔法洞穴'
+region-7:
+  id: 'witch-house'
+  name: '&5女巫小屋'
+region-8:
+  id: 'coal-mine'
+  name: '&b煤矿'
+region-9:
+  id: 'oak-forest'
+  name: '&2橡木森林'
+region-10:
+  id: 'pirate-ship'
+  name: '&b海盗船'
+region-11:
+  id: 'farm'
+  name: '&a农场'
+region-12:
+  id: 'the-barn'
+  name: '&a谷仓'
+region-13:
+  id: 'farms'
+  name: '&a农场区'
+region-14:
+  id: 'acacia-forest'
+  name: '&2金合欢森林'
+region-15:
+  id: 'dark-oak-forest'
+  name: '&2深色橡木森林'
+region-16:
+  id: 'spruce-forest'
+  name: '&2云杉森林'
+region-17:
+  id: 'birch-forest'
+  name: '&2白桦森林'
+region-18:
+  id: 'jungle-forest'
+  name: '&2丛林森林'
+region-19:
+  id: 'spiders-den'
+  name: '&c蜘蛛巢穴'
+region-20:
+  id: 'the-nether'
+  name: '&c下界'
+region-21:
+  id: 'nether-fortress'
+  name: '&c下界堡垒'
+region-22:
+  id: 'deep-caverns'
+  name: '&b深层洞穴'
+region-23:
+  id: 'gold-mine'
+  name: '&6金矿'
+region-24:
+  id: 'lapis-quarry'
+  name: '&9青金石采石场'
+region-25:
+  id: 'redstone-mine'
+  name: '&c红石矿'
+region-26:
+  id: 'emerald-sanctuary'
+  name: '&a绿宝石圣殿'
+region-27:
+  id: 'diamond-reserve'
+  name: '&b钻石保护区'
+region-28:
+  id: 'obsidian-sanctuary'
+  name: '&5黑曜石圣殿'
+region-29:
+  id: 'wheat-farm-1'
+  name: '&a小麦农场'
+region-30:
+  id: 'wheat-farm-2'
+  name: '&a小麦农场'
+region-31:
+  id: 'wheat-farm-3'
+  name: '&a小麦农场'
+region-32:
+  id: 'the-end'
+  name: '&d末地'
+region-33:
+  id: 'dragon-nest'
+  name: '&5龙巢'
+region-34:
+  id: 'dragon-altar'
+  name: '&5龙之祭坛'
+region-35:
+  id: 'coliseum-inside'
+  name: '&b竞技场内部'
+region-36:
+  id: 'dark-auction'
+  name: '&5黑暗拍卖'

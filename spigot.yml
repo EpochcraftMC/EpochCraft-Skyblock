@@ -1,0 +1,157 @@
+# 这是 Spigot 的主配置文件。
+# 如你所见，这里有很多可以配置的内容。有些选项可能会影响游戏玩法，请谨慎使用，
+# 并在配置前确保你了解每个选项的作用。
+# 关于此文件内每个变量的参考，请查看 Spigot wiki：
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# 如果你在配置方面需要帮助或有任何与 Spigot 相关的问题，
+# 欢迎加入我们的 IRC 或在论坛上发帖。
+# 
+# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# 论坛: http://www.spigotmc.org/
+
+config-version: 8
+settings:
+  debug: false
+  save-user-cache-on-stop-only: true
+  filter-creative-items: true
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-threshold: 100.0
+  player-shuffle: 0
+  user-cache-size: 1000
+  bungeecord: false
+  sample-count: 12
+  late-bind: true
+  attribute:
+    maxHealth:
+      max: 2.048E8
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2.048E8
+  timeout-time: 60
+  restart-on-crash: false
+  restart-script: ./start.sh
+  int-cache-limit: 1024
+  netty-threads: 16
+  moved-too-quickly-multiplier: 10.0
+  item-dirty-ticks: 20
+commands:
+  tab-complete: 0
+  log: true
+  silent-commandblock-console: false
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  spam-exclusions:
+  - /skill
+messages:
+  whitelist: §c服务器当前处于白名单模式，请稍后再试。
+  unknown-command: §f未知命令。
+  server-full: §c服务器已满。
+  outdated-client: §c请使用 1.8 - 1.16.3 版本加入
+  outdated-server: §c请使用 1.8 - 1.16.3 版本加入
+  restart: §c服务器正在重启，请几分钟后再回来。
+stats:
+  disable-saving: false
+  forced-stats: {}
+world-settings:
+  default:
+    verbose: false
+    max-entity-collisions: 8
+    seed-village: 10387312
+    seed-feature: 14357617
+    dragon-death-sound-radius: 0
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+    random-light-updates: false
+    save-structure-info: true
+    entity-activation-range:
+      animals: 1
+      monsters: 1
+      misc: 1
+    max-tnt-per-tick: 100
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 1
+    hopper-amount: 1
+    max-bulk-chunks: 10
+    max-tick-time:
+      tile: 15
+      entity: 25
+    hunger:
+      walk-exhaustion: 0.2
+      sprint-exhaustion: 0.8
+      combat-exhaustion: 0.1
+      regen-exhaustion: 6.0
+      jump-walk-exhaustion: 0.05
+      jump-sprint-exhaustion: 0.2
+      swim-multiplier: 0.01
+      sprint-multiplier: 0.1
+      other-multiplier: 0.0
+    nerf-spawner-mobs: false
+    mob-spawn-range: 3
+    anti-xray:
+      enabled: false
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
+    item-despawn-rate: 1500
+    merge-radius:
+      item: 3.0
+      exp: 6.0
+    enable-zombie-pigmen-portal-spawns: true
+    arrow-despawn-rate: 300
+    view-distance: 8
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: true
+    wither-spawn-sound-radius: 0
+    chunks-per-tick: 100
+    clear-tick-list: false
+    seed-monument: 10387313
+    seed-slime: 987234911
+timings:
+  enabled: true
+  verbose: false
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:story/disabled

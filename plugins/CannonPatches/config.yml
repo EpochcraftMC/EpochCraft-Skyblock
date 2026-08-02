@@ -1,0 +1,42 @@
+#消息
+prefix: '&8&l<&e&lCannonPatches&8&l>'
+web-limit-msg: '&c每个 X/Z 坐标最多只能有 %webs% 个蜘蛛网。'
+
+#限制每个 X Z 坐标的蜘蛛网数量
+web-limit-enabled: true
+web-limit: 2
+
+#活塞推动限制（通常用于自动炮）
+pistons-push-limit-enabled: true
+pistons-push-limit: 4
+
+#禁用栅栏门沙板。示例: https://youtu.be/NK_HPv9ZyoQ
+limit-sand-plates: true
+
+#禁用屋顶炮
+limit-roof-cannons: true
+
+#防止仙人掌、活塞底座、箱子、栅栏等方块破坏沙子
+sand-stack-patch: true
+
+#让 TNT 炸开岩浆
+tnt-blow-up-lava: true
+
+#让 TNT 不击退玩家
+no-tnt-kb: true
+
+#让 TNT 不伤害玩家
+no-tnt-health-damage: true
+
+#世界边界
+#主世界
+wb-max-normal: 20000
+wb-min-normal: -20000
+
+#下界
+wb-max-nether: 5000
+wb-min-nether: -5000
+
+#末地
+wb-max-end: 7000
+wb-min-end: -7000

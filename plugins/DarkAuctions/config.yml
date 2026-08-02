@@ -1,0 +1,192 @@
+# 拍卖多久发生一次，单位分钟
+occurence: 120
+# 玩家有多少时间加入拍卖，单位分钟
+jointime: 1
+# 拍卖在结束前循环展示的物品数量
+auctions: 1
+# 尝试开启拍卖时需要的最少在线玩家数
+# 以及尝试开始时已加入拍卖的最少玩家数
+min-players: 4
+# 拍卖内最大玩家数
+max-players: 16
+# 玩家进入拍卖需要支付的金额
+entry-fee: 1000
+# 出价结束前的剩余秒数，出价后重置
+bidding-time: 30
+# 每次加价时，出价在物品基础价格上增加的百分比
+bid-increments: 20
+
+# 玩家每次成功出价时播放的声音
+bid-sound:
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  # 1.8: ORB_PICKUP
+  # 1.9+: ENTITY_EXPERIENCE_ORB_PICKUP
+  sound: "ORB_PICKUP"
+  # 声音播放所属的类别，玩家可以关闭该类别的声音。
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/SoundCategory.html
+  category: "PLAYERS"
+  # 声音的音调，必须在 0 到 2 之间
+  # (0 = 最低, 2 = 最高)
+  pitch: 1.5
+  # 声音的音量，仅在 0 到 1 之间有效
+  # 任何大于 1 的值只会扩大声音可被听到的范围，但不会让它更响
+  volume: 1.0
+# 拍卖开始时播放的声音
+# 在 1.8.x 上默认为 stal，除非声音设置为 ""，此时不会播放任何声音。
+bid-music:
+  sound: ""
+  category: "RECORDS"
+  pitch: 1.0
+  volume: 1.0
+
+# 全息影像行，可接受的值:
+#   {da_item_name} - 物品名称
+#   {da_item_cost} - 物品的起拍价
+#   {da_time}      - 出价结束前的剩余时间
+# 如果你更改了行数，请在重新加载后使用 '/da remove item' 并用 '/da set item' 重新设置。
+hologram:
+  - "{da_item_name}"
+  - "&f起拍价: &6{da_item_cost} 金币"
+  - "&f剩余时间: &b{da_time}秒"
+  - "&e点击出价！"
+
+auction-items:
+  1:
+    material: gold_sword
+    amount: 1
+    displayName: "&6迈达斯之剑"
+    lore:
+      - "&7伤害: &c+150"
+      - "           "
+      - "&6物品技能: 贪婪"
+      - "&7此物品的力量和伤害加成取决于"
+      - "&7在 &5黑暗&5拍卖&7 中为其支付的"
+      - "&7价格！"
+      - "&7如果出价达到 &650,000,000 金币 &7或更高，"
+      - "&7此物品的最大加成为 &c120 &7。"
+      - "&4&4"
+      - "&6&l传奇之剑"
+    flags:
+      - "HIDE_ATTRIBUTES"
+    cost: 100000
+    commands:
+      - "armor give midas-sword %player% hand"
+
+# 非活动拍卖界面的标题
+inactive-title: "&8黑暗拍卖"
+
+# 活动拍卖界面的标题
+active-title: "&8黑暗拍卖"
+
+# 出价界面的标题，支持 %item% 和 %round%
+bid-title: "%item% - 第 %round% 轮"
+
+gui-items:
+  no-auction:
+    material: watch
+    displayName: "&c&l当前没有拍卖"
+    lore:
+      - "&7当前没有进行中的黑暗拍卖。"
+      - "&r"
+      - "&7当 Sirius 准备好出售一些独家物品时，"
+      - "&7他会通知服务器。"
+      - "&r"
+      - "&7下次拍卖: &e%auction_timer%"
+  active-auction:
+    material: gold_block
+    displayName: "&6&l黑暗拍卖进行中"
+    lore:
+      - "&7Sirius 正在举办一场黑暗"
+      - "&7拍卖！点击支付 &6%auction_fee% 金币&7 的"
+      - "&7费用加入拍卖。"
+      - "&r"
+      - "&7剩余时间: &e%auction_remaining%"
+      - "&r"
+      - "&e点击加入！"
+  information:
+    material: compass
+    displayName: "&a信息"
+    lore:
+      - "&7玩家可以在黑暗拍卖中购买"
+      - "&7独家物品。但是，它们"
+      - "&7每两小时才会出现一次。"
+      - "&r"
+      - "&7玩家还必须支付 &6%auction_fee% 金币&7 的"
+      - "&7入场费才能参与"
+      - "&7黑暗拍卖"
+  time-remaining:
+    material: watch
+    displayName: "&e&l剩余时间"
+    lore:
+      - "&7%auction_bid_seconds% 秒"
+  bid:
+    material: gold_ingot
+    # 出价金额将显示的位置占位符。
+    # 仅在此处有效。bidden 和 unavailable 的 displayName 将被忽略，因为出价金额会延续。
+    # %auction_bid_amount%
+    displayName: "&6出价 %auction_bid_amount% 金币"
+    lore:
+      - "&e点击出价！"
+  bidden:
+    material: skull_item
+    damage: 3
+    # 当前最高出价者名称的占位符:
+    # %auction_bidder%
+    lore:
+      - "&f%auction_bidder% &c已经"
+      - "&c出过这个金额了！"
+  unavailable:
+    material: barrier
+    lore:
+      - "&c已经有人出了比这"
+      - "&c更高的出价"
+      - "&c了！"
+  placeholder:
+    material: stained_glass_pane
+    damage: 15
+    displayName: "&r"
+  placeholder2:
+    material: stained_glass_pane
+    damage: 15
+    displayName: "&r"
+  fill:
+    material: stained_glass_pane
+    damage: 15
+    displayName: "&f"
+
+messages:
+  prefix: "&e[NPC] &6Sirius: &f"
+  # 常见格式:
+  #   en-US: 123,456,789.01
+  #   de-DE: 123.456.789,01
+  #   fr-FR: 123 456 789,01
+  # 深入文档: https://docs.oracle.com/javase/7/docs/api/java/util/Locale.html#forLanguageTag(java.lang.String)
+  number-format: "en-US"
+  # 分隔符后数字格式始终显示的位数
+  # Minimum 表示始终显示的位数
+  # Maximum 表示无论有多少位都能显示的位数
+  number-format-fraction-digits-minimum: 0
+  number-format-fraction-digits-maximum: 0
+  reload-start: "配置将被重新加载。如果你是玩家，命令将对你进行测试。"
+  reload: "配置已重新加载。 (&f%time% &7毫秒)"
+  player-only: "只有玩家可以使用此命令。"
+  no-permission: "你没有权限访问此功能。"
+  # %usage% - 命令的用法
+  command-usage: "无效用法！正确的格式是 &f%usage%&7。"
+  itemspawn-invalid-location: "物品生成位置无效。请看着一块玻璃方块。"
+  itemspawn-set: "已将拍卖物品生成位置设置为指定地点。"
+  teleport-set: "已将拍卖传送位置设置为你所在的位置。"
+  itemspawn-removed: "已移除拍卖物品生成位置。"
+  teleport-removed: "已移除拍卖传送位置。"
+  not-enough-money: "&c抱歉，你负担不起这样做。"
+  auction-active: "当前有一场进行中的拍卖。你不能开始另一场。"
+  auction-open: "黑暗拍卖刚刚开启！与 Sirius 对话加入。"
+  already-attending: "你已经在参加拍卖了。"
+  auction-start: "欢迎来到黑暗拍卖，希望你带了足够的钱。"
+  not-enough-players: "没有足够的玩家参加拍卖。"
+  auction-end: "黑暗拍卖已结束，感谢参与。"
+  no-bid: "嗯，没有人对当前物品感兴趣..."
+  # %player% - 赢得出价的玩家
+  # %item% - 物品名称
+  bid-won: "&7%player%&f 以 &6%amount% 金币&f 赢得了 &f%item%&f 的出价！"
+  not-enough-money-auction-win: "&c抱歉，你没有足够的金币来领取物品。"

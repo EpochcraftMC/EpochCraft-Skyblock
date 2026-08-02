@@ -1,0 +1,137 @@
+menu_title: '&8档案管理'
+open_command:
+- profile-management
+size: 36
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 1
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 17
+        - 18 
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 32
+        - 33
+        - 34
+        - 35
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+      used-slot:
+        material: EMERALD_BLOCK
+        slot: 11
+        display_name: '&e档案: &a默认'
+        lore:
+        - '&8默认槽位'
+        - ''
+        - '&7采矿: &e等级 %us_skill_level_MINER%'
+        - '&7农业: &e等级 %us_skill_level_FARMER%'
+        - '&7战斗: &e等级 %us_skill_level_COMBAT%'
+        - '&7林业: &e等级 %us_skill_level_FORAGING%'
+        - '&7钓鱼: &e等级 %us_skill_level_FISHING%'
+        - '&7附魔: &e等级 %us_skill_level_ENCHANTING%'
+        - '&7炼金: &e等级 %us_skill_level_ALCHEMY%'
+        - '&7驯服: &e等级 %us_skill_level_TAMING%'
+        - '&7符文合成: &e等级 %us_skill_level_RUNECRAFTING%'
+        - ''
+        - '&7钱包金币: &6%vault_eco_balance_commas%'
+        - '&7银行金币: &6%royaleeconomy_balance_bank%'
+        - '&7创建时间: &9%player_first_join_date%'
+        - ''
+        - '&b此槽位无法修改。'
+        - '&a你正在使用此档案！'
+        left_click_commands: []
+        right_click_commands: []
+      empty-slot:
+        material: 143
+        slot: 12
+        display_name: '&e空档案槽位'
+        lore:
+        - '&8可用'
+        - ''
+        - '&7如果你想开始新的空岛冒险，'
+        - '&7请使用此槽位。'
+        - ''
+        - '&7每个档案都有独立的：'
+        - '&8● &7私人岛屿'
+        - '&8● &7背包'
+        - '&8● &7末影箱'
+        - '&8● &7银行和钱包'
+        - '&8● &7任务'
+        - '&8● &7收集'
+        - '&8● &7配方书'
+        - '&8● &7交易'
+        - ''
+        - '&b右键点击合作模式！'
+        - '&e点击创建单人档案！'
+        left_click_commands:
+        - '[message] &c你没有权限创建多个档案！'
+        right_click_commands:
+        - '[message] &c你没有权限创建多个档案！'
+      other-slot-2:
+        material: BEDROCK
+        slot: 13
+        display_name: '&c已锁定的档案槽位'
+        lore:
+        - '&8不可用'
+        - ''
+        - '&7此槽位目前对你锁定，'
+        - '&7但将来可能会开放。'
+        left_click_commands: []
+        right_click_commands: []
+      other-slot-3:
+        material: BEDROCK
+        slot: 14
+        display_name: '&c已锁定的档案槽位'
+        lore:
+        - '&8不可用'
+        - ''
+        - '&7此槽位目前对你锁定，'
+        - '&7但将来可能会开放。'
+        left_click_commands: []
+        right_click_commands: []
+      other-slot-4:
+        material: BEDROCK
+        slot: 15
+        display_name: '&c已锁定的档案槽位'
+        lore:
+        - '&8不可用'
+        - ''
+        - '&7此槽位目前对你锁定，'
+        - '&7但将来可能会开放。'
+        left_click_commands: []
+        right_click_commands: []
+      go-back:
+        material: arrow
+        slot: 31
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] menu'
+        right_click_commands:
+        - '[openguimenu] menu'

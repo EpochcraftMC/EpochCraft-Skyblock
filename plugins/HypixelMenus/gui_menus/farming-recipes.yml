@@ -1,0 +1,542 @@
+menu_title: '&8(1/3) 农业配方'
+open_command: 'farming-recipes'
+size: 54
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 1
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 44
+        - 45
+        - 46
+        - 47
+        - 50
+        - 51
+        - 52
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      farming:
+        material: GOLD_HOE
+        slot: 4
+        display_name: '&a农业配方'
+        hide_attributes: true
+        lore:
+        - '&7查看你的农业配方！'
+        left_click_commands: []
+        right_click_commands: []
+
+      enchanted-bread:
+        material: BREAD
+        priority: 1
+        slot: 10
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔面包'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_wheat%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-BREAD'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-BREAD'
+
+      enchanted-hay-bale:
+        material: HAY_BLOCK
+        priority: 1
+        slot: 11
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔干草捆'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_wheat%'
+              output: 250
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-HAY-BALE'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-HAY-BALE'
+
+      farmer-helmet:
+        material: LEATHER_HELMET
+        priority: 1
+        slot: 12
+        hide_attributes: true
+        amount: 1
+        display_name: '&9农夫头盔'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_wheat%'
+              output: 500
+        lore:
+        - '&7防御力: &a+15'
+        - '           '
+        - '&6全套加成：速度提升'
+        - '&7在 &b农场&7、&b谷仓&7 及其他'
+        - '&b作物&7 附近穿戴时，你的 &f✦ 速度&7'
+        - '&7提升 &a+25&7。'
+        - '&8&5'
+        - '&9&l稀有头盔'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FARMER-HELMET'
+        right_click_commands:
+        - '[player] fc preview FARMER-HELMET'
+
+      farmer-chestplate:
+        material: LEATHER_CHESTPLATE
+        priority: 1
+        slot: 13
+        hide_attributes: true
+        amount: 1
+        display_name: '&9农夫胸甲'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_wheat%'
+              output: 500
+        lore:
+        - '&7防御力: &a+40'
+        - '           '
+        - '&6全套加成：速度提升'
+        - '&7在 &b农场&7、&b谷仓&7 及其他'
+        - '&b作物&7 附近穿戴时，你的 &f✦ 速度&7'
+        - '&7提升 &a+25&7。'
+        - '&8&5'
+        - '&9&l稀有胸甲'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FARMER-CHESTPLATE'
+        right_click_commands:
+        - '[player] fc preview FARMER-CHESTPLATE'
+
+      farmer-leggings:
+        material: LEATHER_LEGGINGS
+        priority: 1
+        slot: 14
+        hide_attributes: true
+        amount: 1
+        display_name: '&9农夫护腿'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_wheat%'
+              output: 500
+        lore:
+        - '&7防御力: &a+35'
+        - '           '
+        - '&6全套加成：速度提升'
+        - '&7在 &b农场&7、&b谷仓&7 及其他'
+        - '&b作物&7 附近穿戴时，你的 &f✦ 速度&7'
+        - '&7提升 &a+25&7。'
+        - '&8&5'
+        - '&9&l稀有护腿'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FARMER-LEGGINGS'
+        right_click_commands:
+        - '[player] fc preview FARMER-LEGGINGS'
+
+      farmer-boots:
+        material: LEATHER_BOOTS
+        priority: 1
+        slot: 15
+        hide_attributes: true
+        amount: 1
+        display_name: '&9农夫靴子'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_wheat%'
+              output: 500
+        lore:
+        - '&7防御力: &a+15'
+        - '           '
+        - '&6全套加成：速度提升'
+        - '&7在 &b农场&7、&b谷仓&7 及其他'
+        - '&b作物&7 附近穿戴时，你的 &f✦ 速度&7'
+        - '&7提升 &a+25&7。'
+        - '&8&5'
+        - '&9&l稀有靴子'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview FARMER-BOOTS'
+        right_click_commands:
+        - '[player] fc preview FARMER-BOOTS'
+
+      enchanted-carrot:
+        material: CARROT_ITEM
+        priority: 1
+        slot: 20
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔胡萝卜'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_carrot%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-CARROT'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-CARROT'
+
+      enchanted-carrot-on-a-stick:
+        material: 398
+        priority: 1
+        slot: 21
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔胡萝卜钓竿'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_carrot%'
+              output: 250
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-CARROT-ON-A-STICK'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-CARROT-ON-A-STICK'
+
+      enchanted-golden-carrot:
+        material: GOLDEN_CARROT
+        priority: 1
+        slot: 22
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔金胡萝卜'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_carrot%'
+              output: 1000
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-GOLDEN-CARROT'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-GOLDEN-CARROT'
+
+      enchanted-potato:
+        material: POTATO_ITEM
+        priority: 1
+        slot: 30
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔土豆'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_potato%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-POTATO'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-POTATO'
+
+      enchanted-baked-potato:
+        material: BAKED_POTATO
+        priority: 1
+        slot: 31
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔烤土豆'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_potato%'
+              output: 500
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-BAKED-POTATO'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-BAKED-POTATO'
+
+      enchanted-pumpkin:
+        material: PUMPKIN
+        priority: 1
+        slot: 33
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        amount: 1
+        display_name: '&a附魔南瓜'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_pumpkin%'
+              output: 100
+        lore:
+        - '&a&l罕见'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview ENCHANTED-PUMPKIN'
+        right_click_commands:
+        - '[player] fc preview ENCHANTED-PUMPKIN'
+
+      pumpkin-helmet:
+        material: LEATHER_HELMET
+        priority: 1
+        slot: 37
+        hide_attributes: true
+        amount: 1
+        display_name: '&f南瓜头盔'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_pumpkin%'
+              output: 500
+        lore:
+        - '&7生命值: &a+8'
+        - '&7防御力: &a+8'
+        - '           '
+        - '&6全套加成：南瓜增益'
+        - '&7对所有伤害来源获得 &a+10.0%&7 伤害减免，'
+        - '&7并造成 &a+10.0%&7 额外伤害'
+        - '&8&5'
+        - '&f&l常见头盔'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview PUMPKIN-HELMET'
+        right_click_commands:
+        - '[player] fc preview PUMPKIN-HELMET'
+
+      pumpkin-chestplate:
+        material: LEATHER_CHESTPLATE
+        priority: 1
+        slot: 38
+        hide_attributes: true
+        amount: 1
+        display_name: '&f南瓜胸甲'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_pumpkin%'
+              output: 500
+        lore:
+        - '&7生命值: &a+14'
+        - '&7防御力: &a+14'
+        - '           '
+        - '&6全套加成：南瓜增益'
+        - '&7对所有伤害来源获得 &a+10.0%&7 伤害减免，'
+        - '&7并造成 &a+10.0%&7 额外伤害'
+        - '&8&5'
+        - '&f&l常见胸甲'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview PUMPKIN-CHESTPLATE'
+        right_click_commands:
+        - '[player] fc preview PUMPKIN-CHESTPLATE'
+
+      pumpkin-leggings:
+        material: LEATHER_LEGGINGS
+        priority: 1
+        slot: 39
+        hide_attributes: true
+        amount: 1
+        display_name: '&f南瓜护腿'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_pumpkin%'
+              output: 500
+        lore:
+        - '&7生命值: &a+10'
+        - '&7防御力: &a+10'
+        - '           '
+        - '&6全套加成：南瓜增益'
+        - '&7对所有伤害来源获得 &a+10.0%&7 伤害减免，'
+        - '&7并造成 &a+10.0%&7 额外伤害'
+        - '&8&5'
+        - '&f&l常见护腿'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview PUMPKIN-LEGGINGS'
+        right_click_commands:
+        - '[player] fc preview PUMPKIN-LEGGINGS'
+
+      pumpkin-boots:
+        material: LEATHER_BOOTS
+        priority: 1
+        slot: 40
+        hide_attributes: true
+        amount: 1
+        display_name: '&f南瓜靴子'
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%us_collection_amount_pumpkin%'
+              output: 500
+        lore:
+        - '&7生命值: &a+8'
+        - '&7防御力: &a+8'
+        - '           '
+        - '&6全套加成：南瓜增益'
+        - '&7对所有伤害来源获得 &a+10.0%&7 伤害减免，'
+        - '&7并造成 &a+10.0%&7 额外伤害'
+        - '&8&5'
+        - '&f&l常见靴子'
+        - ''
+        - '&e点击查看配方！'
+        left_click_commands:
+        - '[player] fc preview PUMPKIN-BOOTS'
+        right_click_commands:
+        - '[player] fc preview PUMPKIN-BOOTS'
+
+      locked:
+        material: INK_SACK
+        data: 8
+        priority: 2
+        slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        display_name: '&c???'
+        lore:
+        - '&7你还没有解锁'
+        - '&7这个配方。'
+        left_click_commands: []
+        right_click_commands: []
+
+      next-page:
+        material: ARROW
+        priority: 3
+        slot: 53
+        display_name: '&a下一页'
+        lore:
+        - '&e第 2 页'
+        left_click_commands:
+        - '[openguimenu] farming-recipes-2'
+        right_click_commands:
+        - '[openguimenu] farming-recipes-2'
+
+      go-back:
+        material: ARROW
+        slot: 48
+        priority: 5
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] recipe-book'
+        right_click_commands:
+        - '[openguimenu] recipe-book'
+
+      close:
+        material: BARRIER
+        slot: 49
+        display_name: '&c关闭'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'

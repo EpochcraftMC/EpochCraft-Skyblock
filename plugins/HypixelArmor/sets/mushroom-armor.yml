@@ -1,0 +1,269 @@
+#
+apply:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: false
+    list:
+      - none
+  sound:
+    enabled: false
+    type: 'villager_yes'
+    volume: 1
+    pitch: 0
+#
+remove:
+  message:
+    enabled: false
+    text:
+      - '&7'
+  commands:
+    enabled: false
+    list:
+      - none
+  sound:
+    enabled: false
+    type: 'villager_no'
+    volume: 1
+    pitch: 0
+#
+set-data:
+  1:
+    type: basic
+    damage-increase: -1
+    damage-reduction: -1
+    health: -1
+    kb: -1
+    speed:
+      walk:
+        set: 0.20
+        default: 0.20
+      fly:
+        set: 0.20
+        default: 0.20
+    status-effects:
+      night_vision:
+        duration: 999999
+        level: 1
+#
+set-pieces:
+  helmet:
+    commands:
+      apply:
+        - usbc skills give health {player} 20
+      remove:
+        - usbc skills remove health {player} 20
+    name: '&f蘑菇头盔'
+    item: leather_helmet
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+20 HP'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见头盔'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  chestplate:
+    commands:
+      apply:
+        - usbc skills give health {player} 10
+        - usbc skills give defense {player} 10
+      remove:
+        - usbc skills remove health {player} 10
+        - usbc skills remove defense {player} 10
+    name: '&f蘑菇胸甲'
+    item: leather_chestplate
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+10 HP'
+      - '&7防御: &a+10'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见胸甲'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  leggings:
+    commands:
+      apply:
+        - usbc skills give health {player} 5
+        - usbc skills give defense {player} 10
+      remove:
+        - usbc skills remove health {player} 5
+        - usbc skills remove defense {player} 10
+    name: '&f蘑菇护腿'
+    item: leather_leggings
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+5 HP'
+      - '&7防御: &a+10'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见护腿'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+  boots:
+    commands:
+      apply:
+        - usbc skills give health {player} 15
+      remove:
+        - usbc skills remove health {player} 15
+    name: '&f蘑菇靴子'
+    item: leather_boots
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+15 HP'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见靴子'
+    enchantments:
+    unbreakable: true
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+#
+gui:
+  name: '&8生成物品'
+  type: none
+  size: 27
+  1:
+    slot: 0
+    action: helmet
+    name: '&f蘑菇头盔'
+    item: leather_helmet
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+20 HP'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见头盔'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  2:
+    slot: 1
+    action: chestplate
+    name: '&f蘑菇胸甲'
+    item: leather_chestplate
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+10 HP'
+      - '&7防御: &a+10'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见胸甲'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  3:
+    slot: 2
+    action: leggings
+    name: '&f蘑菇护腿'
+    item: leather_leggings
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+5 HP'
+      - '&7防御: &a+10'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见护腿'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  4:
+    slot: 3
+    action: boots
+    name: '&f蘑菇靴子'
+    item: leather_boots
+    data: 0
+    color: 255:77:77
+    lore:
+      - '&7生命值: &a+15 HP'
+      - '           '
+      - '&6全套加成: 夜之热情'
+      - '&7获得永久的夜视效果。在'
+      - '&7夜晚期间，此套装的属性'
+      - '&7会变成三倍。'
+      - '&8&5'
+      - '&f&l常见靴子'
+      - ''
+      - '&e点击生成！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+      - hide_enchants
+      - hide_unbreakable
+    cost: 0.0
+  5:
+    slot: 22
+    action: back
+    name: '&a返回'
+    item: ARROW
+    data: 0
+    lore:
+    enchantments:
+    item-flags:

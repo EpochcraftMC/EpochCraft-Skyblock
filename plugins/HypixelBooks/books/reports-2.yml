@@ -1,0 +1,36 @@
+# This is an example book to show how to create one
+# Note: The placeholders in this book (like %player_name%) need PlaceholderAPI installed
+# with the proper expansion, see here for more informations: https://www.spigotmc.org/resources/placeholderapi.6245/
+
+# Item's name
+name: 举报
+
+# Book's title
+title: 举报
+
+# Book's author
+author: Skyblock
+
+# Book's generation
+# Valid values: ORIGINAL, COPY_OF_ORIGINAL, COPY_OF_COPY, TATTERED
+generation: ORIGINAL
+
+# Item's lore
+lore:
+- 示例描述 1
+- 示例描述 2
+
+# Command to open this book
+# You can remove this by setting it to ''
+# Separate multiple commands with a space
+open_command: ''
+
+pages:
+  '1':
+  - '你确定要举报 %skript_1::{player}% 的 %skript_2::{player}% 吗？'
+  - ''
+  - '    <tooltip:&a点击确认此举报><run command:/breport %skript_1::{player}% %skript_2::{player}%>&2确认举报<reset>'
+  - ''
+  - '    <tooltip:&c点击取消><run command:/cancelreport>&c取消举报<reset>'
+  - ''
+  - '    <tooltip:&7点击修改举报理由><run command:/report %skript_1::{player}%>&7更换理由<reset>'

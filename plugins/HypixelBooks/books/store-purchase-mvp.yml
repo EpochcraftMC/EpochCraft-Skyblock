@@ -1,0 +1,16 @@
+name: 服务器
+title: 服务器
+author: Server
+generation: ORIGINAL
+lore:
+- 购买确认
+open_command: ''
+
+pages:
+  '1':
+  - '你的购买已处理完成！'
+  - ''
+  - '你已收到以下物品：'
+  - ' ▪ &bMVP &0头衔'
+  - ''
+  - '如果你有任何问题，<tooltip:&e点击加入我们的 Discord 服务器><link:http://discord.gg/8xh2P9Q>&5&l&n联系支持<reset>&r&0。'

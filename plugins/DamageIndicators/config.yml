@@ -1,0 +1,10 @@
+# 伤害数字的显示格式。
+# %digit-<数字>% 是数字中可能出现的各位数字的占位符。
+# 插件只会检查到 digit-9。
+display-format: '&f%digit-1%&e%digit-2%&6%digit-3%&c%digit-4%&f'
+
+# 如果造成的伤害是暴击，将显示在伤害数字的前面和后面。
+crit-character: '✧'
+
+# 伤害显示的持续刻数，20 = 1 秒。
+display-ticks: 20

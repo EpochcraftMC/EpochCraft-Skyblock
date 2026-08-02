@@ -1,0 +1,20 @@
+#让插件知道你希望玩家的拍卖使用哪种货币
+
+#填 'Vault' 使用 Vault 货币（默认）
+#填 'TokenManager' 使用 TokenManager 货币
+#填 'PlayerPoints' 使用 PlayerPoints 货币
+#填 'Skript' 使用 Skript 货币
+#如果你拼错了货币类型，将自动选择 Vault
+currency-type: 'Vault'
+
+#如果你的货币无法使用，拍卖也无法工作
+#可能有两种错误：
+#错误 404 = 缺少货币插件
+#错误 505 = 无法访问玩家的货币（通常由未声明/拼写错误的 skript 变量引起）
+
+#----------- Skript 配置 -----------
+#使用 %player% 代表玩家名称
+#变量应该像在 skript 中一样，但不带花括号
+#示例: {balance.%player%} 应写为 balance.%player%
+skript-variable: 'balance::%player%'
+

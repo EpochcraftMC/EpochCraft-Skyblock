@@ -1,0 +1,17 @@
+blocks-menu-item: '4'
+blocks-menu-name: '&e方块'
+blocks-menu-lore:
+  - '&8分类'
+  - ''
+  - '&7示例:'
+  - '&8■ &7泥土'
+  - '&8■ &7石头'
+  - '&8■ &7任何方块都可以'
+
+#如果你有想放入此分类的自定义物品，
+#请在此处指定它们的名称
+custom-item-names:
+  - '&e&l示例 &6&l物品'
+
+custom-item-ids:
+  - '2266'

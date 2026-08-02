@@ -1,0 +1,2389 @@
+# _ _____ _____ _____ _____ _____ _____ _____ _____ _
+#|_|_____|_____|_____|_____|_____|_____|_____|_____|_|
+#| |    _____  ______ _     _    ___   ________    | |
+#| |   |  __ \|  ____| |   | |  | \ \ / /  ____|   | |
+#|_|   | |  | | |__  | |   | |  | |\ V /| |__      |_|
+#| |   | |  | |  __| | |   | |  | | > < |  __|     | |
+#| |   | |__| | |____| |___| |__| |/ . \| |____    | |
+#|_|   |_____/|______|______\____//_/ \_\______|   |_|
+#| |                                               | |
+#| |          DeluxeBazaar | SedatTR#8666          | |
+#|_|_____ _____ _____ _____ _____ _____ _____ _____|_|
+#|_|_____|_____|_____|_____|_____|_____|_____|_____|_|
+#
+# 如果你有任何问题或建议，请联系我。
+# Discord: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+# Wiki: https://sedattr.gitbook.io/deluxebazaar
+# 如果你正在使用这个插件，即表示你接受服务条款（TOS）。
+categories:
+  lore: # 分类物品的 lore。
+    notSelected: # 未选中分类的 lore。
+      - "&8分类"
+      - "&r"
+      - "&e点击查看！"
+    selected: # 选中分类的 lore。
+      - "&8分类"
+      - "&r"
+      - "&a当前已选中！"
+  mining:
+    glass:
+      material: STAINED_GLASS_PANE
+      data: 5
+    material: DIAMOND_PICKAXE # 分类物品的材质。
+    data: 0 # 物品的 data。
+    name: "采矿" # 分类名称。
+    color: "&a" # 分类的颜色。
+    slot: 1 # 分类的槽位。(1-54)
+    page: 1 # 总页数
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    items: # 物品:槽位
+      - COBBLESTONE:12
+      - COAL:13
+      - IRON_INGOT:14
+      - GOLD_INGOT:15
+      - DIAMOND:16
+      - EMERALD:17
+      - LAPIS_LAZULI:21
+      - REDSTONE:22
+      - QUARTZ:23
+      - OBSIDIAN:24
+      - GLOWSTONE_DUST:25
+      - GRAVEL:26
+      - FLINT:30
+      - ICE:31
+      - NETHERRACK:32
+      - SAND:33
+      - ENDER_STONE:34
+      - SNOW_BALL:35
+  farming:
+    glass:
+      material: STAINED_GLASS_PANE
+      data: 4
+    material: GOLD_HOE
+    data: 0
+    name: "农业"
+    color: "&e"
+    slot: 10
+    page: 1
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    items:
+      - WHEAT:12
+      - CARROT_ITEM:13
+      - POTATO_ITEM:14
+      - PUMPKIN:15
+      - MELON:16
+      - SEEDS:17
+      - RED_MUSHROOM:21
+      - BROWN_MUSHROOM:22
+      - COCOA:23
+      - CACTUS:24
+      - SUGAR_CANE:25
+      - FEATHER:26
+      - LEATHER:30
+      - PORK:31
+      - RAW_CHICKEN:32
+      - MUTTON:33
+      - RABBIT:34
+      - NETHER_WART:35
+  combat:
+    glass:
+      material: STAINED_GLASS_PANE
+      data: 14
+    material: IRON_SWORD
+    data: 0
+    name: "战斗"
+    color: "&c"
+    slot: 19
+    page: 1
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    items:
+      - ROTTEN_FLESH:12
+      - BONE:13
+      - STRING:14
+      - SPIDER_EYE:15
+      - SULPHUR:16
+      - ENDER_PEARL:17
+      - GHAST_TEAR:21
+      - SLIME_BALL:22
+      - BLAZE_ROD:23
+      - MAGMA_CREAM:24
+  foragingfishing:
+    glass:
+      material: STAINED_GLASS_PANE
+      data: 9
+    material: FISHING_ROD
+    data: 0
+    name: "森林与渔业"
+    color: "&b"
+    slot: 28
+    page: 1
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    items:
+      - OAK_LOG:12
+      - SPRUCE_LOG:13
+      - BIRCH_LOG:14
+      - DARK_OAK_LOG:15
+      - ACACIA_LOG:16
+      - JUNGLE_LOG:17
+      - RAW_FISH:21
+      - SALMON:22
+      - CLOWNFISH:23
+      - PUFFERFISH:24
+      - PRISMARINE_CRYSTALS:25
+      - PRISMARINE_SHARD:26
+      - CLAY_BALL:30
+      - WATER_LILY:31
+      - INK:32
+      - SPONGE:33
+  other:
+    glass:
+      material: STAINED_GLASS_PANE
+      data: 1
+    material: ENCHANTMENT_TABLE
+    data: 0
+    name: "其他"
+    color: "&6"
+    slot: 37
+    page: 1
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    items:
+      - KING_SWORD:12
+      - KING_BOW:13
+      - EPIC_ROD:14
+      - OLD_AXE:15
+      - OLD_PICKAXE:16
+
+# 可出售的普通物品（格式为 ITEM-DATA。例如 LOG-2 就是白桦原木）
+# 你只需要写出 data 值不同的物品。
+# 你可以把物品的 name 设为材质名，这样就不需要在这里写了。
+# 示例：COBBLESTONE 的 data 为 0，所以你可以用材质名作为物品名。
+# items:
+#   COBBLESTONE: （物品名）
+normalItems:
+  INK_SACK-0: INK
+  INK_SACK-4: LAPIS_LAZULI
+  INK_SACK-3: COCOA
+  LOG-0: OAK_LOG
+  LOG-1: SPRUCE_LOG
+  LOG-2: BIRCH_LOG
+  LOG-3: JUNGLE_LOG
+  LOG_2-0: ACACIA_LOG
+  LOG_2-1: DARK_OAK_LOG
+  RAW_FISH-0: RAW_FISH
+  RAW_FISH-1: SALMON
+  RAW_FISH-2: CLOWNFISH
+  RAW_FISH-3: PUFFERFISH
+  NETHER_STALK-0: NETHER_WART
+  NETHER_WARTS-0: NETHER_WART
+  NETHER_WART-0: NETHER_WART
+  SUGAR_CANE_BLOCK-0: SUGAR_CANE
+  SUGAR_CANE-0: SUGAR_CANE
+  CROPS-0: WHEAT
+
+# 关于物品设置的更多信息，请查看 wiki。
+items: # 物品设置
+  COBBLESTONE: # 物品名称
+    material: COBBLESTONE # 物品的材质
+    group: COBBLESTONE # 物品的分组（用于分组菜单）。
+    category: mining # 物品的分类
+    data: 0 # 材质数据
+    prices: # 默认收购与出售价格
+      buy: 2.0
+      sell: 1.0
+    name: '圆石' # 物品名称
+    lore: # 物品的 lore（可以删除）
+      - "&f&l常见"
+    color: '&f' # 物品名称的颜色，如物品名等。
+    placeable: true # 如果不想让该物品被放置，请设为 false
+  ENCHANTED_COBBLESTONE:
+    material: COBBLESTONE
+    group: COBBLESTONE
+    category: mining
+    data: 0
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔圆石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  COAL:
+    material: COAL
+    group: COAL
+    category: mining
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '煤炭'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_COAL:
+    material: COAL
+    group: COAL
+    category: mining
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔煤炭'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  IRON_INGOT:
+    material: IRON_INGOT
+    group: IRON_INGOT
+    category: mining
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '铁锭'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_IRON_INGOT:
+    material: IRON_INGOT
+    group: IRON_INGOT
+    category: mining
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔铁锭'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  GOLD_INGOT:
+    material: GOLD_INGOT
+    group: GOLD_INGOT
+    category: mining
+    data: 0
+    prices:
+      buy: 7.5
+      sell: 5.0
+    name: '金锭'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_GOLD_INGOT:
+    material: GOLD_INGOT
+    group: GOLD_INGOT
+    category: mining
+    data: 0
+    prices:
+      buy: 75.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔金锭'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  DIAMOND:
+    material: DIAMOND
+    group: DIAMOND
+    category: mining
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '钻石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_DIAMOND:
+    material: DIAMOND
+    group: DIAMOND
+    category: mining
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔钻石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  EMERALD:
+    material: EMERALD
+    group: EMERALD
+    category: mining
+    data: 0
+    prices:
+      buy: 12.5
+      sell: 7.5
+    name: '绿宝石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_EMERALD:
+    material: EMERALD
+    group: EMERALD
+    category: mining
+    data: 0
+    prices:
+      buy: 125.0
+      sell: 75.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔绿宝石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  LAPIS_LAZULI:
+    material: INK_SACK
+    group: LAPIS_LAZULI
+    category: mining
+    data: 4
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '青金石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_LAPIS_LAZULI:
+    material: INK_SACK
+    group: LAPIS_LAZULI
+    category: mining
+    data: 4
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔青金石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  REDSTONE:
+    material: REDSTONE
+    group: REDSTONE
+    category: mining
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '红石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_REDSTONE:
+    material: REDSTONE
+    group: REDSTONE
+    category: mining
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔红石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  QUARTZ:
+    material: QUARTZ
+    group: QUARTZ
+    category: mining
+    data: 0
+    prices:
+      buy: 15.0
+      sell: 10.0
+    name: '石英'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_QUARTZ:
+    material: QUARTZ
+    group: QUARTZ
+    category: mining
+    data: 0
+    prices:
+      buy: 150.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔石英'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  OBSIDIAN:
+    material: OBSIDIAN
+    group: OBSIDIAN
+    category: mining
+    data: 0
+    prices:
+      buy: 20.0
+      sell: 15.0
+    name: '黑曜石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_OBSIDIAN:
+    material: OBSIDIAN
+    group: OBSIDIAN
+    category: mining
+    data: 0
+    prices:
+      buy: 20.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔黑曜石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  GLOWSTONE_DUST:
+    material: GLOWSTONE_DUST
+    group: GLOWSTONE_DUST
+    category: mining
+    data: 0
+    prices:
+      buy: 15.0
+      sell: 10.0
+    name: '荧石粉'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_GLOWSTONE_DUST:
+    material: GLOWSTONE_DUST
+    group: GLOWSTONE_DUST
+    category: mining
+    data: 0
+    prices:
+      buy: 150.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔荧石粉'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  GRAVEL:
+    material: GRAVEL
+    group: GRAVEL
+    category: mining
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '沙砾'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_GRAVEL:
+    material: GRAVEL
+    group: GRAVEL
+    category: mining
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔沙砾'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  FLINT:
+    material: FLINT
+    group: FLINT
+    category: mining
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '燧石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_FLINT:
+    material: FLINT
+    group: FLINT
+    category: mining
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔燧石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  ICE:
+    material: ICE
+    group: ICE
+    category: mining
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '冰'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_ICE:
+    material: ICE
+    group: ICE
+    category: mining
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔冰'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  NETHERRACK:
+    material: NETHERRACK
+    group: NETHERRACK
+    category: mining
+    data: 0
+    prices:
+      buy: 1.0
+      sell: 0.5
+    name: '下界岩'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_NETHERRACK:
+    material: NETHERRACK
+    group: NETHERRACK
+    category: mining
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔下界岩'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SAND:
+    material: SAND
+    group: SAND
+    category: mining
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 7.5
+    name: '沙子'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SAND:
+    material: SAND
+    group: SAND
+    category: mining
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 7.5
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔沙子'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  ENDER_STONE:
+    material: ENDER_STONE
+    group: ENDER_STONE
+    category: mining
+    data: 0
+    prices:
+      buy: 2.0
+      sell: 1.0
+    name: '末地石'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_ENDER_STONE:
+    material: ENDER_STONE
+    group: ENDER_STONE
+    category: mining
+    data: 0
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔末地石'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SNOW_BALL:
+    material: SNOW_BALL
+    group: SNOW_BALL
+    category: mining
+    data: 0
+    prices:
+      buy: 1.0
+      sell: 0.5
+    name: '雪球'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SNOW_BALL:
+    material: SNOW_BALL
+    group: SNOW_BALL
+    category: mining
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔雪球'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  WHEAT:
+    material: WHEAT
+    group: WHEAT
+    category: farming
+    data: 0
+    prices:
+      buy: 2.0
+      sell: 1.0
+    name: '小麦'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_WHEAT:
+    material: WHEAT
+    group: WHEAT
+    category: farming
+    data: 0
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔小麦'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  CARROT_ITEM:
+    material: CARROT_ITEM
+    group: CARROT_ITEM
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '胡萝卜'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_CARROT_ITEM:
+    material: CARROT_ITEM
+    group: CARROT_ITEM
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔胡萝卜'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  POTATO_ITEM:
+    material: POTATO_ITEM
+    group: POTATO_ITEM
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '土豆'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_POTATO_ITEM:
+    material: POTATO_ITEM
+    group: POTATO_ITEM
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔土豆'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  PUMPKIN:
+    material: PUMPKIN
+    group: PUMPKIN
+    category: farming
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '南瓜'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_PUMPKIN:
+    material: PUMPKIN
+    group: PUMPKIN
+    category: farming
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔南瓜'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  MELON:
+    material: MELON
+    group: MELON
+    category: farming
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '西瓜'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_MELON:
+    material: MELON
+    group: MELON
+    category: farming
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔西瓜'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SEEDS:
+    material: SEEDS
+    group: SEEDS
+    category: farming
+    data: 0
+    prices:
+      buy: 2.0
+      sell: 1.0
+    name: '种子'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SEEDS:
+    material: SEEDS
+    group: SEEDS
+    category: farming
+    data: 0
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔种子'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  RED_MUSHROOM:
+    material: RED_MUSHROOM
+    group: RED_MUSHROOM
+    category: farming
+    data: 0
+    prices:
+      buy: 1.0
+      sell: 0.5
+    name: '红色蘑菇'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_RED_MUSHROOM:
+    material: RED_MUSHROOM
+    group: RED_MUSHROOM
+    category: farming
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔红色蘑菇'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  BROWN_MUSHROOM:
+    material: BROWN_MUSHROOM
+    group: BROWN_MUSHROOM
+    category: farming
+    data: 0
+    prices:
+      buy: 1.0
+      sell: 0.5
+    name: '棕色蘑菇'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_BROWN_MUSHROOM:
+    material: BROWN_MUSHROOM
+    group: BROWN_MUSHROOM
+    category: farming
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔棕色蘑菇'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  COCOA:
+    material: INK_SACK
+    group: COCOA
+    category: farming
+    data: 3
+    prices:
+      buy: 2.0
+      sell: 1.0
+    name: '可可豆'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_COCOA:
+    material: INK_SACK
+    group: COCOA
+    category: farming
+    data: 3
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔可可豆'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  CACTUS:
+    material: CACTUS
+    group: CACTUS
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '仙人掌'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_CACTUS:
+    material: CACTUS
+    group: CACTUS
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔仙人掌'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SUGAR_CANE:
+    material: SUGAR_CANE
+    group: SUGAR_CANE
+    category: farming
+    data: 0
+    prices:
+      buy: 20.0
+      sell: 15.0
+    name: '甘蔗'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SUGAR_CANE:
+    material: SUGAR_CANE
+    group: SUGAR_CANE
+    category: farming
+    data: 0
+    prices:
+      buy: 20.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔甘蔗'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  FEATHER:
+    material: FEATHER
+    group: FEATHER
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '羽毛'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_FEATHER:
+    material: FEATHER
+    group: FEATHER
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔羽毛'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  LEATHER:
+    material: LEATHER
+    group: LEATHER
+    category: farming
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '皮革'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_LEATHER:
+    material: LEATHER
+    group: LEATHER
+    category: farming
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔皮革'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  PORK:
+    material: PORK
+    group: PORK
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '生猪排'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_PORK:
+    material: PORK
+    group: PORK
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔生猪排'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  RAW_CHICKEN:
+    material: RAW_CHICKEN
+    group: RAW_CHICKEN
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '生鸡肉'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_RAW_CHICKEN:
+    material: RAW_CHICKEN
+    group: RAW_CHICKEN
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔生鸡肉'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  MUTTON:
+    material: MUTTON
+    group: MUTTON
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '生羊肉'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_MUTTON:
+    material: MUTTON
+    group: MUTTON
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔生羊肉'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  RABBIT:
+    material: RABBIT
+    group: RABBIT
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '生兔肉'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_RABBIT:
+    material: RABBIT
+    group: RABBIT
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔生兔肉'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  NETHER_WART:
+    material: NETHER_STALK
+    group: NETHER_WART
+    category: farming
+    data: 0
+    prices:
+      buy: 3.0
+      sell: 1.5
+    name: '下界疣'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_NETHER_WART:
+    material: NETHER_STALK
+    group: NETHER_WART
+    category: farming
+    data: 0
+    prices:
+      buy: 30.0
+      sell: 15.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔下界疣'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  ROTTEN_FLESH:
+    material: ROTTEN_FLESH
+    group: ROTTEN_FLESH
+    category: combat
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '腐肉'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_ROTTEN_FLESH:
+    material: ROTTEN_FLESH
+    group: ROTTEN_FLESH
+    category: combat
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔腐肉'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  BONE:
+    material: BONE
+    group: BONE
+    category: combat
+    data: 0
+    prices:
+      buy: 7.5
+      sell: 5.0
+    name: '骨头'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_BONE:
+    material: BONE
+    group: BONE
+    category: combat
+    data: 0
+    prices:
+      buy: 75.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔骨头'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  STRING:
+    material: STRING
+    group: STRING
+    category: combat
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '线'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_STRING:
+    material: STRING
+    group: STRING
+    category: combat
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔线'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SPIDER_EYE:
+    material: SPIDER_EYE
+    group: SPIDER_EYE
+    category: combat
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '蜘蛛眼'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SPIDER_EYE:
+    material: SPIDER_EYE
+    group: SPIDER_EYE
+    category: combat
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔蜘蛛眼'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SULPHUR:
+    material: SULPHUR
+    group: SULPHUR
+    category: combat
+    data: 0
+    prices:
+      buy: 15.0
+      sell: 7.5
+    name: '火药'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SULPHUR:
+    material: SULPHUR
+    group: SULPHUR
+    category: combat
+    data: 0
+    prices:
+      buy: 150.0
+      sell: 75.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔火药'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  ENDER_PEARL:
+    material: ENDER_PEARL
+    group: ENDER_PEARL
+    category: combat
+    data: 0
+    prices:
+      buy: 2.0
+      sell: 1.0
+    name: '末影珍珠'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_ENDER_PEARL:
+    material: ENDER_PEARL
+    group: ENDER_PEARL
+    category: combat
+    data: 0
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔末影珍珠'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  GHAST_TEAR:
+    material: GHAST_TEAR
+    group: GHAST_TEAR
+    category: combat
+    data: 0
+    prices:
+      buy: 25.0
+      sell: 10.0
+    name: '恶魂之泪'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_GHAST_TEAR:
+    material: GHAST_TEAR
+    group: GHAST_TEAR
+    category: combat
+    data: 0
+    prices:
+      buy: 25.0
+      sell: 10.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔恶魂之泪'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  SLIME_BALL:
+    material: SLIME_BALL
+    group: SLIME_BALL
+    category: combat
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '黏液球'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SLIME_BALL:
+    material: SLIME_BALL
+    group: SLIME_BALL
+    category: combat
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔黏液球'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  BLAZE_ROD:
+    material: BLAZE_ROD
+    group: BLAZE_ROD
+    category: combat
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '烈焰棒'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_BLAZE_ROD:
+    material: BLAZE_ROD
+    group: BLAZE_ROD
+    category: combat
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔烈焰棒'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  MAGMA_CREAM:
+    material: MAGMA_CREAM
+    group: MAGMA_CREAM
+    category: combat
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '岩浆膏'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_MAGMA_CREAM:
+    material: MAGMA_CREAM
+    group: MAGMA_CREAM
+    category: combat
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔岩浆膏'
+    lore:
+      - "&a&l罕见"
+    color: '&a'
+    placeable: false
+  OAK_LOG:
+    material: LOG
+    group: OAK_LOG
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '橡木原木'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_OAK_LOG:
+    material: LOG
+    group: OAK_LOG
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔橡木原木'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  SPRUCE_LOG:
+    material: LOG
+    group: SPRUCE_LOG
+    category: foragingfishing
+    data: 1
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '云杉原木'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SPRUCE_LOG:
+    material: LOG
+    group: SPRUCE_LOG
+    category: foragingfishing
+    data: 1
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔云杉原木'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  BIRCH_LOG:
+    material: LOG
+    group: BIRCH_LOG
+    category: foragingfishing
+    data: 2
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '白桦原木'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_BIRCH_LOG:
+    material: LOG
+    group: BIRCH_LOG
+    category: foragingfishing
+    data: 2
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔白桦原木'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  DARK_OAK_LOG:
+    material: LOG_2
+    group: DARK_OAK_LOG
+    category: foragingfishing
+    data: 1
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '深色橡木原木'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_DARK_OAK_LOG:
+    material: LOG_2
+    group: DARK_OAK_LOG
+    category: foragingfishing
+    data: 1
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔深色橡木原木'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  ACACIA_LOG:
+    material: LOG_2
+    group: ACACIA_LOG
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '金合欢原木'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_ACACIA_LOG:
+    material: LOG_2
+    group: ACACIA_LOG
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔金合欢原木'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  JUNGLE_LOG:
+    material: LOG
+    group: JUNGLE_LOG
+    category: foragingfishing
+    data: 3
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '丛林木原木'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_JUNGLE_LOG:
+    material: LOG
+    group: JUNGLE_LOG
+    category: foragingfishing
+    data: 3
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔丛林木原木'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  RAW_FISH:
+    material: RAW_FISH
+    group: RAW_FISH
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '生鱼'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_RAW_FISH:
+    material: RAW_FISH
+    group: RAW_FISH
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔生鱼'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  SALMON:
+    material: RAW_FISH
+    group: SALMON
+    category: foragingfishing
+    data: 1
+    prices:
+      buy: 20.0
+      sell: 10.0
+    name: '生鲑鱼'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SALMON:
+    material: RAW_FISH
+    group: SALMON
+    category: foragingfishing
+    data: 1
+    prices:
+      buy: 200.0
+      sell: 100.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔生鲑鱼'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  CLOWNFISH:
+    material: RAW_FISH
+    group: CLOWNFISH
+    category: foragingfishing
+    data: 2
+    prices:
+      buy: 25.0
+      sell: 12.5
+    name: '小丑鱼'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_CLOWNFISH:
+    material: RAW_FISH
+    group: CLOWNFISH
+    category: foragingfishing
+    data: 2
+    prices:
+      buy: 25.0
+      sell: 12.5
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔小丑鱼'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  PUFFERFISH:
+    material: RAW_FISH
+    group: PUFFERFISH
+    category: foragingfishing
+    data: 3
+    prices:
+      buy: 15.0
+      sell: 7.5
+    name: '河豚'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_PUFFERFISH:
+    material: RAW_FISH
+    group: PUFFERFISH
+    category: foragingfishing
+    data: 3
+    prices:
+      buy: 150.0
+      sell: 75.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔河豚'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  PRISMARINE_CRYSTALS:
+    material: PRISMARINE_CRYSTALS
+    group: PRISMARINE_CRYSTALS
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 5.0
+      sell: 2.5
+    name: '海晶砂粒'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_PRISMARINE_CRYSTALS:
+    material: PRISMARINE_CRYSTALS
+    group: PRISMARINE_CRYSTALS
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 50.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔海晶砂粒'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  PRISMARINE_SHARD:
+    material: PRISMARINE_SHARD
+    group: PRISMARINE_SHARD
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '海晶碎片'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_PRISMARINE_SHARD:
+    material: PRISMARINE_SHARD
+    group: PRISMARINE_SHARD
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔海晶碎片'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  CLAY_BALL:
+    material: CLAY_BALL
+    group: CLAY_BALL
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 4.0
+      sell: 2.0
+    name: '黏土'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_CLAY_BALL:
+    material: CLAY_BALL
+    group: CLAY_BALL
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 4.0
+      sell: 2.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔黏土'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  WATER_LILY:
+    material: WATER_LILY
+    group: WATER_LILY
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 75.0
+      sell: 25.0
+    name: '睡莲'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_WATER_LILY:
+    material: WATER_LILY
+    group: WATER_LILY
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 75.0
+      sell: 25.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔睡莲'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  INK:
+    material: INK_SACK
+    group: INK
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 10.0
+      sell: 5.0
+    name: '墨囊'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_INK:
+    material: INK_SACK
+    group: INK
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔墨囊'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  SPONGE:
+    material: SPONGE
+    group: SPONGE
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    name: '海绵'
+    lore:
+      - "&f&l常见"
+    color: '&f'
+    placeable: true
+  ENCHANTED_SPONGE:
+    material: SPONGE
+    group: SPONGE
+    category: foragingfishing
+    data: 0
+    prices:
+      buy: 100.0
+      sell: 50.0
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    enchants:
+      - DURABILITY:10
+    name: '附魔海绵'
+    lore:
+      "&a&l罕见"
+    color: '&b'
+    placeable: false
+  KING_SWORD:
+    material: DIAMOND_SWORD
+    category: other
+    data: 0
+    prices:
+      buy: 100000.0
+      sell: 50000.0
+    enchants:
+      - DAMAGE_ALL:10
+      - DURABILITY:5
+    name: "王者之剑"
+    lore:
+      - "&7为国王打造的一把极其强大而锋利的剑。"
+      - "&r"
+      - "&6&l传说"
+    color: '&6'
+  KING_BOW:
+    material: BOW
+    category: other
+    data: 0
+    prices:
+      buy: 75000.0
+      sell: 25000.0
+    enchants:
+      - ARROW_DAMAGE:10
+      - DURABILITY:5
+    name: "王者之弓"
+    lore:
+      - "&7为国王打造的一把极其强力而迅捷的弓。"
+      - "&r"
+      - "&6&l传说"
+    color: '&6'
+  EPIC_ROD:
+    material: FISHING_ROD
+    category: other
+    data: 0
+    prices:
+      buy: 50000.0
+      sell: 25000.0
+    enchants:
+      - LUCK:5
+      - LURE:5
+      - DURABILITY:5
+    name: "史诗钓竿"
+    lore:
+      - "&7由一位老渔夫制作。"
+      - "&r"
+      - "&5&l史诗"
+    color: '&5'
+  OLD_AXE:
+    material: STONE_AXE
+    category: other
+    data: 0
+    durability: 75
+    prices:
+      buy: 25000.0
+      sell: 10000.0
+    enchants:
+      - DIG_SPEED:6
+      - DURABILITY:3
+    name: "旧斧头"
+    lore:
+      - "&7一把有 100 年历史的斧头。"
+      - "&r"
+      - "&9&l稀有"
+    color: '&9'
+  OLD_PICKAXE:
+    material: IRON_PICKAXE
+    category: other
+    data: 0
+    durability: 100
+    prices:
+      buy: 25000.0
+      sell: 10000.0
+    enchants:
+      - DIG_SPEED:7
+      - LOOT_BONUS_BLOCKS:3
+      - DURABILITY:3
+    name: "旧镐"
+    lore:
+      - "&7一把有 75 年历史的镐。"
+      - "&r"
+      - "&9&l稀有"
+    color: '&9'
+
+groups: # 分组菜单的分组。
+  COBBLESTONE: # 分组名（将 name 设为默认物品名）
+    - COBBLESTONE:12 # 物品:槽位
+    - ENCHANTED_COBBLESTONE:16 # 物品:槽位
+  COAL:
+    - COAL:12 # 物品:槽位
+    - ENCHANTED_COAL:16 # 物品:槽位
+  IRON_INGOT:
+    - IRON_INGOT:12 # 物品:槽位
+    - ENCHANTED_IRON_INGOT:16 # 物品:槽位
+  GOLD_INGOT:
+    - GOLD_INGOT:12 # 物品:槽位
+    - ENCHANTED_GOLD_INGOT:16 # 物品:槽位
+  DIAMOND:
+    - DIAMOND:12 # 物品:槽位
+    - ENCHANTED_DIAMOND:16 # 物品:槽位
+  EMERALD:
+    - EMERALD:12 # 物品:槽位
+    - ENCHANTED_EMERALD:16 # 物品:槽位
+  LAPIS_LAZULI:
+    - LAPIS_LAZULI:12 # 物品:槽位
+    - ENCHANTED_LAPIS_LAZULI:16 # 物品:槽位
+  REDSTONE:
+    - REDSTONE:12 # 物品:槽位
+    - ENCHANTED_REDSTONE:16 # 物品:槽位
+  QUARTZ:
+    - QUARTZ:12 # 物品:槽位
+    - ENCHANTED_QUARTZ:16 # 物品:槽位
+  OBSIDIAN:
+    - OBSIDIAN:12 # 物品:槽位
+    - ENCHANTED_OBSIDIAN:16 # 物品:槽位
+  GLOWSTONE_DUST:
+    - GLOWSTONE_DUST:12 # 物品:槽位
+    - ENCHANTED_GLOWSTONE_DUST:16 # 物品:槽位
+  GRAVEL:
+    - GRAVEL:12 # 物品:槽位
+    - ENCHANTED_GRAVEL:16 # 物品:槽位
+  FLINT:
+    - FLINT:12 # 物品:槽位
+    - ENCHANTED_FLINT:16 # 物品:槽位
+  ICE:
+    - ICE:12 # 物品:槽位
+    - ENCHANTED_ICE:16 # 物品:槽位
+  NETHERRACK:
+    - NETHERRACK:12 # 物品:槽位
+    - ENCHANTED_NETHERRACK:16 # 物品:槽位
+  SAND:
+    - SAND:12 # 物品:槽位
+    - ENCHANTED_SAND:16 # 物品:槽位
+  ENDER_STONE:
+    - ENDER_STONE:12 # 物品:槽位
+    - ENCHANTED_ENDER_STONE:16 # 物品:槽位
+  SNOW_BALL:
+    - SNOW_BALL:12 # 物品:槽位
+    - ENCHANTED_SNOW_BALL:16 # 物品:槽位
+  WHEAT:
+    - WHEAT:12 # 物品:槽位
+    - ENCHANTED_WHEAT:16 # 物品:槽位
+  CARROT_ITEM:
+    - CARROT_ITEM:12 # 物品:槽位
+    - ENCHANTED_CARROT_ITEM:16 # 物品:槽位
+  POTATO_ITEM:
+    - POTATO_ITEM:12 # 物品:槽位
+    - ENCHANTED_POTATO_ITEM:16 # 物品:槽位
+  PUMPKIN:
+    - PUMPKIN:12 # 物品:槽位
+    - ENCHANTED_PUMPKIN:16 # 物品:槽位
+  MELON:
+    - MELON:12 # 物品:槽位
+    - ENCHANTED_MELON:16 # 物品:槽位
+  SEEDS:
+    - SEEDS:12 # 物品:槽位
+    - ENCHANTED_SEEDS:16 # 物品:槽位
+  RED_MUSHROOM:
+    - RED_MUSHROOM:12 # 物品:槽位
+    - ENCHANTED_RED_MUSHROOM:16 # 物品:槽位
+  BROWN_MUSHROOM:
+    - BROWN_MUSHROOM:12 # 物品:槽位
+    - ENCHANTED_BROWN_MUSHROOM:16 # 物品:槽位
+  COCOA:
+    - COCOA:12 # 物品:槽位
+    - ENCHANTED_COCOA:16 # 物品:槽位
+  CACTUS:
+    - CACTUS:12 # 物品:槽位
+    - ENCHANTED_CACTUS:16 # 物品:槽位
+  SUGAR_CANE:
+    - SUGAR_CANE:12 # 物品:槽位
+    - ENCHANTED_SUGAR_CANE:16 # 物品:槽位
+  FEATHER:
+    - FEATHER:12 # 物品:槽位
+    - ENCHANTED_FEATHER:16 # 物品:槽位
+  LEATHER:
+    - LEATHER:12 # 物品:槽位
+    - ENCHANTED_LEATHER:16 # 物品:槽位
+  PORK:
+    - PORK:12 # 物品:槽位
+    - ENCHANTED_PORK:16 # 物品:槽位
+  RAW_CHICKEN:
+    - RAW_CHICKEN:12 # 物品:槽位
+    - ENCHANTED_RAW_CHICKEN:16 # 物品:槽位
+  MUTTON:
+    - MUTTON:12 # 物品:槽位
+    - ENCHANTED_MUTTON:16 # 物品:槽位
+  RABBIT:
+    - RABBIT:12 # 物品:槽位
+    - ENCHANTED_RABBIT:16 # 物品:槽位
+  NETHER_WART:
+    - NETHER_WART:12 # 物品:槽位
+    - ENCHANTED_NETHER_WART:16 # 物品:槽位
+  ROTTEN_FLESH:
+    - ROTTEN_FLESH:12 # 物品:槽位
+    - ENCHANTED_ROTTEN_FLESH:16 # 物品:槽位
+  BONE:
+    - BONE:12 # 物品:槽位
+    - ENCHANTED_BONE:16 # 物品:槽位
+  STRING:
+    - STRING:12 # 物品:槽位
+    - ENCHANTED_STRING:16 # 物品:槽位
+  SPIDER_EYE:
+    - SPIDER_EYE:12 # 物品:槽位
+    - ENCHANTED_SPIDER_EYE:16 # 物品:槽位
+  SULPHUR:
+    - SULPHUR:12 # 物品:槽位
+    - ENCHANTED_SULPHUR:16 # 物品:槽位
+  ENDER_PEARL:
+    - ENDER_PEARL:12 # 物品:槽位
+    - ENCHANTED_ENDER_PEARL:16 # 物品:槽位
+  GHAST_TEAR:
+    - GHAST_TEAR:12 # 物品:槽位
+    - ENCHANTED_GHAST_TEAR:16 # 物品:槽位
+  SLIME_BALL:
+    - SLIME_BALL:12 # 物品:槽位
+    - ENCHANTED_SLIME_BALL:16 # 物品:槽位
+  BLAZE_ROD:
+    - BLAZE_ROD:12 # 物品:槽位
+    - ENCHANTED_BLAZE_ROD:16 # 物品:槽位
+  MAGMA_CREAM:
+    - MAGMA_CREAM:12 # 物品:槽位
+    - ENCHANTED_MAGMA_CREAM:16 # 物品:槽位
+  OAK_LOG:
+    - OAK_LOG:12 # 物品:槽位
+    - ENCHANTED_OAK_LOG:16 # 物品:槽位
+  SPRUCE_LOG:
+    - SPRUCE_LOG:12 # 物品:槽位
+    - ENCHANTED_SPRUCE_LOG:16 # 物品:槽位
+  BIRCH_LOG:
+    - BIRCH_LOG:12 # 物品:槽位
+    - ENCHANTED_BIRCH_LOG:16 # 物品:槽位
+  DARK_OAK_LOG:
+    - DARK_OAK_LOG:12 # 物品:槽位
+    - ENCHANTED_DARK_OAK_LOG:16 # 物品:槽位
+  ACACIA_LOG:
+    - ACACIA_LOG:12 # 物品:槽位
+    - ENCHANTED_ACACIA_LOG:16 # 物品:槽位
+  JUNGLE_LOG:
+    - JUNGLE_LOG:12 # 物品:槽位
+    - ENCHANTED_JUNGLE_LOG:16 # 物品:槽位
+  RAW_FISH:
+    - RAW_FISH:12 # 物品:槽位
+    - ENCHANTED_RAW_FISH:16 # 物品:槽位
+  SALMON:
+    - SALMON:12 # 物品:槽位
+    - ENCHANTED_SALMON:16 # 物品:槽位
+  CLOWNFISH:
+    - CLOWNFISH:12 # 物品:槽位
+    - ENCHANTED_CLOWNFISH:16 # 物品:槽位
+  PUFFERFISH:
+    - PUFFERFISH:12 # 物品:槽位
+    - ENCHANTED_PUFFERFISH:16 # 物品:槽位
+  PRISMARINE_CRYSTALS:
+    - PRISMARINE_CRYSTALS:12 # 物品:槽位
+    - ENCHANTED_PRISMARINE_CRYSTALS:16 # 物品:槽位
+  PRISMARINE_SHARD:
+    - PRISMARINE_SHARD:12 # 物品:槽位
+    - ENCHANTED_PRISMARINE_SHARD:16 # 物品:槽位
+  CLAY_BALL:
+    - CLAY_BALL:12 # 物品:槽位
+    - ENCHANTED_CLAY_BALL:16 # 物品:槽位
+  WATER_LILY:
+    - WATER_LILY:12 # 物品:槽位
+    - ENCHANTED_WATER_LILY:16 # 物品:槽位
+  INK:
+    - INK:12 # 物品:槽位
+    - ENCHANTED_INK:16 # 物品:槽位
+  SPONGE:
+    - SPONGE:12 # 物品:槽位
+    - ENCHANTED_SPONGE:16 # 物品:槽位

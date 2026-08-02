@@ -1,0 +1,32 @@
+# .
+# .  在 http://dev.bukkit.org/bukkit-plugins/holographic-displays/ 阅读教程
+# .
+# .  插件由 filoghost 创建。
+# .
+space-between-lines: 0.02
+quick-edit-commands: true
+images:
+  symbol: '[x]'
+  transparency:
+    space: ' [|] '
+    color: '&7'
+bungee:
+  refresh-seconds: 3
+  use-RedisBungee: false
+  pinger:
+    enable: false
+    timeout: 500
+    offline-motd: '&c离线，无法获取 MOTD。'
+    status:
+      online: '&a在线'
+      offline: '&c离线'
+    motd-remove-leading-trailing-spaces: true
+    servers:
+    - 'hub: 127.0.0.1:25565'
+    - 'survival: 127.0.0.1:25566'
+    - 'minigames: 127.0.0.1:25567'
+time:
+  format: H:mm
+  zone: GMT+1
+update-notification: false
+debug: false

@@ -1,0 +1,47 @@
+#
+# WEPIF 配置文件
+#
+# 此文件管理所有使用 WEPIF 的插件的权限配置
+#
+# 关于编辑此文件：
+# - 不要使用制表符（TAB）。必须使用空格，否则 Bukkit 会报错。如果你使用
+#   像 Notepad++（推荐 Windows 用户使用）这样的编辑器，需要将其配置为
+#   “用空格替换制表符”。在 Notepad++ 中，可以在 设置 > 首选项 > 语言菜单 中更改。
+# - 不要删除缩进。缩进是为了让某些条目归属到
+#   对应类别下（比如 "enforce-single-session" 属于 "protection"
+#   类别）。
+# - 如果你想在放入 WEPIF 之前检查此文件的格式，请将其粘贴到
+#   http://yaml-online-parser.appspot.com/ 并查看是否出现 "ERROR:"。
+# - 以 # 开头的行是注释，会被忽略。
+#
+# 关于配置权限
+# - 参见 http://wiki.sk89q.com/wiki/WorldEdit/Permissions/Bukkit
+# - 现在支持多世界（见示例）
+
+
+ignore-nijiperms-bridges: true
+resolvers:
+    enabled:
+    - PluginPermissionsResolver
+    - PermissionsExResolver
+    - bPermissionsResolver
+    - GroupManagerResolver
+    - NijiPermissionsResolver
+    - DinnerPermsResolver
+    - FlatFilePermissionsResolver
+permissions:
+    groups:
+        default:
+            permissions:
+            - worldedit.reload
+            - worldedit.selection
+            - worlds.creative.worldedit.region
+        admins:
+            permissions:
+            - '*'
+    users:
+        sk89q:
+            permissions:
+            - worldedit
+            groups:
+            - admins

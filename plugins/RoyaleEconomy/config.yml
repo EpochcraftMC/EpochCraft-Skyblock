@@ -1,0 +1,132 @@
+#Actions made by admins/console
+#will appear as made by this one
+server-executor-name: '&7服务器银行家'
+
+use-old-players-delete: false
+#After how many days of inactivity should data be removed
+#Data is deleted on plugin load
+inactivity-days: 40
+
+#If you have a skyblock plugin that is compatible
+#with RoyaleEconomy and you wish to hook to it, make sure
+#this is set to true
+search-skyblock-hook: true
+
+#Check for other plugins to hook the banks to
+#for example SaberFactions:
+#ATTENTION! The option search-skyblock-hook and this one can't be true at the same time
+other-plugins-hook: false
+
+
+#How many coins should a player have by default in their purse
+default-balance: 0
+#How many coins should a player have by default in their bank
+default-bank-balance: 0
+
+#Cooldowns in seconds
+bank-cooldown: 0
+sharedbank-cooldown: 0
+bank-cooldown-message: '&c银行冷却中，还需 %cooldown% 秒。'
+
+#If this is set to true, when a player creates a shared bank
+#the personal one will redirect to the shared bank
+#The /bank command will be redirected to /sharedbank too
+use-only-one-bank: false
+
+#This setting is to enble %royaleeconomy_dynamic_coins% which
+#can display coins receiving dynamically (+5) (+100), good for scoreboards/actionbar
+use-dynamic-placeholder: true
+dynamic-placeholder-format: '&e(+%amount%)'
+
+#More settings for interest at bank upgrades configuration
+#Cooldown in hours
+interest-cooldown: 31
+use-interest: true
+
+number-format:
+  use-decimals: false
+  short-format:
+    #If you set this to true numbers will be shorter
+    #1,000,000 -> 1M
+    use: false
+    units:
+      unit1:
+        number-of-zeros: 3
+        unit-name: 'K'
+      unit2:
+        number-of-zeros: 6
+        unit-name: 'M'
+      unit3:
+        number-of-zeros: 9
+        unit-name: 'G'
+      unit4:
+        number-of-zeros: 12
+        unit-name: 'T'
+      unit5:
+        number-of-zeros: 15
+        unit-name: 'Q'
+
+mysql:
+  use-mysql: false
+  database: 'RoyaleEconomy'
+  host: 'localhost'
+  port: 3306
+  username: 'root'
+  password: 'pass123'
+
+time-units:
+  days: '天'
+  day: '天'
+  hours: '小时'
+  hour: '小时'
+  minutes: '分钟'
+  minute: '分钟'
+  seconds: '秒'
+  second: '秒'
+  soon: '>1 分钟'
+short-time-units:
+  day: 'd'
+  hour: 'h'
+  minute: 'm'
+  second: 's'
+
+input-guis:
+  #What kind of input would you like? 3 Avalabile
+  #1. 'sign'
+  #2. 'anvil'
+  #3. 'chat'
+  input-type: 'sign'
+  #If you use chat setting, this message will be shown
+  #after 20 seconds of opening the chat listener
+  chat-listener-end-message: '&c你输入耗时太长。'
+  deposit-coins:
+    lines:
+      - '^^^^^^^^^^^^^^^^'
+      - '输入你想要'
+      - '存入的金额'
+    success-message: '&f你已将 &6%amount% 硬币 &f存入银行！'
+    fail-message: '&f你钱包里没有 &6%amount% 硬币&f！'
+    invalid-number: '&c请输入有效的数字。'
+  withdraw-coins:
+    lines:
+      - '^^^^^^^^^^^^^^^^'
+      - '输入你想要'
+      - '取出的金额'
+    success-message: '&f你已从银行取出 &6%amount% 硬币&f！'
+    fail-message: '&f你银行里没有 &6%amount% 硬币&f！'
+    invalid-number: '&c请输入有效的数字。'
+
+piggy-bank:
+  use-piggy-banks: true
+  texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTk4ZGY0MmY0NzdmMjEzZmY1ZTlkN2ZhNWE0Y2M0YTY5ZjIwZDljZWYyYjkwYzRhZTRmMjliZDE3Mjg3YjUifX19'
+  name: '&a存钱罐'
+  lore:
+    - '&7直接访问你的'
+    - '&7个人银行。'
+    - ''
+    - '&e点击打开！'
+  #Cooldown in seconds
+  cooldown: 0
+  cooldown-message: '&c你的存钱罐正在冷却中！'
+  version: 1.1
+config-version: 1.42

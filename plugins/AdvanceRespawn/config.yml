@@ -1,0 +1,62 @@
+
+#Advance Respawn - Spigot 插件 - 作者 Matan Rak 2016-2017
+# 在任何消息中使用 {player} 代表玩家名称
+# 在任何消息中使用 {reason} 代表自定义/默认死亡消息
+
+
+#-==={ 重生设置 }===-#
+Spawn_Randomly: false
+Auto_Respawn: true
+Use_Radius: false
+Min_Radius: 30
+Max_Radius: 50
+
+
+#-==={ 死亡消息设置 }===-#
+Use_Death_Message: false
+Death_Message: '&7{player} &c{reason}'
+#在 causes.properties 文件中自定义死亡原因
+
+
+#-==={ 世界设置 }===-#
+Disabled_Worlds:
+- disabledworld
+- anotherdisabledworld
+
+
+#-==={ 死亡旁观 }===-#
+#当玩家死亡时，他将以旁观者模式重生，直到设定的时间结束
+Spectate_Respawn: false
+Spectate_Respawn_Length: 4
+Spectate_Respawn_Continue_Timer_After_Logout: false
+Spectate_Respawn_Max_Fly_Distance: 100
+Spectate_Respawn_For_Players_In_Creative: false
+Spectate_Respawn_Progress_Title: '&2正在重生...！'
+Spectate_Respawn_Progress_Title_Line2: '&7将在 {countdown} 秒后重生'
+Spectate_Respawn_Title_Line_1: '&c已重生！'
+Spectate_Respawn_Title_Line_2: '&a你已在 &2{blocks} &a格之外重生'
+
+
+#-==={ 标题/消息设置 }===-#
+# 在消息中使用 %blocks% 来添加距离你上次位置的距离！
+Show_Respawn_Titles: false
+Respawn_Title_Line_1: '&c已重生！'
+Respawn_Title_Line_2: '&a你已在 &2{blocks} &a格之外重生'
+
+
+#-==={ 全息影像设置 }===-#
+Show_Holograms: false
+Hologram_Duration: 10
+Hologram_Line_1: '&c{player} &7死亡了。'
+Hologram_Line_2: '&c{reason}'
+
+
+
+#-==={ 重生命令 }===-#
+Player_Run_Command_On_Respawn: false
+Player_Respawn_Commands:
+- spawn
+
+Console_Run_Command_On_Respawn: false
+Console_Respawn_Commands:
+- feed {player}

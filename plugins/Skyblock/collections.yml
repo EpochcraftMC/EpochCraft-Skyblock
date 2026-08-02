@@ -1,0 +1,6864 @@
+collections:
+  wheat:
+    key: wheat
+    name: 小麦
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WHEAT
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9小麦仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔面包 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔干草捆 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9农夫护甲头盔 &7配方'
+        - '&7     &9农夫护甲胸甲 &7配方'
+        - '&7     &9农夫护甲护腿 &7配方'
+        - '&7     &9农夫护甲靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f农耕护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5农耕岛 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5收获升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  carrot:
+    key: carrot
+    name: 胡萝卜
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: CARROT_ITEM
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9胡萝卜仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔胡萝卜 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔胡萝卜钓竿 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 200"
+        rewards:
+        - '&7     &8+&3200 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔金胡萝卜 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f宠物食物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f捕捉蛋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a超级捕捉蛋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a胡萝卜糖果 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9巨型捕捉蛋 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  potato:
+    key: potato
+    name: 马铃薯
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTATO_ITEM
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9马铃薯仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔马铃薯 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔烤马铃薯 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f疫苗护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a谷仓传送门 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 350"
+        rewards:
+        - '&7     &8+&3350 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 400"
+        rewards:
+        - '&7     &8+&3400 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  pumpkin:
+    key: pumpkin
+    name: 南瓜
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: PUMPKIN
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9南瓜仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔南瓜 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f南瓜头盔 &7配方'
+        - '&7     &f南瓜胸甲 &7配方'
+        - '&7     &f南瓜护腿 &7配方'
+        - '&7     &f南瓜靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9立体效果 I&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f农夫宝珠 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9灯笼头盔 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f农场水晶 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  melon:
+    key: melon
+    name: 西瓜
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: MELON
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9西瓜仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&e100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&e150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔西瓜 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔闪烁西瓜 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔西瓜块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 350"
+        rewards:
+        - '&7     &8+&e350 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 400"
+        rewards:
+        - '&7     &8+&e400 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 450"
+        rewards:
+        - '&7     &8+&e450 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 500"
+        rewards:
+        - '&7     &8+&e500 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  seeds:
+    key: seeds
+    name: 种子
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SEEDS
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.grass_block true"
+        rewards:
+        - '&7     &f泥土 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.clay true"
+        rewards:
+        - '&7     &f黏土 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.grass true"
+        rewards:
+        - '&7     &f高草丛 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.fern true"
+        rewards:
+        - '&7     &f蕨 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.deadbush true"
+        rewards:
+        - '&7     &f枯死的灌木 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.tallgrass true"
+        rewards:
+        - '&7     &f高草丛 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  redmushroom:
+    key: redmushroom
+    name: 红蘑菇
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RED_MUSHROOM
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9蘑菇仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.mycelium true"
+        rewards:
+        - '&7     &f菌丝 &f交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔红蘑菇 &7配方'
+        - '&7     &a附魔棕蘑菇 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f蘑菇头盔 &7配方'
+        - '&7     &f蘑菇胸甲 &7配方'
+        - '&7     &f蘑菇护腿 &7配方'
+        - '&7     &f蘑菇靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f红蘑菇方块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔红蘑菇方块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a魔法蘑菇汤 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5夜视护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5蝙蝠宠物蛋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  brownmushroom:
+    key: brownmushroom
+    name: 棕蘑菇
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: BROWN_MUSHROOM
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9蘑菇仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.mycelium true"
+        rewards:
+        - '&7     &f菌丝 &f交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔红蘑菇 &7配方'
+        - '&7     &a附魔棕蘑菇 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f蘑菇头盔 &7配方'
+        - '&7     &f蘑菇胸甲 &7配方'
+        - '&7     &f蘑菇护腿 &7配方'
+        - '&7     &f蘑菇靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f棕蘑菇方块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔棕蘑菇方块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a魔法蘑菇汤 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5夜视护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5蝙蝠宠物蛋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  cocoabeans:
+    key: cocoabeans
+    name: 可可豆
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: INK_SACK
+      damage: 3
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9可可豆仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔可可豆 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 350"
+        rewards:
+        - '&7     &8+&3350 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 400"
+        rewards:
+        - '&7     &a附魔曲奇 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 450"
+        rewards:
+        - '&7     &8+&3450 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9肾上腺素药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  cactus:
+    key: cactus
+    name: 仙人掌
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: CACTUS
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9仙人掌仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔仙人掌 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9荆棘 I&7)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  sugarcane:
+    key: sugarcane
+    name: 甘蔗
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SUGAR_CANE
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9甘蔗仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔糖 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔纸 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5疾风头盔 &7配方'
+        - '&7     &5疾风胸甲 &7配方'
+        - '&7     &5疾风护腿 &7配方'
+        - '&7     &5疾风靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔甘蔗 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 350"
+        rewards:
+        - '&7     &8+&3350 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 400"
+        rewards:
+        - '&7     &8+&3400 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f速度戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f速度护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  feather:
+    key: feather
+    name: 羽毛
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: FEATHER
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔羽毛 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔书 &7(&9弹射物保护 I &7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔书 &7(&9摔落保护 I &7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5箭术药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f羽毛护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9瞄准 I&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f羽毛戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9狙击 I&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5羽毛圣物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  leather:
+    key: leather
+    name: 皮革
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEATHER
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9牛仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔皮革 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f小型背包 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔生牛肉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a中型背包 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a大型背包 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  pork:
+    key: pork
+    name: 猪肉
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: PORK
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9猪仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔猪肉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔烤猪肉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a存钱罐 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9猪宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5猪人宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5猪人剑 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  chicken:
+    key: chicken
+    name: 鸡肉
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_CHICKEN
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9鸡仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔生鸡肉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔鸡蛋 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔蛋糕 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f敏捷药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a搭桥蛋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f随机蛋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9鸡头 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  netherwart:
+    key: netherwart
+    name: 下界疣
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: NETHER_STALK
+    type: FARMING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9下界疣仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Farmer <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7农耕经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔下界疣 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f小型药水袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f药水亲和护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f中型药水袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a药水亲和戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f大型药水袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5药水亲和圣物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Farming
+  cobblestone:
+    key: cobblestone
+    name: 圆石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: COBBLESTONE
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9圆石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔圆石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a圆石头盔 &7配方'
+        - '&7     &a圆石胸甲 &7配方'
+        - '&7     &a圆石护腿 &7配方'
+        - '&7     &a圆石靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a自动冶炼机 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f压实机 3000 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9蠹虫宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f急迫戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5超级压实机 3000 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  coal:
+    key: coal
+    name: 煤炭
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: COAL
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9煤炭仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔煤炭 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔煤炭块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔熔岩桶 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9冶炼之触 I&7) &7配方 &8(&4&l即将
+          推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9凋灵骷髅宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  ironingot:
+    key: ironingot
+    name: 铁锭
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_ORE
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9铁仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔铁 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附铁块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9保护 IV&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔漏斗 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9傀儡帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f傀儡头盔 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &f傀儡胸甲 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &f傀儡护腿 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &f傀儡靴子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5傀儡剑 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  goldingot:
+    key: goldingot
+    name: 金锭
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_ORE
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9金仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔金 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔金块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9时运 II&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔时钟 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9抢夺 II&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a砍肉刀 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f伤害吸收药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  diamond:
+    key: diamond
+    name: 钻石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9钻石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔钻石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔钻石块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9强化钻石头盔 &7配方'
+        - '&7     &9强化钻石胸甲 &7配方'
+        - '&7     &9强化钻石护腿 &7配方'
+        - '&7     &9强化钻石靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f完美头盔 &7配方'
+        - '&7     &f完美胸甲 &7配方'
+        - '&7     &f完美护腿 &7配方'
+        - '&7     &f完美靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5钻石扩散 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9斩杀 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9暴击 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  lapislazuli:
+    key: lapislazuli
+    name: 青金石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: INK_SACK
+      damage: 4
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9青金石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔青金石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔青金石块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a大型经验瓶 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9巨型经验瓶 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f经验药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5经验圣物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  emerald:
+    key: emerald
+    name: 绿宝石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: EMERALD
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9绿宝石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔绿宝石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f幸运硬币护符 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔绿宝石块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9绿宝石头盔 &7配方'
+        - '&7     &9绿宝石胸甲 &7配方'
+        - '&7     &9绿宝石护腿 &7配方'
+        - '&7     &9绿宝石靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5磁力护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f绿宝石戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a绿宝石之刃 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f私人银行 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  redstone:
+    key: redstone
+    name: 红石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9红石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔红石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔红石块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9效率 IV&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5指南针护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f小型饰品袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f中型饰品袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f大型饰品袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f大型饰品袋+ &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f巨型饰品袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  quartz:
+    key: quartz
+    name: 石英
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: QUARTZ
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9石英仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔石英 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔石英块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f夜间保存器 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f白天保存器 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5夜晚水晶 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5白天水晶 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9太阳能板 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f仆从扩展器 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  obsidian:
+    key: obsidian
+    name: 黑曜石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: OBSIDIAN
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9黑曜石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔黑曜石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9致命 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f重力护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f末影箱 1 级 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a眩晕药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f末影箱 2 级 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9伐木斧 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f末影箱 3 级 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &6重铸铁砧 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  glowstone:
+    key: glowstone
+    name: 萤石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GLOWSTONE_DUST
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9萤石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Miner <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7挖掘经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔萤石粉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔萤石块 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Miner <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7挖掘经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Miner <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7挖掘经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔红石灯 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a萤石帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  gravel:
+    key: gravel
+    name: 沙砾
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GRAVEL
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9沙砾仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔燧石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9锋利 IV&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9暴击药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f燧石锹 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9先发制人 III&7) &7配方 &8(&4&l即将
+          推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  ice:
+    key: ice
+    name: 冰
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: PACKED_ICE
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9冰仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9冰霜行者 I&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔冰 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f魔法水桶 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a冰钓饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5冰霜镰刀 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5冰霜烈焰人头盔 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &5冰霜烈焰人胸甲 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &5冰霜烈焰人护腿 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &5冰霜烈焰人靴子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &6螺旋钻杆 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  netherrack:
+    key: netherrack
+    name: 下界岩
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: NETHERRACK
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.netherbrick true"
+        rewards:
+        - '&7     &f下界砖 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  endstone:
+    key: endstone
+    name: 末地石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: ENDER_STONE
+    type: MINING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9末地石仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔末地石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a末地生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f静默方块 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f急迫方块 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5末影螨宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9催化剂 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9末地石剑 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Mining
+  rottenflesh:
+    key: rottenflesh
+    name: 腐肉
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: ROTTEN_FLESH
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9僵尸仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔腐肉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9亡灵杀手 IV&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5僵尸胸甲 &7配方'
+        - '&7     &5僵尸护腿 &7配方'
+        - '&7     &5僵尸靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9僵尸镐 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9僵尸之心 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9僵尸剑 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f僵尸宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  bone:
+    key: bone
+    name: 骨头
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: BONE
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9骷髅仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔骨头 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔骨粉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9力量 IV&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f骷髅帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f骷髅宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a飓风之弓 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f骷髅头盔 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &6卢纳恩之弓 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  string:
+    key: string
+    name: 线
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STRING
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9蜘蛛仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔线 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a抓钩 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9精准采集 I&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f蜘蛛靴子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9无限箭袋 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5蜘蛛宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  spidereye:
+    key: spidereye
+    name: 蜘蛛眼
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SPIDER_EYE
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9洞穴蜘蛛仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔蜘蛛眼 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔发酵蛛眼 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9节肢杀手 IV&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f蜘蛛剑 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9剧毒 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9洞穴蜘蛛宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a跳跃之剑 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  gunpower:
+    key: gunpower
+    name: 火药
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SULPHUR
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  enderpearl:
+    key: enderpearl
+    name: 末影珍珠
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9末影人仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔末影珍珠 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - "&7     &a附魔末影之眼 &7配方"
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a传送板 &7交易 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9末地之相 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a救赎之恩 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9末影杀手 IV&7) &7配方 &8(&4&l即将
+          推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  ghasttear:
+    key: ghasttear
+    name: 恶魂之泪
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GHAST_TEAR
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  slimeball:
+    key: slimeball
+    name: 粘液球
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SLIME_BALL
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  blazerod:
+    key: blazerod
+    name: 烈焰棒
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: BLAZE_ROD
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9烈焰人仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔烈焰棒 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔烈焰粉 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9火焰附加 I&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9火矢 I&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f烈焰人帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5火焰护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5烈焰人头盔 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &5烈焰人胸甲 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &5烈焰人护腿 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &5烈焰人靴子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &6烈焰人宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  magmacream:
+    key: magmacream
+    name: 岩浆膏
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: MAGMA_CREAM
+    type: COMBAT
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9岩浆怪仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f熔岩桶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔岩浆膏 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5岩浆头盔 &7配方'
+        - '&7     &5岩浆胸甲 &7配方'
+        - '&7     &5岩浆护腿 &7配方'
+        - '&7     &5岩浆靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a下界生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5熔岩护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a岩浆之弓 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Combat
+  oak_log:
+    key: oak_log
+    name: 橡木原木
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG
+    type: FORAGING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9橡木仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.oakleave true"
+        rewards:
+        - '&7     &f橡树树叶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f树叶头盔 &7配方'
+        - '&7     &f树叶胸甲 &7配方'
+        - '&7     &f树叶护腿 &7配方'
+        - '&7     &f树叶靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔橡木原木 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f橡木头盔 &7配方'
+        - '&7     &f橡木胸甲 &7配方'
+        - '&7     &f橡木护腿 &7配方'
+        - '&7     &f橡木靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a森林生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9小型仓库 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5木材亲和护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+  spruce_log:
+    key: spruce_log
+    name: 云杉原木
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG
+      damage: 1
+    type: FORAGING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9云杉仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.spruceleave true"
+        rewards:
+        - '&7     &f云杉树叶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔云杉原木 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 200"
+        rewards:
+        - '&7     &8+&3200 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a针叶林生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a锯木厂 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f狼宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+  birch_log:
+    key: birch_log
+    name: 白桦原木
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG
+      damage: 2
+    type: FORAGING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9白桦仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.birchleave true"
+        rewards:
+        - '&7     &f白桦树叶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔白桦原木 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 200"
+        rewards:
+        - '&7     &8+&3200 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a白桦林生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9伐木水晶 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+  jungle_log:
+    key: jungle_log
+    name: 丛林原木
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG
+      damage: 3
+    type: FORAGING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9丛林仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.jungleleave true"
+        rewards:
+        - '&7     &f丛林树叶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔丛林原木 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.vines true"
+        rewards:
+        - '&7     &f藤蔓 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 300"
+        rewards:
+        - '&7     &8+&3300 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a丛林生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a丛林斧 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a豹猫宠物 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+  acacia_log:
+    key: acacia_log
+    name: 金合欢原木
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG_2
+    type: FORAGING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9金合欢仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.acacialeave true"
+        rewards:
+        - '&7     &f金合欢树叶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔金合欢原木 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a草原之弓 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a超级火把 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+  dark_oak_log:
+    key: dark_oak_log
+    name: 深色橡木原木
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG_2
+      damage: 1
+    type: FORAGING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9深色橡木仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "lp user <player> permission set trade.darkoakleave true"
+        rewards:
+        - '&7     &f深色橡木树叶 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔深色橡木原木 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 200"
+        rewards:
+        - '&7     &8+&3200 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands:
+        - "usbc skills xp add Foraging <player> 250"
+        rewards:
+        - '&7     &8+&3250 &7砍伐经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a黑森林生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9生长 I&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a生长头盔 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &a生长胸甲 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &a生长护腿 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &a生长靴子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Foraging
+  raw_fish:
+    key: raw_fish
+    name: 生鱼
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9钓鱼仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔生鱼 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔熟鱼 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f渔夫头盔 &7配方'
+        - '&7     &f渔夫胸甲 &7配方'
+        - '&7     &f渔夫护腿 &7配方'
+        - '&7     &f渔夫靴子 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a鱼帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f中型钓鱼袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f大型钓鱼袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  salmon:
+    key: salmon
+    name: 鲑鱼
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+      damage: 1
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔鲑鱼 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔熟鲑鱼 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f鲑鱼帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9饵钓 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f小鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9闪避药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a疾风钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  clownfish:
+    key: clownfish
+    name: 小丑鱼
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+      damage: 2
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f水桶 &7交易 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f小丑鱼帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9磁力 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a小型袋中袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a中型袋中袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a大型袋中袋 &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a大型袋中袋+ &7升级 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  pufferfish:
+    key: pufferfish
+    name: 河豚
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+      damage: 3
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔河豚 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9深海探索者 II&7)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f河豚帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a河豚船 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f小型钓鱼袋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9中型钓鱼袋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9大型钓鱼袋 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9尖刺鱼钩 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9劈裂 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f尖刺鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  prismarine:
+    key: prismarine
+    name: 海晶石
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: PRISMARINE
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔海晶石 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9海晶石之刃 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5海晶石之弓 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a海晶石钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9穿刺 II&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  prismarine_crystal:
+    key: prismarine_crystal
+    name: 海晶石水晶
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: PRISMARINE_CRYSTALS
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔海晶石水晶 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9水下速掘 I&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f守卫者胸甲 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f发光鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a海晶灯帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a祝福鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9祝福 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  clay:
+    key: clay
+    name: 黏土
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: CLAY_BALL
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9黏土仆从 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔黏土 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9水下呼吸 II&7) &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9脆弱 II&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5农夫钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  water_lily:
+    key: water_lily
+    name: 睡莲
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATER_LILY
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔睡莲 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f幽灵鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f水滴鱼帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f治疗护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a挑战钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a鲸鱼鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5冠军钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5治疗戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &6传奇钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  inksack:
+    key: inksack
+    name: 墨囊
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: INK_SACK
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f鱿鱼帽 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a黑暗鱼饵 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔墨囊 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a深海生物群系木棍 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9施法 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f失明药水 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f附魔书 &7(&9渔夫 IV&7) &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5鱼饵戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f墨囊魔杖 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f??? &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+  sponge:
+    key: sponge
+    name: 海绵
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SPONGE
+    type: FISHING
+    levels:
+      '1':
+        level: 1
+        slot: 18
+        amount: 50
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f海绵 &7交易'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '2':
+        level: 2
+        slot: 19
+        amount: 100
+        page: 1
+        commands:
+        - "usbc skills xp add Fishing <player> 100"
+        rewards:
+        - '&7     &8+&3100 &7钓鱼经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '3':
+        level: 3
+        slot: 20
+        amount: 250
+        page: 1
+        commands:
+        - "usbc skills xp add Fishing <player> 150"
+        rewards:
+        - '&7     &8+&3150 &7钓鱼经验'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '4':
+        level: 4
+        slot: 21
+        amount: 500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔海绵 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '5':
+        level: 5
+        slot: 22
+        amount: 1000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a附魔湿海绵 &7配方'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '6':
+        level: 6
+        slot: 23
+        amount: 2500
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a海绵钓竿 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '7':
+        level: 7
+        slot: 24
+        amount: 10000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &9海兽护符 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '8':
+        level: 8
+        slot: 25
+        amount: 15000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &5立体声裤子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '9':
+        level: 9
+        slot: 26
+        amount: 25000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &a海兽戒指 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing
+      '10':
+        level: 10
+        slot: 27
+        amount: 50000
+        page: 1
+        commands: []
+        rewards:
+        - '&7     &f海绵头盔 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &f海绵胸甲 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &f海绵护腿 &7配方 &8(&4&l即将推出&8)'
+        - '&7     &f海绵靴子 &7配方 &8(&4&l即将推出&8)'
+        fancy:
+          showText: §e点击打开！
+          command: /collections menu Fishing

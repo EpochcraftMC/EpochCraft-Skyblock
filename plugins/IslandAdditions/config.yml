@@ -1,0 +1,19 @@
+# 出生点传送门全息影像的设置
+portal-hologram:
+  offset-x: 4.5
+  offset-y: 2.5
+  offset-z: -19.5
+  lines:
+    - '&b传送到:'
+    - '&a主城岛'
+
+# 岛屿 NPC 的设置
+island-npc:
+  offset-x: -6.5
+  offset-y: -1
+  offset-z: -17.5
+  offset-yaw: -90
+  entityType: VILLAGER
+  lines:
+    - 'Jerry'
+    - '&e&l点击'

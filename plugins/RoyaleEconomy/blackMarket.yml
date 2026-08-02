@@ -1,0 +1,97 @@
+use-blackmarket: false
+#Set to 'none' to disable permission
+blackmarket-permission: 'rec.blackmarket'
+#Decided this feature needs a separate permission message
+no-permission-message: '&6[黑市] &f这里不是谁都能来的！你的访问已被拒绝。'
+blackmarket-menu-name: '&5黑市'
+
+#If use command is set to false
+#the /blackmarket command becomes an admin command
+use-command: true
+admin-permission: 'rec.blackmarket.admin'
+
+#The number of minutes between black market items refresh
+refresh-rate: 180
+#Set to 'none' to disable the message
+#The message gets sent only to players with permission
+refresh-message: '&6[黑市] &f黑市已刷新库存！敢来的话就来看看吧……'
+
+finished-stock-message: '&c该物品的库存已售罄……下次手脚快点！'
+clicking-cooldown: '&c此刻正在进行一笔交易。请等它完成！'
+not-enough-money: '&c你的硬币不够！'
+#Use %amount% and %item-name% for buying details
+buy-message: '&f感谢你从 &5黑市&f 购买 &8%amount%x %item-name%&f！'
+full-inventory: '&c你的背包已满！'
+
+#This message is displayed on /blackmarket refresh
+#or when /blackmarket is no longer accessible (use-limited-access-time is true)
+blackmarket-refresh: '&6[黑市] &f黑市将在 &c%cooldown%&f 后刷新库存！'
+
+use-limited-access-time: false
+#Time in minutes in which players can access
+#the black market. When the time ends, they will not
+#be able to access it until the next refresh
+time-to-access: 20
+
+#Item slots are where random items will appear
+#anything that is not an item slot will be set to
+#background item which you can set bellow.
+blackmarket-menu-size: 36
+close-menu-slot: 31
+close-menu-item:
+  material: '262'
+  name: '&c关闭市场'
+  lore:
+    - '&7点击关闭'
+    - '&7市场。'
+blackmarket-background-item: '160:15'
+blackmarket-item-slots:
+  - 10
+  - 13
+  - 16
+
+#If you have more slots, than actual items
+#this item pops up
+no-item-to-display:
+  material: '166'
+  name: '&c无物品'
+  lore:
+    - '&7这里没有'
+    - '&7物品可显示。'
+
+item-price-lore-addition:
+  - ''
+  - '&7价格：&6%price% 硬币'
+
+#If item has stock:
+stock-lore-addition:
+  - '&7剩余库存：&e%stock%'
+
+#If you remove a rarity that is asigned to an item
+#the item will be moved to the first rarity it finds
+#Rarities don't need to reach 100% combined, but they must be from 1-100
+rarities:
+  epic:
+    chance: 5
+    lore-addition:
+      - ''
+      - '&7黑市上的'
+      - '&7稀有物品！'
+      - ''
+      - '&7稀有度：&5&l史诗 (5%)'
+  rare:
+    chance: 30
+    lore-addition:
+      - ''
+      - '&7黑市上的'
+      - '&7罕见物品！'
+      - ''
+      - '&7稀有度：&9&l稀有 (30%)'
+  common:
+    chance: 50
+    lore-addition:
+      - ''
+      - '&7黑市上的'
+      - '&7常见物品！'
+      - ''
+      - '&7稀有度：&a&l常见 (50%)'

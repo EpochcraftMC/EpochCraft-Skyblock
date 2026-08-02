@@ -1,0 +1,448 @@
+{
+  "createCommand": {
+    "aliases": [
+      "create"
+    ],
+    "description": "创建一个新的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "homeCommand": {
+    "aliases": [
+      "home"
+    ],
+    "description": "传送到你的岛屿家园",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "deleteCommand": {
+    "aliases": [
+      "delete"
+    ],
+    "description": "删除你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "reloadCommand": {
+    "aliases": [
+      "reload"
+    ],
+    "description": "重新加载配置",
+    "permission": "iridiumskyblock.reload",
+    "player": false,
+    "enabled": true
+  },
+  "regenCommand": {
+    "aliases": [
+      "regen",
+      "reset"
+    ],
+    "description": "重新生成你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "inviteCommand": {
+    "aliases": [
+      "invite"
+    ],
+    "description": "邀请玩家加入你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "joinCommand": {
+    "aliases": [
+      "join"
+    ],
+    "description": "加入其他玩家的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "missionsCommand": {
+    "aliases": [
+      "missions"
+    ],
+    "description": "打开任务界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "upgradeCommand": {
+    "aliases": [
+      "upgrade"
+    ],
+    "description": "打开升级界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "boosterCommand": {
+    "aliases": [
+      "booster"
+    ],
+    "description": "打开加成界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "crystalsCommand": {
+    "aliases": [
+      "crystals"
+    ],
+    "description": "显示你拥有的水晶数量",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "giveCrystalsCommand": {
+    "aliases": [
+      "givecrystals"
+    ],
+    "description": "给予玩家水晶",
+    "permission": "iridiumskyblock.givecrystals",
+    "player": false,
+    "enabled": true
+  },
+  "removeCrystalsCommand": {
+    "aliases": [
+      "removecrystals"
+    ],
+    "description": "移除玩家的水晶",
+    "permission": "iridiumskyblock.removecrystals",
+    "player": false,
+    "enabled": true
+  },
+  "membersCommand": {
+    "aliases": [
+      "members",
+      "users",
+      "list"
+    ],
+    "description": "查看你的岛屿成员",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "flyCommand": {
+    "aliases": [
+      "fly",
+      "flight"
+    ],
+    "description": "切换飞行能力",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "aboutCommand": {
+    "aliases": [
+      "about",
+      "version"
+    ],
+    "description": "显示插件信息",
+    "permission": "iridiumskyblock.",
+    "player": false,
+    "enabled": true
+  },
+  "warpsCommand": {
+    "aliases": [
+      "warps"
+    ],
+    "description": "打开传送点界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "warpCommand": {
+    "aliases": [
+      "setwarp",
+      "addwarp"
+    ],
+    "description": "设置新的岛屿传送点",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "valueCommand": {
+    "aliases": [
+      "value"
+    ],
+    "description": "显示你的岛屿价值",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "topCommand": {
+    "aliases": [
+      "top"
+    ],
+    "description": "查看顶级岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "leaveCommand": {
+    "aliases": [
+      "leave"
+    ],
+    "description": "离开岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "worldBorderCommand": {
+    "aliases": [
+      "border",
+      "worldborder",
+      "color",
+      "colour"
+    ],
+    "description": "打开世界边界界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "kickCommand": {
+    "aliases": [
+      "kick"
+    ],
+    "description": "将玩家踢出你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "visitCommand": {
+    "aliases": [
+      "visit"
+    ],
+    "description": "访问其他玩家的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "publicCommand": {
+    "aliases": [
+      "public"
+    ],
+    "description": "允许玩家访问你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "privateCommand": {
+    "aliases": [
+      "private"
+    ],
+    "description": "禁止玩家访问你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "bypassCommand": {
+    "aliases": [
+      "bypass"
+    ],
+    "description": "绕过所有岛屿限制",
+    "permission": "iridiumskyblock.bypass",
+    "player": true,
+    "enabled": true
+  },
+  "setHomeCommand": {
+    "aliases": [
+      "sethome"
+    ],
+    "description": "设置你的岛屿家园",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "permissionsCommand": {
+    "aliases": [
+      "permissions"
+    ],
+    "description": "编辑岛屿权限",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "transferCommand": {
+    "aliases": [
+      "transfer"
+    ],
+    "description": "转移岛屿所有权",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "adminCommand": {
+    "aliases": [
+      "admin"
+    ],
+    "description": "管理玩家的岛屿",
+    "permission": "iridiumskyblock.admin",
+    "player": true,
+    "enabled": true
+  },
+  "giveBoosterCommand": {
+    "aliases": [
+      "givebooster"
+    ],
+    "description": "给予岛屿加成",
+    "permission": "iridiumskyblock.givebooster",
+    "player": false,
+    "enabled": true
+  },
+  "giveUpgradeCommand": {
+    "aliases": [
+      "giveupgrade"
+    ],
+    "description": "给予岛屿升级",
+    "permission": "iridiumskyblock.giveupgrade",
+    "player": false,
+    "enabled": true
+  },
+  "banCommand": {
+    "aliases": [
+      "ban"
+    ],
+    "description": "禁止玩家访问你的岛屿",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "unBanCommand": {
+    "aliases": [
+      "unban"
+    ],
+    "description": "解除玩家访问你的岛屿的禁令",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "coopCommand": {
+    "aliases": [
+      "coop"
+    ],
+    "description": "将你加入岛屿合作",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "unCoopCommand": {
+    "aliases": [
+      "uncoop"
+    ],
+    "description": "撤销岛屿的合作权限",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "setNameCommand": {
+    "aliases": [
+      "setname"
+    ],
+    "description": "设置你的岛屿名称",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "bankCommand": {
+    "aliases": [
+      "bank"
+    ],
+    "description": "打开银行界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "chatCommand": {
+    "aliases": [
+      "chat"
+    ],
+    "description": "与你的岛屿成员聊天",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "shopCommand": {
+    "aliases": [
+      "shop"
+    ],
+    "description": "访问空岛商店",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "biomeCommand": {
+    "aliases": [
+      "biome"
+    ],
+    "description": "打开生物群系界面",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "helpCommand": {
+    "aliases": [
+      "help"
+    ],
+    "description": "显示插件命令",
+    "permission": "iridiumskyblock.",
+    "player": true,
+    "enabled": true
+  },
+  "languagesCommand": {
+    "aliases": [
+      "language",
+      "languages",
+      "translate"
+    ],
+    "description": "更改插件语言",
+    "permission": "iridiumskyblock.language",
+    "player": true,
+    "enabled": true
+  },
+  "recalculateCommand": {
+    "id": 0,
+    "aliases": [
+      "recalc",
+      "recalculate"
+    ],
+    "description": "重新计算所有岛屿价值",
+    "permission": "recalculate",
+    "player": false,
+    "enabled": true
+  },
+  "addValueCommand": {
+    "aliases": [
+      "addvalue"
+    ],
+    "description": "给予岛屿额外价值",
+    "permission": "iridiumskyblock.addvalue",
+    "player": false,
+    "enabled": true
+  },
+  "removeValueCommand": {
+    "aliases": [
+      "removevalue"
+    ],
+    "description": "移除岛屿的价值",
+    "permission": "iridiumskyblock.removevalue",
+    "player": false,
+    "enabled": true
+  },
+  "expelCommand": {
+    "aliases": [
+      "expel",
+      "visitors"
+    ],
+    "description": "将访客踢出你的岛屿",
+    "permission": "",
+    "player": true,
+    "enabled": true
+  }
+}

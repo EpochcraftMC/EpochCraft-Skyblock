@@ -1,0 +1,54 @@
+# 这是 Bukkit 的帮助配置文件。
+# 
+# 默认情况下你无需修改此文件。所有插件命令的帮助主题会自动生成或从已安装的插件中提取。
+# 只有当你想为服务器添加新的帮助页面，或覆盖现有插件命令的帮助页面时，才需要修改此文件。
+# 
+# 此文件分为以下几个部分：
+# -- general-topics: 管理员自定义的帮助主题列表
+# -- index-topics:   管理员自定义的索引主题列表
+# -- amend-topics:   对现有帮助主题的修改列表
+# -- ignore-plugins: 需要从帮助中排除的插件列表
+# 
+# 下面给出了示例。修改命令主题时，字符串 <text> 将被替换为帮助主题中的现有值。
+# 主题文本中可以使用颜色代码，颜色代码字符为 & 后跟 0-F。
+# ================================================================
+# 
+# 设为 true 可在总帮助中列出各命令的帮助主题。
+# command-topics-in-master-index: true
+# 
+# 每个 general topic 都会在帮助索引中显示为一个单独的主题，与所有插件命令主题并列。
+# general-topics:
+#     Rules:
+#         shortText: 服务器规则
+#         fullText: |
+#             &61. 善待你的玩家伙伴。
+#             &B2. 禁止恶意破坏。
+#             &D3. 禁止说脏话。
+#         permission: topics.rules
+# 
+# 每个 index topic 都会在帮助索引中显示为一个单独的子索引，与所有插件命令主题并列。
+# 若要覆盖默认帮助索引（用户执行 /help 时显示的内容），请将索引主题命名为 "Default"。
+# index-topics:
+#     Ban Commands:
+#         shortText: 封禁玩家命令
+#         preamble: 管理员 - 请勿滥用这些命令
+#         permission: op
+#         commands:
+#             - /ban
+#             - /ban-ip
+#             - /banlist
+# 
+# 主题修改用于更改自动生成的插件命令主题的内容。
+# amended-topics:
+#     /stop:
+#         shortText: 立刻停止服务器……就现在！
+#         fullText: <text> - 这会关闭服务器。
+#         permission: you.dont.have
+# 
+# 被列入忽略列表的插件将从帮助中排除。名称必须与 /plugins 命令显示的名称一致。
+# 忽略 "Bukkit" 可从索引中移除标准的 bukkit 命令。忽略 "All" 可完全禁用自动帮助主题生成。
+# ignore-plugins:
+#    - PluginNameOne
+#    - PluginNameTwo
+#    - PluginNameThree
+

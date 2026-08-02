@@ -1,0 +1,10 @@
+# CrispyBow 的反世界下载器插件
+# Skype � crispybow31
+# YouTube � CrispyBow
+# 
+# 变量: %player%, %prefix%
+
+Messages:
+  reloadConfig: '&a配置文件已重新加载！'
+  noPermission: '&f未知命令。'
+Punishment-Command: kick %player% §c你不能在拥有 §b世界下载器模组§c 的情况下加入服务器

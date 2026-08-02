@@ -1,0 +1,403 @@
+type: MINER
+simple: "挖掘"
+name: "&a挖掘技能"
+levelName: "&a挖掘 <level>"
+level: "挖掘等级 <level>"
+desc:
+  - "&7探索岛屿寻找矿石和"
+  - "&7有价值的材料来"
+  - "&7获得挖掘经验值！"
+levelIcon:
+  - "&e探矿者 <level>"
+  - "&a<chance>%&f 的几率获得双倍"
+  - "&f矿石。"
+levelDesc:
+  - "&7奖励："
+  - "<rewards>"
+icon:
+  material: STONE_PICKAXE
+  data: 0
+  amount: 1
+  mainSlot: 20
+  levelSlot: 0
+specialIcon:
+  material: IRON_BLOCK
+  data: 0
+levels:
+  level1:
+    level: 1
+    slot: 9
+    page: 1
+    levelUp: 50
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:25"
+    lore:
+      - "&7 &e探矿者 I"
+      - "&7  &a4%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&625 &7硬币"
+  level2:
+    level: 2
+    slot: 18
+    page: 1
+    levelUp: 125
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:50"
+    lore:
+      - "&7 &e探矿者 II"
+      - "&7  &84➜&a8%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&650 &7硬币"
+  level3:
+    level: 3
+    slot: 27
+    page: 1
+    levelUp: 250
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:100"
+      - "COMMAND:lp user <player> permission set jumppad.deep-caverns true"
+    lore:
+      - "&7 &e探矿者 III"
+      - "&7  &88➜&a12%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &a可进入 &6金矿"
+      - "&7 &8+&6100 &7硬币"
+  level4:
+    level: 4
+    slot: 28
+    page: 1
+    levelUp: 500
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:200"
+    lore:
+      - "&7 &e探矿者 IV"
+      - "&7  &812➜&a16%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6200 &7硬币"
+  level5:
+    level: 5
+    slot: 29
+    page: 1
+    levelUp: 1000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:300"
+    lore:
+      - "&7 &e探矿者 V"
+      - "&7  &816➜&a20%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6300 &7硬币"
+  level6:
+    level: 6
+    slot: 20
+    page: 1
+    levelUp: 1500
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:400"
+    lore:
+      - "&7 &e探矿者 VI"
+      - "&7  &820➜&a24%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6400 &7硬币"
+  level7:
+    level: 7
+    slot: 11
+    page: 1
+    levelUp: 2000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:500"
+    lore:
+      - "&7 &e探矿者 VII"
+      - "&7  &824➜&a28%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6500 &7硬币"
+  level8:
+    level: 8
+    slot: 2
+    page: 1
+    levelUp: 2500
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:600"
+    lore:
+      - "&7 &e探矿者 VIII"
+      - "&7  &828➜&a32%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6600 &7硬币"
+  level9:
+    level: 9
+    slot: 3
+    page: 1
+    levelUp: 3000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:700"
+    lore:
+      - "&7 &e探矿者 IX"
+      - "&7  &832➜&a36%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6700 &7硬币"
+  level10:
+    level: 10
+    slot: 4
+    page: 1
+    levelUp: 3500
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:800"
+    lore:
+      - "&7 &e探矿者 X"
+      - "&7  &836➜&a40%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6800 &7硬币"
+  level11:
+    level: 11
+    slot: 13
+    page: 1
+    levelUp: 4500
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:900"
+    lore:
+      - "&7 &e探矿者 XI"
+      - "&7  &840➜&a44%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&6900 &7硬币"
+  level12:
+    level: 12
+    slot: 22
+    page: 1
+    levelUp: 6000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:1000"
+    lore:
+      - "&7 &e探矿者 XII"
+      - "&7  &844➜&a48%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&61,000 &7硬币"
+  level13:
+    level: 13
+    slot: 31
+    page: 1
+    levelUp: 7500
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:1100"
+    lore:
+      - "&7 &e探矿者 XIII"
+      - "&7  &848➜&a52%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&61,100 &7硬币"
+  level14:
+    level: 14
+    slot: 32
+    page: 1
+    levelUp: 9000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:1"
+      - "COINS:1200"
+    lore:
+      - "&7 &e探矿者 XIV"
+      - "&7  &852➜&a56%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a1 ❇ 防御"
+      - "&7 &8+&61,200 &7硬币"
+  level15:
+    level: 15
+    slot: 33
+    page: 1
+    levelUp: 11000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:1300"
+    lore:
+      - "&7 &e探矿者 XV"
+      - "&7  &856➜&a60%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&61,300 &7硬币"
+  level16:
+    level: 16
+    slot: 24
+    page: 1
+    levelUp: 13000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:1400"
+    lore:
+      - "&7 &e探矿者 XVI"
+      - "&7  &860➜&a64%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&61,400 &7硬币"
+  level17:
+    level: 17
+    slot: 15
+    page: 1
+    levelUp: 15000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:1500"
+    lore:
+      - "&7 &e探矿者 XVII"
+      - "&7  &864➜&a68%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&61,500 &7硬币"
+  level18:
+    level: 18
+    slot: 6
+    page: 1
+    levelUp: 20000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:1600"
+    lore:
+      - "&7 &e探矿者 XVIII"
+      - "&7  &868➜&a72%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&61,600 &7硬币"
+  level19:
+    level: 19
+    slot: 7
+    page: 1
+    levelUp: 25000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:1800"
+    lore:
+      - "&7 &e探矿者 XIX"
+      - "&7  &872➜&a76%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&61,800 &7硬币"
+  level20:
+    level: 20
+    slot: 8
+    page: 1
+    levelUp: 30000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:2000"
+    lore:
+      - "&7 &e探矿者 XX"
+      - "&7  &876➜&a80%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&62,000 &7硬币"
+  level21:
+    level: 21
+    slot: 17
+    page: 1
+    levelUp: 33000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:2200"
+    lore:
+      - "&7 &e探矿者 XXI"
+      - "&7  &880➜&a84%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&62,200 &7硬币"
+  level22:
+    level: 22
+    slot: 26
+    page: 1
+    levelUp: 40000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:2400"
+    lore:
+      - "&7 &e探矿者 XXII"
+      - "&7  &884➜&a88%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&62,400 &7硬币"
+  level23:
+    level: 23
+    slot: 35
+    page: 1
+    levelUp: 42000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:2600"
+    lore:
+      - "&7 &e探矿者 XXIII"
+      - "&7  &888➜&a92%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&62,600 &7硬币"
+  level24:
+    level: 24
+    slot: 44
+    page: 1
+    levelUp: 45000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:2800"
+    lore:
+      - "&7 &e探矿者 XXIV"
+      - "&7  &892➜&a96%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&62,800 &7硬币"
+  level25:
+    level: 25
+    slot: 53
+    page: 1
+    levelUp: 50000
+    rewards:
+      - "ADDDOUBLEORES:4"
+      - "ADDDEFENSE:2"
+      - "COINS:3000"
+    lore:
+      - "&7 &e探矿者 XXV"
+      - "&7  &896➜&a100%&f 的几率获得双倍"
+      - "&7  &f矿石。"
+      - "&7 &8+&a2 ❇ 防御"
+      - "&7 &8+&63,000 &7硬币"

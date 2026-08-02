@@ -1,0 +1,354 @@
+loaded-sets:
+  - savanna-bow
+  - lapis-armor
+  - emerald-armor
+  - mushroom-armor
+  - farmer-armor
+  - cobblestone-armor
+  - oak-armor
+  - magma-armor
+  - pumpkin-armor
+  - speedster-armor
+  - leaflet-armor
+  - zombie-armor
+  - perfect-armor
+  - hardened-armor
+  - cheap-tuxedo-armor
+  - angler-armor
+  - midas-sword
+#
+armor-switch:
+  enabled: false
+  sound:
+    enabled: false
+    type: 'level_up'
+    volume: 1
+    pitch: 2
+  message:
+    enabled: false
+    text:
+      - '&7'
+#
+gui:
+  name: '&8自定义物品 GUI'
+  type: none
+  size: 54
+  1:
+    slot: 0
+    action: lapis-armor
+    name: '&a青金石套装'
+    item: leather_chestplate
+    data: 0
+    color: 51:51:255
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &a青金石头盔'
+     - '&8- &a青金石胸甲'
+     - '&8- &a青金石护腿'
+     - '&8- &a青金石靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  2:
+    slot: 1
+    action: emerald-armor
+    name: '&9绿宝石套装'
+    item: leather_chestplate
+    data: 0
+    color: 51:255:51
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &9绿宝石头盔'
+     - '&8- &9绿宝石胸甲'
+     - '&8- &9绿宝石护腿'
+     - '&8- &9绿宝石靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  3:
+    slot: 2
+    action: savanna-bow
+    name: '&a草原之弓'
+    item: BOW
+    data: 0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &a草原之弓'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  5:
+    slot: 3
+    action: farmer-armor
+    name: '&9农夫套装'
+    item: leather_chestplate
+    data: 0
+    color: 255:128:0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &9农夫头盔'
+     - '&8- &9农夫胸甲'
+     - '&8- &9农夫护腿'
+     - '&8- &9农夫靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  6:
+    slot: 4
+    action: mushroom-armor
+    name: '&f蘑菇套装'
+    item: leather_chestplate
+    data: 0
+    color: 255:77:77
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &f蘑菇头盔'
+     - '&8- &f蘑菇胸甲'
+     - '&8- &f蘑菇护腿'
+     - '&8- &f蘑菇靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  7:
+    slot: 5
+    action: cobblestone-armor
+    name: '&a圆石套装'
+    item: leather_chestplate
+    data: 0
+    color: 120:120:120
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &a圆石头盔'
+     - '&8- &a圆石胸甲'
+     - '&8- &a圆石护腿'
+     - '&8- &a圆石靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  8:
+    slot: 6
+    action: oak-armor
+    name: '&f橡木套装'
+    item: leather_chestplate
+    data: 0
+    color: 0:255:0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &f橡木头盔'
+     - '&8- &f橡木胸甲'
+     - '&8- &f橡木护腿'
+     - '&8- &f橡木靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  9:
+    slot: 7
+    action: magma-armor
+    name: '&5岩浆套装'
+    item: chainmail_chestplate
+    data: 0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &5岩浆头盔'
+     - '&8- &5岩浆胸甲'
+     - '&8- &5岩浆护腿'
+     - '&8- &5岩浆靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  10:
+    slot: 8
+    action: pumpkin-armor
+    name: '&f南瓜套装'
+    item: leather_chestplate
+    data: 0
+    color: 255:128:0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &f南瓜头盔'
+     - '&8- &f南瓜胸甲'
+     - '&8- &f南瓜护腿'
+     - '&8- &f南瓜靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  11:
+    slot: 9
+    action: speedster-armor
+    name: '&5疾风套装'
+    item: leather_chestplate
+    data: 0
+    color: 224:252:247
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &5疾风头盔'
+     - '&8- &5疾风胸甲'
+     - '&8- &5疾风护腿'
+     - '&8- &5疾风靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  12:
+    slot: 10
+    action: leaflet-armor
+    name: '&f树叶套装'
+    item: leather_chestplate
+    data: 0
+    color: 77:204:77
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &f树叶头盔'
+     - '&8- &f树叶胸甲'
+     - '&8- &f树叶护腿'
+     - '&8- &f树叶靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  13:
+    slot: 11
+    action: zombie-armor
+    name: '&5僵尸套装'
+    item: diamond_chestplate
+    data: 0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &5僵尸胸甲'
+     - '&8- &5僵尸护腿'
+     - '&8- &5僵尸靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  14:
+    slot: 12
+    action: perfect-armor
+    name: '&9完美套装'
+    item: diamond_chestplate
+    data: 0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &9完美头盔'
+     - '&8- &9完美胸甲'
+     - '&8- &9完美护腿'
+     - '&8- &9完美靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  15:
+    slot: 13
+    action: hardened-armor
+    name: '&9强化套装'
+    item: diamond_chestplate
+    data: 0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &9强化头盔'
+     - '&8- &9强化胸甲'
+     - '&8- &9强化护腿'
+     - '&8- &9强化靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  16:
+    slot: 14
+    action: cheap-tuxedo-armor
+    name: '&5廉价燕尾服套装'
+    item: leather_chestplate
+    data: 0
+    color: 120:120:120
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &5廉价燕尾服胸甲'
+     - '&8- &5廉价燕尾服护腿'
+     - '&8- &5廉价燕尾服靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  17:
+    slot: 15
+    action: angler-armor
+    name: '&f渔夫套装'
+    item: leather_chestplate
+    data: 0
+    color: 11:0:79
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &f渔夫头盔'
+     - '&8- &f渔夫胸甲'
+     - '&8- &f渔夫护腿'
+     - '&8- &f渔夫靴子'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  18:
+    slot: 16
+    action: midas-sword
+    name: '&6迈达斯之剑'
+    item: gold_sword
+    data: 0
+    lore:
+     - ''
+     - '&7包含:'
+     - '&8- &6迈达斯之剑'
+     - ''
+     - '&e点击打开！'
+    enchantments:
+    item-flags:
+      - hide_attributes
+  53:
+    slot: 49
+    action: close
+    name: '&c关闭'
+    item: barrier
+    data: 0
+    lore:
+    enchantments:
+    item-flags:
+      - hide_attributes

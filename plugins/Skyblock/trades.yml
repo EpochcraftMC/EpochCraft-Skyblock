@@ -1,0 +1,597 @@
+trades:
+  coal:
+    key: coal
+    permission: trade.coal
+    slot: 10
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: COAL
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: LOG
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f煤炭 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f橡木原木 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  grass_block:
+    key: grass_block
+    permission: trade.grass_block
+    slot: 11
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: GRASS
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIRT
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f草方块 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f泥土 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  clay:
+    key: clay
+    permission: trade.clay
+    slot: 12
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: CLAY_BALL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SEEDS
+      amount: 12
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f黏土 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f种子 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  oakleave:
+    key: oakleave
+    permission: trade.oakleave
+    slot: 13
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAPLING
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f橡树树叶 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f橡树树苗 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  spruceleave:
+    key: spruceleave
+    permission: trade.spruceleave
+    slot: 14
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAPLING
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f云杉树叶 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f云杉树苗 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  birchleave:
+    key: birchleave
+    permission: trade.birchleave
+    slot: 15
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES
+      damage: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAPLING
+      damage: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f白桦树叶 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f白桦树苗 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  jungleleave:
+    key: jungleleave
+    permission: trade.jungleleave
+    slot: 16
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAPLING
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f丛林树叶 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f丛林树苗 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  vines:
+    key: vines
+    permission: trade.vines
+    slot: 19
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: VINE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES
+      damage: 3
+      amount: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f藤蔓 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f丛林树叶 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  acacialeave:
+    key: acacialeave
+    permission: trade.acacialeave
+    slot: 20
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES_2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAPLING
+      damage: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f金合欢树叶 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f金合欢树苗 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  darkoakleave:
+    key: darkoakleave
+    permission: trade.darkoakleave
+    slot: 21
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEAVES_2
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAPLING
+      damage: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f深色橡木树叶 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f深色橡木树苗 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  grass:
+    key: grass
+    permission: trade.grass
+    slot: 22
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LONG_GRASS
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIRT
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f草 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f泥土 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  fern:
+    key: fern
+    permission: trade.fern
+    slot: 23
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: LONG_GRASS
+      damage: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIRT
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f蕨 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f泥土 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  deadbush:
+    key: deadbush
+    permission: trade.deadbush
+    slot: 24
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: DEAD_BUSH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIRT
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f枯死的灌木 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f泥土 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  tallgrass:
+    key: tallgrass
+    permission: trade.tallgrass
+    slot: 25
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: DOUBLE_PLANT
+      damage: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIRT
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f高草丛 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f泥土 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  redsand:
+    key: redsand
+    permission: trade.redsand
+    slot: 28
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAND
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SAND
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f红沙 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f沙子 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  soulsand:
+    key: soulsand
+    permission: trade.soulsand
+    slot: 29
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: SOUL_SAND
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: FERMENTED_SPIDER_EYE
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f灵魂沙 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f发酵蛛眼 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  mycelium:
+    key: mycelium
+    permission: trade.mycelium
+    slot: 30
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: MYCEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: RED_MUSHROOM
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f菌丝 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f红蘑菇 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  netherbrick:
+    key: netherbrick
+    permission: trade.netherbrick
+    slot: 31
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: NETHER_BRICK_ITEM
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: NETHERRACK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f下界砖 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f下界岩 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>
+  sponge:
+    key: sponge
+    permission: trade.sponge
+    slot: 32
+    page: 1
+    give:
+      ==: org.bukkit.inventory.ItemStack
+      type: SPONGE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    cost:
+      ==: org.bukkit.inventory.ItemStack
+      type: SPONGE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §f§l常见
+    displayname: §f海绵 §8<amount>
+    lore:
+    - §f§l常见
+    - §7
+    - §7价格
+    - §f湿海绵 §8<amount>
+    - §7
+    - §e点击交易！
+    - <tradingOptions>

@@ -1,0 +1,8 @@
+messages:
+  usage: |-
+    &aCleanMotD 命令:
+    &e/cleanmotd reload &7- &b重新加载插件！
+
+  reload: "&a插件 CleanMotD 已重新加载！"
+  unknowncommand: "&c未知命令。使用 /cleanmotd help 查看可用命令！"
+  nopermission: "&c你没有权限使用此命令！"

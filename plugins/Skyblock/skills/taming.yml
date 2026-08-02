@@ -1,0 +1,374 @@
+type: TAMING
+simple: "驯服"
+name: "&a驯服技能"
+levelName: "&a驯服 <level>"
+level: "驯服等级 <level>"
+desc:
+  - "&7升级宠物获得"
+  - "&7驯服经验值！"
+levelIcon:
+  - "&e动物学家 <level>"
+  - "&a<chance>%&f 额外宠物经验。"
+levelDesc:
+  - "&7奖励："
+  - "<rewards>"
+icon:
+  material: MONSTER_EGG
+  data: 56
+  amount: 1
+  mainSlot: 30
+  levelSlot: 0
+specialIcon:
+  material: IRON_BLOCK
+  data: 0
+levels:
+  level1:
+    level: 1
+    slot: 9
+    page: 1
+    levelUp: 50
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:50"
+    lore:
+      - "&7 &e动物学家 I"
+      - "&7  &a4%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&625 &7硬币"
+  level2:
+    level: 2
+    slot: 18
+    page: 1
+    levelUp: 125
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:50"
+    lore:
+      - "&7 &e动物学家 II"
+      - "&7  &f获得 &81➜&a2%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&650 &7硬币"
+  level3:
+    level: 3
+    slot: 27
+    page: 1
+    levelUp: 250
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:100"
+    lore:
+      - "&7 &e动物学家 III"
+      - "&7  &f获得 &82➜&a3%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6100 &7硬币"
+  level4:
+    level: 4
+    slot: 28
+    page: 1
+    levelUp: 500
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:200"
+    lore:
+      - "&7 &e动物学家 IV"
+      - "&7  &f获得 &83➜&a4%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6200 &7硬币"
+  level5:
+    level: 5
+    slot: 29
+    page: 1
+    levelUp: 1000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:300"
+    lore:
+      - "&7 &e动物学家 V"
+      - "&7  &f获得 &84➜&a5%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6300 &7硬币"
+  level6:
+    level: 6
+    slot: 20
+    page: 1
+    levelUp: 1500
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:400"
+    lore:
+      - "&7 &e动物学家 VI"
+      - "&7  &f获得 &85➜&a6%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6400 &7硬币"
+  level7:
+    level: 7
+    slot: 11
+    page: 1
+    levelUp: 2000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:500"
+    lore:
+      - "&7 &e动物学家 VII"
+      - "&7  &f获得 &86➜&a7%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6500 &7硬币"
+  level8:
+    level: 8
+    slot: 2
+    page: 1
+    levelUp: 2500
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:600"
+    lore:
+      - "&7 &e动物学家 VIII"
+      - "&7  &f获得 &87➜&a8%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6600 &7硬币"
+  level9:
+    level: 9
+    slot: 3
+    page: 1
+    levelUp: 3000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:700"
+    lore:
+      - "&7 &e动物学家 IX"
+      - "&7  &f获得 &88➜&a9%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6700 &7硬币"
+  level10:
+    level: 10
+    slot: 4
+    page: 1
+    levelUp: 3500
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:800"
+    lore:
+      - "&7 &e动物学家 X"
+      - "&7  &f获得 &89➜&a10%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6800 &7硬币"
+  level11:
+    level: 11
+    slot: 13
+    page: 1
+    levelUp: 4500
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:900"
+    lore:
+      - "&7 &e动物学家 XI"
+      - "&7  &f获得 &810➜&a11%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&6900 &7硬币"
+  level12:
+    level: 12
+    slot: 22
+    page: 1
+    levelUp: 6000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:1000"
+    lore:
+      - "&7 &e动物学家 XII"
+      - "&7  &f获得 &811➜&a12%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&61,000 &7硬币"
+  level13:
+    level: 13
+    slot: 31
+    page: 1
+    levelUp: 7500
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:1100"
+    lore:
+      - "&7 &e动物学家 XIII"
+      - "&7  &f获得 &812➜&a13%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&61,100 &7硬币"
+  level14:
+    level: 14
+    slot: 32
+    page: 1
+    levelUp: 9000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:1"
+      - "COINS:1200"
+    lore:
+      - "&7 &e动物学家 XIV"
+      - "&7  &f获得 &813➜&a14%&f 额外宠物经验"
+      - "&7 &8+&a1 &d<luck> 宠物幸运"
+      - "&7 &8+&61,200 &7硬币"
+  level15:
+    level: 15
+    slot: 33
+    page: 1
+    levelUp: 11000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:1300"
+    lore:
+      - "&7 &e动物学家 XV"
+      - "&7  &f获得 &814➜&a15%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&61,300 &7硬币"
+  level16:
+    level: 16
+    slot: 24
+    page: 1
+    levelUp: 13000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:1400"
+    lore:
+      - "&7 &e动物学家 XVI"
+      - "&7  &f获得 &815➜&a16%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&61,400 &7硬币"
+  level17:
+    level: 17
+    slot: 15
+    page: 1
+    levelUp: 15000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:1500"
+    lore:
+      - "&7 &e动物学家 XVII"
+      - "&7  &f获得 &816➜&a17%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&61,500 &7硬币"
+  level18:
+    level: 18
+    slot: 6
+    page: 1
+    levelUp: 20000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:1600"
+    lore:
+      - "&7 &e动物学家 XVIII"
+      - "&7  &f获得 &817➜&a18%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&61,600 &7硬币"
+  level19:
+    level: 19
+    slot: 7
+    page: 1
+    levelUp: 25000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:1800"
+    lore:
+      - "&7 &e动物学家 XIX"
+      - "&7  &f获得 &818➜&a19%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&61,800 &7硬币"
+  level20:
+    level: 20
+    slot: 8
+    page: 1
+    levelUp: 30000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:2000"
+    lore:
+      - "&7 &e动物学家 XX"
+      - "&7  &f获得 &819➜&a20%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&62,000 &7硬币"
+  level21:
+    level: 21
+    slot: 17
+    page: 1
+    levelUp: 33000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:2200"
+    lore:
+      - "&7 &e动物学家 XXI"
+      - "&7  &f获得 &820➜&a21%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&62,200 &7硬币"
+  level22:
+    level: 22
+    slot: 26
+    page: 1
+    levelUp: 40000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:2400"
+    lore:
+      - "&7 &e动物学家 XXII"
+      - "&7  &f获得 &821➜&a22%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&62,400 &7硬币"
+  level23:
+    level: 23
+    slot: 35
+    page: 1
+    levelUp: 42000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:2600"
+    lore:
+      - "&7 &e动物学家 XXIII"
+      - "&7  &f获得 &822➜&a23%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&62,600 &7硬币"
+  level24:
+    level: 24
+    slot: 44
+    page: 1
+    levelUp: 45000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:2800"
+    lore:
+      - "&7 &e动物学家 XXIV"
+      - "&7  &f获得 &823➜&a24%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&62,800 &7硬币"
+  level25:
+    level: 25
+    slot: 53
+    page: 1
+    levelUp: 50000
+    rewards:
+      - "PETXP:1"
+      - "PETLUCK:2"
+      - "COINS:3000"
+    lore:
+      - "&7 &e动物学家 XXV"
+      - "&7  &f获得 &824➜&a25%&f 额外宠物经验"
+      - "&7 &8+&a2 &d<luck> 宠物幸运"
+      - "&7 &8+&63,000 &7硬币"

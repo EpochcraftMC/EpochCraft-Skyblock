@@ -1,0 +1,13 @@
+# BeerSpigot 配置文件
+config-version: 1
+world-settings:
+  default:
+    verbose: true
+    igDropPoppy: false
+    fix-east-west-cannoning: true
+    enableLeftShooting: true
+    noSpawnerParticles: true
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: false
+    igFallDamage: true

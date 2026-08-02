@@ -1,0 +1,82 @@
+# 这是 ySpigot 的主配置文件。
+# 修改时请格外小心，并确保你知道自己在做什么。
+# 作者: Mael
+# 支持 Discord 服务器 - https://discord.gg/PTrhTN
+options:
+  license:
+    key: LICENSE_KEY_HERE
+  events:
+    enablelavatocobble: true
+    infinite-water-sources: true
+    fire-player-move-event: true
+    leaves-decay-event: true
+    block-operations: false
+    enable-entity-activation: false
+    endermite-spawning: true
+  physics:
+    disable-physics-on-place: false
+    disable-physics-update: false
+  mobs:
+    enable-mob-ai: true
+    enable-mob-sound: false
+  chunk:
+    do-chunk-unload: false
+  tab:
+    hidden-players-in-tab: true
+    complete-hidden: true
+    complete-plugins: true
+  pearl:
+    taliban-pearl: false
+    pearl-through-string: false
+    pearl-through-fence-gate: true
+    pearl-through-cobweb: false
+    pearl-through-slab: false
+  thread:
+    thread-tps: 60
+    netty-threads: 5
+  async:
+    hit-detection: true
+    knockback: true
+  commands:
+    permissions:
+      message: '&c抱歉，你没有权限执行此命令。
+        如果你认为这是一个错误，请联系服务器管理员。'
+    ping:
+      enabled: true
+      message:
+        not_online: '&c玩家 ''%player%'' 不在线！'
+        ping_other_player: '&f%player%'' 的延迟: &b%player_ping%毫秒'
+        ping_you: '&f延迟: &b%player_ping%毫秒'
+    plugin:
+      enabled_custom_message: true
+      custom_message: '&f插件 %list%'
+      command-public: true
+    version:
+      command-public: true
+    tps:
+      command-public: false
+      message:
+        tps-message:
+        - '&8&m------------------------------'
+        - '&7内存 &f» &c%used_ram%MB&7/&c%total_ram%MB &8(&c%free_ram%MB 空闲&8)'
+        - '&7运行时间 &f» &c%uptime%'
+        - '&7TPS 1m, 5m, 15m &f» &c%list_tps%'
+        - '&7当前服务器延迟 &f» &8(&c%current_tps%&8) &c%bar%'
+        - '&7服务器总负载 &f» &c%server_load%'
+        - '&7Minecraft 调度器负载 &f» &c%minecraft_scheduler_load%'
+        - '&7Bukkit 调度器负载 &f» &c%bukkit_scheduler_load%'
+        - '&7连接负载 &f» &c%connection_load%'
+        - '&7总可调度负载 &f» &c%tickable_load%'
+        - '&7区块 IO 负载 &f» &c%chunkio_load%'
+        - '&8&m------------------------------'
+  tnt:
+    fix-east-west-cannons: true
+    optimize-tnt: true
+    optimize-tnt-movement: true
+    optimize-liquid-explosions: true
+  tcp-no-delay: true
+  attack-cancel-sprint: false
+  max-display-name-length: 16
+  hide-ips: false
+  blocked-protocols: []
+  yspigotcrossversion: true

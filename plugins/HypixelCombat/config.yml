@@ -1,0 +1,123 @@
+# 此配置选项不会起任何作用
+# 它只是为了提供信息
+generated-by-version: "9.9.3.4"
+
+# CombatLogX 的配置选项
+options:
+  # 设为 true 可在控制台中查看更多信息
+  # 除非你喜欢刷屏，否则不需要使用它
+  # 默认: false
+  debug: false
+
+  # 设为 true 如果你想检查更新
+  # 这不会自动下载更新
+  # 默认: true
+  check for updates: false
+
+  # 如果你不想让玩家在这些世界中被标记，请将世界添加到列表中
+  # 世界名称区分大小写，因此 "world1" 不等于 "wOrLd1"
+  disabled worlds:
+  - "world1"
+  - "world2"
+
+  broadcasts:
+    # 设为 true 如果你想在插件启用时广播一条消息。
+    # 默认: true
+    on enable: false
+
+    # 设为 true 如果你想在插件禁用时广播一条消息。
+    # 默认: true
+    on disable: false
+
+  # 玩家在被标记战斗状态后，可以登出的时间（以秒为单位）。
+  # 如果他们在该时间结束前离开，将受到惩罚。
+  # 默认: 30
+  time: 15
+
+  link:
+    # 设为 true 可将箭矢、药水、雪球、鸡蛋和其他投射物与发射它们的实体关联
+    # 只有在发射者是攻击者时才会关联
+    # 默认: true
+    projectiles: true
+
+    # 设为 true 可将狼、豹猫、鹦鹉和其他宠物与拥有它们的实体关联
+    # 只有在主人是攻击者时才会关联
+    # 默认: true
+    pets: true
+
+# CombatLogX 的惩罚选项
+punish:
+  # 设为 true 如果玩家在战斗中登出时应受到惩罚
+  # 默认: true
+  on quit: true
+
+  # 设为 true 如果玩家在战斗中被插件或工作人员踢出时应受到惩罚
+  # 默认: false
+  on kick: false
+
+  # 设为 true 如果玩家的战斗计时器到期时应受到惩罚
+  # 你永远不应该需要这个选项，但它在这里用于调试目的
+  # 默认: false 
+  on expire: false
+
+  # 设为 true 如果玩家受到惩罚时应该被杀死
+  # 默认: true
+  kill: true
+
+  sudo:
+    # 设为 true 如果玩家/控制台应在玩家受到惩罚时执行命令
+    # 默认: false
+    enabled: false
+
+    # 如果上面的选项设为 true，则列出命令
+    # 以 [CONSOLE] 为前缀以控制台身份执行 
+    # 以 [PLAYER] 为前缀以玩家身份执行
+    # 以 [OP] 为前缀以玩家身份但拥有 "服务器管理员" 权限执行
+    commands:
+    - "[CONSOLE]eco take {player} 100"
+    - "[PLAYER]me logged out during combat!"
+
+# CombatLogX 的战斗选项   
+combat:
+  # 设为 true 如果玩家的当前敌人死亡时应取消标记
+  # 默认: false
+  untag on enemy death: false
+
+  # 设为 true 如果玩家死亡时应取消标记
+  # 默认: true
+  untag on self death: true
+
+  bypass:
+    # 设为 true 如果应允许玩家绕过战斗。你需要授予他们下面配置的权限
+    # 默认: false
+    allow: true
+
+    # 如果你不喜欢默认权限，可以更改它
+    permission: "combatlogx.bypass"
+
+  # 设为 true 以允许玩家标记自己
+  # 默认: true
+  self: true
+
+  mobs:
+    # 设为 true 以允许怪物标记玩家
+    # 默认: true
+    enabled: true
+
+    # 不会引发战斗的怪物列表
+    blacklist:
+    - WITHER
+    - ARMOR_STAND
+
+  sudo:
+    # 设为 true 如果玩家/控制台应在玩家被标记时执行命令
+    # 默认: false
+    enabled: false
+
+    # 如果上面的选项设为 true，则列出命令
+    # 以 [CONSOLE] 为前缀以控制台身份执行 
+    # 以 [PLAYER] 为前缀以玩家身份执行
+    # 以 [OP] 为前缀以玩家身份但拥有 "服务器管理员" 权限执行
+    commands:
+    - "[PLAYER]me is now in Combat"
+    

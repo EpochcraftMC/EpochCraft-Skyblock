@@ -1,0 +1,20 @@
+reload:
+  - '&a你已成功重新加载插件。'
+
+help:
+  - '&7请参阅 github wiki 页面获取命令、权限和配置帮助。'
+
+insufficient-funds:
+  - '&7你没有足够的资金购买该物品。'
+
+purchase:
+  - '&a你刚刚从 &6{set-name} &a套装中生成了一件装备。'
+
+give-piece-giver:
+  - '&7你已将 &6{set-name} &7套装中的 &6{player} {amount}x &7件 &6{piece} &7装备。'
+
+give-piece-receiver:
+  - '这是一条空白消息'
+
+unsafe-warp-location:
+  - '&7你的 &3&l传送点套装 &7试图传送你，但服务器认为该位置不安全。'

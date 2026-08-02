@@ -1,0 +1,319 @@
+menu_title: '你的属性'
+open_command: 'attributes'
+size: 54
+items:
+      background:
+        material: 160
+        data: 15
+        priority: 2
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 48
+        - 50
+        - 51
+        - 52
+        - 53
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+
+      attributes:
+        material: head;%player_name%
+        slot: 4
+        display_name: '&a你的档案'
+        lore:
+        - ' &c❤ 生命值 &f%us_health% HP'
+        - ' &a❇ 防御 &f%us_defense%'
+        - ' &f❂ 真实防御 &f0'
+        - ' &c❁ 力量 &f%us_force%'
+        - ' &f✦ 速度 &f%us_speed%%'
+        - ' &9☣ 暴击几率 &f%us_critchance%%'
+        - ' &9☠ 暴击伤害 &f%us_critdamage%%'
+        - ' &e⚔ 额外攻击速度 &f0%'
+        - ' &b✎ 智力 &f%us_intelligence%'
+        - ' &3ð 海洋生物几率 &f%us_seacreature%%'
+        - ' &b✯ 魔法寻获 &f0'
+        - ' &d♠ 宠物幸运 &f0'
+        left_click_commands: []
+        right_click_commands: []
+
+      health:
+        display_name: '&c❤ 生命值 &f%us_health%'
+        material: 322
+        lore:
+        - '&7生命值是你的最大生命上限。'
+        - '&7你的自然回复速度是'
+        - '&7每 &a2.0 秒 &a2%&7。'
+        - ''
+        - '&7生命值：&a%us_health% HP'
+        - '&8&o  通过提升你的农业和钓鱼'
+        - '&8&o  技能，并向 &2野外&8&o 中的'
+        - '&8&o  &d精灵 &8&o 捐献，来增加'
+        - '&8&o  你的基础生命值。'
+        - ''
+        priority: 1
+        data: 0
+        slot: 19
+        left_click_commands: []
+        right_click_commands: []
+
+      defense:
+        display_name: '&a❇ 防御 &f%us_defense%'
+        material: IRON_CHESTPLATE
+        hide_attributes: true
+        lore:
+        - '&7防御可以减少你受到的'
+        - '&7来自敌人的伤害。'
+        - ''
+        - '&7防御：&a%us_defense%'
+        - '&8&o  通过提升你的采矿技能，'
+        - '&8&o  并向 &2野外&8&o 中的 &d精灵'
+        - '&8&o  &8&o 捐献，来增加你的'
+        - '&8&o  基础防御。'
+        - ''
+        priority: 1
+        data: 0
+        slot: 20
+        left_click_commands: []
+        right_click_commands: []
+
+      strength:
+        display_name: '&c❁ 力量 &f%us_force%'
+        material: BLAZE_POWDER
+        lore:
+        - '&7力量会增加你的基础'
+        - '&7近战伤害，包括徒手攻击'
+        - '&7和武器伤害。'
+        - ''
+        - '&7力量：&a%us_force%'
+        - '&8&o  通过提升你的伐木技能，'
+        - '&8&o  并向 &2野外&8&o 中的 &d精灵'
+        - '&8&o  &8&o 捐献，来增加你的'
+        - '&8&o  基础力量。'
+        - ''
+        - '&7基础伤害：&a3'
+        priority: 1
+        data: 0
+        slot: 21
+        left_click_commands: []
+        right_click_commands: []
+
+      speed:
+        display_name: '&f✦ 速度 &f%us_speed%%'
+        material: SUGAR
+        lore:
+        - '&7速度会提升你的移动速度。'
+        - ''
+        - '&7基础速度：&a100'
+        - '&8&o  通过向 &2野外&8&o 中的'
+        - '&8&o  &d精灵 &8&o 捐献，来增加'
+        - '&8&o  你的基础速度。'
+        - ''
+        - '&7你的速度提升了 &a%us_speed%%&7！'
+        - ''
+        priority: 1
+        data: 0
+        slot: 22
+        left_click_commands: []
+        right_click_commands: []
+
+      critchance:
+        display_name: '&9☣ 暴击几率 &f%us_critchance%%'
+        material: 397
+        data: 1
+        lore:
+        - '&7暴击几率是你对敌人'
+        - '&7造成额外伤害的几率。'
+        - ''
+        - '&7暴击几率：&a%us_critchance%%'
+        - '&8&o  通过提升你的战斗技能'
+        - '&8&o  来增加你的基础暴击'
+        - '&8&o  几率。'
+        - ''
+        priority: 1
+        slot: 23
+        left_click_commands: []
+        right_click_commands: []
+
+      critdamage:
+        display_name: '&9☣ 暴击伤害 &f%us_critdamage%%'
+        material: 397
+        data: 1
+        lore:
+        - '&7暴击伤害是你在造成'
+        - '&7暴击时额外造成的'
+        - '&7伤害量。'
+        - ''
+        - '&7暴击伤害：&a%us_critdamage%%'
+        - '&8&o  通过探索世界来增加'
+        - '&8&o  你的基础暴击几率！'
+        - ''
+        priority: 1
+        slot: 24
+        left_click_commands: []
+        right_click_commands: []
+
+      bonusattackspeed:
+        display_name: '&e⚔ 额外攻击速度 &f0%'
+        material: GOLD_AXE
+        hide_attributes: true
+        data: 0
+        lore:
+        - '&7额外攻击速度会减少你'
+        - '&7对敌人两次攻击之间的'
+        - '&7间隔时间。'
+        - ''
+        - '&7基础额外攻击速度：&a0%'
+        - '&8&o  所有玩家的基础额外'
+        - '&8&o  攻击速度相同。'
+        - ''
+        - '&7额外加成攻击速度：&8+&e0%'
+        - '&8&o  通过装备护甲并在背包中'
+        - '&8&o  携带护符，来增加你的'
+        - '&8&o  额外攻击速度加成。'
+        - ''
+        - '&7你现在攻击速度提升了 &a0%&7！'
+        priority: 1
+        slot: 25
+        left_click_commands: []
+        right_click_commands: []
+
+      intelligence:
+        display_name: '&b✎ 智力 &f%us_intelligence%'
+        material: 403
+        data: 0
+        lore:
+        - '&7智力会同时提升你的'
+        - '&7蓝量上限和魔法物品的'
+        - '&7伤害。'
+        - ''
+        - '&7智力：&a%us_intelligence%'
+        - '&8&o  通过提升你的附魔和'
+        - '&8&o  炼金技能，来增加你的'
+        - '&8&o  基础智力。'
+        - ''
+        - '&7魔法伤害 &7+&b0%'
+        - '&7蓝量上限：&b%us_mana%'
+        priority: 1
+        slot: 28
+        left_click_commands: []
+        right_click_commands: []
+
+      seacreature:
+        display_name: '&3ð 海洋生物几率 &f%us_seacreature%%'
+        material: PRISMARINE_CRYSTALS
+        data: 0
+        lore:
+        - '&7海洋生物几率是你在钓鱼时'
+        - '&7捕获海洋生物的'
+        - '&7几率。'
+        - ''
+        - '&7基础海洋生物几率：&a0%'
+        - '&8&o  所有玩家的基础'
+        - '&8&o  几率相同。'
+        - ''
+        - '&7额外海洋生物几率：&8+&e%us_seacreature%%'
+        - '&8&o  通过装备护甲并在背包中'
+        - '&8&o  携带护符，来增加你的'
+        - '&8&o  额外加成几率。'
+        priority: 1
+        slot: 29
+        left_click_commands: []
+        right_click_commands: []
+
+
+      magicfind:
+        display_name: '&b✯ 魔法寻获 &f0'
+        material: STICK
+        data: 0
+        lore:
+        - '&7魔法寻获会增加你找到'
+        - '&7稀有物品的数量。'
+        - ''
+        - '&7魔法寻获：&a0%'
+        - '&8&o  通过收集独特的宠物来'
+        - '&8&o  增加你的基础魔法寻获。'
+        - ''
+        priority: 1
+        slot: 30
+        left_click_commands: []
+        right_click_commands: []
+
+      petluck:
+        display_name: '&d♠ 宠物幸运 &f0'
+        material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNjOGFhM2ZkZTI5NWZhOWY5YzI3ZjczNGJkYmFiMTFkMzNhMmU0M2U4NTVhY2NkNzQ2NTM1MjM3NzQxM2IifX19'
+        data: 0
+        lore:
+        - '&7宠物幸运会增加你找到宠物的'
+        - '&7数量，并让你在合成宠物时'
+        - '&7拥有更好的运气。'
+        - ''
+        - '&7宠物幸运：&a0%'
+        - '&8&o  通过提升你的驯服技能，'
+        - '&8&o  来增加你的基础宠物幸运。'
+        - ''
+        priority: 1
+        slot: 30
+        left_click_commands: []
+        right_click_commands: []
+
+
+
+
+      go-back:
+        material: ARROW
+        slot: 49
+        display_name: '&a返回'
+        lore: []
+        left_click_commands:
+        - '[openguimenu] menu'
+        right_click_commands:
+        - '[openguimenu] menu'

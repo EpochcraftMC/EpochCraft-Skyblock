@@ -1,0 +1,28 @@
+gui-configuration-error:
+  - '&7该套装的 GUI 未正确配置，请联系管理员并让他们检查控制台。'
+
+only-players-accessible:
+  - '&7只有玩家可以使用该命令，请进入游戏后再试一次。'
+
+insufficient-permission: []
+
+target-not-online:
+  - '&7目标玩家必须在线才能完成该操作。'
+
+invalid-amount:
+  - '&7请输入一个有效的数量，必须是整数。'
+
+invalid-piece:
+  - '&7请输入有效的护甲部位，&7&o((&6&o头盔&7&o, &6&o胸甲&7&o, &6&o护腿&7&o, &6&o靴子&7&o, &6&o手持&7&o, &6&o全部&7&o))。'
+
+invalid-number-of-arguments:
+  - '&7您输入的参数数量不正确。'
+
+invalid-command:
+  - '&7您输入的命令不存在。'
+
+invalid-set:
+  - '&7您输入的套装不存在，请检查您的套装文件夹中的有效套装。'
+
+piece-does-not-exist:
+  - '&7该护甲部件尚未为该套装配置。'

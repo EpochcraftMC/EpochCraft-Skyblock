@@ -1,0 +1,124 @@
+Language: English
+Ingame_Only: '&c此命令只能在游戏内使用。'
+No_Permission: '&c你没有权限使用此命令！'
+Hyphen: '&9----------------------------------------------------'
+Exceptions:
+  AlreadySent: '&c你已经向这个人发送过好友请求了！'
+  AlreadyFriend: '&c你已经是这个人的好友了！'
+  Ignored: '&c该玩家已将你加入黑名单！'
+  IsntOnYourFriends: '&c%targetDisplayName &c不在你的好友列表中！'
+  CantAddYourSelf: '&c你不能将自己添加为好友！'
+  CantRemoveYourself: '&c你不能移除自己！'
+  NoInvited: '&c那个人还没有邀请你成为好友！试试 &e/friend add %name'
+  HasntFriend: '&c那个人还没有邀请你成为好友！试试 &e/friend add
+    %name'
+  SlotLimitReached: '&c你的好友数量已达上限！要添加更多好友，请先移除一些！'
+  RequestDeny: '&c该玩家已禁用好友请求接收！'
+No-Joined-The-Party: '&c你必须在一个队伍中才能使用此命令！'
+Cant-Find: '&c找不到名为 ''%name'' 的玩家'
+Friends:
+  Join: '&a好友 > &7%%displayName%% &e加入了。'
+  Quit: '&a好友 > &7%%displayName%% &e离开了。'
+Add:
+  Usage: '&c用法: /friend add <玩家>'
+  Sent: '&e你已向 %targetDisplayName&e 发送了好友请求！'
+  5-Minutes: '&e他们有 5 分钟时间接受！'
+  Accept:
+    Prefix: '&a&l[接受]&r'
+    Message: '&b点击接受好友请求'
+  Deny:
+    Prefix: '&c&l[拒绝]&r'
+    Message: '&b点击拒绝好友请求'
+  Ignore:
+    Prefix: '&7&l[忽略]'
+    Message: '&b点击屏蔽所有未来的好友请求。'
+  Request:
+    Received: '&e收到来自 %displayName&e 的好友请求！'
+  Expired:
+    YourSelf: '&e你发给 %targetDisplayName &e的好友请求已过期。'
+    Target: '&e来自 %displayName &e的好友请求已过期。'
+Remove:
+  Usage: '&c用法: /friend remove <玩家>'
+  YourSelf: '&e你已将 %targetDisplayName &e从好友列表中移除！'
+  Target: '&e%displayName &e已将你从他们的好友列表中移除！'
+  All:
+    Confirm: '&e你确定要删除所有好友吗？要删除，请输入
+      &c''/f removeall confirm''&e。'
+    Failed: '&e删除失败: %uuid'
+    Done: '&e已删除我所有的好友。'
+Accept:
+  Usage: '&c用法: /friend accept <玩家>'
+  YourSelf: '&a你现在与 %targetDisplayName 是好友了'
+  Target: '&a你现在与 %displayName 是好友了'
+Deny:
+  Usage: '&c用法: /friend deny <玩家>'
+  Declined: '&e已拒绝 %targetDisplayName&e 的好友请求！'
+List:
+  DontHave:
+    One: '&e你还没有任何好友！'
+    Two: '&e用 /friend add <玩家> 添加一些好友'
+  Online: '&e%targetDisplayName &e在线。'
+  Offline: '&e%targetDisplayName &c当前离线'
+  Page: '&6好友（第 %%currentPage%% / %%maxPage%% 页）'
+Lang:
+  Usage: '&c无效用法！''/friend lang <语言>'''
+  Available: '&b当前可用的语言:'
+  Update: '&a已选择的语言: &e%lang&a！'
+  Updater:
+    LastUpdate: '&a最后更新: %data'
+    Usage: '&c无效用法！''/friend lang update <语言>'''
+    NeedCheck: '&c你需要检查可用语言列表！（/friend lang update）'
+    Checking: '&7正在检查更新...'
+    Failed-Connect: '&c无法连接到服务器。'
+    Unknown: '&c未找到此语言。'
+    Available: '&a可用文件:'
+    Updated: '&a%lang 语言已更新！你可能需要重启服务器。'
+Ignore:
+  Usage:
+    Main: '&c无效用法！''/friend ignore <add|remove|list>'''
+    Add: '&c无效用法！''/friend ignore add <玩家>'''
+    Remove: '&c无效用法！''/friend ignore add <玩家>'''
+  Havent:
+    One: '&e你还没有任何屏蔽列表！'
+    Two: '&e用 /friend ignore add <玩家> 添加'
+  Added: '&a已将 %targetDisplayName &a添加到你的屏蔽列表。'
+  AlreadyAdded: '&c你已经屏蔽了该玩家！&b/ignore remove Player &c解除屏蔽！'
+  Removed: '&a已将 %targetDisplayName &a从你的屏蔽列表移除。'
+  NotAdded: '&c你没有屏蔽该玩家！&b/ignore add Player &c屏蔽！'
+Force-Add:
+  Usage: '&c用法: /friend force-add <玩家>'
+  YourSelf: '&a你现在与 %targetDisplayName 是好友了 &c&l[强制]'
+  Target: '&a你现在与 %displayName 是好友了 &c&l[强制]'
+Prefix:
+  Usage: '&c用法: /friend prefix <玩家> <前缀>'
+  Current: '&7%targetDisplayName&e 当前的前缀是 ''%prefix&e'''
+  To: '&7%targetDisplayName&e 的前缀已更改为 ''%prefix&e'''
+Toggle:
+  Enabled: '&e好友请求已 &a启用&e！'
+  Disabled: '&e好友请求已 &c禁用&e！'
+Help:
+  Command: '&aFriend Commands:'
+  Help: '&e/friend help &7- &bPrints this help message'
+  Lang: '&9----------------------------------------------------'
+  Add: '&e/friend add &7- &bAdd a player as a friend'
+  Remove: '&e/friend remove &7- &bRemove a player from your friends'
+  RemoveAll: '&e/friend removeall &7- &bRemove all your friends.'
+  Accept: '&e/friend accept &7- &bAccept a friend request'
+  Deny: '&e/friend deny &7- &bDecline a friend request'
+  List: '&e/friend list &7- &bList your friends'
+  Ignore: '&e/friend ignore &7- &bManage Ignore list'
+  Force-Add: '&e/friend force-add &7- &bYou will be forced to be friends with the
+    player.'
+  Prefix: '&e/friend prefix &7- &bSet player prefix.'
+  Toggle: '&e/friend toggle &7- &bToggle friend request.'
+Tell-Command:
+  Usage: '&cUsage: /tell <player> <message>'
+  YourSelf: '&dTo: %targetDisplayName&7: %message'
+  Target: '&dFrom: %displayName&7: %message'
+  MustBeFriends: '&cYou must be friends with %targetDisplayName!'
+  Offline: '&c%targetDisplayName &cis not online!'
+Reply-Command:
+  Usage: '&cUsage: /reply <message>'
+  Target: '&cReply target: %targetDisplayName'
+OSL:
+  NotFound: '&bOpen Source Item was not found.'

@@ -1,0 +1,136 @@
+bids-menu-name: '&8拍卖查看'
+
+bid-history-item: '358:0'
+bid-history-item-name: '&f出价历史'
+bid-history-item-lore:
+  no-bids:
+    - '&7目前还没有人'
+    - '&7对这个物品出价。'
+    - ''
+    - '&7成为第一个出价的人吧！'
+  #出价历史物品的描述在有出价时是动态的，
+  #下面的结构会在每次新出价时重复，
+  #添加到描述中
+  #使用 %bid-amount% 代表出价金额
+  #使用 %bidder-display-name% 代表出价者的显示名称
+  #使用 %when-bidded% 代表出价时间（例如 2 天）（不包含“前”字，以便你修改）
+  bid-structure:
+    - '&8&m--------------'
+    - '&7出价: &6%bid-amount% 金币'
+    - '&7出价者: %bidder-display-name%'
+    - '&b%when-bidded% 前'
+
+
+#点击带有 "即将结束" 提示的物品时显示的消息
+too-late-to-open-now: '&c现在打开这个太晚了！'
+
+#当拍卖被卖家领取后，出价历史
+#不再更新 %when-bidded%，下面的消息会
+#添加到出价历史物品的描述中
+#使用 %date% 代表最后更新的日期
+bid-history-last-updated-message: '&8最后更新于 %date%'
+
+submit-bid-cannot-afford-item: '394'
+#使用 %bid-amount% 代表所需金额（玩家没有的）
+submit-bid-cannot-afford-item-name: '&6提交出价'
+submit-bid-cannot-afford-item-lore:
+  - ''
+  - '&7新出价: &6%bid-amount% 金币'
+  - ''
+  - '&c无法负担此出价！'
+
+submit-bid-item: '371'
+submit-bid-item-name: '&6提交出价'
+submit-bid-item-lore:
+  no-previous-bids:
+    - ''
+    - '&7新出价: &6%bid-amount% 金币'
+    - ''
+    - '&e点击出价！'
+  #使用 %bid-amount% 代表出价金额
+  #使用 %previous-bid% 代表之前的出价金额
+  #使用 %coins-to-pay% 代表先前出价与实际出价之间的差额
+  with-previous-bids:
+    - ''
+    - '&7新出价: &6%bid-amount% 金币'
+    - '&7先前出价: &e%previous-bid% 金币'
+    - ''
+    - '&7你需要支付: &6%coins-to-pay% 金币'
+    - ''
+    - '&e点击出价！'
+
+collect-bid-item: '41'
+collect-bid-item-name: '&6领取拍卖'
+collect-bid-item-lore:
+  #使用 %coins% 代表玩家可以领取的金币数量
+  collect-coins:
+    - ''
+    - '&7你有 &6%coins% 金币'
+    - '&7可以从这个拍卖中'
+    - '&7领取。'
+    - ''
+    - '&e点击领取！'
+  collect-item:
+    - ''
+    - '&7你有物品可以从'
+    - '&7这个拍卖中'
+    - '&7领取。'
+    - ''
+    - '&e点击领取！'
+
+edit-bid-item: '266'
+#使用 %current-bid% 代表玩家选择的出价金额
+edit-bid-item-name: '&f出价金额: &6%current-bid% 金币'
+#使用 %minimum-bid% 代表你必须在此拍卖上出价的最低金额
+edit-bid-item-lore:
+  - '&7你需要至少出价'
+  - '&6%minimum-bid% 金币 &7才能在此拍卖'
+  - '&7上持有最高出价。'
+  - ''
+  - '&7拍卖结束时的 &e最高出价&7'
+  - '&7将赢得物品。'
+  - ''
+  - '&7如果你没有获胜，你可以'
+  - '&7领回你的出价金币。'
+  - ''
+  - '&e点击编辑金额！'
+
+#用于编辑的告示牌与拍卖创建器中的起拍价
+#文本相同
+
+#当你尝试用低于要求的数值编辑出价时显示的消息
+edit-bid-deny-message: '&c你的出价太低了。'
+
+#出价成功时显示的消息
+placed-bid-message: '&a你的出价已成功提交！'
+
+#当你有 28 个出价（达到上限）时的消息
+max-bids-reached: '&c你同时最多可以在不同的拍卖上出价 28 次。'
+
+#玩家被超价时发送的消息
+#使用 %outbid-player-display-name% 代表超价者的名称
+#使用 %top-bid% 代表新的最高出价
+#使用 %bid-item% 代表物品名称
+outbid-message:
+  - '&6[拍卖] &f你被 %outbid-player-display-name%&f 在 %bid-item%&f 上超价了。'
+  - '&f新的最高出价是 &6%top-bid% 金币&f。&e&l点击查看'
+
+#有人对其拍卖出价时发送给卖家的消息
+#使用 %bidder% 代表出价者的显示名称
+#使用 %bid-amount% 代表出价金额
+#使用 %bid-item% 代表物品名称
+bid-message: '&6[拍卖] %bidder% &f对你的 %bid-item%&f 出价了 &6%bid-amount% 金币&f！'
+
+not-enough-money-bid: '&c你没有足够的金币来出这个价。'
+
+#此消息会添加到某些物品的描述中
+#让玩家知道这是他们自己的拍卖
+own-auction-message: '&a这是你自己的拍卖！'
+
+#为了防止两个玩家在同一拍卖上出相同金额的 bug
+#（当两个玩家同时打开同一个拍卖查看菜单时会发生）
+#如果玩家尝试提交的金额已经存在，
+#将向玩家发送此消息
+bid-error-message:
+  - '&c[拍卖错误] &f在你思考如何提交时，已经有人出价了。'
+  - '&c正在重新打开菜单...'

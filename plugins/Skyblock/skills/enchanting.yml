@@ -1,0 +1,400 @@
+type: ENCHANTING
+simple: "附魔"
+name: "&a附魔技能"
+levelName: "&a附魔 <level>"
+level: "附魔等级 <level>"
+desc:
+  - "&7附魔物品来获得附魔"
+  - "&7经验值！"
+levelIcon:
+  - "&e术士 <level>"
+  - "&a<chance>%&f 从任何来源获得"
+  - "&f更多经验。"
+levelDesc:
+  - "&7奖励："
+  - "<rewards>"
+icon:
+  material: ENCHANTMENT_TABLE
+  data: 0
+  amount: 1
+  mainSlot: 24
+  levelSlot: 0
+specialIcon:
+  material: HAY_BLOCK
+  data: 0
+levels:
+  level1:
+    level: 1
+    slot: 9
+    page: 1
+    levelUp: 50
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:25"
+    lore:
+      - "&7 &e术士 I"
+      - "&7  &a4%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&625 &7硬币"
+  level2:
+    level: 2
+    slot: 18
+    page: 1
+    levelUp: 125
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:50"
+    lore:
+      - "&7 &e术士 II"
+      - "&7  &84➜&a8%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&650 &7硬币"
+  level3:
+    level: 3
+    slot: 27
+    page: 1
+    levelUp: 250
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:100"
+    lore:
+      - "&7 &e术士 III"
+      - "&7  &88➜&a12%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6100 &7硬币"
+  level4:
+    level: 4
+    slot: 28
+    page: 1
+    levelUp: 500
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:200"
+    lore:
+      - "&7 &e术士 IV"
+      - "&7  &812➜&a16%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6200 &7硬币"
+  level5:
+    level: 5
+    slot: 29
+    page: 1
+    levelUp: 1000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:300"
+    lore:
+      - "&7 &e术士 V"
+      - "&7  &816➜&a20%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6300 &7硬币"
+  level6:
+    level: 6
+    slot: 20
+    page: 1
+    levelUp: 1500
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:400"
+    lore:
+      - "&7 &e术士 VI"
+      - "&7  &820➜&a24%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6400 &7硬币"
+  level7:
+    level: 7
+    slot: 11
+    page: 1
+    levelUp: 2000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:500"
+    lore:
+      - "&7 &e术士 VII"
+      - "&7  &824➜&a28%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6500 &7硬币"
+  level8:
+    level: 8
+    slot: 2
+    page: 1
+    levelUp: 2500
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:600"
+    lore:
+      - "&7 &e术士 VIII"
+      - "&7  &828➜&a32%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6600 &7硬币"
+  level9:
+    level: 9
+    slot: 3
+    page: 1
+    levelUp: 3000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:700"
+    lore:
+      - "&7 &e术士 IX"
+      - "&7  &832➜&a36%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6700 &7硬币"
+  level10:
+    level: 10
+    slot: 4
+    page: 1
+    levelUp: 3500
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:800"
+    lore:
+      - "&7 &e术士 X"
+      - "&7  &836➜&a40%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6800 &7硬币"
+  level11:
+    level: 11
+    slot: 13
+    page: 1
+    levelUp: 4500
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:900"
+    lore:
+      - "&7 &e术士 XI"
+      - "&7  &840➜&a44%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&6900 &7硬币"
+  level12:
+    level: 12
+    slot: 22
+    page: 1
+    levelUp: 6000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:1000"
+    lore:
+      - "&7 &e术士 XII"
+      - "&7  &844➜&a48%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,000 &7硬币"
+  level13:
+    level: 13
+    slot: 31
+    page: 1
+    levelUp: 7500
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:1100"
+    lore:
+      - "&7 &e术士 XIII"
+      - "&7  &848➜&a52%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,100 &7硬币"
+  level14:
+    level: 14
+    slot: 32
+    page: 1
+    levelUp: 9000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:1"
+      - "COINS:1200"
+    lore:
+      - "&7 &e术士 XIV"
+      - "&7  &852➜&a56%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,200 &7硬币"
+  level15:
+    level: 15
+    slot: 33
+    page: 1
+    levelUp: 11000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:1300"
+    lore:
+      - "&7 &e术士 XV"
+      - "&7  &856➜&a60%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,300 &7硬币"
+  level16:
+    level: 16
+    slot: 24
+    page: 1
+    levelUp: 13000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:1400"
+    lore:
+      - "&7 &e术士 XVI"
+      - "&7  &860➜&a64%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,400 &7硬币"
+  level17:
+    level: 17
+    slot: 15
+    page: 1
+    levelUp: 15000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:1500"
+    lore:
+      - "&7 &e术士 XVII"
+      - "&7  &864➜&a68%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,500 &7硬币"
+  level18:
+    level: 18
+    slot: 6
+    page: 1
+    levelUp: 20000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:1600"
+    lore:
+      - "&7 &e术士 XVIII"
+      - "&7  &868➜&a72%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,600 &7硬币"
+  level19:
+    level: 19
+    slot: 7
+    page: 1
+    levelUp: 25000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:1800"
+    lore:
+      - "&7 &e术士 XIX"
+      - "&7  &872➜&a76%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&61,800 &7硬币"
+  level20:
+    level: 20
+    slot: 8
+    page: 1
+    levelUp: 30000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:2000"
+    lore:
+      - "&7 &e术士 XX"
+      - "&7  &876➜&a80%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&62,000 &7硬币"
+  level21:
+    level: 21
+    slot: 17
+    page: 1
+    levelUp: 33000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:2200"
+    lore:
+      - "&7 &e术士 XXI"
+      - "&7  &880➜&a84%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&62,200 &7硬币"
+  level22:
+    level: 22
+    slot: 26
+    page: 1
+    levelUp: 40000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:2400"
+    lore:
+      - "&7 &e术士 XXII"
+      - "&7  &884➜&a88%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&62,400 &7硬币"
+  level23:
+    level: 23
+    slot: 35
+    page: 1
+    levelUp: 42000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:2600"
+    lore:
+      - "&7 &e术士 XXIII"
+      - "&7  &888➜&a92%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&62,600 &7硬币"
+  level24:
+    level: 24
+    slot: 44
+    page: 1
+    levelUp: 45000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:2800"
+    lore:
+      - "&7 &e术士 XXIV"
+      - "&7  &892➜&a96%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&62,800 &7硬币"
+  level25:
+    level: 25
+    slot: 53
+    page: 1
+    levelUp: 50000
+    rewards:
+      - "ADDXP:4"
+      - "ADDINTELLIGENCE:2"
+      - "COINS:3000"
+    lore:
+      - "&7 &e术士 XXV"
+      - "&7  &896➜&a100%&f 从任何来源获得"
+      - "&7  &f更多经验。"
+      - "&7 &8+&a1 &b<intelligence> 情报"
+      - "&7 &8+&63,000 &7硬币"
